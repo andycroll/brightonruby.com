@@ -1,0 +1,4 @@
+name: Brighton Ruby Conference 2014
+markdown: redcarpet
+pygments: true
+exclude: ['config.ru', 'Gemfile', 'Gemfile.lock', 'vendor']
