@@ -76,10 +76,10 @@ And we obviously have our fair share of Subway, Starbucks, Costa, McDonald's and
 
 A couple of personal recommendations:
 
-[Food for friends](http://www.foodforfriends.com) - Vege - Ship Street
-[Solero](http://www.solera-brighton.co.uk) - Spanish Tapas - Sydney Street
-[La Choza](http://www.lachoza.co.uk) - Mexican - Gloucester Road
-[Chilli Pickle](http://www.thechillipickle.com) - Amazing Indian - Jubilee St
+* [Food for friends](http://www.foodforfriends.com) - Vege - Ship Street
+* [Solero](http://www.solera-brighton.co.uk) - Spanish Tapas - Sydney Street
+* [La Choza](http://www.lachoza.co.uk) - Mexican - Gloucester Road
+* [Chilli Pickle](http://www.thechillipickle.com) - Amazing Indian - Jubilee St
 
 And of course your average pub food in Brighton is pretty great.
 
@@ -93,11 +93,11 @@ We have some cash put away at the Dome for after-conference drinks, but if you w
 
 ## Good coffee in town
 
-[Coffee@33](https://twitter.com/CoffeeAt33) - North Road - near the station
-[Marwood Coffee](http://themarwood.com) - Ship St - tucked away, ace decor
-[Velo](http://www.velo-cafe.co.uk/) - The Level
-[Small Batch](http://smallbatchcoffee.co.uk) - Jubilee St - Brighton chain, this is their main branch
-And several places, all on Kensington gardens
+* [Coffee@33](https://twitter.com/CoffeeAt33) - North Road - near the station
+* [Marwood Coffee](http://themarwood.com) - Ship St - tucked away, ace decor
+* [Velo](http://www.velo-cafe.co.uk/) - The Level
+* [Small Batch](http://smallbatchcoffee.co.uk) - Jubilee St - Brighton chain, this is their main branch
+* Several places, all on Kensington gardens
 
 And slightly out of town... [Emporium](http://emporiumbrighton.com) - London Road - a gorgeous old theatre
 
