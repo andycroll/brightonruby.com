@@ -64,8 +64,7 @@ Grassy area just north of the North Laine. Skate park (lookout for men who are '
 
 [Visit Brighton](http://www.visitbrighton.com) a standard 'tourist-y' site - to cover stuff I haven't seen or done. I only moved here in June last year and I have twins under 18 months old. I haven't hit the town much.
 
-
-
+![Brighton Areas](/images/brighton.png)
 
 And there's the regular standbyes of Foursquare and Yelp: their coverage seems pretty accurate.
 
