@@ -1,5 +1,5 @@
 GIT
-  remote: git@github.com:andycroll/rack-jekyll.git
+  remote: git://github.com/andycroll/rack-jekyll.git
   revision: f3976fa8364e3e9707c265672a606b6ebd00a640
   specs:
     rack-jekyll (0.4.1)
