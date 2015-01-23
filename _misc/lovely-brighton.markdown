@@ -1,7 +1,8 @@
 ---
 title: 'Lovely Brighton'
 layout: page
-category: 2014
+redirect_from:
+  - /2014/lovely-brighton.html
 ---
 
 _A not very brief and personal take on my home town. Locals with more knowledge are welcome to make amendments!_

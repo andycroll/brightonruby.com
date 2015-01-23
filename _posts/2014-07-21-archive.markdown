@@ -1,0 +1,143 @@
+---
+title: 'Brighton Ruby 2014 Archive'
+layout: page
+redirect_from:
+  - /schedule.html
+
+---
+
+
+
+<div class="row">
+<div class="col-xs-offset-1 col-xs-10 col-sm-offset-2 col-sm-8">
+<h3 class="h5 text-center">SPONSORED BY</h3>
+</div>
+</div>
+<div class="row">
+<div class="col-xs-offset-2 col-xs-8">
+<a href="http://bytemark-hosting.com/r/brightonruby"><img src="/images/bytemark.jpg" class="img-responsive" alt="Bytemark Hosting" /></a>
+</div>
+</div>
+<div class="row">
+<div class="col-xs-offset-1 col-xs-5 col-sm-offset-2 col-sm-4 col-md-offset-0 col-md-3">
+<a href="http://pivotallabs.com"><img src="/images/pivotal-labs.jpg" class="img-responsive" alt="Pivotal Labs" /></a>
+</div>
+<div class="col-xs-5 col-sm-4 col-md-offset-0 col-md-3">
+<a href="http://freeagent.com"><img src="/images/freeagent.jpg" class="img-responsive" alt="Free Agent" /></a>
+</div>
+<div class="col-xs-offset-1 col-xs-5 col-sm-offset-2 col-sm-4 col-md-offset-0 col-md-3">
+<a href="http://fundingcircle.com"><img src="/images/funding-circle.jpg" class="img-responsive" alt="Funding Circle" /></a>
+</div>
+<div class="col-xs-5 col-sm-4 col-md-offset-0 col-md-3">
+<a href="http://kyan.com"><img src="/images/kyan.jpg" class="img-responsive" alt="Kyan" /></a>
+</div>
+</div>
+
+
+<div class="row">
+<div class="col-xs-2 col-sm-offset-2 col-sm-1"><h4>0900</h4></div>
+<div class="col-xs-8 col-sm-7">
+<h4><a href="http://twitter.com/hone02">Terence Lee</a> &amp; <a href="http://twitter.com/_zzak">Zak</a> - <i>May the Ruby be with you</i></h4>
+<p><small>Studying under the tutelage of zzak, Padawan Terence earned his commit bit by maintaining legacy versions of Ruby in order to support hundreds of thousands of customers on the Heroku platform as well as the broader Ruby community.<br />
+Acting as a of knight of the Ruby Order (aka Ruby Core), zzak has helped train many younglings with their first patches. While exploring the far reaches of the world so that people can learn the ways of the Ruby Order.</small></p>
+</div>
+</div>
+<div class="row">
+<div class="col-xs-2 col-sm-offset-2 col-sm-1"><h4>0945</h4></div>
+<div class="col-xs-8 col-sm-7">
+<h4><a href="http://twitter.com/benlovell">Ben Lovell</a> - <i>Building fast, standardised JSON APIs in Ruby</i></h4>
+<p><small>Ben works for digital agency 1minus1. A regular contributor to open-source, agile fanboy and harbours an almost unhealthy obsession for all things API. Ruby is his first love. Beards a close second.
+</small></p>
+</div>
+</div>
+
+<div class="row">
+<div class="col-sm-offset-2 col-xs-8">
+<hr />
+<h3 class="h5 text-center">BREAK</h3>
+<hr />
+</div>
+</div>
+
+<div class="row">
+<div class="col-xs-2 col-sm-offset-2 col-sm-1"><h4>1045</h4></div>
+<div class="col-xs-8 col-sm-7">
+<h4><a href="http://twitter.com/alinajaf">Najaf Ali</a> - <i>Better Security For Rails Apps</i></h4>
+<p><small>Husband, Antitheist, Father and Hacker. Breaks websites, makes babies, speaks Japanese and occasionally builds internets with the Rubies.</small></p>
+</div>
+</div>
+<div class="row">
+<div class="col-xs-2 col-sm-offset-2 col-sm-1"><h4>1105</h4></div>
+<div class="col-xs-8 col-sm-7">
+<h4><a href="http://twitter.com/tom_b025">Thomas Brand</a> - <i>Don't Fear The Cuke</i></h4>
+<p><small>Coding ruby since 2009 for equity fund managers, and joined Pivotal Labs in early 2014. Became a Cucumber dev team member in October 2013.</small></p>
+</div>
+</div>
+<div class="row">
+<div class="col-xs-2 col-sm-offset-2 col-sm-1"><h4>1120</h4></div>
+<div class="col-xs-8 col-sm-7">
+<h4><a href="http://twitter.com/sarahmei">Sarah Mei</a> - <i>Unpacking Technical Decisions</i></h4>
+<p><small>Ruby developer, rabid pair-programmer, RailsBridge founder, Head of Propaganda at <a href="http://www.minifast.co" title="Rails Pairing Consulting">Ministry of Velocity</a>.</small></p>
+</div>
+</div>
+
+<div class="row">
+<div class="col-sm-offset-2 col-xs-8">
+<hr />
+<h3 class="h5 text-center">LUNCH</h3>
+<hr />
+</div>
+</div>
+
+<div class="row">
+<div class="col-xs-2 col-sm-offset-2 col-sm-1"><h4>1345</h4></div>
+<div class="col-xs-8 col-sm-7">
+<h4><a href="http://twitter.com/lrz">Laurent Sansonetti</a> - <i>RubyMotion: Ruby For Native Mobile Apps</i></h4>
+<p><small>Belgian software hacker, husband, dad and cat wrangler. Founder/CEO of <a href="http://hipbyte.com" title="Hipbyte">HipByte</a>, who make <a href="http://rubymotion.com" title="iOS + Ruby = Nice">RubyMotion</a>. Former Apple employee, MacRuby author.</small></p>
+</div>
+</div>
+<div class="row">
+<div class="col-xs-2 col-sm-offset-2 col-sm-1"><h4>1430</h4></div>
+<div class="col-xs-8 col-sm-7">
+<h4><a href="http://twitter.com/sampphippen">Sam Phippen</a> - <i>Types in Ruby</i></h4>
+<p><small>A swashbuckling hacker from London, UK. He fixes every size of data problem at Fun and Plausible Solutions. He helps fight for the forces of justice as a member of the RSpec core team. He's sad that he can't hug every cat.</small></p>
+</div>
+</div>
+<div class="row">
+<div class="col-xs-2 col-sm-offset-2 col-sm-1"><h4>1450</h4></div>
+<div class="col-xs-8 col-sm-7">
+<h4><a href="http://twitter.com/andypike">Andy Pike</a> - <i>Take the pain out of your TDD</i></h4>
+<p><small>Andy is Technical Director of a small web agency in leafy Surrey called 1minus1. When Andy isn't hacking on Ruby you'll find him mining for diamonds with his kids in Minecraft or watching the latest eSports competition.</small></p>
+</div>
+</div>
+
+<div class="row">
+<div class="col-sm-offset-2 col-xs-8">
+<hr />
+<h3 class="h5 text-center">BREAK</h3>
+<hr />
+</div>
+</div>
+
+<div class="row">
+<div class="col-xs-2 col-sm-offset-2 col-sm-1"><h4>1615</h4></div>
+<div class="col-xs-8 col-sm-7">
+<h4><a href="http://twitter.com/rosaemerald">Rosa Fox</a> &amp; <a href="http://twitter.com/despo">Despo Pentara</a> - <i>Codebar &amp; Coaching</i></h4>
+<p><small>Rosa is a developer at Happy Bear Software and co-organiser of Codebar Brighton and a Music Informatics graduate. Encourages others to embrace coding.<br/>
+Despo is a Ruby developer. Codebar Founder. Loves open source &amp; making things</small></p>
+</div>
+</div>
+<div class="row">
+<div class="col-xs-2 col-sm-offset-2 col-sm-1"><h4>1635</h4></div>
+<div class="col-xs-8 col-sm-7">
+<h4><a href="http://twitter.com/jodosha">Luca Guidi</a> - <i>Web development with Lotus</i></h4>
+<p><small>Family, music &amp; programming are the things that he loves the most. Author of Lotus: a complete web framework for Ruby</small></p>
+</div>
+</div>
+<div class="row">
+<div class="col-xs-2 col-sm-offset-2 col-sm-1"><h4>1655</h4></div>
+<div class="col-xs-8 col-sm-7">
+<h4><a href="http://twitter.com/tenderlove">Aaron Patterson</a> - <i>Closing</i></h4>
+<p><small>Rails Core. Ruby Core. Tender to the core.</small></p>
+</div>
+</div>

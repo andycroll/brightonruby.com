@@ -1,7 +1,8 @@
 ---
 title: 'Code of Conduct'
 layout: page
-category: 2014
+redirect_from:
+  - /2014/code-of-conduct.html
 ---
 
 All attendees, speakers, sponsors & volunteers at our conference are required to agree with the following code of conduct. We will enforce this code throughout the event. We expect all participants to help create a safe environment for everybody.
