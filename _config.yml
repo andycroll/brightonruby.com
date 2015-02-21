@@ -1,7 +1,7 @@
 name: Brighton Ruby Conference 2015
 
 markdown: kramdown
-highlighter: rouge
+highlighter: pygments
 exclude: ['config.ru', 'Gemfile', 'Gemfile.lock', 'vendor']
 permalink: /:year/:title/
 
