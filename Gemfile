@@ -1,6 +1,4 @@
 source 'https://rubygems.org'
-ruby '2.2.0'
+ruby '2.2.2'
 gem 'bundler'
-gem 'jekyll'
-gem 'jekyll-redirect-from'
-gem 'rack-jekyll', github: 'andycroll/rack-jekyll'
+gem 'github-pages'
