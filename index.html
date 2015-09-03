@@ -1,291 +1,64 @@
 ---
 layout: default
-title: "Brighton Ruby Conference 2015"
-date: "20th July 2015"
+title: "Brighton Ruby Conference 2016"
 ---
 
-<div class="row"><br/></div>
+<article>
+  <div class="pure-g">
+    <div class="pure-u-sm-4-24 pure-u-md-7-24 pure-u-lg-5-24"></div>
+    <div class="pure-u-1 pure-u-sm-3-4 pure-u-md-14-24 pure-u-lg-11-24 l-box">
+      <h1>Friday 8th July 2016</h1>
+      <h2>A one day, single track, conference for Rubyists &amp; the Ruby-curious.</h2>
+      <p>Organized by <a href="http://twitter.com/andycroll">@andycroll</a> in Brighton,&nbsp;UK</p>
+    </div>
+  </div>
 
-<div class="row">
-  <div class="col-xs-offset-2 col-xs-8 col-sm-offset-3 col-sm-6 col-md-offset-4 col-md-4">
-    <img src="images/logo.png" class="img-responsive" alt="Brighton Ruby Conference 2015: This is the Brighton Dome rendered Ruby-ish by my own fair hand." />
-    <h3 class="text-center">{{ page.title }}</h3>
+  <div class="pure-g l-pad">
+    {% for archive in site.archives %}
+      {% for photo in archive.photos limit:6 %}
+        <div class="pure-u-1-6 pure-u-md-1-12">
+          <img src="/images/{{ archive.date | date: "%Y" }}/{{ photo.src }}.jpg" alt="{{ photo.alt }}" class="pure-img" />
+        </div>
+      {% endfor %}
+    {% endfor %}
   </div>
-  <div class="col-xs-offset-1 col-xs-10">
-    <h4 class="text-center">{{ page.date }}</h4>
-  </div>
-  <div class="col-xs-offset-1 col-xs-10">
-    <h5 class="text-center"><a href="http://twitter.com/brightonruby">@brightonruby</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="http://lanyrd.com/2015/brightonruby/">lanyrd page</a></h5>
-  </div>
-</div>
 
-<div class="row"><br/></div>
+  <div class="pure-g">
+    <div class="pure-u-sm-4-24 pure-u-md-7-24 pure-u-lg-5-24"></div>
+    <div class="pure-u-1 pure-u-sm-3-4 pure-u-md-14-24 pure-u-lg-11-24 l-box">
+      <p>Hello, I'm <a href="http://twitter.com/andycroll" title="Andy Croll Twitter">Andy</a>.</p>
+      <p><a href="/2015">2015&rsquo;s event</a> was jolly good fun, although the weather didn't exactly rock. And we had a gameshow!</p>
+      <p><em>I'm extraordinarily well ahead of myself, so why not buy a ticket for next year?</em></p>
+      <p>I've already got some great speakers lined up but I'm keeping them a secret for now.</p>
+    </div>
+  </div>
 
-<div class="row">
-  <div class="col-xs-offset-1 col-xs-10 col-sm-offset-2 col-sm-8">
-    <h4>Hello, I'm <a href="http://twitter.com/andycroll" title="Andy Croll Twitter">Andy</a>.</h4>
-    <p><a href="/2014/archive">Last year</a> we basked in tropical weather and had a lovely time. And clearly I don't know when to quit.</p>
-    <p><em>So why not come to lovely, sunny* Brighton on Monday July 20th? We can do it all again.</em></p>
-    <p><small>* sun not guaranteed, obviously</small></p>
-  </div>
-</div>
+  <!-- <div class="pure-g l-pad">
+    <div class="pure-u-sm-4-24 pure-u-md-7-24 pure-u-lg-5-24"></div>
+    <div class="pure-u-1 pure-u-sm-3-4 pure-u-md-14-24 pure-u-lg-11-24 l-box">
+      <h2>Latest Videos</h2>
+    </div>
+    <div class="pure-u-1"></div>
+    <div class="pure-u-sm-4-24 pure-u-md-7-24 pure-u-lg-5-24"></div>
+    <div class="pure-u-1 pure-u-sm-3-8 pure-u-md-7-24 pure-u-lg-5-24 l-box">
+      {% for post in site.posts limit:2 %}
+        <p>
+          <a href="{{ post.url }}">{{ post.title }}</a><br />
+          {{ post.speakers.first.name }}
+        </p>
+      {% endfor %}
+    </div>
+  </div> -->
 
-<div class="row"><br/></div>
+  <div class="pure-g">
+    <div class="pure-u-sm-4-24 pure-u-md-7-24 pure-u-lg-5-24"></div>
+    <div class="pure-u-1 pure-u-sm-3-4 pure-u-md-14-24 pure-u-lg-11-24 l-box">
+      <h2>What is Brighton Like?</h2>
+      <p>Well I think it's <a href="/misc/lovely-brighton" title="Brighton Guide">like this.</a></p>
 
-<div class="row">
-  <div class="col-xs-offset-1 col-xs-10 col-sm-offset-2 col-sm-8">
-    <h3 class="h3 text-center">Sponsors</h3>
+      <h3>Behaviour</h3>
+      <p>Brighton Ruby Conference is a harassment-free experience for everyone. With that in mind we have a brief code of conduct. It's not draconian, we merely want everyone to enjoy themselves and be considerate of everyone else. <em>Matz is nice, so we are nice.</em></p>
+      <p><a href="/misc/code-of-conduct" title="Code of Conduct">Code of Conduct</a></p>
+    </div>
   </div>
-</div>
-
-<div class="row">
-  <div class="col-xs-12">
-    <h4 class="text-center"><small>GOLD</small></h4>
-  </div>
-  <div class="col-xs-12 col-sm-offset-4 col-sm-4">
-    <a href="http://freeagent.com/"><img src="images/freeagent.jpg" class="img-responsive" alt="Free Agent" /></a>
-  </div>
-  <div class="col-xs-12">
-    <h4 class="text-center"><small>SILVER</small></h4>
-  </div>
-  <div class="col-xs-6 col-sm-offset-2 col-sm-4">
-    <a href="http://unboxedconsulting.com/"><img src="images/unboxed-consulting.png" class="img-responsive" alt="Unboxed Consulting" /></a>
-  </div>
-  <div class="col-xs-6 col-sm-4">
-    <a href="http://bytemark.co.uk/"><img src="images/bytemark.png" class="img-responsive" alt="Bytemark" /></a>
-  </div>
-  <div class="col-xs-6 col-sm-offset-2 col-sm-4">
-    <a href="http://pivotallabs.com/"><img src="images/pivotal-labs.jpg" class="img-responsive" alt="Pivotal Labs" /></a>
-  </div>
-  <div class="col-xs-6 col-sm-4">
-    <a href="http://notonthehighstreet.com/"><img src="images/not-on-the-high-street.png" class="img-responsive" alt="Not on the High Street" /></a>
-  </div>
-</div>
-
-<div class="row">
-  <div class="col-xs-offset-2 col-xs-8">
-    <hr />
-    <h2 class="text-center">Venue</h2>
-    <p>The Studio Theatre at the lovely <a href="http://brightondome.org">Brighton Dome</a>. Starting at 9AM, registration from 8AM.</p>
-  </div>
-</div>
-
-<div class="row">
-  <div class="col-xs-offset-2 col-xs-8">
-    <hr />
-    <h2 class="text-center">Schedule</h2>
-  </div>
-</div>
-
-<div class="row">
-  <div class="col-xs-3 col-sm-offset-2 col-sm-2 col-md-offset-3 col-md-1">
-    <h5><small>0900&mdash;0915</small></h5>
-  </div>
-  <div class="col-xs-8 col-sm-5 col-md-4">
-    <h4>Welcome &amp; Introduction</h4>
-    <p><i><a href="http://twitter.com/andycroll">Andy Croll</a>, your grateful host</i></p>
-  </div>
-  <div class="col-xs-1"><img src="https://pbs.twimg.com/profile_images/1883092999/Screen_Shot_2012-03-09_at_1.12.00_PM.png" class="img-responsive" alt="Andy Croll" /></div>
-</div>
-
-<div class="row">
-  <div class="col-xs-3 col-sm-offset-2 col-sm-2 col-md-offset-3 col-md-1">
-    <h5><small>0915&mdash;1000</small></h5>
-  </div>
-  <div class="col-xs-8 col-sm-5 col-md-4">
-    <h4>Making Software Fun</h4>
-    <p><i><a href="http://twitter.com/ultrasaurus">Sarah Allen</a></i></p>
-  </div>
-  <div class="col-xs-1"><img src="https://pbs.twimg.com/profile_images/451707693577682945/6MKmBXjK.jpeg" class="img-responsive" alt="Sarah Allen" /></div>
-</div>
-
-<div class="row">
-  <div class="col-xs-3 col-sm-offset-2 col-sm-2 col-md-offset-3 col-md-1">
-    <h5><small>1000&mdash;1030</small></h5>
-  </div>
-  <div class="col-xs-8 col-sm-5 col-md-4">
-    <h4>Lotus and the future of Ruby</h4>
-    <p><i><a href="http://twitter.com/jodosha">Luca Guidi</a></i></p>
-  </div>
-  <div class="col-xs-1"><img src="https://pbs.twimg.com/profile_images/510098659392778240/bkAzyKUm.jpeg" class="img-responsive" alt="Luca Guidi" /></div>
-</div>
-
-<div class="row">
-  <div class="col-xs-3 col-sm-offset-2 col-sm-2 col-md-offset-3 col-md-1">
-  </div>
-  <div class="col-xs-9 col-sm-8 col-md-5">
-    <hr />
-    <h5 class="text-center"><small>BREAK</small></h5>
-    <hr />
-  </div>
-</div>
-
-<div class="row">
-  <div class="col-xs-3 col-sm-offset-2 col-sm-2 col-md-offset-3 col-md-1">
-    <h5><small>1100&mdash;1120</small></h5>
-  </div>
-  <div class="col-xs-8 col-sm-5 col-md-4">
-    <h4>Just in Time</h4>
-    <p><i><a href="http://twitter.com/aemeredith">Elle Meredith</a></i></p>
-  </div>
-  <div class="col-xs-1"><img src="https://pbs.twimg.com/profile_images/588109473/buli_icon.jpg" class="img-responsive" alt="Elle Meredith" /></div>
-</div>
-
-<div class="row">
-  <div class="col-xs-3 col-sm-offset-2 col-sm-2 col-md-offset-3 col-md-1">
-    <h5><small>1120&mdash;1140</small></h5>
-  </div>
-  <div class="col-xs-8 col-sm-5 col-md-4">
-    <h4>Do You Need That Gem?</h4>
-    <p><i><a href="http://twitter.com/samphippen">Sam Phippen</a></i></p>
-  </div>
-  <div class="col-xs-1"><img src="https://pbs.twimg.com/profile_images/518125659709644801/YaZgtOsg.jpeg" class="img-responsive" alt="Sam Phippen" /></div>
-</div>
-
-<div class="row">
-  <div class="col-xs-3 col-sm-offset-2 col-sm-2 col-md-offset-3 col-md-1">
-    <h5><small>1140&mdash;1210</small></h5>
-  </div>
-  <div class="col-xs-9 col-sm-5 col-md-4">
-    <h4>Lightning Talks</h4>
-    <p>
-      <i>
-        <a href="https://twitter.com/sonjaheinen">Sonja Heinen</a>,
-        <a href="https://twitter.com/olga_scott">Olga Scott</a>,
-        <a href="https://twitter.com/binaryberry">Tatiana Soukiassian</a>,
-        <a href="https://twitter.com/robb1e">Robbie Clutton</a>  &amp;
-        <a href="https://twitter.com/felltir">Alex Sunderland</a>
-      </i>
-    </p>
-  </div>
-  <div class="col-xs-1"></div>
-</div>
-
-<div class="row">
-  <div class="col-xs-3 col-sm-offset-2 col-sm-2 col-md-offset-3 col-md-1">
-    <h5><small>1210&mdash;1230</small></h5>
-  </div>
-  <div class="col-xs-8 col-sm-5 col-md-4">
-    <h4>Mini Munging: The Joy of Small Data</h4>
-    <p><i><a href="http://twitter.com/robmil">Rob Miller</a></i></p>
-  </div>
-  <div class="col-xs-1"><img src="https://pbs.twimg.com/profile_images/491233282189574144/Bpl_8sp9.jpeg" class="img-responsive" alt="Rob Miller" /></div>
-</div>
-
-<div class="row">
-  <div class="col-xs-3 col-sm-offset-2 col-sm-2 col-md-offset-3 col-md-1">
-  </div>
-  <div class="col-xs-9 col-sm-8 col-md-5">
-    <hr />
-    <h5 class="text-center"><small>LUNCH</small></h5>
-    <hr />
-  </div>
-</div>
-
-<div class="row">
-  <div class="col-xs-3 col-sm-offset-2 col-sm-2 col-md-offset-3 col-md-1">
-    <h5><small>1400&mdash;1420</small></h5>
-  </div>
-  <div class="col-xs-8 col-sm-5 col-md-4">
-    <h4>Playing Games in the Clouds</h4>
-    <p><i><a href="http://twitter.com/nodunayo">Nadia Odunayo</a></i></p>
-  </div>
-  <div class="col-xs-1"><img src="https://pbs.twimg.com/profile_images/619252951421353988/enOQyVuR.jpg" class="img-responsive" alt="Nadia Odunayo" /></div>
-</div>
-
-<div class="row">
-  <div class="col-xs-3 col-sm-offset-2 col-sm-2 col-md-offset-3 col-md-1">
-    <h5><small>1420&mdash;1440</small></h5>
-  </div>
-  <div class="col-xs-8 col-sm-5 col-md-4">
-    <h4>Command &amp; Conquer: Red Alert</h4>
-    <p><i><a href="https://twitter.com/tadejm">Tadej Murovec</a></i></p>
-  </div>
-  <div class="col-xs-1"><img src="https://avatars1.githubusercontent.com/u/17839" class="img-responsive" alt="Tadej Murovec" /></div>
-</div>
-
-<div class="row">
-  <div class="col-xs-3 col-sm-offset-2 col-sm-2 col-md-offset-3 col-md-1">
-    <h5><small>1440&mdash;1500</small></h5>
-  </div>
-  <div class="col-xs-8 col-sm-5 col-md-4">
-    <h4>The Struggle to Stay Technical</h4>
-    <p><i><a href="http://twitter.com/KinseyAnnDurham">Kinsey Ann Durham</a></i></p>
-  </div>
-  <div class="col-xs-1"><img src="https://pbs.twimg.com/profile_images/3656924547/b62501c4a5b511c24e6067a24c6b4b04.jpeg" class="img-responsive" alt="Kinsey Ann Durham" /></div>
-</div>
-
-<div class="row">
-  <div class="col-xs-3 col-sm-offset-2 col-sm-2 col-md-offset-3 col-md-1">
-    <h5><small>1500&mdash;1530</small></h5>
-  </div>
-  <div class="col-xs-8 col-sm-5 col-md-4">
-    <h4>Just a (Ruby) Minute <small>live</small></h4>
-    <p><i><a href="https://twitter.com/MarmiteJunction">Andrew Faraday</a>, your host</i></p>
-  </div>
-  <div class="col-xs-1"><img src="https://pbs.twimg.com/profile_images/581857926043795457/VTbhtKAM.jpg" class="img-responsive" alt="Andrew Faraday" /></div>
-</div>
-
-
-<div class="row">
-  <div class="col-xs-3 col-sm-offset-2 col-sm-2 col-md-offset-3 col-md-1">
-  </div>
-  <div class="col-xs-9 col-sm-8 col-md-5">
-    <hr />
-    <h5 class="text-center"><small>BREAK</small></h5>
-    <hr />
-  </div>
-</div>
-
-<div class="row">
-  <div class="col-xs-3 col-sm-offset-2 col-sm-2 col-md-offset-3 col-md-1">
-    <h5><small>1615&mdash;1700</small></h5>
-  </div>
-  <div class="col-xs-8 col-sm-5 col-md-4">
-    <h4>The Soul of Software</h4>
-    <p><i><a href="http://twitter.com/avdi">Avdi Grimm</a></i></p>
-  </div>
-  <div class="col-xs-1"><img src="/images/avdi.jpg" class="img-responsive" alt="Avdi Grimm" /></div>
-</div>
-
-<div class="row">
-  <div class="col-xs-offset-1 col-xs-10 col-sm-offset-2 col-sm-8">
-    <br />
-    <hr />
-    <h4><strong>Tickets are £100.</strong> Contact me for student pricing.</h4>
-    <p>The conference will be a single day, single track with some lightning talks.</p>
-    <p>Given the snappy talks there will be plenty of socialising time during the day. There'll also be some sort of after-party, but think more &lsquo;few drinks in the sunshine&rsquo; than &lsquo;dark, shouty basement&rsquo;.</p>
-    <hr />
-  </div>
-</div>
-
-<div class="row">
-  <div class="col-xs-12 col-sm-6">
-    <img src="images/reddotrubyconf-2012-a.jpg" class="img-responsive" alt="Obie + the crowd (2012)" />
-  </div>
-  <div class="col-xs-12 col-sm-6">
-    <img src="images/reddotrubyconf-2012-b.jpg" class="img-responsive" alt="Githubbers, Heroku-ers + the crowd (2012)" />
-  </div>
-</div>
-
-<div class="row">
-  <div class="col-xs-offset-1 col-xs-10 col-sm-offset-2 col-sm-8">
-    <hr />
-
-    <h4>What is Brighton Like?</h4>
-    <p>Well I think it's <a href="/misc/lovely-brighton" title="Brighton Guide">like this.</a></p>
-    <hr />
-  </div>
-</div>
-
-<div class="row">
-  <div class="col-xs-offset-1 col-xs-10 col-sm-offset-2 col-sm-8">
-    <h4>Behaviour</h4>
-    <p>Brighton Ruby Conference is a harassment-free experience for everyone. With that in mind we have a brief code of conduct. It's not draconian, we merely want everyone to enjoy themselves and be considerate of everyone else. <em>Matz is nice, so we are nice.</em></p>
-    <hr />
-    <p class="text-center"><a class="btn btn-default" href="/misc/code-of-conduct" title="Code of Conduct">Code of Conduct</a></p>
-    <hr />
-  </div>
-</div>
-
-<div class="row"><br/></div>
+</article>

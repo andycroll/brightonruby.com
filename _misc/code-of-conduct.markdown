@@ -1,6 +1,6 @@
 ---
 title: 'Code of Conduct'
-layout: page
+layout: article
 redirect_from:
   - /2014/code-of-conduct.html
 ---
@@ -37,4 +37,4 @@ We expect participants to follow these rules at conference and workshop venues a
 
 <small>Adapted from <a href="https://github.com/leftlogic/confcodeofconduct.com">http://github.com/leftlogic/confcodeofconduct.com</a> which was originally sourced from <a href="http://2012.jsconf.us/#/about">http://2012.jsconf.us/#/about</a> &amp; <a href="http://geekfeminism.wikia.com/wiki/Conference_anti-harassment/Policy">The Ada Initiative</a></small>
 
-<small>This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/3.0/deed.en_US">Creative Commons Attribution 3.0 Unported License</a></em></small>
+<small>This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/3.0/deed.en_US">Creative Commons Attribution 3.0 Unported License</a></small>

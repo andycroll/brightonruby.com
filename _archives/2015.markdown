@@ -1,0 +1,117 @@
+---
+title: '2015 Archive'
+date: '2015-07-20'
+layout: 'archive'
+sponsors:
+  - name: 'FreeAgent'
+    link: 'http://freeagent.com'
+  - name: 'Bytemark Hosting'
+    link: 'http://bytemark-hosting.com/r/brightonruby'
+  - name: 'Pivotal Labs'
+    link: 'http://pivotallabs.com'
+  - name: 'Not On The High Street'
+    link: 'http://notonthehighstreet.com'
+  - name: 'Unboxed Consulting'
+    link: 'http://unboxedconsulting.com'
+talks:
+  - time: '09:00'
+    title: 'Welcome & Introduction'
+    speaker:
+      - name: 'Andy Croll'
+        twitter: 'andycroll'
+  - time: '09:15'
+    title: 'Making Software Fun'
+    speaker:
+      - name: 'Sarah Allen'
+        twitter: 'ultrasaurus'
+  - time: '10:00'
+    title: 'Lotus and the future of Ruby'
+    speaker:
+      - name: 'Luca Guidi'
+        twitter: 'jodosha'
+    slides: 'https://speakerdeck.com/jodosha/lotus-brighton-ruby-2015'
+  - time: '11:00'
+    title: 'Just in Time'
+    speaker:
+      - name: 'Elle Meredith'
+        twitter: 'aemeredith'
+  - time: '11:20'
+    title: 'Do You Need That Gem?'
+    speaker:
+      - name: 'Sam Phippen'
+        twitter: 'samphippen'
+  - time: '11:40'
+    title: 'Lightning Talks'
+    speaker:
+      - name: 'Sonja Heinen'
+        twitter: sonjaheinen
+      - name: 'Olga Scott'
+        twitter: olga_scott
+      - name: 'Tatiana Soukiassian'
+        twitter: binaryberry
+      - name: 'Robbie Clutton'
+        twitter: robb1e
+      - name: 'Alex Sunderland'
+        twitter: felltir
+  - time: '12:10'
+    title: 'Mini Munging: The Joy of Small Data'
+    speaker:
+      - name: 'Rob Miller'
+        twitter: 'robmil'
+    slides: 'https://robm.me.uk/talks/2015/07/21/mini-munging.html'
+  - time: '14:00'
+    title: 'Playing Games in the Clouds'
+    speaker:
+      - name: 'Nadia Odunayo'
+        twitter: 'nodunayo'
+    slides: 'https://speakerdeck.com/nodunayo/playing-games-in-the-clouds'
+  - time: '14:20'
+    title: 'Command &amp; Conquer: Red Alert'
+    speaker:
+      - name: 'Tadej Murovec'
+        twitter: 'tadejm'
+    slides: 'http://www.slideshare.net/tadejm/command-conquer-red-alert'
+  - time: '14:40'
+    title: 'The Struggle to Stay Technical'
+    speaker:
+      - name: 'Kinsey Ann Durham'
+        twitter: 'KinseyAnnDurham'
+  - time: '15:00'
+    speaker:
+      - name: 'Andrew Faraday'
+        twitter: 'MarmiteJunction'
+    title: 'Just a (Ruby) Minute'
+  - time: '16:15'
+    speaker:
+      - name: 'Avdi Grimm'
+        twitter: 'avdi'
+    title: 'The Soul of Software'
+photos:
+  - src: andycroll
+    alt: 'Just a Ruby Minute (Andy Croll)'
+  - src: marmitejunction
+    alt: 'Beginning (Andrew Faraday)'
+  - src: nodunayo
+    alt: 'Speakers (Nadine Odunayo)'
+  - src: marmitejunction3
+    alt: 'Tatiana (Andrew Faraday)'
+  - src: nodunayo2
+    alt: 'Love (Nadine Odunayo)'
+  - src: makevoid
+    alt: 'Lotus (Francesco Canessa)'
+  - src: marmitejunction2
+    alt: 'Crowd (Andrew Faraday)'
+tweets:
+  - 'https://twitter.com/tomstuart/status/623402580681560065'
+  - 'https://twitter.com/robinboening/status/623391708382781440'
+  - 'https://twitter.com/robmil/status/623263261895622656'
+  - 'https://twitter.com/vertism/status/623249116596957184'
+  - 'https://twitter.com/mikekrzywinski/status/623227749851860992'
+  - 'https://twitter.com/avdi/status/623221456386818052'
+  - 'https://twitter.com/paulca/status/623207515438862336'
+  - 'https://twitter.com/teabass/status/623205752124125184'
+---
+
+Well the first one worked, mostly, so why not just do another?
+
+A sell out three weeks before the day with an eager waiting list. An eclectic mix of speakers representing seven nations and all experiences crammed tidily into a single day. With a Radio 4 gameshow and a final Avdi Grimm polemic to round out the day.

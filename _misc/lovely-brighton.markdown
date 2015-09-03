@@ -1,6 +1,6 @@
 ---
 title: 'Lovely Brighton'
-layout: page
+layout: article
 redirect_from:
   - /2014/lovely-brighton.html
 ---

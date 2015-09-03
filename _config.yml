@@ -1,14 +1,16 @@
-name: Brighton Ruby Conference 2015
+name: Brighton Ruby Conference 2016
 
-markdown: kramdown
-highlighter: pygments
 exclude: ['config.ru', 'Gemfile', 'Gemfile.lock', 'vendor']
 permalink: /:year/:title/
 
-gems:
-  - jekyll-redirect-from
+sass:
+  style: :compressed
 
 collections:
+  archives:
+    output: true
+    permalink: /:path/
+    layout: archive
   misc:
     output: true
     permalink: /misc/:path/
