@@ -55,13 +55,10 @@ layout: default
     <div class="archive">
       {% for talk in page.talks %}
         <article>
-          <h3>{{ talk.title }} <small>{{ talk.time }}</small></h3>
+          <h3>{{ talk.title }}</h3>
           <p>
           {% for person in talk.speaker %}
-            {% if talk.speaker.size > 1 and talk.speaker.first != person %}
-            &amp;
-            {% endif %}
-            {{ person.name }} <small><a href="https://twitter.com/{{ person.twitter }}">@{{ person.twitter }}</a></small>
+            {{ person.name }} <small><a href="https://twitter.com/{{ person.twitter }}">@{{ person.twitter }}</a></small><br />
           {% endfor %}
           </p>
         </article>
