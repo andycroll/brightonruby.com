@@ -115,6 +115,10 @@ a:hover, a:focus {
   color: $white;
 }
 
+.buynow a {
+  text-decoration: underline;
+}
+
 @media (min-width: 35.5em) {
 }
 
