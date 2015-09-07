@@ -17,7 +17,7 @@ html, button, input, select, textarea,
 }
 
 // Variables
-$highlight: #C6180E;
+$highlight: #AE1616;
 $white:     #FDFDFD;
 
 // Layout
@@ -108,6 +108,11 @@ a:hover, a:focus {
     background: $white;
     color: $highlight;
   }
+}
+
+.buynow, .buynow a {
+  background: $highlight;
+  color: $white;
 }
 
 @media (min-width: 35.5em) {
