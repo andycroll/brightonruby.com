@@ -20,49 +20,64 @@ layout: default
     {% endcase %}
 {% endif %}
 
-<div class="pure-g">
-  <div class="pure-u-sm-1-6 pure-u-md-7-24 pure-u-lg-5-24"></div>
-  <div class="pure-u-1 pure-u-sm-3-4 pure-u-md-14-24 pure-u-lg-11-24 l-box">
-    <h1>{{ page.date | date: "%Y" }} <small>{{ page.date | date: "%A, %-d" }}{{ ordinal }} {{ page.date | date: "%B"  }}</small></h1>
-
-    <div class="archive">
-      {{ content }}
+<article class="archive">
+  <div class="row">
+    <div class="header">
+      <div class="col-sm-9">
+        <h1 class="display-1">Previously... <small>{{ page.date | date: "%A, %-d" }}{{ ordinal }} {{ page.date | date: "%B %Y"  }}<small></h1>
+      </div>
     </div>
   </div>
-</div>
 
-<div class="pure-g">
-  {% for sponsor in page.sponsors %}
-    <div class="pure-u-1-3 pure-u-lg-1-6 l-box">
-      <a href="{{ sponsor.link }}"><img src="/images/{{ page.date | date: "%Y" }}/{{ sponsor.name | slugify }}.jpg" alt="{{ sponsor.name }}" class="pure-img" /></a>
-    </div>
-  {% endfor %}
-</div>
+  <div class="row">
+    <div class="col-sm-6 col-sm-push-6">
+      <h4 class="h5 text-uppercase">Sponsors</h4>
 
-<div class="pure-g">
-  <div class="pure-u-sm-1-24"></div>
-  <div class="pure-u-7-24 pure-u-sm-5-24 pure-u-md-1-2 l-box">
-    <div class="pure-g">
-      {% for photo in page.photos %}
-        <div class="pure-u-1 pure-u-md-1-3">
-          <img src="/images/{{ page.date | date: "%Y" }}/{{ photo.src }}.jpg" alt="{{ photo.alt }}" class="pure-img" />
-        </div>
-      {% endfor %}
-    </div>
-  </div>
-  <div class="pure-u-sm-1-24"></div>
-  <div class="pure-u-17-24 pure-u-sm-14-24 pure-u-md-10-24 l-box">
-    <div class="archive">
-      {% for talk in page.talks %}
-        <article>
-          <h3>{{ talk.title }}</h3>
-          <p>
-          {% for person in talk.speaker %}
-            {{ person.name }} <small><a href="https://twitter.com/{{ person.twitter }}">@{{ person.twitter }}</a></small><br />
+      <div class="row">
+        <div class="col-xs-8">
+          {% for sponsor in page.sponsors | limit: 1 %}
+            <a href="{{ sponsor.link }}"><img src="/images/{{ page.date | date: "%Y" }}/{{ sponsor.name | slugify }}.jpg" alt="{{ sponsor.name }}" class="img-responsive" /></a>
           {% endfor %}
-          </p>
-        </article>
-      {% endfor %}
+        </div>
+      </div>
+
+      <div class="row">
+        {% for sponsor in page.sponsors | offset: 1 %}
+          <div class="col-xs-6">
+            <p><a href="{{ sponsor.link }}"><img src="/images/{{ page.date | date: "%Y" }}/{{ sponsor.name | slugify }}.jpg" alt="{{ sponsor.name }}" class="img-responsive" /></a></p>
+          </div>
+        {% endfor %}
+      </div>
+    </div>
+
+    <div class="col-sm-6 col-sm-pull-6">
+      <h4 class="h5 text-uppercase">Schedule</h4>
+
+      <div class="archive">
+        {% for talk in page.talks %}
+          <article>
+            <h3>{{ talk.title }}</h3>
+            <p>
+            {% for person in talk.speaker %}
+              {{ person.name }} <small><a href="https://twitter.com/{{ person.twitter }}">@{{ person.twitter }}</a></small><br />
+            {% endfor %}
+            </p>
+          </article>
+        {% endfor %}
+      </div>
+    </div>
+
+    <div class="col-sm-6 col-sm-offset-6">
+      <h4 class="h5 text-uppercase">Photos</h4>
+      <div class="row">
+        {% for photo in page.photos %}
+          <div class="col-xs-6">
+            <p>
+              <img src="/images/{{ page.date | date: "%Y" }}/{{ photo.src }}.jpg" alt="{{ photo.alt }}" class="img-responsive" />
+            </p>
+          </div>
+        {% endfor %}
+      </div>
     </div>
   </div>
 </div>

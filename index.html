@@ -4,43 +4,35 @@ title: "Brighton Ruby Conference 2016"
 ---
 
 <article>
-  <div class="pure-g">
-    <div class="pure-u-sm-4-24 pure-u-md-7-24 pure-u-lg-5-24"></div>
-    <div class="pure-u-1 pure-u-sm-3-4 pure-u-md-14-24 pure-u-lg-11-24 l-box">
-      <h1>Friday 8th July 2016</h1>
-      <h2>A one day, single track, conference for Rubyists &amp; the Ruby-curious.</h2>
-      <p>Organized by <a href="http://twitter.com/andycroll">@andycroll</a> in Brighton,&nbsp;UK</p>
+  <div class="header">
+    <div class="row">
+      <div class="col-sm-9">
+        <h2 class="display-1">A one day, single track, conference for Rubyists <span class="amp">&amp;</span> the Ruby-curious.</h2>
+        <p style="font-size:32px;"><i>organized by <a href="http://twitter.com/andycroll">@andycroll</a> in Brighton,&nbsp;UK</i></p>
+        <p>&nbsp;</p>
+        <p>&nbsp;</p>
+      </div>
     </div>
   </div>
 
-  <div class="pure-g l-pad">
-    {% for archive in site.archives %}
-      {% for photo in archive.photos limit:6 %}
-        <div class="pure-u-1-6 pure-u-md-1-12">
-          <img src="/images/{{ archive.date | date: "%Y" }}/{{ photo.src }}.jpg" alt="{{ photo.alt }}" class="pure-img" />
-        </div>
-      {% endfor %}
-    {% endfor %}
-  </div>
-
-  <div class="pure-g">
-    <div class="pure-u-sm-4-24 pure-u-md-7-24 pure-u-lg-5-24"></div>
-    <div class="pure-u-1 pure-u-sm-3-4 pure-u-md-14-24 pure-u-lg-11-24 l-box">
-      <p>Hello, I'm <a href="http://twitter.com/andycroll" title="Andy Croll Twitter">Andy</a>.</p>
+  <div class="row">
+    <div class="col-sm-6">
+      <h3 class="h5 text-uppercase">Hello. I'm Andy.</h3>
       <p><a href="/2015">2015&rsquo;s event</a> was jolly good fun, although the weather didn't exactly rock. And we had a gameshow!</p>
-      <p><em>I'm extraordinarily well ahead of myself, so why not <a href="https://ti.to/goodscary/brighton-ruby-conference-2016">buy a ticket</a> for next year?</em></p>
       <p>I've already got some great speakers lined up but I'm keeping them a secret for now.</p>
     </div>
+
+    <div class="col-sm-6">
+      <h4 class="h5 text-uppercase">Sponsors</h4>
+      <p>Want to sponsor? <a href="/sponsorship/brighton-ruby-sponsorship-2016.pdf">Find out more</a>.</p>
+    </div>
   </div>
 
-  <!-- <div class="pure-g l-pad">
-    <div class="pure-u-sm-4-24 pure-u-md-7-24 pure-u-lg-5-24"></div>
-    <div class="pure-u-1 pure-u-sm-3-4 pure-u-md-14-24 pure-u-lg-11-24 l-box">
+  <!-- <div class="row l-pad">
+    <div class="col-sm-12">
       <h2>Latest Videos</h2>
     </div>
-    <div class="pure-u-1"></div>
-    <div class="pure-u-sm-4-24 pure-u-md-7-24 pure-u-lg-5-24"></div>
-    <div class="pure-u-1 pure-u-sm-3-8 pure-u-md-7-24 pure-u-lg-5-24 l-box">
+    <div class="col-sm-12">
       {% for post in site.posts limit:2 %}
         <p>
           <a href="{{ post.url }}">{{ post.title }}</a><br />
@@ -50,9 +42,20 @@ title: "Brighton Ruby Conference 2016"
     </div>
   </div> -->
 
-  <div class="pure-g">
-    <div class="pure-u-sm-4-24 pure-u-md-7-24 pure-u-lg-5-24"></div>
-    <div class="pure-u-1 pure-u-sm-3-4 pure-u-md-14-24 pure-u-lg-11-24 l-box">
+  <div class="row" style="margin-top:6em;">
+    <div class="col-sm-6">
+      <div class="row">
+        {% for archive in site.archives %}
+          {% for photo in archive.photos limit:3 %}
+            <div class="col-xs-4">
+              <img src="/images/{{ archive.date | date: "%Y" }}/{{ photo.src }}.jpg" alt="{{ photo.alt }}" class="img-responsive" /><br />
+            </div>
+          {% endfor %}
+        {% endfor %}
+      </div>
+    </div>
+
+    <div class="col-sm-6">
       <h2>What is Brighton Like?</h2>
       <p>Well I think it's <a href="/misc/lovely-brighton" title="Brighton Guide">like this.</a></p>
 
