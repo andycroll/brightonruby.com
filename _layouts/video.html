@@ -34,7 +34,7 @@ layout: default
         {{ page.title }}<br />
         <small>{{ page.speakers.first.name }}</small>
       </h1>
-      <p>{{ page.speaking_date | date: "%A, %-d" }}{{ ordinal }} {{ page.speaking_date | date: "%B %Y"  }}</p>
+      <p>{{ page.date | date: "%A, %-d" }}{{ ordinal }} {{ page.date | date: "%B %Y"  }}</p>
       {{ content }}
     </div>
   </div>
