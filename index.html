@@ -19,30 +19,90 @@ title: "Brighton Ruby Conference 2016"
     <div class="col-sm-6">
       <h3 class="h5 text-uppercase">Hello. I'm Andy.</h3>
       <p><a href="/2015">2015&rsquo;s event</a> was jolly good fun, although the weather didn't exactly rock. And we had a gameshow!</p>
-      <p>I've already got some great speakers lined up but I'm keeping them a secret for now.</p>
+
+      <div class="row">
+        <div class="col-sm-12">
+          <h4 class="h5 text-uppercase">Sponsors</h4>
+          <p>Want to sponsor? <a href="/sponsorship/brighton-ruby-sponsorship-2016.pdf">Find out more</a>.</p>
+        </div>
+      </div>
     </div>
 
     <div class="col-sm-6">
-      <h4 class="h5 text-uppercase">Sponsors</h4>
-      <p>Want to sponsor? <a href="/sponsorship/brighton-ruby-sponsorship-2016.pdf">Find out more</a>.</p>
+      <h4 class="h5 text-uppercase">Confirmed Speakers</h4>
+      <div class="row">
+        <div class="col-sm-4">
+          <p><img src="/images/2016/sarah-mei.jpg" class="img-responsive" /></p>
+          <p>
+            <a href="https://twitter.com/sarahmei">Sarah Mei</a><br />
+            <small>Ruby Central, Ruby Hero, Devmynd</small>
+          </p>
+        </div>
+
+        <div class="col-sm-4">
+          <p><img src="/images/2016/eileen-uchitelle.jpg" class="img-responsive" /></p>
+          <p>
+            <a href="https://twitter.com/eileencodes">Eileen Uchitelle</a><br />
+            <small>Basecamp, Rails Core, Ruby Hero</small>
+          </p>
+        </div>
+
+        <div class="col-sm-4">
+          <p><img src="/images/2016/patrick-mckenzie.jpg" class="img-responsive" /></p>
+          <p>
+            <a href="https://twitter.com/patio11">Patrick McKenzie</a><br />
+            <small>Starfighter</small>
+          </p>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-sm-4">
+          <p><img src="/images/2016/sarah-simon.jpg" class="img-responsive" /></p>
+          <p>
+            <a href="https://twitter.com/sarambsimon">Sarah Simon</a><br />
+            <small>Vermont Public Radio</small>
+          </p>
+        </div>
+
+        <div class="col-sm-4">
+          <p><img src="/images/2016/just-a-minute.jpg" class="img-responsive" /></p>
+          <p>
+            <a href="https://twitter.com/marmitejunction">Andrew Faraday</a><br />
+            <small>Just a Ruby Minute <i>Returns</i></small>
+          </p>
+        </div>
+
+        <div class="col-sm-4">
+          <h2></h2>
+          <p></p>
+        </div>
+
+        <div class="col-sm-4">
+          <h2>And you? <a href="https://www.papercall.io/brightonruby2016">CFP is open until 1st April</a></h2>
+        </div>
+      </div>
     </div>
   </div>
 
-  <!-- <div class="row l-pad">
+  <div class="row" style="margin-top:3em;">
     <div class="col-sm-12">
-      <h2>Latest Videos</h2>
+      <h4 class="h5 text-uppercase">Latest Videos</h2>
     </div>
-    <div class="col-sm-12">
-      {% for post in site.posts limit:2 %}
+    {% for post in site.posts limit:5 %}
+      <div class="col-sm-2">
         <p>
           <a href="{{ post.url }}">{{ post.title }}</a><br />
-          {{ post.speakers.first.name }}
+          <small>{{ post.speakers.first.name }}</small>
         </p>
-      {% endfor %}
+      </div>
+    {% endfor %}
+    <div class="col-sm-2">
+      <p><a href="/2015">More...</a>
     </div>
-  </div> -->
+  </div>
 
-  <div class="row" style="margin-top:6em;">
+  <div class="row" style="margin-top:3em;">
     <div class="col-sm-6">
       <div class="row">
         {% for archive in site.archives %}
