@@ -2,7 +2,7 @@
 layout: default
 ---
 
-{% capture day %}{{ page.speaking_date | date: "%-d" }}{% endcapture %}
+{% capture day %}{{ page.date | date: "%-d" }}{% endcapture %}
 {% capture dayLastTwoDigits %}{{ day | modulo: 100 }}{% endcapture %}
 {% if dayLastTwoDigits >= "11" and dayLastTwoDigits <= "13" %}
     {% assign ordinal = "th" %}
