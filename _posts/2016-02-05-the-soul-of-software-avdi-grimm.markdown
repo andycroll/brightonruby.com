@@ -4,7 +4,7 @@ layout: 'video'
 speakers:
   - name: 'Avdi Grimm'
     twitter: 'avdi'
-wista: 'a3wy6rdlep'
+wistia: 'a3wy6rdlep'
 speaking_date: '2015-07-20'
 ---
 
