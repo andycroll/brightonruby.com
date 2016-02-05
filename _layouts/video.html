@@ -25,16 +25,17 @@ layout: default
     &nbsp;
   </div>
   <div class="row">
-    <div class="col-sm-8">
+    <div class="col-md-8">
       <script charset="ISO-8859-1" src="//fast.wistia.com/assets/external/E-v1.js" async></script>
       <div class="wistia_embed wistia_async_{{ page.wistia }} videoFoam=true" style="width:640px;height:388px;">&nbsp;</div>
     </div>
-    <div class="col-sm-4" style="">
-      <h1 class="display-1">
+    <div class="col-md-4" style="">
+      <h1 class="">
         {{ page.title }}<br />
         <small>{{ page.speakers.first.name }}</small>
       </h1>
-      <p>{{ page.date | date: "%A, %-d" }}{{ ordinal }} {{ page.date | date: "%B %Y"  }}</p>
+      <p></p>
+      <h4 class="h5 text-uppercase">{{ page.date | date: "%A, %-d" }}{{ ordinal }} {{ page.date | date: "%B %Y"  }}</h4>
       {{ content }}
     </div>
   </div>
