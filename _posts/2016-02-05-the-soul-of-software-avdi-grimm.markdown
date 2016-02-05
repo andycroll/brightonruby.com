@@ -5,7 +5,7 @@ speakers:
   - name: 'Avdi Grimm'
     twitter: 'avdi'
 wistia: 'a3wy6rdlep'
-speaking_date: '2015-07-20'
+date: '2015-07-20'
 ---
 
 The conference was rounded off by a thoughtful treatise on where the Ruby community is and how we're building software.
