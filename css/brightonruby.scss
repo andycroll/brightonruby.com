@@ -1,129 +1,88 @@
 ---
 ---
 
-@import "pure/base";
-@import "pure/buttons-core";
-@import "pure/buttons";
-@import "pure/grids-core";
-@import "pure/grids-units";
-@import "pure/grids-responsive";
-// @import "pure/forms";
-// @import "pure/menus-core";
-// @import "pure/menus-horizontal";
+@import "bootstrap/variables";
+@import "bootstrap/mixins";
 
-html, button, input, select, textarea,
-.pure-g [class *= "pure-u"] {
-  font-family: Oxygen, sans-serif;
+// Reset and dependencies
+@import "bootstrap/normalize";
+@import "bootstrap/print";
+// @import "bootstrap/glyphicons";
+
+// Core CSS
+@import "bootstrap/scaffolding";
+@import "bootstrap/type";
+// @import "bootstrap/code";
+@import "bootstrap/grid";
+// @import "bootstrap/tables";
+// @import "bootstrap/forms";
+@import "bootstrap/buttons";
+
+// Components
+// @import "bootstrap/component-animations";
+// @import "bootstrap/dropdowns";
+// @import "bootstrap/button-groups";
+// @import "bootstrap/input-groups";
+// @import "bootstrap/navs";
+// @import "bootstrap/navbar";
+// @import "bootstrap/breadcrumbs";
+// @import "bootstrap/pagination";
+// @import "bootstrap/pager";
+// @import "bootstrap/labels";
+// @import "bootstrap/badges";
+// @import "bootstrap/jumbotron";
+// @import "bootstrap/thumbnails";
+// @import "bootstrap/alerts";
+// @import "bootstrap/progress-bars";
+// @import "bootstrap/media";
+// @import "bootstrap/list-group";
+// @import "bootstrap/panels";
+// @import "bootstrap/responsive-embed";
+// @import "bootstrap/wells";
+// @import "bootstrap/close";
+
+// Components w/ JavaScript
+// @import "bootstrap/modals";
+// @import "bootstrap/tooltip";
+// @import "bootstrap/popovers";
+// @import "bootstrap/carousel";
+
+// Utility classes
+@import "bootstrap/utilities";
+@import "bootstrap/responsive-utilities";
+
+body {
+  font-family: Georgia;
+  max-width: 1000px;
+  margin: 0 auto;
 }
 
-// Variables
-$highlight: #AE1616;
-$white:     #FDFDFD;
-
-// Layout
-.pure-g > div {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-}
-
-.l-box {
-  padding: 1em;
-  & > *:last-child {
-    margin-bottom: 0;
-  }
-}
-
-.l-pad {
-  padding: 1.5em 0;
-  & > *:last-child {
-    margin-bottom: 0;
-  }
-}
-
-// Type
-h1, h2, h3, h4, h5, h6 {
-  margin-top: 0;
-  margin-bottom: 0;
-}
-h1 + h2 {
-  margin-top: 0.5em;
-  margin-bottom: 0.5em;
-}
-
-p {
-  margin-top: 0.2em;
-  line-height: 1.4;
-  margin-bottom: 0.8em;
-}
-
-// Links
-a {
-  text-decoration: none;
-  color: $highlight;
-}
-
-a:hover, a:focus {
-  text-decoration: underline;
-}
-
-.button-xsmall {
-  font-size: 70%;
-}
-
-.button-small {
-  font-size: 85%;
-}
-
-.button-large {
-  font-size: 110%;
-}
-
-.button-xlarge {
+.amp {
+  font-family: Baskerville, Constantia, Palatino, "Palatino Linotype", "Times New Roman", Times, serif;
+  font-style: italic;
+  display: inline-block;
   font-size: 125%;
+  margin: -0.06em 0 0 -0.02em
 }
 
-.button-hollow {
-  color: $highlight;
-  background: transparent;
-  border: 2px solid $highlight;
-  text-shadow: 0;
-  text-decoration: none;
-
-  .sidebar & {
-    color: $white;
-    border: 2px solid $white;
+@media (min-width: $screen-lg-min) {
+  .display-1 {
+    font-size: 54px;
+  }
+  .display-2 {
+    font-size: 32px;
   }
 }
 
-.button-hollow-hover,
-.button-hollow:hover,
-.button-hollow:focus {
-  background: $highlight;
-  color: $white;
-  filter: none;
-  text-decoration: none;
-
-  .sidebar & {
-    background: $white;
-    color: $highlight;
-  }
+.siteheader {
+  border-top: 5px solid rgb(174,22,22);
+  padding-top: 2em;
 }
 
-.buynow, .buynow a {
-  background: $highlight;
-  color: $white;
+article .header {
+  padding-top: 2em;
 }
 
-.buynow a {
-  text-decoration: underline;
-}
-
-@media (min-width: 35.5em) {
-}
-
-@media (min-width: 48em) {
-}
-
-@media (min-width: 64em) {
+[role=contentinfo] {
+  padding-top: 6em;
 }
