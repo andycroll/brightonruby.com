@@ -32,7 +32,9 @@ layout: default
     <div class="col-md-4" style="">
       <h1 class="">
         {{ page.title }}<br />
-        <small>{{ page.speakers.first.name }}</small>
+        {% capture speakers %}{% for speaker in page.speakers %}{{ speaker.name }}{% if speaker != page.speakers.last %}, {% endif %}{% endfor %}{% endcapture %}
+
+        <small>{{ speakers }}</small>
       </h1>
       <p>&nbsp;</p>
       <h4 class="h5 text-uppercase">{{ page.date | date: "%A, %-d" }}{{ ordinal }} {{ page.date | date: "%B %Y"  }}</h4>
