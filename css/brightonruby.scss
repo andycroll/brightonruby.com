@@ -53,7 +53,10 @@
 
 body {
   font-family: Georgia;
-  max-width: 1000px;
+}
+
+.container-fluid {
+  max-width: 1100px;
   margin: 0 auto;
 }
 
