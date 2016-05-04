@@ -56,7 +56,15 @@ layout: default
       <div class="archive">
         {% for talk in page.talks %}
           <article>
-            <h3>{{ talk.title }}</h3>
+            <h1 class="h4">
+              {% if talk.video != nil %}
+                <a href="{{ talk.video }}">
+                  {{ talk.title }}
+                </a>
+              {% else %}
+                {{ talk.title }}
+              {% endif %}
+            </h1>
             <p>
             {% for person in talk.speaker %}
               {{ person.name }} <small><a href="https://twitter.com/{{ person.twitter }}">@{{ person.twitter }}</a></small><br />

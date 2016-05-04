@@ -1,5 +1,5 @@
 ---
-title: 'Games in the Clouds'
+title: 'Playing Games in the Clouds'
 layout: 'video'
 speakers:
   - name: 'Nadia Odunayo'

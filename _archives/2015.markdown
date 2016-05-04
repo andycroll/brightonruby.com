@@ -21,27 +21,32 @@ talks:
         twitter: 'andycroll'
   - time: '09:15'
     title: 'Making Software Fun'
+    video: '/2015/making-software-fun-sarah-allen/'
     speaker:
       - name: 'Sarah Allen'
         twitter: 'ultrasaurus'
   - time: '10:00'
-    title: 'Lotus and the future of Ruby'
+    title: 'Lotus (Hanami) and the future of Ruby'
+    video: '/2015/lotus-hanami-and-the-future-of-ruby-luca-guidi/'
     speaker:
       - name: 'Luca Guidi'
         twitter: 'jodosha'
     slides: 'https://speakerdeck.com/jodosha/lotus-brighton-ruby-2015'
   - time: '11:00'
     title: 'Just in Time'
+    video: '/2015/just-in-time-elle-meredith/'
     speaker:
       - name: 'Elle Meredith'
         twitter: 'aemeredith'
   - time: '11:20'
     title: 'Do You Need That Gem?'
+    video: '/2015/do-you-need-that-gem-sam-phippen/'
     speaker:
       - name: 'Sam Phippen'
         twitter: 'samphippen'
   - time: '11:40'
     title: 'Lightning Talks'
+    video: '/2015/lightning-talks/'
     speaker:
       - name: 'Sonja Heinen'
         twitter: sonjaheinen
@@ -55,37 +60,43 @@ talks:
         twitter: felltir
   - time: '12:10'
     title: 'Mini Munging: The Joy of Small Data'
+    video: '/2015/mini-munging-the-joy-of-small-data-rob-miller/'
     speaker:
       - name: 'Rob Miller'
         twitter: 'robmil'
     slides: 'https://robm.me.uk/talks/2015/07/21/mini-munging.html'
   - time: '14:00'
     title: 'Playing Games in the Clouds'
+    video: '/2015/playing-games-in-the-clouds-nadia-odunayo/'
     speaker:
       - name: 'Nadia Odunayo'
         twitter: 'nodunayo'
     slides: 'https://speakerdeck.com/nodunayo/playing-games-in-the-clouds'
   - time: '14:20'
     title: 'Command &amp; Conquer: Red Alert'
+    video: '/2015/command-and-conquer-red-alert-tadej-murovec/'
     speaker:
       - name: 'Tadej Murovec'
         twitter: 'tadejm'
     slides: 'http://www.slideshare.net/tadejm/command-conquer-red-alert'
   - time: '14:40'
     title: 'The Struggle to Stay Technical'
+    video: '/2015/the-struggle-to-stay-technical-kinsey-ann-durham/'
     speaker:
       - name: 'Kinsey Ann Durham'
         twitter: 'KinseyAnnDurham'
   - time: '15:00'
+    title: 'Just a (Ruby) Minute'
+    video: '/2015/just-a-ruby-minute-andrew-faraday/'
     speaker:
       - name: 'Andrew Faraday'
         twitter: 'MarmiteJunction'
-    title: 'Just a (Ruby) Minute'
   - time: '16:15'
+    title: 'The Soul of Software'
+    video: '/2015/the-soul-of-software-avdi-grimm/'
     speaker:
       - name: 'Avdi Grimm'
         twitter: 'avdi'
-    title: 'The Soul of Software'
 photos:
   - src: andycroll
     alt: 'Just a Ruby Minute (Andy Croll)'
