@@ -5,6 +5,7 @@ speakers:
   - name: 'Luca Guidi'
     twitter: 'jodosha'
 wistia: 'i730zh3lqs'
+vimeo: '168034258'
 date: '2015-07-20'
 ---
 

@@ -26,8 +26,14 @@ layout: default
   </div>
   <div class="row">
     <div class="col-md-8">
+      {% if page.vimeo %}
+      <div class="js-video vimeo widescreen">
+        <iframe src="https://player.vimeo.com/video/{{ page.vimeo }}" width="640" height="480" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+      </div>
+      {% else %}
       <script charset="ISO-8859-1" src="//fast.wistia.com/assets/external/E-v1.js" async></script>
       <div class="wistia_embed wistia_async_{{ page.wistia }} videoFoam=true" style="width:640px;height:388px;">&nbsp;</div>
+      {% endif %}
     </div>
     <div class="col-md-4">
       <h1 class="">
