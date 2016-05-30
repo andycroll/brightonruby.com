@@ -5,6 +5,7 @@ speakers:
   - name: 'Tadej Murovec'
     twitter: 'tadejm'
 wistia: 'g72635w5gg'
+vimeo: '168624857'
 date: '2015-07-20'
 ---
 
