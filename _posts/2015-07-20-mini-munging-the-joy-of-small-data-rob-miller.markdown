@@ -5,6 +5,7 @@ speakers:
   - name: 'Rob Miller'
     twitter: 'robmil'
 wistia: 'rc3ltk6jws'
+vimeo: '168916230'
 date: '2015-07-20'
 ---
 

@@ -5,6 +5,7 @@ speakers:
   - name: 'Sarah Allen'
     twitter: 'ultrasaurus'
 wistia: '0qk6cqmrxr'
+vimeo: '168923466'
 date: '2015-07-20'
 ---
 

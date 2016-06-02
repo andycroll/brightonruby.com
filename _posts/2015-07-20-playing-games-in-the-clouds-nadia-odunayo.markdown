@@ -5,6 +5,7 @@ speakers:
   - name: 'Nadia Odunayo'
     twitter: 'nodunayo'
 wistia: 'xjnjbdufp8'
+vimeo: '168916228'
 date: '2015-07-20'
 ---
 
