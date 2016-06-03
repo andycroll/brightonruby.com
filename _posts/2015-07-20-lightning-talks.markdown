@@ -13,6 +13,7 @@ speakers:
   - name: 'Alex Sunderland'
     twitter: felltir
 wistia: 'dya0zbv4dm'
+vimeo: '169162325'
 date: '2015-07-20'
 ---
 

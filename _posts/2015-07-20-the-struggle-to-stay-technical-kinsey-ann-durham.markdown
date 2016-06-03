@@ -5,6 +5,7 @@ speakers:
   - name: 'Kinsey Ann Durham'
     twitter: 'KinseyAnnDurham'
 wistia: '32515v1lch'
+vimeo: '169222630'
 date: '2015-07-20'
 ---
 
