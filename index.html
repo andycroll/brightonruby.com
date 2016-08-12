@@ -5,367 +5,52 @@ title: "Brighton Ruby Conference 2016"
 
 <article>
   <div class="header">
-    <!-- <div class="row">
+    <div class="row">
       <div class="col-lg-9">
-        <h2 class="display-1">A one day, single track, conference for Rubyists <span class="amp">&amp;</span> the Ruby-curious in Brighton,&nbsp;UK</h2>
+        <h2 class="h3">A one day, one track, event for Rubyists <span class="amp">&amp;</span> the Ruby-curious.</h2>
         <p>&nbsp;</p>
       </div>
-    </div> -->
+    </div>
   </div>
 
   <div class="row">
-    <!-- <div class="col-sm-8">
-      <h3 class="h5 text-uppercase">Hello. I'm Andy. (<a href="http://twitter.com/andycroll">@andycroll</a>)</h3>
-      <p>Why not join us for a day of talks, for all levels of Rubyists. And some jolly good fun, and getting out in the lovely (non-guaranteed) sunshine.</p>
-      <p>&nbsp;</p>
-    </div> -->
+    <div class="col-sm-8">
+      <p>2016's event is finished. I'm (<a href="http://twitter.com/andycroll">@andycroll</a>) lying down. Why not enjoy some video goodness?</p>
 
-    <div class="col-md-8" style="margin-bottom: 2em;">
-      <h4 class="h5 text-uppercase">Schedule</h4>
+      <form action="//goodscary.us1.list-manage.com/subscribe/post?u=8978f575757c4b55d2a353a62&amp;id=22d770cd7c" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate form-inline" target="_blank" novalidate>
+        <input type="hidden" value="PRE2017" name="PRE2017" id="mce-pre2017">
+        <div class="form-group">
+          <label for="mce-EMAIL">Hear about 2017&hellip;</label>
+          <input type="email" value="" name="EMAIL" class="form-control required email" placeholder="email@domain.com" id="mce-EMAIL">
+        </div>
+        <button type="submit" id="mc-embedded-subscribe" class="btn btn-sm btn-danger">Sign up</button>
+        <div id="mce-responses">
+          <div class="response" id="mce-error-response" style="display:none"></div>
+          <div class="response" id="mce-success-response" style="display:none"></div>
+        </div>
+        <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_8978f575757c4b55d2a353a62_22d770cd7c" tabindex="-1" value=""></div>
+      </form>
+      <script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script>
+      <script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';fnames[2]='LNAME';ftypes[2]='text';fnames[4]='MMERGE4';ftypes[4]='text';fnames[3]='2014';ftypes[3]='text';fnames[5]='2015';ftypes[5]='text';fnames[6]='2016';ftypes[6]='text';}(jQuery));var $mcj = jQuery.noConflict(true);</script>
+    </div>
+  </div>
 
+  <div class="row" style="">
+    <div class="col-sm-8">
+      <h4 class="h5 text-uppercase">2016 Videos</h2>
       <div class="row">
-        <div class="col-xs-3 col-sm-4">
-          <div class="row">
-            <div class="col-sm-6">
-              <p class="h4">8:15</p>
-            </div>
+        {% for post in site.posts limit:1 %}
+          <div class="col-sm-6">
+            <p>
+              <a href="{{ post.url }}">{{ post.title }}</a><br />
+              <small>{{ post.speakers.first.name }}</small>
+            </p>
           </div>
-        </div>
-        <div class="col-xs-9 col-sm-8">
-          <h5 class="h4">
-            Registration
-          </h5>
-        </div>
-      </div>
-
-      <hr />
-
-      <div class="row">
-        <div class="col-xs-3 col-sm-4">
-          <div class="row">
-            <div class="col-sm-6">
-              <p class="h4">9:15</p>
-            </div>
-            <div class="col-sm-6" style="margin-top: 10px;">
-              <img src="/images/2016/andy-croll.jpg" class="img-responsive" />
-            </div>
-          </div>
-        </div>
-        <div class="col-xs-9 col-sm-8">
-          <h5 class="h4">
-            Opening Remarks
-          </h5>
-          <p>
-            <a href="https://twitter.com/andycroll">Andy Croll</a> —
-            <small>Mostly Tired Organiser</small>
-          </p>
-        </div>
-      </div>
-
-      <div class="row">
-        <div class="col-xs-3 col-sm-4">
-          <div class="row">
-            <div class="col-sm-6">
-              <p class="h4">9:30</p>
-            </div>
-            <div class="col-sm-6" style="margin-top: 10px;">
-              <img src="/images/2016/eileen-uchitelle.jpg" class="img-responsive" />
-            </div>
-          </div>
-        </div>
-        <div class="col-xs-9 col-sm-8">
-          <h5 class="h4">
-            Security is Broken
-          </h5>
-          <p>
-            <a href="https://twitter.com/eileencodes">Eileen Uchitelle</a> —
-            <small>Basecamp, Rails committer, Ruby Hero</small>
-          </p>
-        </div>
-      </div>
-
-      <div class="row">
-        <div class="col-xs-3 col-sm-4">
-          <div class="row">
-            <div class="col-sm-6">
-              <p class="h4">10:00</p>
-            </div>
-            <div class="col-sm-6" style="margin-top: 10px;">
-              <img src="/images/2016/john-cinnamond.jpg" class="img-responsive" />
-            </div>
-          </div>
-        </div>
-        <div class="col-xs-9 col-sm-8">
-          <h5 class="h4">
-            The Point of Objects
-          </h5>
-          <p>
-            <a href="https://twitter.com/jcinnamond">John Cinnamond</a><br />
-            <small>Panagile</small>
-          </p>
-        </div>
-      </div>
-
-      <hr />
-
-      <div class="row">
-        <div class="col-xs-9 col-xs-offset-3 col-sm-8 col-sm-offset-4">
-          <h5 class="h4">
-            Break
-          </h5>
-        </div>
-      </div>
-
-      <hr />
-
-      <div class="row">
-        <div class="col-xs-3 col-sm-4">
-          <div class="row">
-            <div class="col-sm-6">
-              <p class="h4">11:00</p>
-            </div>
-            <div class="col-sm-6" style="margin-top: 10px;">
-              <img src="/images/2016/sam-phippen.jpg" class="img-responsive" />
-            </div>
-          </div>
-        </div>
-        <div class="col-xs-9 col-sm-8">
-          <h5 class="h4">
-            What is Processor?
-          </h5>
-          <p>
-            <a href="https://twitter.com/samphippen">Sam Phippen</a> —
-            <small>Digital Ocean, member of RSpec core team</small>
-          </p>
-        </div>
-      </div>
-
-      <div class="row">
-        <div class="col-xs-3 col-sm-4">
-          <div class="row">
-            <div class="col-sm-6">
-              <p class="h4">11:20</p>
-            </div>
-            <div class="col-sm-6" style="margin-top: 10px;">
-              <img src="/images/2016/sarah-simon.jpg" class="img-responsive" />
-            </div>
-          </div>
-        </div>
-        <div class="col-xs-9 col-sm-8">
-          <h5 class="h4">
-            The Function of Bias
-          </h5>
-          <p>
-            <a href="https://twitter.com/sarambsimon">Sara Simon</a> —
-            <small>Vermont Public Radio</small>
-          </p>
-        </div>
-      </div>
-
-      <div class="row">
-        <div class="col-xs-3 col-sm-4">
-          <div class="row">
-            <div class="col-sm-6">
-              <p class="h4">11:40</p>
-            </div>
-            <div class="col-sm-6" style="margin-top: 10px;">
-              <img src="/images/2016/emily-stolfo.jpg" class="img-responsive" />
-            </div>
-          </div>
-        </div>
-        <div class="col-xs-9 col-sm-8">
-          <h5 class="h4">
-            Do It Yourself Testing
-          </h5>
-          <p>
-            <a href="https://twitter.com/emstolfo">Emily Stolfo</a> —
-            <small>MongoDB Ruby Driver &amp; Mongoid maintainer</small>
-          </p>
-        </div>
-      </div>
-
-      <hr />
-
-      <div class="row">
-        <div class="col-xs-9 col-xs-offset-3 col-sm-8 col-sm-offset-4">
-          <h5 class="h4">
-            Lunch
-          </h5>
-        </div>
-      </div>
-
-      <hr />
-
-      <div class="row">
-        <div class="col-xs-3 col-sm-4">
-          <div class="row">
-            <div class="col-sm-6">
-              <p class="h4">14:00</p>
-            </div>
-            <div class="col-sm-6" style="margin-top: 10px;">
-              <img src="/images/2016/just-a-minute.jpg" class="img-responsive" />
-            </div>
-          </div>
-        </div>
-        <div class="col-xs-9 col-sm-8">
-          <h5 class="h4">
-            Just a Ruby Minute <i>Returns</i>
-          </h5>
-          <p>
-            <a href="https://twitter.com/marmitejunction">Andrew Faraday</a> —
-            <small>Not Nicolas Parsons</small>
-          </p>
-        </div>
-      </div>
-
-      <div class="row">
-        <div class="col-xs-3 col-sm-4">
-          <p class="h4">14:30</p>
-        </div>
-        <div class="col-xs-9 col-sm-8">
-          <h5 class="h4">
-            Fast Talks
-          </h5>
-        </div>
-        <div class="col-xs-3 col-xs-offset-3 col-sm-2 col-sm-offset-2">
-          <p><img src="/images/2016/phil-nash.jpg" class="img-responsive" /></p>
-        </div>
-        <div class="col-xs-3 col-sm-2">
-          <p><img src="/images/2016/andy-pike.jpg" class="img-responsive" /></p>
-        </div>
-        <div class="col-xs-3 col-sm-2">
-          <p><img src="/images/2016/dorothy-wingrove.jpg" class="img-responsive" /></p>
-        </div>
-        <div class="col-xs-3 col-xs-offset-3 col-sm-2 col-sm-offset-0">
-          <p><img src="/images/2016/jay-caines-gooby.jpg" class="img-responsive" /></p>
-        </div>
-        <div class="col-xs-3 col-sm-2">
-          <p><img src="/images/2016/neil-middleton.jpg" class="img-responsive" /></p>
-        </div>
-        <div class="col-xs-9 col-xs-offset-3 col-sm-8 col-sm-offset-4">
-          <p>
-            <a href="https://twitter.com/philnash">Phil Nash</a>,
-            <a href="https://twitter.com/andypike">Andy Pike</a>,
-            <a href="https://twitter.com/notthepoint">Dorothy Wingrove</a>,
-            <a href="https://twitter.com/jaygooby">Jay Caines-Gooby</a>
-            <span class="amp">&amp;</span>
-            <a href="https://twitter.com/neilmiddleton">Neil Middleton</a>
-          </p>
-        </div>
-      </div>
-
-      <div class="row">
-        <div class="col-xs-3 col-sm-4">
-          <div class="row">
-            <div class="col-sm-6">
-              <p class="h4">15:00</p>
-            </div>
-            <div class="col-sm-6" style="margin-top: 10px;">
-              <img src="/images/2016/sean-griffin.jpg" class="img-responsive" />
-            </div>
-          </div>
-        </div>
-        <div class="col-xs-9 col-sm-8">
-          <h5 class="h4">
-            Rails 5 Features You Haven&rsquo;t Heard About
-          </h5>
-          <p>
-            <a href="https://twitter.com/sgrif">Sean Griffin</a> —
-            <small>Shopify, Rails committer, Podcaster at The Bike Shed</small>
-          </p>
-        </div>
-      </div>
-
-      <hr />
-
-      <div class="row">
-        <div class="col-xs-9 col-xs-offset-3 col-sm-8 col-sm-offset-4">
-          <h5 class="h4">
-            Break
-          </h5>
-        </div>
-      </div>
-
-      <hr />
-
-      <div class="row">
-        <div class="col-xs-3 col-sm-4">
-          <div class="row">
-            <div class="col-sm-6">
-              <p class="h4">16:00</p>
-            </div>
-            <div class="col-sm-6" style="margin-top: 10px;">
-              <img src="/images/2016/patrick-mckenzie.jpg" class="img-responsive" />
-            </div>
-          </div>
-        </div>
-        <div class="col-xs-9 col-sm-8">
-          <h5 class="h4">
-            Hubs and Spokes and Stockmarkets
-          </h5>
-          <p>
-            <a href="https://twitter.com/patio11">Patrick McKenzie</a> —
-            <small>Starfighter</small>
-          </p>
-        </div>
-      </div>
-
-      <div class="row">
-        <div class="col-xs-3 col-sm-4">
-          <div class="row">
-            <div class="col-sm-6">
-              <p class="h4">16:20</p>
-            </div>
-            <div class="col-sm-6" style="margin-top: 10px;">
-              <img src="/images/2016/britni-alexander.jpg" class="img-responsive" />
-            </div>
-          </div>
-        </div>
-        <div class="col-xs-9 col-sm-8">
-          <h5 class="h4">
-            Mary Richards and the Delicate Art of <abbr title="You Only Live Once">YOLO</abbr>
-          </h5>
-          <p>
-            <a href="https://twitter.com/twitnithegirl">Britni Alexander</a> —
-            <small>Manheim</small>
-          </p>
-        </div>
-      </div>
-
-      <div class="row">
-        <div class="col-xs-3 col-sm-4">
-          <div class="row">
-            <div class="col-sm-6">
-              <p class="h4">16:40</p>
-            </div>
-            <div class="col-sm-6" style="margin-top: 10px;">
-              <img src="/images/2016/sarah-mei.jpg" class="img-responsive" />
-            </div>
-          </div>
-        </div>
-        <div class="col-xs-9 col-sm-8">
-          <h5 class="h4">
-            How We Make Software
-          </h5>
-          <p>
-            <a href="https://twitter.com/sarahmei">Sarah Mei</a> —
-            <small>Ruby Central, Ruby Hero, Devmynd</small>
-          </p>
-        </div>
-      </div>
-
-      <hr />
-
-      <div class="row">
-        <div class="col-xs-9 col-xs-offset-3 col-sm-8 col-sm-offset-4">
-          <h5 class="h4">
-            Relax <span class="amp">&amp;</span> chat over a complimentary beverage, alcoholic or otherwise
-          </h5>
-        </div>
+        {% endfor %}
       </div>
     </div>
 
-    <div class="col-md-4">
+    <div class="col-sm-4">
       <div class="row">
         <div class="col-xs-12">
           <h4 class="h5 text-uppercase">Gold Sponsors</h4>
@@ -431,7 +116,7 @@ title: "Brighton Ruby Conference 2016"
     <div class="col-sm-12">
       <h4 class="h5 text-uppercase">2015 Videos</h2>
     </div>
-    {% for post in site.posts limit:5 %}
+    {% for post in site.posts limit:8 offset:1 %}
       <div class="col-sm-4 col-lg-2">
         <p>
           <a href="{{ post.url }}">{{ post.title }}</a><br />
