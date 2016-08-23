@@ -39,7 +39,7 @@ title: "Brighton Ruby Conference 2016"
     <div class="col-sm-8">
       <h4 class="h5 text-uppercase">2016 Videos</h2>
       <div class="row">
-        {% for post in site.posts limit:1 %}
+        {% for post in site.posts limit:3 %}
           <div class="col-sm-6">
             <p>
               <a href="{{ post.url }}">{{ post.title }}</a><br />
@@ -116,7 +116,7 @@ title: "Brighton Ruby Conference 2016"
     <div class="col-sm-12">
       <h4 class="h5 text-uppercase">2015 Videos</h2>
     </div>
-    {% for post in site.posts limit:8 offset:1 %}
+    {% for post in site.posts limit:8 offset:3 %}
       <div class="col-sm-4 col-lg-2">
         <p>
           <a href="{{ post.url }}">{{ post.title }}</a><br />
