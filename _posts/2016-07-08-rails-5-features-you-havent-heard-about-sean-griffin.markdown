@@ -1,5 +1,5 @@
 ---
-title: "Rails 5 Feature You Haven’t Heard About"
+title: "Rails 5 Features You Haven’t Heard About"
 layout: 'video'
 speakers:
   - name: 'Sean Griffin'
