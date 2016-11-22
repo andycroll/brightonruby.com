@@ -1,0 +1,19 @@
+s3_id: <%= ENV['AWS_S3_ID'] %>
+s3_secret: <%= ENV['AWS_S3_SECRET'] %>
+s3_bucket: <%= ENV['AWS_S3_BUCKET'] %>
+s3_endpoint: <%= ENV['AWS_ENDPOINT'] %>
+
+max_age: 2419200
+
+gzip:
+  - .css
+  - .html
+  - .ico
+  - .js
+  - .md
+  - .svg
+
+index_document: index.html
+error_document: error.html
+
+s3_reduced_redundancy: true
