@@ -20,22 +20,14 @@ layout: default
     {% endcase %}
 {% endif %}
 
-<article>
-  <div class="header">
-    &nbsp;
-  </div>
+<article class="pt-5">
   <div class="row">
     <div class="col-md-8">
-      {% if page.vimeo %}
-      <div class="js-video vimeo widescreen">
+      <div class="embed-responsive embed-responsive-16by9">
         <iframe src="https://player.vimeo.com/video/{{ page.vimeo }}" width="640" height="480" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
       </div>
-      {% else %}
-      <script charset="ISO-8859-1" src="//fast.wistia.com/assets/external/E-v1.js" async></script>
-      <div class="wistia_embed wistia_async_{{ page.wistia }} videoFoam=true" style="width:640px;height:388px;">&nbsp;</div>
-      {% endif %}
 
-      <a href="https://ti.to/goodscary/brighton-ruby-conference-2017" class="btn btn-lg btn-danger">Buy a SUPER-early ticket</a>
+      <a href="https://ti.to/goodscary/brighton-ruby-conference-2017" class="btn btn-lg btn-danger mt-2">Buy a ticket to 2017</a>
     </div>
     <div class="col-md-4">
       <h1 class="">
