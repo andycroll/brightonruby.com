@@ -7,13 +7,13 @@ redirect_from:
 
 All attendees, speakers, sponsors & volunteers at our conference are required to agree with the following code of conduct. We will enforce this code throughout the event. We expect all participants to help create a safe environment for everybody.
 
-_tl;dr: Hold yourself to the highest standards of behaviour. Don't be an idiot._
+_tl;dr: Hold yourself to the highest standards of behaviour. Don’t be an idiot._
 
 #### The Quick Version
 
 Brighton Ruby Conference is a harassment-free experience for everyone, regardless of gender, sexual orientation, disability, physical appearance, body size, race, or religion. We **do not** tolerate harassment of conference participants in any form, even if you think you're just 'being funny'.
 
-Sexual language and imagery is not appropriate for any conference venue, including talks, workshops, parties, Twitter and other online media. Anyone violating these rules may be expelled from the conference *without a refund* at the discretion of the conference organisers. _Just don't do it._
+Sexual language and imagery is not appropriate for any conference venue, including talks, workshops, parties, Twitter and other online media. Anyone violating these rules may be expelled from the conference *without a refund* at the discretion of the conference organisers. _Just don’t do it._
 
 If you have any questions, email the organiser at [andy@goodscary.com](mailto:andy@goodscary.com)
 

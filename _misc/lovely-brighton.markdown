@@ -36,7 +36,7 @@ Our amazing venue. Next to the Pavillion with some lovely gardens and next to a 
 
 #### The Pier
 
-We used to have two. Then there was a fire, now there is one. It couldn't be more 'English Seaside' if it tried. Arcades, average pubs, sunburnt tourists and a funfair.
+We used to have two. Then there was a fire, now there is one. It couldn’t be more 'English Seaside' if it tried. Arcades, average pubs, sunburnt tourists and a funfair.
 
 #### Beach
 
@@ -44,7 +44,7 @@ Pebbles! _Sorry_. There's food and drink venues to the West of the Pier toward H
 
 #### The North Laine
 
-Home to great independent shops. Some of which you can't work out how they survive. Terrific Cafes. Excellent pubs.
+Home to great independent shops. Some of which you can’t work out how they survive. Terrific Cafes. Excellent pubs.
 
 #### The Lanes
 
@@ -64,7 +64,7 @@ Grassy area just north of the North Laine. Skate park (lookout for men who are '
 
 #### And more
 
-[Visit Brighton](http://www.visitbrighton.com) a standard 'tourist-y' site - to cover stuff I haven't seen or done. I only moved here in June last year and I have twins under 18 months old. I haven't hit the town much.
+[Visit Brighton](http://www.visitbrighton.com) a standard 'tourist-y' site - to cover stuff I haven’t seen or done. I only moved here in June last year and I have twins under 18 months old. I haven’t hit the town much.
 
 <img src="/images/brighton.png" class="img-fluid" alt="Brighton Central Areas" />
 
