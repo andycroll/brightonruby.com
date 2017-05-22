@@ -20,14 +20,18 @@ layout: default
     {% endcase %}
 {% endif %}
 
+{% assign page_year = page.date | date: "%Y" %}
+
 <article>
   <div class="row">
     <div class="col-9">
-      {% assign page_year = page.date | date: "%Y" %}
       {% if page_year != '2017' %}
         <small>Previously...</small>
       {% endif %}
-      <h1 class="display-2">{{ page.date | date: "%A, %-d" }}{{ ordinal }} {{ page.date | date: "%B %Y"  }}</h1>
+      <h1 class="display-2">
+        {{ page_year }} /
+        {{ page.date | date: "%A, %-d" }}{{ ordinal }} {{ page.date | date: "%B"  }}
+      </h1>
     </div>
   </div>
 
@@ -36,7 +40,6 @@ layout: default
       {% assign ordered_posts = site.posts | sort: 'date' %}
       {% for post in ordered_posts %}
         {% assign post_year = post.date | date: "%Y" %}
-        {% assign page_year = page.date | date: "%Y" %}
         {% if post_year == page_year %}
           {% if post.break == true %}<hr />{% endif %}
           <div class="row mb-3">
