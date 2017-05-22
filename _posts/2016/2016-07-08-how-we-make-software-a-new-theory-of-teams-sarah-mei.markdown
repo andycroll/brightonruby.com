@@ -1,5 +1,5 @@
 ---
-title: How We Make Software: A New Theory of Teams
+title: "How We Make Software: A New Theory of Teams"
 layout: video
 speaker: sarahmei
 vimeo: 178469403

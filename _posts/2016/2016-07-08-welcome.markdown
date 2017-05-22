@@ -1,6 +1,5 @@
 ---
-title: 'Welcome'
-speakers:
-  - 'andycroll'
+title: Welcome
+speaker: andycroll
 date: '2016-07-08 09:15'
 ---
