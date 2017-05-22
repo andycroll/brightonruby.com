@@ -5,42 +5,58 @@ layout: default
 {% capture day %}{{ page.date | date: "%-d" }}{% endcapture %}
 {% capture dayLastTwoDigits %}{{ day | modulo: 100 }}{% endcapture %}
 {% if dayLastTwoDigits >= "11" and dayLastTwoDigits <= "13" %}
-    {% assign ordinal = "th" %}
+  {% assign ordinal = "th" %}
 {% else %}
-    {% capture dayLastDigit %}{{ day | modulo: 10 }}{% endcapture %}
-    {% case dayLastDigit %}
-        {% when "1" %}
-            {% assign ordinal = "st" %}
-        {% when "2" %}
-            {% assign ordinal = "nd" %}
-        {% when "3" %}
-            {% assign ordinal = "rd" %}
-        {% else %}
-            {% assign ordinal = "th" %}
-    {% endcase %}
+  {% capture dayLastDigit %}{{ day | modulo: 10 }}{% endcapture %}
+  {% case dayLastDigit %}
+    {% when "1" %}
+      {% assign ordinal = "st" %}
+    {% when "2" %}
+      {% assign ordinal = "nd" %}
+    {% when "3" %}
+      {% assign ordinal = "rd" %}
+    {% else %}
+      {% assign ordinal = "th" %}
+  {% endcase %}
 {% endif %}
 
-<article class="pt-5">
+<article>
+  <h1 class="mb-3">
+    {{ page.title }}
+
+  </h1>
+
   <div class="row">
-    <div class="col-md-8">
+    <div class="col-md-7">
       <div class="embed-responsive embed-responsive-16by9">
         <iframe src="https://player.vimeo.com/video/{{ page.vimeo }}" width="640" height="480" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
       </div>
 
       <a href="https://ti.to/goodscary/brighton-ruby-conference-2017" class="btn btn-lg btn-danger mt-2">Buy a ticket to 2017</a>
     </div>
-    <div class="col-md-4">
-      <h1 class="">
-        {{ page.title }}<br />
-        {% capture speakers %}{% for speaker in page.speakers %}{{ speaker.name }}{% if speaker != page.speakers.last %}, {% endif %}{% endfor %}{% endcapture %}
 
-        <small>{{ speakers }}</small>
-      </h1>
-      <p>&nbsp;</p>
-      <p><a href="/2015">More Videos</a></p>
-      <p>&nbsp;</p>
-      <h4 class="h5 text-uppercase">{{ page.date | date: "%A, %-d" }}{{ ordinal }} {{ page.date | date: "%B %Y"  }}</h4>
-      {{ content }}
+    <div class="col-md-5">
+      <div class="row">
+        <div class="col-md-3">
+          {% if page.speaker %}
+            <img src="/images/speakers/{{ page.speaker }}.jpg" class="img-fluid"/>
+          {% endif %}
+        </div>
+
+        <div class="col-md-9">
+          <h2 class="h3 mb-3">
+            {% assign speaker = site.data.speakers[page.speaker] %}
+            {{ speaker.name }}
+            {% if speaker.twitter %}
+              <small><a href="https://twitter.com/{{ speaker.twitter }}">@{{ speaker.twitter }}</a></small>
+            {% endif %}
+          </h2>
+          {{ content }}
+          <small>{{ page.date | date: "%A, %-d" }}{{ ordinal }} {{ page.date | date: "%B %Y"  }}</small>
+          <p>&nbsp;</p>
+          <p><a href="/{{ page.date | date: "%Y" }}">More Videos</a></p>
+        </div>
+      </div>
     </div>
   </div>
 </article>

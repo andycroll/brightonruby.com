@@ -13,63 +13,6 @@ sponsors:
     link: 'http://fundingcircle.com'
   - name: 'Kyan'
     link: 'http://kyan.com'
-talks:
-  - time: '09:00'
-    title: 'May the Ruby be with you'
-    speaker:
-      - name: 'Terence Lee'
-        twitter: 'hone02'
-      - name: 'Zak'
-        twitter: '_zzak'
-  - time: '09:45'
-    title: 'Building fast, standardised JSON APIs in Ruby'
-    speaker:
-      - name: 'Ben Lovell'
-        twitter: 'benlovell'
-    slides: 'https://speakerdeck.com/benlovell/fast-testable-and-sane-json-apis-with-rails-api-et-al'
-  - time: '10:45'
-    title: 'Better Security For Rails Apps'
-    speaker:
-      - name: 'Najaf Ali'
-        twitter: 'alinajaf'
-  - time: '11:05'
-    title: "Don't Fear The Cuke"
-    speaker:
-      - name: 'Thomas Brand'
-        twitter: 'tom_b025'
-  - time: '11:20'
-    title: 'Unpacking Technical Decisions'
-    speaker:
-      - name: 'Sarah Mei'
-        twitter: 'sarahmei'
-  - time: '13:45'
-    title: 'RubyMotion: Ruby For Native Mobile Apps'
-    speaker:
-      - name: 'Laurent Sansonetti'
-        twitter: 'lrz'
-  - time: '14:30'
-    title: 'Types in Ruby'
-    speaker:
-      - name: 'Sam Phippen'
-        twitter: 'sampphippen'
-  - time: '14:50'
-    title: 'Take the pain out of your TDD'
-    speaker:
-      - name: 'Andy Pike'
-        twitter: 'andypike'
-    slides: 'https://speakerdeck.com/andypike/take-the-pain-out-of-your-tdd'
-  - time: '16:15'
-    title: 'Codebar & Coaching'
-    speaker:
-      - name: 'Rosa Fox'
-        twitter: 'rosaemerald'
-      - name: 'Despo Pentara'
-        twitter: 'despo'
-  - time: '16:55'
-    title: 'Closing'
-    speaker:
-      - name: 'tenderlove'
-        twitter: 'Aaron Patterson'
 photos:
   - src: andrewfrance
     alt: 'Apres (Andrew France - Flickr)'
@@ -103,3 +46,60 @@ Having eighteen-month-old twins I decided that a _smart_ idea was to run a ruby 
 And the sun shone, people dressed as Jedi, Laurent Sansonetti live coded an Android app on stage and Aaron Patterson giggled and much fun was had by all.
 
 No-one died in the sweltering conditions, so I'm basically calling it a win.
+
+- time: '09:00'
+  title: 'May the Ruby be with you'
+  speaker:
+    - name: 'Terence Lee'
+      twitter: 'hone02'
+    - name: 'Zak'
+      twitter: '_zzak'
+- time: '09:45'
+  title: 'Building fast, standardised JSON APIs in Ruby'
+  speaker:
+    - name: 'Ben Lovell'
+      twitter: 'benlovell'
+  slides: 'https://speakerdeck.com/benlovell/fast-testable-and-sane-json-apis-with-rails-api-et-al'
+- time: '10:45'
+  title: 'Better Security For Rails Apps'
+  speaker:
+    - name: 'Najaf Ali'
+      twitter: 'alinajaf'
+- time: '11:05'
+  title: "Don’t Fear The Cuke"
+  speaker:
+    - name: 'Thomas Brand'
+      twitter: 'tom_b025'
+- time: '11:20'
+  title: 'Unpacking Technical Decisions'
+  speaker:
+    - name: 'Sarah Mei'
+      twitter: 'sarahmei'
+- time: '13:45'
+  title: 'RubyMotion: Ruby For Native Mobile Apps'
+  speaker:
+    - name: 'Laurent Sansonetti'
+      twitter: 'lrz'
+- time: '14:30'
+  title: 'Types in Ruby'
+  speaker:
+    - name: 'Sam Phippen'
+      twitter: 'sampphippen'
+- time: '14:50'
+  title: 'Take the pain out of your TDD'
+  speaker:
+    - name: 'Andy Pike'
+      twitter: 'andypike'
+  slides: 'https://speakerdeck.com/andypike/take-the-pain-out-of-your-tdd'
+- time: '16:15'
+  title: 'Codebar & Coaching'
+  speaker:
+    - name: 'Rosa Fox'
+      twitter: 'rosaemerald'
+    - name: 'Despo Pentara'
+      twitter: 'despo'
+- time: '16:55'
+  title: 'Closing'
+  speaker:
+    - name: 'tenderlove'
+      twitter: 'Aaron Patterson'

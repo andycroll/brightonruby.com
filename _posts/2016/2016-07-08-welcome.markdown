@@ -1,0 +1,6 @@
+---
+title: 'Welcome'
+speakers:
+  - 'andycroll'
+date: '2016-07-08 09:15'
+---

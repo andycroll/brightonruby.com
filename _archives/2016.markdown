@@ -1,0 +1,26 @@
+---
+title: '2016 Archive'
+date: '2016-07-08'
+layout: 'archive'
+gold:
+  - freeagent
+  - hired
+silver:
+  - pusher
+  - twilio
+  - cookpad
+photos:
+  #- src: andycroll
+  #  alt: 'Just a Ruby Minute (Andy Croll)'
+tweets:
+  - https://twitter.com/sfcgim/status/751872180095422464
+  - https://twitter.com/spyou/status/751743270288551936
+  - https://twitter.com/andypike/status/751731789488676865
+  - https://twitter.com/samphippen/status/751726565181063168
+  - https://twitter.com/matiaskorhonen/status/751712944287875072
+  - https://twitter.com/jamesjefferies/status/751459802027532289
+---
+
+A move to the middle-sized room of the Brighton Dome as the Studio Theatre could no longer hold us.
+
+A slightly larger crowd, a friendly atmosphere two members of the Rails core team and the return of Sarah Mei.

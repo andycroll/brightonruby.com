@@ -1,0 +1,24 @@
+---
+title: '2017 Archive'
+date: '2017-07-07'
+layout: 'archive'
+gold:
+  - bytemark
+  - freeagent
+  - hired
+  - cookpad
+silver:
+  - carwow
+  - kyan
+  - mwrinfosecurity
+friend:
+  - heroku
+  - skillsearch
+  - zappi
+photos:
+  #- src: andycroll
+  #  alt: 'Just a Ruby Minute (Andy Croll)'
+tweets:
+---
+
+Just a single-day, single-track Ruby-ish conference looking at you asking you to love it. For the fourth time.

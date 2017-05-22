@@ -2,6 +2,7 @@ name: Brighton Ruby Conference 2016
 
 exclude: ['config.ru', 'Gemfile', 'Gemfile.lock', 'vendor']
 permalink: /:year/:title/
+future: true
 
 sass:
   style: :compressed

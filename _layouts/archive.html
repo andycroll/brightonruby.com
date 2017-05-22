@@ -20,61 +20,60 @@ layout: default
     {% endcase %}
 {% endif %}
 
-<article class="archive">
+<article>
   <div class="row">
-    <div class="header">
-      <div class="col-sm-9">
-        <h1 class="display-1">Previously... <small>{{ page.date | date: "%A, %-d" }}{{ ordinal }} {{ page.date | date: "%B %Y"  }}<small></h1>
-      </div>
+    <div class="col-9">
+      {% assign page_year = page.date | date: "%Y" %}
+      {% if page_year != '2017' %}
+        <small>Previously...</small>
+      {% endif %}
+      <h1 class="display-2">{{ page.date | date: "%A, %-d" }}{{ ordinal }} {{ page.date | date: "%B %Y"  }}</h1>
     </div>
   </div>
 
   <div class="row">
-    <div class="col-sm-6 col-sm-push-6">
-      <h4 class="h5 text-uppercase">Sponsors</h4>
-
-      <div class="row">
-        <div class="col-8">
-          {% for sponsor in page.sponsors | limit: 1 %}
-            <a href="{{ sponsor.link }}"><img src="/images/{{ page.date | date: "%Y" }}/{{ sponsor.name | slugify }}.jpg" alt="{{ sponsor.name }}" class="img-fluid" /></a>
-          {% endfor %}
-        </div>
-      </div>
-
-      <div class="row">
-        {% for sponsor in page.sponsors | offset: 1 %}
-          <div class="col-6">
-            <p><a href="{{ sponsor.link }}"><img src="/images/{{ page.date | date: "%Y" }}/{{ sponsor.name | slugify }}.jpg" alt="{{ sponsor.name }}" class="img-fluid" /></a></p>
-          </div>
-        {% endfor %}
-      </div>
-    </div>
-
-    <div class="col-sm-6 col-sm-pull-6">
-      <h4 class="h5 text-uppercase">Schedule</h4>
-
-      <div class="archive">
-        {% for talk in page.talks %}
-          <article>
-            <h1 class="h4">
-              {% if talk.video != nil %}
-                <a href="{{ talk.video }}">
-                  {{ talk.title }}
-                </a>
+    <div class="col-sm-8">
+      {% assign ordered_posts = site.posts | sort: 'date' %}
+      {% for post in ordered_posts %}
+        {% assign post_year = post.date | date: "%Y" %}
+        {% assign page_year = page.date | date: "%Y" %}
+        {% if post_year == page_year %}
+          {% if post.break == true %}<hr />{% endif %}
+          <div class="row mb-3">
+            <div class="col-4 col-sm-2">
+              {% if post.speaker %}
+                <img src="/images/speakers/{{ post.speaker }}.jpg" class="img-fluid"/>
               {% else %}
-                {{ talk.title }}
+                &nbsp;
               {% endif %}
-            </h1>
-            <p>
-            {% for person in talk.speaker %}
-              {{ person.name }} <small><a href="https://twitter.com/{{ person.twitter }}">@{{ person.twitter }}</a></small><br />
-            {% endfor %}
-            </p>
-          </article>
-        {% endfor %}
-      </div>
+            </div>
+            <div class="col-8 col-sm-10">
+              <h3 class="h4">
+                <small>{{ post.date | date: "%H:%M" }}</small><br />
+                {% if post.vimeo != nil or post.layout == 'preview' %}
+                  <a href="{{ post.url }}">
+                    {{ post.title }}
+                  </a>
+                {% else %}
+                  {{ post.title }}
+                {% endif %}
+              </h3>
+              <h4 class="h6">
+                {% assign speaker = site.data.speakers[post.speaker] %}
+                {{ speaker.name }}
+                {% if speaker.twitter %}
+                  <small><a href="https://twitter.com/{{ speaker.twitter }}">@{{ speaker.twitter }}</a></small><br />
+                {% endif %}
+              </h4>
+            </div>
+          </div>
+          {% if post.break == true %}<hr />{% endif %}
+        {% endif %}
+      {% endfor %}
     </div>
+  </div>
 
+  <div class="row">
     <div class="col-sm-6 offset-sm-6">
       <h4 class="h5 text-uppercase">Photos</h4>
       <div class="row">
