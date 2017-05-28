@@ -21,7 +21,7 @@ title: "Brighton Ruby Conference 2017"
 
     <div class="mb-4">
       <p class="h6">Where?</p>
-      <p class="h4">It's at the Brighton Dome. In the concert hall this year. Which is a <i>lovely</i> room.</p>
+      <p class="h4">It's at the Brighton Dome. In the concert hall this year. Which is a <i>lovely</i> room <span class="amp">&amp;</span> doesn&rsquo;t get quite so warm in the tropical Brighton sun.</p>
     </div>
 
     <div class="mb-4">
@@ -34,7 +34,7 @@ title: "Brighton Ruby Conference 2017"
       {% for post in ordered_posts %}
         {% assign post_year = post.date | date: "%Y" %}
         {% if post_year == '2017' and post.speaker and post.title != 'Welcome' %}
-        <div class="col-4 col-sm-3 mb-2">
+        <div class="col-4 col-sm-3 mb-4">
           <a href="{{ post.url }}">
             <img src="/images/speakers/{{ post.speaker }}.jpg" class="img-fluid"/>
           </a>
@@ -48,7 +48,7 @@ title: "Brighton Ruby Conference 2017"
       <p class="h4">The sponsors. Without them this whole thing falls apart and I end up under living under a bridge like some kind of fairytale troll.</p>
     </div>
 
-    <h3 class="my-4">Gold Sponsors</h5>
+    <h3 class="h6 my-4">Gold Sponsors</h3>
 
     <div class="row">
       <div class="col-sm-6 col-md-4">
@@ -76,7 +76,7 @@ title: "Brighton Ruby Conference 2017"
       </div>
     </div>
 
-    <h3 class="my-4">Silver Sponsors</h5>
+    <h3 class="h6 my-4">Silver Sponsors</h5>
 
     <div class="row">
       <div class="col-8 col-sm-4">
@@ -98,7 +98,7 @@ title: "Brighton Ruby Conference 2017"
       </div>
     </div>
 
-    <h4 class="my-4">Friends of Brighton Ruby</h4>
+    <h4 class="h6 my-4">Friends of Brighton Ruby</h4>
 
     <div class="row">
       <div class="col-4 col-sm-2">
