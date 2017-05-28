@@ -9,9 +9,11 @@ adamniedzielski:
 alexcoles:
   name: Alex Coles
   twitter: myabc
+  bio: 'CTO of education startup Skive and very active in the Ruby community, having founded the annual eurucamp camp/conference and JRubyConf EU.\n\nHe has also contributed extensively to many open-source projects including OpenProject, RefineryCMS and DataMapper.'
 andrewnesbitt:
   name: Andrew Nesbitt
   twitter: teabass
+  bio: 'Andrew is a freelance software developer, based in Somerset, UK. He spends most of his days programming in Ruby, contributing to open source projects and organising local developer user groups.'
 andycroll:
   name: Andy Croll
   twitter: andycroll
@@ -19,24 +21,25 @@ andypike:
   name: Andy Pike
   twitter: andypike
 avdigrimm:
-  name: 'Avdi Grimm'
-  twitter: 'avdi'
+  name: Avdi Grimm
+  twitter: avdi
 britnialexander:
   name: Britni Alexander
   twitter: TwitniTheGirl
 dotwingrove:
   name: Dot Wingrove
   twitter: notthepoint
-  bio: 'co-organiser of @CodebarBrighton, studying maths with @OpenUniversity, humum to @morty_macgrove'
+  bio: 'Co-organiser of @CodebarBrighton, studying maths with @OpenUniversity, humum to @morty_macgrove'
 eileenuchitelle:
   name: Eileen Uchitelle
   twitter: eileencodes
 elizadejager:
   name: "Eliza de&nbsp;Jager"
   twitter: code_kitten
+  bio: 'Developer at Zappi Store.'
 ellemeredith:
-  name: 'Elle Meredith'
-  twitter: 'aemeredith'
+  name: Elle Meredith
+  twitter: aemeredith
 elliotthilaire:
   name: Elliott Hilaire
   twitter: elliotthilaire
@@ -66,10 +69,10 @@ kinseyanndurham:
   twitter: KinseyAnnDurham
   bio: 'Software Engineer at GoSpotCheck, co-founder [Kubmo](http://kubmo.org), Chair of Bridge Foundry board, mentor @trybloc. Addicted to fly fishing and her dog.'
 lightning2015:
-  name: 'Sonja Heinen, Olga Scott, Tatiana Soukiassian, Robbie Clutton & Alex Sunderland'
+  name: Sonja Heinen, Olga Scott, Tatiana Soukiassian, Robbie Clutton & Alex Sunderland
 lucaguidi:
-  name: 'Luca Guidi'
-  twitter: 'jodosha'
+  name: Luca Guidi
+  twitter: jodosha
 nadiaodunayo:
   name: Nadia Odunayo
   twitter: nodunayo
@@ -77,6 +80,7 @@ nadiaodunayo:
 najafali:
   name: Najaf Ali
   twitter: alinajaf
+  bio: 'Ali runs a Ruby on Rails consultancy called Happy Bear Software. He has fixed a lot of bugs and trained a lot of junior developers, who also have fixed a lot of bugs.'
 neilmiddleton:
   name: Neil Middleton
   twitter: neilmiddleton
@@ -92,8 +96,8 @@ piotrsolnica:
   twitter: _solnic_
   bio: 'A software engineer with over 10 years of experience, working as Tech Lead at Icelab.\n\nFormer DataMapper core team member, creator of the popular Virtus gem, lead developer of Ruby Object Mapper project, and dryrb core developer.'
 robmiller:
-  name: 'Rob Miller'
-  twitter: 'robmil'
+  name: Rob Miller
+  twitter: robmil
 ryanmcgillivray:
   name: Ryan McGillivray
   twitter: RyanMacG
@@ -121,8 +125,8 @@ seangriffin:
   name: Sean Griffin
   twitter: sgrif
 tadejmurovec:
-  name: 'Tadej Murovec'
-  twitter: 'tadejm'
+  name: Tadej Murovec
+  twitter: tadejm
   bio: 'Passionate Ruby developer, a g33k, indie music lover, petrol–head.'
 xavierriley:
   name: Xavier Riley
