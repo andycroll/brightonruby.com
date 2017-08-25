@@ -1,0 +1,31 @@
+branches:
+  only:
+  - master
+bundler_args: "--without production --deployment --jobs=3 --retry=3"
+cache: bundler
+deploy:
+  on:
+    branch: master
+  provider: script
+  script: rvm $TRAVIS_RUBY_VERSION do ./deploy.sh
+  skip_cleanup: true
+env:
+  global:
+  - secure: T4AIZxay4TOpglXemSwOFQJ7EhJM2408XIj0c0ywFvke/MopkBI2WF4igdnGg2Y5/H9ZClN54aA33CelDgdNaNVF0zN3BfUTkU3Mde61lcxhhGvYGGgwTib8ijUuFcwRtG3iDvk8hULiu028WZ8+KO4LDNYJV8jUqVcLJ7uj3IM=
+  - secure: RRsaklwWXa5WqoGw0rxxuCtYYCXd0as7HUL7BonSkPWVBB+vBGRFuau+kngLYFiuivi/fh3a9y72w4pzMm7Il6kJ4SWltO3hi1TQnGs2U8zEbp4UJVspWznI1x2FA67xoNW+qNlx4TP6QKXIsJkd/MNP/2Liw8eMY/QchuA/G5I=
+  - secure: f7x+qtGNfmV4CG58B8oBe2tq6P0vADE5mt2Gz9THfdtd7N679Ia0GCQhrDWO7abf/nQ3m9RbEqrERQD03UN4OBcL9qWjoqiAAfZm/mG+g7JjQTQWzAZ7EbXMcwAk0S0PPGkV4rbLoMEMDORZA0TDbShyJSxwEr40CCTmUDesKHc=
+  - secure: P3Hzh3B7bCrwCT19RwAGjk7XfUiDkzg19Bw7AKKdh2+bagXRzJe7ISxbiAKpPXR6l+GzRY8YqnSbZa7+NDikXu0SWygJl06Quvn3o3RYU24BX4PEaXWlZbT43YMbaLMPkdGE3+4WEk7iecTkPtVK7xtRffBv3ew/xS3hXhEPtXU=
+  - secure: DQkHlK0u/rL7lEMMDLday6TRYPsKJsjAv31tc1imx37DnAqh4mzZomyEx8SOuF5BraT9sk3h7XLj6xa1uCZhdSrBJ0odnWovizJgqdKGNgnFfef8RuZTMArB23vPEmGWyDCeCi8Ha4j53IlSHn6RWpkXCfWpj6HAWaTGksRyYpI=
+language: ruby
+notifications:
+  email: false
+  slack:
+    on_failure: always
+    on_success: always
+    rooms:
+      secure: CDqfILIJ0YaqxvUZF0OKhSbjKEF4FP+pfvGkrEq2piQLbWWwEeHjeaxjm5Bcv/16oa3uikkeEGUKZ7K02BA1kmOyTpg8n5wEEpFKmPI2PogC3VIS+rmA8TGqGnktuHiLDZcMBzjxkNvqzVwQSW+uVorkb+KV7ZN+aEGoC+JRM2Jdu3c6Uwj2XDNRZEcGluB8/22KmUAZGzhv6BHFJLubnWpUIdpIiUbClDjqzCyDxOaAh8fAnfen1cPltOX0AnMUSV/zxJQNT0S/gGPGmeUaf/ej92KRujBrauYHkvD7ocbnkjhRi8rfj5wQI2Yhw+Uh3yT2GWVUY6/ThdW06I5cdJW0+T5p4svAyyHs4FQTPvDELZ6hKahZJNihrJATb74mKS8FdWeWRR175KuwUwNoKfUCbtd4gQhvU+6Yto+hSUHkAdICdT5r7QNtIZ7uUxGhGADW9aV/UJ/6KdSZHr2Qbw0oJ1c5eC5r5InjmE43djXB5qCHa2TDik4HghoeYEII2xzJ4St1Bh2AMY88RCRGP+zEVU9vnIRNyL6qrCPA+5LJitBLBSw6ZbKAMOBl6NeF8F1DOSenmtlGEco3Uy10zKYNYzDwsjasNLAocyIMY9eEezorKEhGSV+xmtukkkU3l/JzgMxdfukuVOwV2U+gA1tMsSrYjgBFs4hC5JM1sZ4=
+rvm:
+- 2.4.1
+script:
+- bundle exec jekyll build
+- bundle exec htmlproofer ./_site --disable-external
