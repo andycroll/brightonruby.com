@@ -37,14 +37,14 @@ layout: default
       <div class="col-md-5">
         <div class="row">
           <div class="col-sm-4 col-md-3 mb-2">
+            {% assign speaker = site.data.speakers[page.speaker] %}
             {% if page.speaker %}
-              <img src="/images/speakers/{{ page.speaker }}.jpg" class="img-fluid"/>
+              <img src="/images/speakers/{{ page.speaker }}.jpg" class="img-fluid" alt="{{ speaker.name }}" />
             {% endif %}
           </div>
 
           <div class="col-md-9">
             <h2 class="h3 mb-3">
-              {% assign speaker = site.data.speakers[page.speaker] %}
               {{ speaker.name }}
               {% if speaker.twitter %}
                 <small><a href="https://twitter.com/{{ speaker.twitter }}">@{{ speaker.twitter }}</a></small>

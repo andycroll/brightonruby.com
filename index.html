@@ -36,7 +36,8 @@ title: "Brighton Ruby Conference 2017"
         {% if post_year == '2017' and post.speaker and post.title != 'Welcome' %}
         <div class="col-4 col-sm-3 mb-4">
           <a href="{{ post.url }}">
-            <img src="/images/speakers/{{ post.speaker }}.jpg" class="img-fluid"/>
+            {% assign speaker = site.data.speakers[post.speaker] %}
+            <img src="/images/speakers/{{ post.speaker }}.jpg" class="img-fluid" alt="{{ speaker.name }}" />
           </a>
         </div>
         {% endif %}

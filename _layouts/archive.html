@@ -46,7 +46,8 @@ layout: default
             <div class="row mb-3">
               <div class="col-4 col-sm-2">
                 {% if post.speaker %}
-                  <img src="/images/speakers/{{ post.speaker }}.jpg" class="img-fluid"/>
+                  {% assign speaker = site.data.speakers[post.speaker] %}
+                  <img src="/images/speakers/{{ post.speaker }}.jpg" class="img-fluid" alt="{{ speaker.name }}" />
                 {% else %}
                   &nbsp;
                 {% endif %}
@@ -63,7 +64,6 @@ layout: default
                   {% endif %}
                 </h3>
                 <h4 class="h6">
-                  {% assign speaker = site.data.speakers[post.speaker] %}
                   {{ speaker.name }}
                   {% if speaker.twitter %}
                     <small><a href="https://twitter.com/{{ speaker.twitter }}">@{{ speaker.twitter }}</a></small><br />
