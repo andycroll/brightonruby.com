@@ -33,6 +33,8 @@ Conference staff will be happy to help participants contact hotel/venue security
 
 We expect participants to follow these rules at conference and workshop venues and conference-related social events.
 
+We also reserve the right to refuse tickets and admission to anyone, for any reason. Brighton Ruby is a privately run event.
+
 -----
 
 <small>Adapted from <a href="https://github.com/leftlogic/confcodeofconduct.com">http://github.com/leftlogic/confcodeofconduct.com</a> which was originally sourced from <a href="http://2012.jsconf.us/#/about">http://2012.jsconf.us/#/about</a> &amp; <a href="http://geekfeminism.wikia.com/wiki/Conference_anti-harassment/Policy">The Ada Initiative</a></small>
