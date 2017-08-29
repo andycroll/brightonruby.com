@@ -1,7 +1,7 @@
 ---
 title: Rails 5 Features You Haven’t Heard About
 layout: video
-speaker: seangriffin
+author: seangriffin
 vimeo: 180888392
 date: '2016-07-08 15:00'
 ---

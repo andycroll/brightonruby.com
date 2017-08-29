@@ -1,7 +1,7 @@
 ---
 title: Five WTFs in Six LOCs
 layout: video
-speaker: dotwingrove
+author: dotwingrove
 vimeo: 181409251
 date: '2016-07-08 14:40'
 ---

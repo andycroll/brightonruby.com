@@ -1,7 +1,7 @@
 ---
 title: Do-it-Yourself Testing
 layout: video
-speaker: emilystolfo
+author: emilystolfo
 vimeo: 179928224
 date: '2016-07-08 11:40'
 ---

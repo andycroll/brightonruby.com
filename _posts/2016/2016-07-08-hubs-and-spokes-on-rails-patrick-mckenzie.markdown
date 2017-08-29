@@ -1,7 +1,7 @@
 ---
 title: Hubs & Spokes on Rails
 layout: video
-speaker: patrickmckenzie
+author: patrickmckenzie
 vimeo: 181103691
 date: '2016-07-08 16:00'
 ---

@@ -1,7 +1,7 @@
 ---
 title: Security is Broken
 layout: video
-speaker: eileenuchitelle
+author: eileenuchitelle
 vimeo: 178624701
 date: '2016-07-08 09:30'
 ---

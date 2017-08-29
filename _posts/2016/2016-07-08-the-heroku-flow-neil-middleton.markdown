@@ -1,7 +1,7 @@
 ---
 title: The Heroku Flow
 layout: video
-speaker: neilmiddleton
+author: neilmiddleton
 vimeo: 181818654
 date: '2016-07-08 14:50'
 ---

@@ -1,7 +1,7 @@
 ---
 title: Can My Friends Come Too?
 layout: preview
-speaker: andrewnesbitt
+author: andrewnesbitt
 date: '2017-07-07 14:40'
 ---
 

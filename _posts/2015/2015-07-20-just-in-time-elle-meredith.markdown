@@ -1,7 +1,7 @@
 ---
 title: Just in Time
 layout: video
-speaker: ellemeredith
+author: ellemeredith
 vimeo: 168624856
 date: '2015-07-20 11:00'
 ---

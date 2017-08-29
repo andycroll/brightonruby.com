@@ -1,7 +1,7 @@
 ---
 title: Playing Games in the Clouds
 layout: video
-speaker: nadiaodunayo
+author: nadiaodunayo
 vimeo: 168916228
 date: '2015-07-20 14:00'
 slides: 'https://speakerdeck.com/nodunayo/playing-games-in-the-clouds'

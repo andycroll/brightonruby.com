@@ -1,7 +1,7 @@
 ---
 title: Just a Ruby Minute
 layout: video
-speaker: justaminute
+author: justaminute
 vimeo: 181854772
 date: '2016-07-08 14:00'
 ---

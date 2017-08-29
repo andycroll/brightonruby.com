@@ -1,7 +1,7 @@
 ---
 title: Eigen What Now?
 layout: preview
-speaker: elizadejager
+author: elizadejager
 date: '2017-07-07 15:30'
 ---
 

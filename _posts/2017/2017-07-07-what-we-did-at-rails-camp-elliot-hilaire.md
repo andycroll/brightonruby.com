@@ -1,7 +1,7 @@
 ---
 title: What we did at Rails Camp
 layout: preview
-speaker: elliotthilaire
+author: elliotthilaire
 date: '2017-07-07 11:30'
 ---
 

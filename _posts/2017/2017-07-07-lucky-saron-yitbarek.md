@@ -1,7 +1,7 @@
 ---
 title: Lucky
 layout: preview
-speaker: saronyitbarek
+author: saronyitbarek
 date: '2017-07-07 09:10'
 ---
 

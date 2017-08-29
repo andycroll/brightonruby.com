@@ -1,7 +1,7 @@
 ---
 title: Doing Silly Stuff with Postgres For Fun & Profit
 layout: preview
-speaker: ryanmcgillivray
+author: ryanmcgillivray
 date: '2017-07-07 11:30'
 ---
 

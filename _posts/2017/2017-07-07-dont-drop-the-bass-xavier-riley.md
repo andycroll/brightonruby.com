@@ -1,7 +1,7 @@
 ---
 title: Don’t Drop The Bass
 layout: preview
-speaker: xavierriley
+author: xavierriley
 date: '2017-07-07 11:30'
 ---
 

@@ -1,7 +1,7 @@
 ---
 title: Livable Code
 layout: preview
-speaker: sarahmei
+author: sarahmei
 date: '2017-07-07 16:10'
 ---
 

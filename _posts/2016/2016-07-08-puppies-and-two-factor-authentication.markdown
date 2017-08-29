@@ -1,7 +1,7 @@
 ---
 title: Puppies & Two Factor Authentication
 layout: video
-speaker: philnash
+author: philnash
 vimeo: 181815705
 date: '2016-07-08 14:45'
 ---

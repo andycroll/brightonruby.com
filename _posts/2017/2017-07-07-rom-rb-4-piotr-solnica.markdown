@@ -1,7 +1,7 @@
 ---
 title: 'rom-rb 4.0 is Coming: Let Me Explain What It Means'
 layout: preview
-speaker: piotrsolnica
+author: piotrsolnica
 date: '2017-07-07 10:50'
 ---
 

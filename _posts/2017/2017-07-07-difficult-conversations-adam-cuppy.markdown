@@ -1,8 +1,9 @@
 ---
 title: Difficult Conversations
 layout: preview
-speaker: adamcuppy
+author: adamcuppy
 date: '2017-07-07 14:00'
+vimeo: 230210054
 ---
 
 It’s never easy to have a tough conversations, and they never go away. Therefore, I see a better way to live with them, and I want everyone to hear it: empower yourself to understand why we do what we do so you can effect change.

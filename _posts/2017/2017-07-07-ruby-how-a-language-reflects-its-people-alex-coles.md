@@ -1,7 +1,7 @@
 ---
 title: 'Ruby: How a Language Reflects its People'
 layout: preview
-speaker: alexcoles
+author: alexcoles
 date: '2017-07-07 09:40'
 ---
 

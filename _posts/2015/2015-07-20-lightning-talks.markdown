@@ -1,7 +1,7 @@
 ---
 title: Lightning Talks
 layout: video
-speaker: lightning2015
+author: lightning2015
 vimeo: 169162325
 date: '2015-07-20 11:40'
 ---

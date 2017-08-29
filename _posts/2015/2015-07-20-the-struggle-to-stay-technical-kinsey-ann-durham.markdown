@@ -1,7 +1,7 @@
 ---
 title: The Struggle to Stay Technical
 layout: video
-speaker: kinseyanndurham
+author: kinseyanndurham
 vimeo: 169222630
 date: '2015-07-20 14:40'
 ---
