@@ -43,9 +43,9 @@ layout: default
             {% if post.break == true %}<hr />{% endif %}
             <div class="row mb-3">
               <div class="col-4 col-sm-2">
-                {% if post.author %}
-                  {% assign speaker = site.data.authors[post.author] %}
-                  <img src="/images/speakers/{{ post.author }}.jpg" class="img-fluid" alt="{{ author.name }}" />
+                {% assign author = site.data.authors[post.author] %}
+                {% if author %}
+                  <img src="{{ author.image }}" class="img-fluid" alt="{{ author.name }}" />
                 {% else %}
                   &nbsp;
                 {% endif %}

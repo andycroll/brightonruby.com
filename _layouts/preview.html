@@ -38,8 +38,8 @@ layout: default
         <div class="row">
           <div class="col-sm-4 col-md-3 mb-2">
             {% assign author = site.data.authors[page.author] %}
-            {% if page.author %}
-              <img src="/images/speakers/{{ page.author }}.jpg" class="img-fluid" alt="{{ author.name }}" />
+            {% if author %}
+              <img src="{{ author.image }}" class="img-fluid" alt="{{ author.name }}" />
             {% endif %}
           </div>
 
