@@ -1,7 +1,7 @@
 ---
 title: The Function of Bias
 layout: video
-speaker: sarasimon
+author: sarasimon
 vimeo: 179819139
 date: '2016-07-08 11:20'
 ---

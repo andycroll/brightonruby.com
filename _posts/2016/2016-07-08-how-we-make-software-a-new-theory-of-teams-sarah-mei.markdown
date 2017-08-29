@@ -1,7 +1,7 @@
 ---
 title: "How We Make Software: A New Theory of Teams"
 layout: video
-speaker: sarahmei
+author: sarahmei
 vimeo: 178469403
 date: '2016-07-08 16:40'
 ---

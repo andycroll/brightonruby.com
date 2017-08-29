@@ -1,7 +1,7 @@
 ---
 title: The Point of Objects
 layout: video
-speaker: johncinnamond
+author: johncinnamond
 vimeo: 180888400
 date: '2016-07-08 10:00'
 ---

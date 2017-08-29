@@ -1,7 +1,7 @@
 ---
 title: Craft & Cathedrals
 layout: video
-speaker: jaycainesgooby
+author: jaycainesgooby
 vimeo: 181409253
 date: '2016-07-08 14:35'
 ---

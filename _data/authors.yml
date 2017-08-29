@@ -1,134 +1,172 @@
 adamcuppy:
   name: Adam Cuppy
   twitter: adamcuppy
+  image: /images/authors/adamcuppy.jpg
   bio: 'Master of Smile Generation. Ambassador of Company Culture. Tech Entreprenur. Speaker/Educator. One-time Professional Actor @osfashland. Husband. Chief Zealous Officer @CodingZeal'
 adamniedzielski:
   name: Adam Niedzielski
   twitter: niedzielskiadam
+  image: /images/authors/adamniedzielski.jpg
   bio: 'Adam is a programmer that loves teaching people how to write code and sharing his knowledge. He enjoys conferences and local programming meetups as an attendee, speaker and organizer. Adam is obsessed with clean code, but he never forgets that the technology exists to serve its users. He is really proud of his blog.\n\nIn his free time Adam plays board games, drinks craft beer or explores new cities without checking a map.'
 alexcoles:
   name: Alex Coles
   twitter: myabc
+  image: /images/authors/alexcoles.jpg
   bio: 'CTO of education startup Skive and very active in the Ruby community, having founded the annual eurucamp camp/conference and JRubyConf EU.\n\nHe has also contributed extensively to many open-source projects including OpenProject, RefineryCMS and DataMapper.'
 andrewnesbitt:
   name: Andrew Nesbitt
   twitter: teabass
+  image: /images/authors/andrewnesbitt.jpg
   bio: 'Andrew is a freelance software developer, based in Somerset, UK. He spends most of his days programming in Ruby, contributing to open source projects and organising local developer user groups.'
 andycroll:
   name: Andy Croll
   twitter: andycroll
+  image: /images/authors/andycroll.jpg
 andypike:
   name: Andy Pike
   twitter: andypike
+  image: /images/authors/andypike.jpg
 avdigrimm:
   name: Avdi Grimm
   twitter: avdi
+  image: /images/authors/avdigrimm.jpg
 britnialexander:
   name: Britni Alexander
   twitter: TwitniTheGirl
+  image: /images/authors/britnialexander.jpg
 dotwingrove:
   name: Dot Wingrove
   twitter: notthepoint
+  image: /images/authors/dotwingrove.jpg
   bio: 'Co-organiser of @CodebarBrighton, studying maths with @OpenUniversity, humum to @morty_macgrove'
 eileenuchitelle:
   name: Eileen Uchitelle
   twitter: eileencodes
+  image: /images/authors/eileenuchitelle.jpg
 elizadejager:
   name: "Eliza de&nbsp;Jager"
   twitter: code_kitten
+  image: /images/authors/elizadejager.jpg
   bio: 'Developer at Zappi Store.'
 ellemeredith:
   name: Elle Meredith
   twitter: aemeredith
+  image: /images/authors/ellemeredith.jpg
 elliotthilaire:
   name: Elliott Hilaire
   twitter: elliotthilaire
+  image: /images/authors/elliotthilaire.jpg
   bio: 'Elliott writes Ruby at Square Enix and likes to photograph small bitey things. He moved from Australia to London, where there is a shortage of small bitey things.'
 emilystolfo:
   name: Emily Stolfo
   twitter: emstolfo
+  image: /images/authors/emilystolfo.jpg
 emmabeynon:
   name: Emma Beynon
   twitter: emmabeynon
+  image: /images/authors/emmabeynon.jpg
   bio: 'Emma is a junior developer at the Government Digital Service in London, helping make government better for users. A former marketer, she quit her job in late 2015 to undertake a 4-month intensive coding bootcamp. Having successfully landed her first junior position at GDS in early 2016, she has been trying to navigate the developer career path ever since.\n\nWhen she’s not learning how to become a better developer, she enjoys going to gigs, eating burritos and travelling.'
 jaycainesgooby:
   name: Jay Caines-Gooby
   twitter: jaygooby
+  image: /images/authors/jaycainesgooby.jpg
 johncinnamond:
   name: John Cinnamond
   twitter: jcinnamond
+  image: /images/authors/johncinnamond.jpg
 justaminute:
   name: Andrew Faraday
   twitter: marmitejunction
+  image: /images/authors/justaminute.jpg
 justaminute2017:
   name: Andrew Faraday
   twitter: marmitejunction
+  image: /images/authors/justaminute2017.jpg
   bio: 'A tribute to the Radio 4 original, created with Playstation controllers and noises from the radio.'
 kinseyanndurham:
   name: Kinsey Ann Durham
   twitter: KinseyAnnDurham
+  image: /images/authors/kinseyanndurham.jpg
   bio: 'Software Engineer at GoSpotCheck, co-founder [Kubmo](http://kubmo.org), Chair of Bridge Foundry board, mentor @trybloc. Addicted to fly fishing and her dog.'
 lightning2015:
   name: Sonja Heinen, Olga Scott, Tatiana Soukiassian, Robbie Clutton & Alex Sunderland
+  image: /images/authors/lightning2015.jpg
 lucaguidi:
   name: Luca Guidi
   twitter: jodosha
+  image: /images/authors/lucaguidi.jpg
 nadiaodunayo:
   name: Nadia Odunayo
   twitter: nodunayo
+  image: /images/authors/nadiaodunayo.jpg
   bio: 'Nadia co-founded Ignition Works in order to find fun and sustainable ways to build worthwhile software products. She has taught good engineering practices through pair programming at Pivotal Labs and Pivotal Cloud Foundry. She originally learnt to code at Makers Academy and she runs the Ruby Book Club podcast in her spare time.'
 najafali:
   name: Najaf Ali
   twitter: alinajaf
+  image: /images/authors/najafali.jpg
   bio: 'Ali runs a Ruby on Rails consultancy called Happy Bear Software. He has fixed a lot of bugs and trained a lot of junior developers, who also have fixed a lot of bugs.'
 neilmiddleton:
   name: Neil Middleton
   twitter: neilmiddleton
+  image: /images/authors/neilmiddleton.jpg
 patrickmckenzie:
   name: Patrick McKenzie
   twitter: patio11
+  image: /images/authors/patrickmckenzie.jpg
   bio: 'A recovering Japanese salaryman who ran a succession of small software companies. Currently working at Stripe, on Atlas to make it easier to start and scale companies worldwide.'
 philnash:
   name: Phil Nash
   twitter: philnash
+  image: /images/authors/philnash.jpg
 piotrsolnica:
   name: Piotr Solnica
   twitter: _solnic_
+  image: /images/authors/piotrsolnica.jpg
   bio: 'Piotr is a Technical Lead @icelab. Author and core team member @rom_rb and a co-founder and core team member @dry_rb.'
 robmiller:
   name: Rob Miller
   twitter: robmil
+  image: /images/authors/robmiller.jpg
 ryanmcgillivray:
   name: Ryan McGillivray
   twitter: RyanMacG
+  image: /images/authors/ryanmcgillivray.jpg
   bio: 'Ruby guy living in London.'
 samphippen:
   name: Sam Phippen
   twitter: samphippen
+  image: /images/authors/samphippen.jpg
   bio: ''
 sarahallen:
   name: Sarah Allen
   twitter: ultrasaurus
+  image: /images/authors/sarahallen.jpg
   bio: 'Write code, connect pixels and speaks truth to make change. Founder of Bridge Foundry, Mightyverse. Works on the Firebase team at Google.'
 sarahmei:
   name: Sarah Mei
   twitter: sarahmei
+  image: /images/authors/sarahmei.jpg
   bio: 'Chief Consultant at DevMynd Software, out of San Franciso. Founder of Bridge Foundry (Rails Bridge), Director at Ruby Central (organisers of RailsConf & RubyConf).'
 sarasimon:
   name: Sara Simon
   twitter: sarambsimon
+  image: /images/authors/sarasimon.jpg
 saronyitbarek:
   name: Saron Yitbarek
   twitter: saronyitbarek
+  image: /images/authors/saronyitbarek.jpg
   bio: 'Formerly an apprentice herself, she started the CodeNewbie movement: the most supportive community of programmers and people learning to code. Saron will bring her perspective to share ideas for learners and coaches.'
 seangriffin:
   name: Sean Griffin
   twitter: sgrif
+  image: /images/authors/seangriffin.jpg
 tadejmurovec:
   name: Tadej Murovec
   twitter: tadejm
+  image: /images/authors/tadejmurovec.jpg
   bio: 'Passionate Ruby developer, a g33k, indie music lover, petrol–head.'
 xavierriley:
   name: Xavier Riley
   twitter: xavriley
+  image: /images/authors/xavierriley.jpg
   bio: 'Xavier likes music and Ruby, and where possible likes to combine the two. When he’s not procrastinating on side projects he works for Heroku in their support team.'

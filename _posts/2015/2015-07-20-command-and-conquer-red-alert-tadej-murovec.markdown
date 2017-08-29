@@ -1,7 +1,7 @@
 ---
 title: 'Command & Conquer: Red Alert'
 layout: 'video'
-speaker: tadejmurovec
+author: tadejmurovec
 vimeo: '168624857'
 date: '2015-07-20 14:20'
 slides: 'http://www.slideshare.net/tadejm/command-conquer-red-alert'

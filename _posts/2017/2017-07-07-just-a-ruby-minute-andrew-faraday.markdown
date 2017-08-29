@@ -1,7 +1,7 @@
 ---
 title: Just a Ruby Minute
 layout: preview
-speaker: justaminute2017
+author: justaminute2017
 date: '2017-07-07 13:15'
 ---
 

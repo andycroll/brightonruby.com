@@ -1,7 +1,7 @@
 ---
 title: Making Software Fun
 layout: video
-speaker: sarahallen
+author: sarahallen
 vimeo: 168923466
 date: '2015-07-20 09:15'
 ---

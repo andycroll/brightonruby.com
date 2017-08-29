@@ -1,7 +1,7 @@
 ---
 title: Developing Junior Developers
 layout: preview
-speaker: emmabeynon
+author: emmabeynon
 date: '2017-07-07 11:30'
 ---
 

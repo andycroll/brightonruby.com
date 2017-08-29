@@ -31,24 +31,22 @@ layout: default
         <div class="embed-responsive embed-responsive-16by9">
           <iframe src="https://player.vimeo.com/video/{{ page.vimeo }}" width="640" height="480" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
         </div>
-
-        <a href="https://ti.to/goodscary/brighton-ruby-conference-2017" class="btn btn-lg btn-danger mt-2">Buy a ticket to 2017</a>
       </div>
 
       <div class="col-md-5">
         <div class="row">
           <div class="col-md-3">
-            {% assign speaker = site.data.speakers[page.speaker] %}
-            {% if page.speaker %}
-              <img src="/images/speakers/{{ page.speaker }}.jpg" class="img-fluid" alt="{{ speaker.name }}" />
+            {% assign author = site.data.authors[page.author] %}
+            {% if author %}
+              <img src="{{ author.image }}" class="img-fluid" alt="{{ author.name }}" />
             {% endif %}
           </div>
 
           <div class="col-md-9">
             <h2 class="h3 mb-3">
-              {{ speaker.name }}
-              {% if speaker.twitter %}
-                <small><a href="https://twitter.com/{{ speaker.twitter }}">@{{ speaker.twitter }}</a></small>
+              {{ author.name }}
+              {% if author.twitter %}
+                <small><a href="https://twitter.com/{{ author.twitter }}">@{{ author.twitter }}</a></small>
               {% endif %}
             </h2>
             {{ content }}

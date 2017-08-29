@@ -1,7 +1,7 @@
 ---
 title: Debugging For New Developers
 layout: preview
-speaker: najafali
+author: najafali
 date: '2017-07-07 11:10'
 ---
 

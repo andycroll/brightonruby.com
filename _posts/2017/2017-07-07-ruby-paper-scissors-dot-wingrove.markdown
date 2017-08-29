@@ -1,7 +1,7 @@
 ---
 title: Ruby Paper Scissors
 layout: preview
-speaker: dotwingrove
+author: dotwingrove
 date: '2017-07-07 10:00'
 redirect_from:
  - /2017/what-roshambo-can-teach-us-dot-wingrove/

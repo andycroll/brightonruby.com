@@ -1,7 +1,7 @@
 ---
 title: The Soul of Software
 layout: video
-speaker: avdigrimm
+author: avdigrimm
 vimeo: 168182041
 date: '2015-07-20 16:15'
 ---

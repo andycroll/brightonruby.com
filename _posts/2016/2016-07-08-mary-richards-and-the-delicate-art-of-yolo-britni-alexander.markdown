@@ -1,7 +1,7 @@
 ---
 title: Mary Richards and the Delicate Art of YOLO
 layout: video
-speaker: britnialexander
+author: britnialexander
 vimeo: 178734728
 date: '2016-07-08 16:20'
 ---

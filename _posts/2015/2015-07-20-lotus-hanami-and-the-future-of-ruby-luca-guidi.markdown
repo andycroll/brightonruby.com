@@ -1,7 +1,7 @@
 ---
 title: Lotus.rb (Hanami) and the Future of Ruby
 layout: video
-speaker: lucaguidi
+author: lucaguidi
 vimeo: 168034258
 date: '2015-07-20 10:00'
 ---
