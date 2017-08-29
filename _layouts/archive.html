@@ -26,9 +26,7 @@ layout: default
   <article>
     <div class="row">
       <div class="col-9">
-        {% if page_year != '2017' %}
-          <small>Previously...</small>
-        {% endif %}
+        <small>Previously...</small>
         <h1 class="display-2">
           {{ page_year }} /
           {{ page.date | date: "%A, %-d" }}{{ ordinal }} {{ page.date | date: "%B"  }}
@@ -45,9 +43,9 @@ layout: default
             {% if post.break == true %}<hr />{% endif %}
             <div class="row mb-3">
               <div class="col-4 col-sm-2">
-                {% if post.speaker %}
-                  {% assign speaker = site.data.speakers[post.speaker] %}
-                  <img src="/images/speakers/{{ post.speaker }}.jpg" class="img-fluid" alt="{{ speaker.name }}" />
+                {% if post.author %}
+                  {% assign speaker = site.data.authors[post.author] %}
+                  <img src="/images/speakers/{{ post.author }}.jpg" class="img-fluid" alt="{{ author.name }}" />
                 {% else %}
                   &nbsp;
                 {% endif %}
@@ -64,9 +62,9 @@ layout: default
                   {% endif %}
                 </h3>
                 <h4 class="h6">
-                  {{ speaker.name }}
-                  {% if speaker.twitter %}
-                    <small><a href="https://twitter.com/{{ speaker.twitter }}">@{{ speaker.twitter }}</a></small><br />
+                  {{ author.name }}
+                  {% if author.twitter %}
+                    <small><a href="https://twitter.com/{{ author.twitter }}">@{{ author.twitter }}</a></small><br />
                   {% endif %}
                 </h4>
               </div>
@@ -79,20 +77,5 @@ layout: default
         {{ content }}
       </div>
     </div>
-
-    <!-- <div class="row">
-      <div class="col-sm-6 offset-sm-6">
-        <h4 class="h5 text-uppercase">Photos</h4>
-        <div class="row">
-          {% for photo in page.photos %}
-            <div class="col-6">
-              <p>
-                <img src="/images/{{ page.date | date: "%Y" }}/{{ photo.src }}.jpg" alt="{{ photo.alt }}" class="img-fluid" />
-              </p>
-            </div>
-          {% endfor %}
-        </div>
-      </div>
-    </div> -->
   </div>
 </div>
