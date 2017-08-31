@@ -1,10 +1,10 @@
 ---
 title: Boring Ruby Code
-description: 'Ruby is a powerful language and this means that Ruby gives you a good chance to shoot yourself in a foot. “With great power comes great responsibility” and we all love to abuse our powers.'
 author: adamniedzielski
 date: '2017-07-07 15:50'
-layout: video
-image:
+layout: preview
+image: '/images/2017/boring-ruby-code-adam-niedzielski.jpg'
+slides: 'https://speakerdeck.com/adamniedzielski/boring-ruby-code-2'
 ---
 
 Ruby is a powerful language and this means that Ruby gives you a good chance to shoot yourself in a foot. “With great power comes great responsibility” and we all love to abuse our powers.
