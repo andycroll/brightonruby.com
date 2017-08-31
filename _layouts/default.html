@@ -7,10 +7,31 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
   <title>{{ page.title }}</title>
-  <meta name="description" content="{{ page.desc || 'A one day conference in Brighton for Rubyists' }}">
-  <meta name="google-site-verification" content="fzTlgmD4DlpboRN8sNLkyM9OckP6hiNcouLCNpD1upU" />
+  <meta name="description" content="{{ page.description }}">
 
-  <meta name="application-name" content="{{ site.name }}">
+  {% assign page_author = site.data.authors[page.author] %}
+  {% assign page_image = page.image %}
+
+  <meta property="og:title" content="{{ page.title }}">
+  <meta property="og:description" content="{{ page.description }}">
+  <meta property="og:site_name" content="{{ site.name }}">
+  <meta property="og:type" content="article">
+  {% if page_image %}
+    <meta property="og:image" content="{{ page.image | absolute_url }}">
+  {% endif %}
+
+  <meta name="twitter:site" content="@brightonruby">
+  {% if page_author %}
+    <meta name="twitter:creator" content="@{{ page_author.twitter }}">
+  {% else %}
+    <meta name="twitter:creator" content="@andycroll">
+  {% endif %}
+  <meta name="twitter:title" content="{{ page.title }}">
+  <meta name="twitter:description" content="{{ page.description }}">
+  {% if page_image %}
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content="{{ page.image | absolute_url }}">
+  {% endif %}
 
   <link rel="stylesheet" href="/css/brightonruby.css">
 </head>
