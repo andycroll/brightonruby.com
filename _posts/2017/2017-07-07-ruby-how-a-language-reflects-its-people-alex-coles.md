@@ -1,6 +1,6 @@
 ---
 title: 'Ruby: How a Language Reflects its People'
-layout: preview
+layout: video
 author: alexcoles
 date: '2017-07-07 09:40'
 vimeo: 231675233

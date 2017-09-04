@@ -1,6 +1,6 @@
 ---
 title: Ruby Paper Scissors
-layout: preview
+layout: video
 author: dotwingrove
 date: '2017-07-07 10:00'
 redirect_from:
