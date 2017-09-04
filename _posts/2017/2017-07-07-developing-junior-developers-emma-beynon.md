@@ -3,6 +3,8 @@ title: Developing Junior Developers
 layout: preview
 author: emmabeynon
 date: '2017-07-07 11:30'
+vimeo: 230443185
+image: '/images/2017/developing-junior-developers-emma-beynon.jpg'
 ---
 
 Starting out as junior developer can be an overwhelming experience, and sometimes teams don’t have the right tools to support their personal growth.
