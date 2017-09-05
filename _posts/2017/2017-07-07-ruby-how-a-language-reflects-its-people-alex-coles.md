@@ -6,6 +6,7 @@ date: '2017-07-07 09:40'
 vimeo: 231675233
 slides: 'https://speakerdeck.com/myabc/how-a-language-reflects-its-people-brighton-ruby'
 image: '/images/2017/ruby-how-a-language-reflects-its-people-alex-coles.jpg'
+description: 'In human-to-human languages the same core ideas get shaped differently depending on the language in which they are spoken.'
 ---
 
 “The limits of my language mean the limits of my world”, said Wittgenstein.

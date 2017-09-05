@@ -6,6 +6,7 @@ date: '2017-07-07 14:00'
 vimeo: 230210054
 image: '/images/2017/difficult-conversations-adam-cuppy.jpg'
 slides: 'https://speakerdeck.com/acuppy/brighton-ruby-2017-difficult-conversations'
+description: 'It’s never easy to have a tough conversations, and they never go away.'
 ---
 
 It’s never easy to have a tough conversations, and they never go away. Therefore, I see a better way to live with them, and I want everyone to hear it: empower yourself to understand why we do what we do so you can effect change.

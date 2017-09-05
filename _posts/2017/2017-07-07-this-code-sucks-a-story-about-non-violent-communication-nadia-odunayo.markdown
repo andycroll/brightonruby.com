@@ -8,6 +8,7 @@ redirect_from:
 vimeo: 230355123
 slides: 'https://speakerdeck.com/nodunayo/this-code-sucks-a-story-about-nonviolent-communication'
 image: '/images/2017/this-code-sucks-nadia-odunayo.jpg'
+description: 'Think about something that happened at work recently. How did it make you feel? Why did it make you feel that way?'
 ---
 
 Think about something that happened at work recently. How did it make you feel? Why did it make you feel that way?
