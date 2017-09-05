@@ -4,6 +4,7 @@ description: A one day conference in Brighton for Rubyists
 exclude: ['config.ru', 'Gemfile', 'Gemfile.lock', 'vendor']
 permalink: /:year/:title/
 future: true
+url: 'https://brightonruby.com'
 
 sass:
   style: :compressed
