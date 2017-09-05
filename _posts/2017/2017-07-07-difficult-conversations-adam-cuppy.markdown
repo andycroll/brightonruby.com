@@ -1,6 +1,6 @@
 ---
 title: Difficult Conversations
-layout: preview
+layout: video
 author: adamcuppy
 date: '2017-07-07 14:00'
 vimeo: 230210054

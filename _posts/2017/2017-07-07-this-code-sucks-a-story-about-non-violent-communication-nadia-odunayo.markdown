@@ -1,6 +1,6 @@
 ---
 title: 'This Code Sucks: A Story About Non-violent Communication'
-layout: preview
+layout: video
 author: nadiaodunayo
 date: '2017-07-07 14:20'
 redirect_from:
