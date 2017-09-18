@@ -5,6 +5,7 @@ author: sarahmei
 date: '2017-07-07 16:10'
 vimeo: 231672897
 image: '/images/2017/livable-code-sarah-mei.jpg'
+description: 'The modern practice of software isn’t much like architecture or construction. The buildings are largely built. These days, we make a pre-built space work for whoever lives there.'
 ---
 
 The modern practice of software isn’t much like architecture or construction. The buildings are largely built. These days, we make a pre-built space work for whoever lives there.

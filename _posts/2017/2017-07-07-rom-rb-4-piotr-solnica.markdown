@@ -6,6 +6,7 @@ date: '2017-07-07 10:50'
 vimeo: 231674594
 image: '/images/2017/rom-rb-4-piotr-solnica.jpg'
 slides: 'https://speakerdeck.com/solnic/rom-4-dot-0-is-coming'
+description: 'Ruby Object Mapper is an open-source persistence and mapping toolkit for Ruby built for speed and simplicity.'
 ---
 
 Ruby Object Mapper is an open-source persistence and mapping toolkit for Ruby built for speed and simplicity.
