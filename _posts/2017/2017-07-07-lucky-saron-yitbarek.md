@@ -1,8 +1,9 @@
 ---
 title: Lucky
-layout: preview
+layout: video
 author: saronyitbarek
 date: '2017-07-07 09:10'
+vimeo: 232795065
 image: '/images/2017/lucky-saron-yitbarek.jpg'
 ---
 

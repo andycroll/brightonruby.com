@@ -1,8 +1,9 @@
 ---
 title: Eigen What Now?
-layout: preview
+layout: video
 author: elizadejager
 date: '2017-07-07 15:30'
+vimeo: 234104301
 image: '/images/2017/eigen-what-now-eliza-de-jager.jpg'
 slides: 'https://github.com/epdejager/Eigenclasses-Talk/blob/master/talk_framework/Eigen%20What%20Now.pdf'
 ---

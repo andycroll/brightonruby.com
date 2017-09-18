@@ -1,8 +1,9 @@
 ---
 title: Can My Friends Come Too?
-layout: preview
+layout: video
 author: andrewnesbitt
 date: '2017-07-07 14:40'
+vimeo: 234033142
 image: '/images/2017/can-my-friends-come-too-andrew-nesbitt.jpg'
 slides: 'https://speakerdeck.com/andrew/can-my-friends-come-too'
 ---

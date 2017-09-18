@@ -1,6 +1,6 @@
 ---
 title: Livable Code
-layout: preview
+layout: video
 author: sarahmei
 date: '2017-07-07 16:10'
 vimeo: 231672897

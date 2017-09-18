@@ -2,7 +2,8 @@
 title: Boring Ruby Code
 author: adamniedzielski
 date: '2017-07-07 15:50'
-layout: preview
+layout: video
+vimeo: 232857110
 image: '/images/2017/boring-ruby-code-adam-niedzielski.jpg'
 slides: 'https://speakerdeck.com/adamniedzielski/boring-ruby-code-2'
 ---
