@@ -66,24 +66,12 @@
   margin: -0.06em 0 0 -0.02em
 }
 
-@include media-breakpoint-up(lg) {
-  .display-1 {
-    font-size: 54px;
-  }
-  .display-2 {
-    font-size: 32px;
-  }
-}
-
-.siteheader {
+body {
   border-top: 5px solid rgb(174,22,22);
 
   // a { color: black; }
 }
 
-.site-footer {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-}
 .text-white { color: white; }
 .logo { width: 22px; height: 22px; fill: #FFF; }
 .logo-footer { width: 50px; height: 50px; fill: #FFF; }
