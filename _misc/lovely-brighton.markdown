@@ -50,7 +50,7 @@ Home to great independent shops. Some of which you can’t work out how they sur
 
 Between the North Laine and the sea is a warren of streets, known for jewellery and slightly a more boutiquey shop. As you end up toward the sea... restaurants.
 
-#### Western Road
+#### West Street
 
 Walk straight from the station to the sea and as you walk over the main crossroads, you'll find Western Road. A blight on central Brighton featuring spray-clean chain pubs frequented by stag (bachelor) and hen (bachelorette) parties. It'll be dead by Sunday when you arrive. There's a carbuncle of an Odeon cinema at the end of the street by the sea.
 
