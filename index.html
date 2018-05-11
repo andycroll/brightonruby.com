@@ -29,102 +29,26 @@ image: 'images/twitter-image.jpg'
       </div>
     </div>
     <div class="row mb-5">
-      <div class="col-md-6 text-center text-md-right">
-        <p class="h2">Bringing their knowledge, thoughts <span class="amp">&amp;</span> good humour.</p>
-      </div>
-      <div class="col-md-6 text-center text-md-left">
-        <h3 class="h2">Could you be a speaker? <small>(Spoiler: Yes)</small></h3>
-        <p>We welcome applications from new & experienced speakers as well as individuals from under-represented groups.</p>
-        <a href="https://cfp.brightonruby.com" class="btn btn-primary">Submit a Talk</a>
-      </div>
-    </div>
-
-    <hr>
-
-    <div class="row">
-      <div class="col-sm-6">
-        <div class="row">
-          <div class="col-4 mb-3">
-            <img src="/images/authors/kytrinx.jpg" class="img-fluid" />
-          </div>
-          <div class="col-md-8">
-            <h3>Katrina Owen</h3>
-            <p>
-              ...is an ecosystem engineer at GitHub. She accidentally became a developer while
-              pursuing a degree in molecular biology. When programming, her focus is on automation,
-              workflow optimization, and refactoring.
-            </p>
-            <p>
-              She works primarily in Go and Ruby, contributes to several open source projects, and
-              is the creator of exercism.io, a platform for code practice and programming mentorship.
-            </p>
-            <p><a href="https://twitter.com/kytrinyx">@kytrinx</a></p>
-          </div>
-        </div>
+      <div class="col-12 text-center">
+        <p class="h2 mb-3">Bringing their knowledge, thoughts <span class="amp">&amp;</span> good humour.</p>
       </div>
 
-      <div class="col-sm-6">
-        <div class="row">
-          <div class="col-4 mb-3">
-            <img src="/images/authors/nmeans.jpg" class="img-fluid" />
-          </div>
-          <div class="col-md-8">
-            <h3>Nickolas Means</h3>
-            <p>
-              ...is infatuated with disasters of all kinds and the amazing things we
-              can learn from them. When he’s not stuck in a Wikipedia binge loop reading about plane
-              crashes, he leads the engineering team at Muve Health, helping build software to
-              improve the joint replacement experience for patients and their families.
-            </p>
-            <p>
-              He works remotely from Austin, TX, and spends most of his spare time hanging out with
-              his wife and kids or going out for a run.
-            </p>
-            <p><a href="https://twitter.com/nmeans">@nmeans</a></p>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="row">
-      <div class="col-sm-6">
-        <div class="row">
-          <div class="col-4 mb-3">
-            <img src="/images/authors/sarahmei.jpg" class="img-fluid" />
-          </div>
-          <div class="col-md-8">
-            <h3>Sarah Mei</h3>
-            <p>
-              ...is a director of RubyCentral and co-creator of Brodge Foundry. <i>And</i> returning
-              to bring her insight into how we form teams and understand software.
-            </p>
-            <p>
-              She works at Salesforce where she’s developing new understanding of how teams work
-              within a much larger organisation.
-            </p>
-            <p><a href="https://twitter.com/sarahmei">@sarahmei</a></p>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-sm-6">
-        <div class="row">
-          <div class="col-4 mb-3">
-            <img src="/images/authors/aellispierce.jpg" class="img-fluid" />
-          </div>
-          <div class="col-md-8">
-            <h3>Ashley Ellis-Pierce</h3>
-            <p>
-              ... lives in Durham, NC and is an Application Engineer at GitHub. She enjoys helping
-              others learn to code and is the lead organizer for RailsBridge Triangle and a mentor
-              for Code the Dream, an organization that helps minority and immigrant youth break into
-              tech. Her favorite programming languages are Ruby and Elixir.
-            </p>
-            <p>
-              In her free time she enjoys cycling, amateur furniture building, and photography.
-            </p>
-            <p><a href="https://twitter.com/aellispierce">@aellispierce</a></p>
-          </div>
+      <div class="offset-2 col-md-8">
+        {% assign ordered_posts = site.posts | sort: 'date' %}
+        <div class="row mb-3">
+          {% for post in ordered_posts %}
+            {% assign post_year = post.date | date: "%Y" %}
+            {% if post_year == '2018' %}
+              {% if post.break != true %}
+                <div class="col-4">
+                  {% assign author = site.data.authors[post.author] %}
+                  <a href="{{ post.url }}">
+                    <img src="{{ author.image }}" class="img-fluid mb-4" alt="{{ author.name }}" />
+                  </a>
+                </div>
+              {% endif %}
+            {% endif %}
+          {% endfor %}
         </div>
       </div>
     </div>
