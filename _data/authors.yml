@@ -13,11 +13,21 @@ alexcoles:
   twitter: myabc
   image: /images/authors/alexcoles.jpg
   bio: 'CTO of education startup Skive and very active in the Ruby community, having founded the annual eurucamp camp/conference and JRubyConf EU.\n\nHe has also contributed extensively to many open-source projects including OpenProject, RefineryCMS and DataMapper.'
+alexpeattie:
+  name: Alex Peattie
+  twitter: alexpeattie
+  image: /images/authors/alexpeattie.jpg
+  bio: 'Alex is the co-founder and CTO of Peg, a technology platform helping multinational brands and agencies to find and work with top YouTubers.'
 andrewnesbitt:
   name: Andrew Nesbitt
   twitter: teabass
   image: /images/authors/andrewnesbitt.jpg
   bio: 'Andrew is a freelance software developer, based in Somerset, UK. He spends most of his days programming in Ruby, contributing to open source projects and organising local developer user groups.'
+anamartinez:
+  name: Ana Martínez
+  twitter: anamma_06
+  image: /images/authors/anamartinez.jpg
+  bio: 'Ana is in love the open source development. She is currently working at SUSE on the Open Build Service frontend, one of the oldest Rails projects that is still in use.'
 andycroll:
   name: Andy Croll
   twitter: andycroll
@@ -26,6 +36,11 @@ andypike:
   name: Andy Pike
   twitter: andypike
   image: /images/authors/andypike.jpg
+ashleyellispierce:
+  name: Ashley Ellis Pierce
+  twitter: aellispierce
+  image: /images/authors/ashleyellispierce.jpg
+  bio: 'Ashley lives in Durham, NC and is an Application Engineer at GitHub. She enjoys helping others learn to code and is the lead organizer for RailsBridge Triangle and a mentor for Code the Dream'
 avdigrimm:
   name: Avdi Grimm
   twitter: avdi
@@ -66,10 +81,20 @@ emmabeynon:
   twitter: emmabeynon
   image: /images/authors/emmabeynon.jpg
   bio: 'Emma is a junior developer at the Government Digital Service in London, helping make government better for users. A former marketer, she quit her job in late 2015 to undertake a 4-month intensive coding bootcamp. Having successfully landed her first junior position at GDS in early 2016, she has been trying to navigate the developer career path ever since.\n\nWhen she’s not learning how to become a better developer, she enjoys going to gigs, eating burritos and travelling.'
+hannahdwan:
+  name: 'Hannah Dwan'
+  twitter: 'hoeyboey'
+  image: /images/authors/hannahdwan.jpg
+  bio: 'Hannah Dwan is a developer at Happy Bear Software! She used to be a games journalist, but abandoned the glitz and glamour of esports in favour of pull requests and documentation.'
 jaycainesgooby:
   name: Jay Caines-Gooby
   twitter: jaygooby
   image: /images/authors/jaycainesgooby.jpg
+joehart:
+  name: Joe Hart
+  twitter: joehart
+  image: /images/authors/joehart.jpg
+  bio: 'Joe Hart is a comedian who codes, or a software engineer who tells jokes depending on which time of the day he’s asked. He’s built software for the BBC, non profits and is currently making WebVR things for Blend Media.'
 johncinnamond:
   name: John Cinnamond
   twitter: jcinnamond
@@ -83,6 +108,11 @@ justaminute2017:
   twitter: marmitejunction
   image: /images/authors/justaminute2017.jpg
   bio: 'A tribute to the Radio 4 original, created with Playstation controllers and noises from the radio.'
+katrinaowen:
+  name: Katrina Owen
+  twitter: kytrinyx
+  image: /images/authors/kytrinx.jpg
+  bio: 'An ecosystem engineer at GitHub and author. She accidentally became a developer while pursuing a degree in molecular biology. When programming, her focus is on automation, workflow optimization, and refactoring.'
 kinseyanndurham:
   name: Kinsey Ann Durham
   twitter: KinseyAnnDurham
@@ -95,6 +125,11 @@ lucaguidi:
   name: Luca Guidi
   twitter: jodosha
   image: /images/authors/lucaguidi.jpg
+mariagutierrez:
+  name: Maria Gutierrez
+  twitter: mariagutierrez
+  image: /images/authors/mariaguiterrez.jpg
+  bio: 'VP of Engineering at Edinburgh-based FreeAgent. Previously worked at LivingSocial leading globally distributed teams, and at Adobe where she worked in the developer technologies group. Also a Director of the WomenWhoCode Edinburgh network.'
 nadiaodunayo:
   name: Nadia Odunayo
   twitter: nodunayo
@@ -109,6 +144,11 @@ neilmiddleton:
   name: Neil Middleton
   twitter: neilmiddleton
   image: /images/authors/neilmiddleton.jpg
+nickmeans:
+  name: Nick Means
+  twitter: nmeans
+  image: /images/authors/nickmeans.jpg
+  bio: 'Storyteller, empathetic leader, student of disasters, builder of distributed teams. Unabashed AV geek. VP of Engineering at Muve Health.'
 patrickmckenzie:
   name: Patrick McKenzie
   twitter: patio11
@@ -118,6 +158,11 @@ philnash:
   name: Phil Nash
   twitter: philnash
   image: /images/authors/philnash.jpg
+piotrmurach:
+  name: Piotr Murach
+  twitter: piotr_murach
+  image: /images/authors/piotrmurach.jpg
+  bio: 'Software engineer by day, open sourcer by night, mathematician by design and human languages enthusiast life, Piotr has released many open source projects such as tty, finite_machine, github_api. In recent years, Piotr has been obsessively thinking about optimising Ruby terminal applications development.'
 piotrsolnica:
   name: Piotr Solnica
   twitter: _solnic_
@@ -165,6 +210,11 @@ tadejmurovec:
   twitter: tadejm
   image: /images/authors/tadejmurovec.jpg
   bio: 'Passionate Ruby developer, a g33k, indie music lover, petrol–head.'
+tekinsuleyman:
+  name: Tekin Süleyman
+  twitter: tekin
+  image: /images/authors/tekinsuleyman.jpg
+  bio: Senior Ruby/Rails consultant, NWRUG and Rails Girls Manchester organiser. Formally at GDS & Co-op Digital.
 xavierriley:
   name: Xavier Riley
   twitter: xavriley
