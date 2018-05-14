@@ -4,5 +4,5 @@
 // without modifying source files.
 
 $body-color: #ddd;
-$link-color: #fff;
+$link-color: lighten($red, 20%);
 $link-hover-color: $red;
