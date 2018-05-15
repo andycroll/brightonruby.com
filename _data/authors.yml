@@ -8,6 +8,11 @@ adamniedzielski:
   twitter: niedzielskiadam
   image: /images/authors/adamniedzielski.jpg
   bio: 'Adam is a programmer that loves teaching people how to write code and sharing his knowledge. He enjoys conferences and local programming meetups as an attendee, speaker and organizer. Adam is obsessed with clean code, but he never forgets that the technology exists to serve its users. He is really proud of his blog.\n\nIn his free time Adam plays board games, drinks craft beer or explores new cities without checking a map.'
+alexbalhatchet:
+  name: Alex Balhatchet
+  twitter: kaokun
+  image: /images/authors/alexbalhatchet.jpg
+  bio: 'Senior software engineer at CharlieHR, building the HR software for teams with big ideas. Previously CTO at Nestoria so ask me about writing Perl for a decade before switching to Ruby :-)'
 alexcoles:
   name: Alex Coles
   twitter: myabc
@@ -18,6 +23,16 @@ alexpeattie:
   twitter: alexpeattie
   image: /images/authors/alexpeattie.jpg
   bio: 'Alex is the co-founder and CTO of Peg, a technology platform helping multinational brands and agencies to find and work with top YouTubers.'
+alfredomotta:
+  name: Alfredo Motta
+  twitter: mottalrd
+  image: /images/authors/alfredomotta.jpg
+  bio: 'CTO at CreditSpring, protecting people from unexpected financial emergencies. Loves data and scientific experimentation over intuition and learning over being too serious.'
+andrewfaraday:
+  name: Andrew Faraday
+  twitter: marmitejunction
+  image: /images/authors/andrewfaraday.jpg
+  bio: 'Rubyist, music graduate, autistic, international panel game host, kidney donor, follower of Christ. Mostly tweets about politics and software. Host of Just a (Ruby) Minute.'
 andrewnesbitt:
   name: Andrew Nesbitt
   twitter: teabass
@@ -49,6 +64,11 @@ britnialexander:
   name: Britni Alexander
   twitter: TwitniTheGirl
   image: /images/authors/britnialexander.jpg
+danielberzon:
+  name: Danny Berzon
+  twitter: DvBerzon
+  image: /images/authors/danielberzon.jpg
+  bio: 'Danny has worked in Web Development since late last century, Java and Servlets then Ruby on Rails. Currently in a permanent position at Ocasta Studios.'
 dotwingrove:
   name: Dot Wingrove
   twitter: notthepoint
@@ -154,6 +174,11 @@ patrickmckenzie:
   twitter: patio11
   image: /images/authors/patrickmckenzie.jpg
   bio: 'A recovering Japanese salaryman who ran a succession of small software companies. Currently working at Stripe, on Atlas to make it easier to start and scale companies worldwide.'
+paulamuldoon:
+  name: Paula Muldoon
+  twitter: fiddlerscode
+  image: /images/authors/paulamuldoon.jpg
+  bio: 'Engineer at Kurt Geiger, graduated from Makers Academy and University of Michigan. Code by day, music by night.'
 philnash:
   name: Phil Nash
   twitter: philnash
