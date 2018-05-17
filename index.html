@@ -8,44 +8,39 @@ image: 'images/twitter-image.jpg'
   <article>
     <div class="header mb-5">
       <div class="row">
-        <div class="col-sm-6 offset-sm-3 text-center">
-          <p class="h1">Hello. I’m <a class="text-white" href="http://twitter.com/andycroll">Andy</a>.</p>
-        </div>
-        <div class="col-sm-8 offset-sm-3 text-center">
-          <p class="h3">I organise Brighton Ruby.</p>
-        </div>
-        <div class="col-sm-10 offset-sm-1 text-center">
-          <p class="h2">It’s a friendly, single day, single track event for Rubyists and the Ruby-curious.</p>
-        </div>
-        <div class="col-sm-8 offset-sm-2 text-center">
+        <div class="col">
+          <p class="h1 mb-3">
+            <small>Hello.</small><br />
+            I’m <a class="text-white" href="http://twitter.com/andycroll">Andy</a>.
+            You should come to Brighton Ruby.
+          </p>
+          <p class="h2 mb-3">It’s a friendly, single day, single track event for Rubyists and the Ruby-curious.</p>
           <p class="h3">We’re nice. The speakers are ace. You should come.</p>
         </div>
       </div>
     </div>
 
     <div class="row">
-      <div class="col text-center">
-        <p class="h1 mb-4">Lovely Speakers</p>
-      </div>
-    </div>
-    <div class="row mb-5">
-      <div class="col-12 text-center">
-        <p class="h2 mb-3">Bringing their knowledge, thoughts <span class="amp">&amp;</span> good humour.</p>
-      </div>
+      <div class="col mb-5">
+        <p class="h1">
+          Lovely Speakers.
+          <small><a href="/2018">See the schedule</a></small>
+        </p>
 
-      <div class="offset-2 col-md-8">
         {% assign ordered_posts = site.posts | sort: 'date' %}
-        <div class="row mb-3">
+        <div class="row my-3">
           {% for post in ordered_posts %}
             {% assign post_year = post.date | date: "%Y" %}
             {% if post_year == '2018' %}
               {% if post.break != true %}
-                <div class="col-4">
-                  {% assign author = site.data.authors[post.author] %}
-                  <a href="{{ post.url }}">
-                    <img src="{{ author.image }}" class="img-fluid mb-4" alt="{{ author.name }}" />
-                  </a>
-                </div>
+                {% assign author = site.data.authors[post.author] %}
+                {% if post.author != 'andycroll' %}
+                  <div class="col-4">
+                    <a href="{{ post.url }}">
+                      <img src="{{ author.image }}" class="img-fluid mb-4" alt="{{ author.name }}" />
+                    </a>
+                  </div>
+                {% endif %}
               {% endif %}
             {% endif %}
           {% endfor %}
@@ -69,58 +64,67 @@ image: 'images/twitter-image.jpg'
     </div>
 
     <div class="row">
-      <div class="col-sm-4 pt-4 text-right">
-        <h4 class="h1">Gold</h4>
-      </div>
-
-      <div class="col-sm-8">
-        <div class="row">
-          <div class="col-sm-6">
-            <svg viewBox="0 0 400 120" class="img-fluid mb-3">
-              <use xlink:href="#sponsor-freeagent"></use>
-            </svg>
-          </div>
-
-          <div class="col-sm-6">
-            <svg viewBox="0 0 400 120" class="img-fluid mb-3">
-              <use xlink:href="#sponsor-cookpad"></use>
-            </svg>
-          </div>
-        </div>
+      <div class="col py-2 text-center">
+        <h4 class="h5">Gold</h4>
       </div>
     </div>
 
     <div class="row">
-      <div class="col-sm-4 pt-2 text-right">
-        <h4 class="h1">Silver</h4>
+      <div class="col-sm-6">
+        <svg viewBox="0 0 400 120" class="img-fluid mb-3">
+          <use xlink:href="#sponsor-freeagent"></use>
+        </svg>
       </div>
 
-      <div class="col-sm-8">
-        <div class="row">
-          <div class="col-sm-4">
-            <svg viewBox="0 0 400 120" class="img-fluid mb-3">
-              <use xlink:href="#sponsor-carwow"></use>
-            </svg>
-          </div>
-        </div>
+      <div class="col-sm-6">
+        <svg viewBox="0 0 400 120" class="img-fluid mb-3">
+          <use xlink:href="#sponsor-cookpad"></use>
+        </svg>
       </div>
     </div>
 
-    <!--
     <div class="row">
-      <div class="col-sm-4 pt-2 text-right">
-        <h4 class="h1">Friends</h4>
-      </div>
-
-      <div class="col-sm-8">
-        <div class="row">
-          <div class="col-sm-4">
-            Github
-          </div>
-        </div>
+      <div class="col py-2 text-center">
+        <h4 class="h5">Silver</h4>
       </div>
     </div>
-    -->
+
+    <div class="row">
+      <div class="col-6 col-sm-4 offset-sm-4">
+        <svg viewBox="0 0 400 120" class="img-fluid mb-3">
+          <use xlink:href="#sponsor-carwow"></use>
+        </svg>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col py-2 text-center">
+        <h4 class="h6">Friends</h4>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-4 col-sm-3">
+        <svg viewBox="0 0 400 120" class="img-fluid mb-3">
+          <use xlink:href="#sponsor-github"></use>
+        </svg>
+      </div>
+      <div class="col-4 col-sm-3">
+        <svg viewBox="0 0 400 120" class="img-fluid mb-3">
+          <use xlink:href="#sponsor-bloom"></use>
+        </svg>
+      </div>
+      <div class="col-4 col-sm-3">
+        <svg viewBox="0 0 400 120" class="img-fluid mb-3">
+          <use xlink:href="#sponsor-charliehr"></use>
+        </svg>
+      </div>
+      <div class="col-4 col-sm-3">
+        <svg viewBox="0 0 400 120" class="img-fluid mb-3">
+          <use xlink:href="#sponsor-suse"></use>
+        </svg>
+      </div>
+    </div>
 
     <div class="row my-4">
       <div class="col-sm-6">

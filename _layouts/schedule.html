@@ -1,0 +1,77 @@
+---
+layout: default
+---
+
+{% capture day %}{{ page.date | date: "%-d" }}{% endcapture %}
+{% capture dayLastTwoDigits %}{{ day | modulo: 100 }}{% endcapture %}
+{% if dayLastTwoDigits >= "11" and dayLastTwoDigits <= "13" %}
+  {% assign ordinal = "th" %}
+{% else %}
+  {% capture dayLastDigit %}{{ day | modulo: 10 }}{% endcapture %}
+  {% case dayLastDigit %}
+    {% when "1" %}
+      {% assign ordinal = "st" %}
+    {% when "2" %}
+      {% assign ordinal = "nd" %}
+    {% when "3" %}
+      {% assign ordinal = "rd" %}
+    {% else %}
+      {% assign ordinal = "th" %}
+  {% endcase %}
+{% endif %}
+
+{% assign page_year = page.date | date: "%Y" %}
+
+<article>
+  <div class="row">
+    <div class="col-9">
+      <h1 class="h1">
+        <small><a href="/{{ page.date | date: "%Y" }}">{{ page_year }}</a></small><br />
+        {{ page.date | date: "%A, %-d" }}{{ ordinal }} {{ page.date | date: "%B"  }}
+      </h1>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col">
+      {% assign ordered_posts = site.posts | sort: 'date' %}
+      {% for post in ordered_posts %}
+        {% assign post_year = post.date | date: "%Y" %}
+        {% if post_year == page_year %}
+          {% if post.break == true %}<hr />{% endif %}
+          <div class="row mb-3">
+            <div class="col-4 col-sm-2">
+              {% assign author = site.data.authors[post.author] %}
+              {% if author %}
+                <img src="{{ author.image }}" class="img-fluid" alt="{{ author.name }}" />
+              {% else %}
+                &nbsp;
+              {% endif %}
+            </div>
+            <div class="col-8 col-sm-10">
+              <h3 class="h4">
+                <small>{{ post.date | date: "%H:%M" }}</small><br />
+                {% if post.vimeo != nil or post.layout == 'preview' %}
+                  <a href="{{ post.url }}">
+                    {{ post.title }}
+                  </a>
+                {% else %}
+                  {{ post.title }}
+                {% endif %}
+              </h3>
+              <h4 class="h6">
+                {{ author.name }}
+                {% if author.twitter %}
+                  <small><a href="https://twitter.com/{{ author.twitter }}">@{{ author.twitter }}</a></small><br />
+                {% endif %}
+              </h4>
+            </div>
+          </div>
+          {% if post.break == true %}<hr />{% endif %}
+        {% endif %}
+      {% endfor %}
+
+      {{ content }}
+    </div>
+  </div>
+</div>

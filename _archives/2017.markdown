@@ -28,25 +28,25 @@ Just a single-day, single-track Ruby-ish conference looking at you asking you to
 <h3 class="h6 my-4">Gold Sponsors</h3>
 
 <div class="row">
-  <div class="col-12">
+  <div class="col-12 col-sm-6">
     <svg viewBox="0 0 400 120" class="img-fluid mb-3">
       <use xlink:href="#sponsor-bytemark"></use>
     </svg>
   </div>
 
-  <div class="col-12">
+  <div class="col-12 col-sm-6">
     <svg viewBox="0 0 400 120" class="img-fluid mb-3">
       <use xlink:href="#sponsor-freeagent"></use>
     </svg>
   </div>
 
-  <div class="col-12">
+  <div class="col-12 col-sm-6">
     <svg viewBox="0 0 400 120" class="img-fluid mb-3">
       <use xlink:href="#sponsor-hired"></use>
     </svg>
   </div>
 
-  <div class="col-12">
+  <div class="col-12 col-sm-6">
     <svg viewBox="0 0 400 120" class="img-fluid mb-3">
       <use xlink:href="#sponsor-cookpad"></use>
     </svg>
@@ -56,25 +56,25 @@ Just a single-day, single-track Ruby-ish conference looking at you asking you to
 <h3 class="h6 my-4">Silver Sponsors</h3>
 
 <div class="row">
-  <div class="col-6">
+  <div class="col-6 col-sm-4">
     <svg viewBox="0 0 400 120" class="img-fluid mb-3">
       <use xlink:href="#sponsor-carwow"></use>
     </svg>
   </div>
 
-  <div class="col-6">
+  <div class="col-6 col-sm-4">
     <svg viewBox="0 0 400 120" class="img-fluid mb-3">
       <use xlink:href="#sponsor-kyan"></use>
     </svg>
   </div>
 
-  <div class="col-6">
+  <div class="col-6 col-sm-4">
     <svg viewBox="0 0 400 120" class="img-fluid mb-3">
       <use xlink:href="#sponsor-mwr"></use>
     </svg>
   </div>
 
-  <div class="col-6">
+  <div class="col-6 col-sm-4">
     <svg viewBox="0 0 400 120" class="img-fluid mb-3">
       <use xlink:href="#sponsor-palatinate"></use>
     </svg>
@@ -84,13 +84,13 @@ Just a single-day, single-track Ruby-ish conference looking at you asking you to
 <h4 class="h6 my-4">Friends of Brighton Ruby</h4>
 
 <div class="row">
-  <div class="col-4">
+  <div class="col-4 col-sm-3">
     <svg viewBox="0 0 400 120" class="img-fluid mb-3">
       <use xlink:href="#sponsor-heroku"></use>
     </svg>
   </div>
 
-  <div class="col-4">
+  <div class="col-4 col-sm-3">
     <svg viewBox="0 0 400 120" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class="img-fluid mb-3">
       <defs>
         <path d="M39.03 28.53c0-11.9-6.76-22.74-17.65-28.42C16.9.9 8.66 2.8 2.78 7.4.9 8.85 0 10.5.18 12.23c.4 4.82 8.5 9.13 8.57 9.17l.78.5c4.55 2.9 11.44 7.26 12.92 13.84.74 3.3 0 6.83-2.28 10.4-3.4 5.47-8.5 10.25-15.08 14.2-.1.06-.2.2-.2.3 0 .14.1.22.2.2 18.7.03 33.9-14.48 33.9-32.3z" id="a"/>
@@ -120,13 +120,13 @@ Just a single-day, single-track Ruby-ish conference looking at you asking you to
     </svg>
   </div>
 
-  <div class="col-4">
+  <div class="col-4 col-sm-3">
     <svg viewBox="0 0 400 120" class="img-fluid mb-3">
       <use xlink:href="#sponsor-zappi"></use>
     </svg>
   </div>
 
-  <div class="col-4">
+  <div class="col-4 col-sm-3">
     <svg viewBox="0 0 400 120" class="img-fluid mb-3">
       <use xlink:href="#sponsor-depfu"></use>
     </svg>
