@@ -22,59 +22,34 @@ layout: default
 
 {% assign page_year = page.date | date: "%Y" %}
 
-<div class="container-fluid">
-  <article>
-    <div class="row">
-      <div class="col-9">
-        <h1 class="h1">
-          {{ page_year }} /
-          {{ page.date | date: "%A, %-d" }}{{ ordinal }} {{ page.date | date: "%B"  }}
-        </h1>
-      </div>
-    </div>
+<article>
+  <h1 class="h1 mb-4">
+    <small><a href="/{{ page.date | date: "%Y" }}">{{ page_year }}</a></small><br />
+    {{ page.date | date: "%A, %-d" }}{{ ordinal }} {{ page.date | date: "%B"  }}
+  </h1>
 
-    <div class="row">
-      <div class="col-sm-8">
-        {% assign ordered_posts = site.posts | sort: 'date' %}
-        {% for post in ordered_posts %}
-          {% assign post_year = post.date | date: "%Y" %}
-          {% if post_year == page_year %}
-            {% if post.break == true %}<hr />{% endif %}
-            <div class="row mb-3">
-              <div class="col-4 col-sm-2">
-                {% assign author = site.data.authors[post.author] %}
-                {% if author %}
-                  <img src="{{ author.image }}" class="img-fluid" alt="{{ author.name }}" />
-                {% else %}
-                  &nbsp;
-                {% endif %}
-              </div>
-              <div class="col-8 col-sm-10">
-                <h3 class="h4">
-                  <small>{{ post.date | date: "%H:%M" }}</small><br />
-                  {% if post.vimeo != nil or post.layout == 'preview' %}
-                    <a href="{{ post.url }}">
-                      {{ post.title }}
-                    </a>
-                  {% else %}
-                    {{ post.title }}
-                  {% endif %}
-                </h3>
-                <h4 class="h6">
-                  {{ author.name }}
-                  {% if author.twitter %}
-                    <small><a href="https://twitter.com/{{ author.twitter }}">@{{ author.twitter }}</a></small><br />
-                  {% endif %}
-                </h4>
-              </div>
-            </div>
-            {% if post.break == true %}<hr />{% endif %}
-          {% endif %}
-        {% endfor %}
-      </div>
-      <div class="col-4">
-        {{ content }}
-      </div>
-    </div>
+  <div class="row">
+    {% assign ordered_posts = site.posts | sort: 'date' %}
+    {% for post in ordered_posts %}
+      {% assign post_year = post.date | date: "%Y" %}
+      {% if post_year == page_year and post.break != true and post.author != 'andycroll' %}
+        <div class="col-md-6 mb-3">
+          <a href="{{ post.url }}">
+            {% if post.image %}
+              <img src="{{ post.image | absolute_url }}" class="img-fluid mb-2" alt="{{ post.title }}" />
+            {% else %}
+              <img src="/images/brighton-ruby-social.jpg" class="img-fluid mb-2" alt="{{ post.title }}" />
+            {% endif %}
+          </a>
+          {% assign author = site.data.authors[post.author] %}
+          <a href="{{ post.url }}">
+            {{ post.title }}
+          </a> // {{ author.name }}
+
+        </div>
+      {% endif %}
+    {% endfor %}
   </div>
+
+  {{ content }}
 </div>

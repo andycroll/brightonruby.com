@@ -23,40 +23,35 @@ layout: default
 <div class="container-fluid">
   <article>
     <h1 class="mb-3">
+      <small><a href="/{{ page.date | date: "%Y" }}">{{ page.date | date: "%Y" }}</a></small><br />
       {{ page.title }}
     </h1>
 
-    <div class="row">
-      <div class="col-md-7">
-        <div class="embed-responsive embed-responsive-16by9">
-          <iframe src="https://player.vimeo.com/video/{{ page.vimeo }}" width="640" height="480" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-        </div>
+    <div class="embed-responsive embed-responsive-16by9">
+      <iframe src="https://player.vimeo.com/video/{{ page.vimeo }}" width="640" height="480" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+    </div>
 
-        <a href="https://ti.to/goodscary/brighton-ruby-conference-2018" class="btn btn-lg btn-danger mt-2">Buy a ticket to 2018</a>
+    <div class="row mt-4">
+      <div class="col-3">
+        {% assign author = site.data.authors[page.author] %}
+        {% if author %}
+          <img src="{{ author.image }}" class="img-fluid" alt="{{ author.name }}" />
+        {% endif %}
       </div>
 
-      <div class="col-md-5">
-        <div class="row">
-          <div class="col-md-3">
-            {% assign author = site.data.authors[page.author] %}
-            {% if author %}
-              <img src="{{ author.image }}" class="img-fluid" alt="{{ author.name }}" />
-            {% endif %}
-          </div>
+      <div class="col-9">
+        <h2 class="h3 mb-3">
+          {{ author.name }}
+          {% if author.twitter %}
+            <small><a href="https://twitter.com/{{ author.twitter }}">@{{ author.twitter }}</a></small>
+          {% endif %}
+        </h2>
+        {{ author.bio | default: '' | markdownify }}
 
-          <div class="col-md-9">
-            <h2 class="h3 mb-3">
-              {{ author.name }}
-              {% if author.twitter %}
-                <small><a href="https://twitter.com/{{ author.twitter }}">@{{ author.twitter }}</a></small>
-              {% endif %}
-            </h2>
-            {{ content }}
-            <small>{{ page.date | date: "%A, %-d" }}{{ ordinal }} {{ page.date | date: "%B %Y"  }}</small>
-            <p>&nbsp;</p>
-            <p><a href="/{{ page.date | date: "%Y" }}">More Videos</a></p>
-          </div>
-        </div>
+        <hr />
+
+        {{ content }}
+        <small>{{ page.date | date: "%A, %-d" }}{{ ordinal }} {{ page.date | date: "%B %Y"  }}</small>
       </div>
     </div>
   </article>
