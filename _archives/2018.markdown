@@ -13,6 +13,8 @@ photos:
   #- src: andycroll
   #  alt: 'Just a Ruby Minute (Andy Croll)'
 tweets:
+image: 'images/twitter-image.jpg'
+description: 'A terrific lineup, a friendly day. For Rubyists and the Ruby curious.'
 ---
 
 Five? Five? **Five.**
