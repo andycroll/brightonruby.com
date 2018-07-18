@@ -1,6 +1,6 @@
 ---
 layout: default
-title: "Brighton Ruby Conference 2018"
+title: "Brighton Ruby Conference 2019"
 image: 'images/twitter-image.jpg'
 ---
 
@@ -24,7 +24,7 @@ image: 'images/twitter-image.jpg'
       <div class="col mb-5">
         <p class="h1">
           Lovely Speakers.
-          <small><a href="/2018">See the schedule</a></small>
+          <small><a href="/2018">See the schedule for 2018</a></small>
         </p>
 
         {% assign ordered_posts = site.posts | sort: 'date' %}
@@ -34,13 +34,11 @@ image: 'images/twitter-image.jpg'
             {% if post_year == '2018' %}
               {% if post.break != true %}
                 {% assign author = site.data.authors[post.author] %}
-                {% if post.author != 'andycroll' %}
-                  <div class="col-4">
-                    <a href="{{ post.url }}">
-                      <img src="{{ author.image }}" class="img-fluid mb-4" alt="{{ author.name }}" />
-                    </a>
-                  </div>
-                {% endif %}
+                <div class="col-4">
+                  <a href="{{ post.url }}">
+                    <img src="{{ author.image }}" class="img-fluid mb-4" alt="{{ author.name }}" />
+                  </a>
+                </div>
               {% endif %}
             {% endif %}
           {% endfor %}
@@ -50,7 +48,7 @@ image: 'images/twitter-image.jpg'
 
     <div class="row">
       <div class="col text-center">
-        <p class="h1 mb-4">Charming Sponsors</p>
+        <p class="h1 mb-4">2018 Sponsors</p>
       </div>
     </div>
     <div class="row mb-5">
