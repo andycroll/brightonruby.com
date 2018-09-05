@@ -2,7 +2,8 @@
 title: A Branch in Time
 author: tekinsuleyman
 date: '2018-07-06 12:10'
-layout: preview
+layout: video
+vimeo: 280579162
 image: '/images/2018/a-branch-in-time-tekin-suleyman.jpg'
 description: 'A considered history of your code can be powerful. Learn tools and techniques that can mean the difference between hours of frustration and a quick path to clarity.'
 ---
