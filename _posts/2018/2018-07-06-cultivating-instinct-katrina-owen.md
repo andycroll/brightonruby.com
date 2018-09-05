@@ -2,7 +2,8 @@
 title: Cultivating Instinct
 author: katrinaowen
 date: '2018-07-06 10:10'
-layout: preview
+layout: video
+vimeo: 280566451
 image: '/images/2018/cultivating-instinct-katrina-owen.jpg'
 description: 'As novices we slowly and laboriously sift through a chaotic flood of minutia. To experts the significant details are obvious. Irrelevant details fade to the background.'
 ---
