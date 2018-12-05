@@ -2,7 +2,8 @@
 title: 'Ruby-us Hagrid: Writing Harry Potter with Ruby'
 author: alexpeattie
 date: '2018-07-06 16:10'
-layout: preview
+layout: video
+vimeo: 281233495
 image: '/images/2018/writing-harry-potter-with-ruby-alex-peattie.jpg'
 description: 'The average salary for a Ruby programmer is £52k, but the average net worth of a “J. K. Rowling” is more than $1bn! We shouldn’t be writing Ruby code, we should be writing Harry Potter books.'
 ---

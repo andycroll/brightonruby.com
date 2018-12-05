@@ -2,7 +2,8 @@
 title: The Best Worst Software I’ve Ever Written
 author: andrewfaraday
 date: '2018-07-06 14:55'
-layout: preview
+layout: video
+vimeo: 280615166
 image: '/images/2018/the-best-worst-software-ive-ever-written-andrew-faraday.jpg'
 description: 'No Just a (Ruby) Minute this year, but how did the game come to be?'
 redirect_from:

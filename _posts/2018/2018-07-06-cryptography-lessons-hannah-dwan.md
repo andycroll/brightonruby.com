@@ -2,7 +2,8 @@
 title: Cryptography Lessons
 author: hannahdwan
 date: '2018-07-06 15:30'
-layout: preview
+layout: video
+vimeo: 281232268
 image: '/images/2018/cryptography-lessons-hannah-dwan.jpg'
 description: 'Cryptopals is one of the most rewarding ways to learn Ruby, to learn logic and to learn how all the encryption you rely on works.'
 ---

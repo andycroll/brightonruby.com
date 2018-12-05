@@ -2,7 +2,8 @@
 title: Configuration-first Open Source
 author: alexbalhatchet
 date: '2018-07-06 14:40'
-layout: preview
+layout: video
+vimeo: 280614734
 image: '/images/2018/configuration-first-open-source-alex-balhatchet.jpg'
 description: 'You might not realise it, but your Ruby project probably relies on a popular configuration-first OSS project. The tzdata library is updated regularly as time zones and daylight savings rules change more often than you might think!'
 ---

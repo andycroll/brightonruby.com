@@ -2,7 +2,8 @@
 title: The Ruby Alchemist’s Secret Potion
 author: piotrmurach
 date: '2018-07-06 15:50'
-layout: preview
+layout: video
+vimeo: 281232819
 image: '/images/2018/the-ruby-alchemists-secret-potion-piotr-murach.jpg'
 description: 'What if there was a set of simple and potent gems that could exponentially increase productivity when building modern terminal applications such as Bundler, in next to no time?'
 ---
