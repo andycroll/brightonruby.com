@@ -88,14 +88,14 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  bundler
+  bundler (< 2)
   dotenv
   html-proofer
   jekyll
   jekyll-redirect-from
 
 RUBY VERSION
-   ruby 2.4.1p111
+   ruby 2.6.1p33
 
 BUNDLED WITH
-   1.15.4
+   1.17.2

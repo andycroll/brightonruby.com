@@ -1,8 +1,8 @@
-source 'https://rubygems.org'
+source "https://rubygems.org"
 
-ruby '2.4.1'
-gem 'bundler'
-gem 'dotenv'
-gem 'html-proofer'
-gem 'jekyll'
-gem 'jekyll-redirect-from'
+ruby "2.6.1"
+gem "bundler", "<2"
+gem "dotenv"
+gem "html-proofer"
+gem "jekyll"
+gem "jekyll-redirect-from"
