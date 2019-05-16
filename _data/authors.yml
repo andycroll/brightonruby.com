@@ -7,7 +7,7 @@ aaronpatterson:
   name: Aaron Patterson
   twitter: tenderlove
   image: /images/authors/aaronpatterson.jpg
-  bio: 'Likes puns'
+  bio: "Aaron is on the Ruby core team, the Rails core team, and the team that takes care of his cat, Gorby puff.  During the day he works for a small technology company called GitHub.  Someday he will find the perfect safety gear to wear while extreme programming."
 adamniedzielski:
   name: Adam Niedzielski
   twitter: niedzielskiadam
@@ -33,6 +33,11 @@ alfredomotta:
   twitter: mottalrd
   image: /images/authors/alfredomotta.jpg
   bio: 'CTO at CreditSpring, protecting people from unexpected financial emergencies. Loves data and scientific experimentation over intuition and learning over being too serious.'
+aminaadewusi:
+  name: Amina Adewusi
+  twitter: a_adewusi
+  image: /images/authors/aminaadewusi.jpg
+  bio: "Amina Adewusi is a Junior Developer at Error and taught herself how to code after discovering open source."
 andrewfaraday:
   name: Andrew Faraday
   twitter: marmitejunction
@@ -106,6 +111,16 @@ emmabeynon:
   twitter: emmabeynon
   image: /images/authors/emmabeynon.jpg
   bio: 'Emma is a junior developer at the Government Digital Service in London, helping make government better for users. A former marketer, she quit her job in late 2015 to undertake a 4-month intensive coding bootcamp. Having successfully landed her first junior position at GDS in early 2016, she has been trying to navigate the developer career path ever since.\n\nWhen she’s not learning how to become a better developer, she enjoys going to gigs, eating burritos and travelling.'
+frederickcheung:
+  name: Frederick Cheung
+  twitter: fglc2
+  image: /images/authors/frederickcheung.jpg
+  bio: "CTO at Dressipi, long time Rubyist and Ruby Hero 2012."
+garethmarlow:
+  name: Gareth Marlow
+  twitter:
+  image: /images/authors/garethmarlow.jpg
+  bio: "Executive coach at eqsystems.io; formerly COO at Redgate Software; Father of four; renaissance man."
 hannahdwan:
   name: 'Hannah Dwan'
   twitter: 'hoeyboey'
@@ -155,6 +170,16 @@ mariagutierrez:
   twitter: mariagutierrez
   image: /images/authors/mariaguiterrez.jpg
   bio: 'VP of Engineering at Edinburgh-based FreeAgent. Previously worked at LivingSocial leading globally distributed teams, and at Adobe where she worked in the developer technologies group. Also a Director of the WomenWhoCode Edinburgh network.'
+matiaskorhonen:
+  name: Matias Korhonen
+  twitter: matiaskorhonen
+  image: /images/authors/matiaskorhonen.jpg
+  bio: "Matias has been writing Ruby for almost a decade and in his spare time he's a beer enthusiast and general internet astronaut."
+matthewrudyjacobs:
+  name: Matthew Ruby Jacobs
+  twitter: matthewrudy
+  bio: "Engineer at Babylon Health, and Organiser of Hong Kong Code Conf."
+  image: /images/authors/matthewrudyjacobs.jpg
 nadiaodunayo:
   name: Nadia Odunayo
   twitter: nodunayo
@@ -174,6 +199,11 @@ nickmeans:
   twitter: nmeans
   image: /images/authors/nickmeans.jpg
   bio: 'Storyteller, empathetic leader, student of disasters, builder of distributed teams. Unabashed AV geek. VP of Engineering at Muve Health.'
+noahgibbs:
+  name: Noah Gibbs
+  twitter: codefolio
+  image: /images/authors/noahgibbs.jpg
+  bio: "Noah is a Ruby Fellow for AppFolio, working on the core Ruby language and related tooling. After over 30 years of communicating with computers, Noah now believes that communicating with humans may not be a passing fad, and he’s trying it out."
 patrickmckenzie:
   name: Patrick McKenzie
   twitter: patio11
@@ -235,6 +265,11 @@ seangriffin:
   name: Sean Griffin
   twitter: sgrif
   image: /images/authors/seangriffin.jpg
+sroopsunar:
+  name: Sroop Sunar
+  twitter: sroopsunar
+  bio: "Sroop Sunar is a Software Developer (and employee #1) at Peg. Before that, she worked at Thoughtbot, and in a previous life was an illustrator and graphic designer."
+  image: /images/authors/sroopsunar.jpg
 tadejmurovec:
   name: Tadej Murovec
   twitter: tadejm
@@ -250,6 +285,11 @@ vaidehijoshi:
   twitter: vaidehijoshi
   image: /images/authors/vaidehijoshi.jpg
   bio: 'Creator of Base CS'
+valeriewoolardsrinivasan:
+  name: Valerie Woolard Srinivasan
+  twitter: valeriecodes
+  image: /images/authors/valeriewoolardsrinivasan.jpg
+  bio: "Valerie loves writing software, running marathons, and baking desserts."
 xavierriley:
   name: Xavier Riley
   twitter: xavriley
