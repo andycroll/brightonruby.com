@@ -1,0 +1,28 @@
+---
+title: '2019 Schedule'
+date: '2019-07-05'
+layout: 'schedule'
+gold:
+  - freeagent
+  - cookpad
+  - trx
+  - simply_business
+silver:
+  - loco2
+  - cleo
+  - immmersive_labs
+  -
+friend:
+  - bloom_and_wild
+  - dressipi
+  - appfolio
+  - error
+photos:
+  #- src: andycroll
+  #  alt: 'Just a Ruby Minute (Andy Croll)'
+tweets:
+image: 'images/twitter-image.jpg'
+description: 'A terrific lineup, a friendly day. For Rubyists and the Ruby curious.'
+---
+
+In a world divided, one conference continues to try to bring good humans together. And give them Ruby knowledge. And ice cream.
