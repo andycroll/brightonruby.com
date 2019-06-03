@@ -1,7 +1,7 @@
 ---
 title: From Developer to Architect (and back again)
 author: matthewrudyjacobs
-date: '2019-07-05 12:30'
+date: '2019-07-05 11:30'
 layout: preview
 image: '/images/2019/from-developer-to-architect-and-back-again-matthew-rudy-jacobs.jpg'
 description: "Weren’t Software Architects a thing in the 90s, cast away when we learnt about Agile?"

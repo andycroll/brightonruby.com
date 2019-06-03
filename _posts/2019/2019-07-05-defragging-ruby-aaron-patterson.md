@@ -1,7 +1,7 @@
 ---
 title: Defragging Ruby
 author: aaronpatterson
-date: '2019-07-05 16:30'
+date: '2019-07-05 17:00'
 layout: preview
 image: '/images/2019/defragging-ruby-aaron-patterson.jpg'
 description: "It’s been said that programmers like garbage collectors, so let’s take a look at Ruby’s GC!"

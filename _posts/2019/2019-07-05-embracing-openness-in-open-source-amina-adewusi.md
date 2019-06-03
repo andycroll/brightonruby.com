@@ -1,7 +1,7 @@
 ---
 title: Embracing Openness in Open Source
 author: aminaadewusi
-date: '2019-07-05 12:20'
+date: '2019-07-05 11:40'
 layout: preview
 image: '/images/2019/embracing-openness-in-open-source-amina-adewusi.jpg'
 description: "How you avoid stumbling blocks when you start out in Open Source projects"

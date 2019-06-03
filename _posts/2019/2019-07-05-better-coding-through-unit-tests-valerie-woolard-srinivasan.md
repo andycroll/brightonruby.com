@@ -1,7 +1,7 @@
 ---
 title: Better Coding Through Unit Tests
 author: valeriewoolardsrinivasan
-date: "2019-07-05 11:00"
+date: "2019-07-05 14:00"
 layout: preview
 image: '/images/2019/better-coding-through-unit-tests-valerie-woolard-srinivasan.jpg'
 description: "We all know that testing is important. But it’s also hard to get right."

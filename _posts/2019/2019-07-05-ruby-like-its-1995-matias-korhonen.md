@@ -1,9 +1,9 @@
 ---
 title: Ruby like it’s 1995
 author: matiaskorhonen
-date: '2019-07-05 12:50'
+date: '2019-07-05 16:30'
 layout: preview
-image: '/images/2019/from-developer-to-architect-and-back-again-matthew-rudy-jacobs.jpg'
+image: '/images/2019/2019-07-05-ruby-like-its-1995-matias-korhonen.jpg'
 description: "Running Ruby 0.95"
 ---
 
