@@ -87,21 +87,15 @@ image: 'images/twitter-image.jpg'
 
     <div class="row">
       <div class="col-sm-6">
-        <svg viewBox="0 0 400 120" class="img-fluid mb-3">
-          <use xlink:href="#sponsor-freeagent"></use>
-        </svg>
+        <img class="img-fluid mb-3" mb-3 src="data:image/svg+xml;base64,{{ site.data.sponsors['freeagent'].base64logo }}" />
       </div>
 
       <div class="col-sm-6">
-        <svg viewBox="0 0 400 120" class="img-fluid mb-3">
-          <use xlink:href="#sponsor-cookpad"></use>
-        </svg>
+        <img class="img-fluid mb-3" mb-3 src="data:image/svg+xml;base64,{{ site.data.sponsors['cookpad'].base64logo }}" />
       </div>
 
       <div class="col-sm-6">
-        <svg viewBox="0 0 400 120" class="img-fluid mb-3">
-          <use xlink:href="#sponsor-trx"></use>
-        </svg>
+        <img class="img-fluid mb-3" mb-3 src="data:image/svg+xml;base64,{{ site.data.sponsors['trx'].base64logo }}" />
       </div>
 
       <div class="col-sm-6">
@@ -123,6 +117,14 @@ image: 'images/twitter-image.jpg'
       <div class="col-6 col-sm-4 mb-3">
         <img class="img-fluid mb-3" src="data:image/svg+xml;base64,{{ site.data.sponsors['loco2'].base64logo }}" />
       </div>
+
+      <div class="offset-3 col-6 offset-sm-2 col-sm-4 mb-3">
+        <img class="img-fluid mb-3" src="data:image/svg+xml;base64,{{ site.data.sponsors['immersive_labs'].base64logo }}" />
+      </div>
+
+      <div class="col-6 col-sm-4 mb-3">
+        <img class="img-fluid mb-3" src="data:image/svg+xml;base64,{{ site.data.sponsors['nexmo'].base64logo }}" />
+      </div>
     </div>
 
     <div class="row">
@@ -133,9 +135,7 @@ image: 'images/twitter-image.jpg'
 
     <div class="row">
       <div class="col-4 col-sm-3">
-        <svg viewBox="0 0 400 120" class="img-fluid mb-3">
-          <use xlink:href="#sponsor-bloom"></use>
-        </svg>
+        <img class="img-fluid mb-3" src="data:image/svg+xml;base64,{{ site.data.sponsors['bloom_and_wild'].base64logo }}" />
       </div>
 
       <div class="col-4 col-sm-3">
@@ -148,6 +148,10 @@ image: 'images/twitter-image.jpg'
 
       <div class="col-4 col-sm-3">
         <img class="img-fluid mb-3" src="data:image/svg+xml;base64,{{ site.data.sponsors['error'].base64logo }}" />
+      </div>
+
+      <div class="col-4 col-sm-3">
+        <img class="img-fluid mb-3" src="data:image/svg+xml;base64,{{ site.data.sponsors['p92'].base64logo }}" />
       </div>
     </div>
 
