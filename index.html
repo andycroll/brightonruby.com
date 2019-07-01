@@ -47,7 +47,7 @@ image: 'images/twitter-image.jpg'
                     <div class="col-9">
                       <h3 class="h5">
                         <small>
-                          <a href="https://twitter.com/{{ author.twitter }}" class="text-white">{{ author.name }}</a></small>
+                          <a href="https://twitter.com/{{ author.twitter }}" class="text-white">{{ author.name }}</a>
                         </small>
                         <br />
                         <a href="{{ post.url }}">
@@ -167,7 +167,9 @@ image: 'images/twitter-image.jpg'
       </div>
 
       <div class="col-4 col-sm-3">
-        <img class="img-fluid mb-3" src="data:image/svg+xml;base64,{{ site.data.sponsors['p92'].base64logo }}" />
+        <a href="{{ site.data.sponsors['p92'].url }}" target="_blank">
+          <img class="img-fluid mb-3" src="data:image/svg+xml;base64,{{ site.data.sponsors['p92'].base64logo }}" />
+        </a>
       </div>
     </div>
 
