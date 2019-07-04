@@ -1,203 +1,166 @@
 ---
-layout: default
+layout: "default"
 title: "Brighton Ruby Conference 2019"
 image: 'images/twitter-image.jpg'
 ---
 
-<div class="container-fluid">
-  <article>
-    <div class="header mb-5">
-      <div class="row">
-        <div class="col">
-          <p class="h1 mb-3">
-            <small>Hello.</small><br />
-            I’m <a class="text-white" href="http://twitter.com/andycroll">Andy</a>.
-            You should come to Brighton Ruby.
-          </p>
-          <p class="h2 mb-3">It’s a friendly, single day, single track event for Rubyists and the Ruby-curious.</p>
-          <p class="h3">We’re nice. The speakers are ace.</p>
-          <p>Last year’s videos are <a href="/2018">available</a> if you are interested.</p>
-        </div>
-      </div>
-    </div>
+<div class="row">
+  <div class="col-12 col-md-9">
+    {% assign ordered_posts = site.posts | sort: 'date' %}
+    {% for post in ordered_posts %}
+      {% assign post_year = post.date | date: "%Y" %}
+      {% if post_year == "2019" %}
+        {% if post.break == true %}<hr class="my-2" />{% endif %}
 
-    <div class="row">
-      <div class="col-12 mb-5">
-        <p class="h1">
-          Lovely Speakers.
-          <small>Brilliant Brains</small>
-        </p>
-
-        <div class="row my-3">
-          {% assign ordered_posts = site.posts | sort: 'date' %}
-          {% for post in ordered_posts %}
-            {% assign post_year = post.date | date: "%Y" %}
-            {% if post_year == '2019' %}
-              {% if post.break != true %}
-                <div class="col-10 col-sm-6 mb-3">
-                  <div class="row">
-                    <div class="col-3">
-                      {% assign author = site.data.authors[post.author] %}
-                      {% if author %}
-                        <img src="{{ author.image }}" class="img-fluid" alt="{{ author.name }}" />
-                      {% else %}
-                        &nbsp;
-                      {% endif %}
-                    </div>
-                    <div class="col-9">
-                      <h3 class="h5">
-                        <small>
-                          <a href="https://twitter.com/{{ author.twitter }}" class="text-white">{{ author.name }}</a>
-                        </small>
-                        <br />
-                        <a href="{{ post.url }}">
-                          {{ post.title }}
-                        </a>
-                      </h3>
-                    </div>
-                  </div>
-                </div>
-              {% endif %}
-            {% endif %}
-          {% endfor %}
-        </div>
-      </div>
-    </div>
-
-    <div class="row">
-      <div class="col text-center">
-        <p class="h1 mb-4">Sponsors</p>
-      </div>
-    </div>
-    <div class="row mb-5">
-      <div class="col-md-6 text-center text-md-right">
-        <p class="h2">This conference simply doesn’t happen without their support.</p>
-      </div>
-      <div class="col-md-6 text-center text-md-left">
-        <h3 class="h2 mb-4">Would your company be a sponsor?</h3>
-        <a href="/sponsorship/sponsor-brighton-ruby-2019.pdf" class="btn btn-primary">Find out more</a>
-      </div>
-    </div>
-
-    <div class="row">
-      <div class="col py-2 text-center">
-        <h4 class="h5">Gold</h4>
-      </div>
-    </div>
-
-    <div class="row">
-      <div class="col-sm-6">
-        <a href="{{ site.data.sponsors['freeagent'].url }}" target="_blank">
-          <img class="img-fluid mb-3" mb-3 src="data:image/svg+xml;base64,{{ site.data.sponsors['freeagent'].base64logo }}" />
-        </a>
-      </div>
-
-      <div class="col-sm-6">
-        <a href="{{ site.data.sponsors['cookpad'].url }}" target="_blank">
-          <img class="img-fluid mb-3" mb-3 src="data:image/svg+xml;base64,{{ site.data.sponsors['cookpad'].base64logo }}" />
-        </a>
-      </div>
-
-      <div class="col-sm-6">
-        <a href="{{ site.data.sponsors['trx'].url }}" target="_blank">
-          <img class="img-fluid mb-3" mb-3 src="data:image/svg+xml;base64,{{ site.data.sponsors['trx'].base64logo }}" />
-        </a>
-      </div>
-
-      <div class="col-sm-6">
-        <a href="{{ site.data.sponsors['simply_business'].url }}" target="_blank">
-          <img class="img-fluid" mb-3 src="data:image/svg+xml;base64,{{ site.data.sponsors['simply_business'].base64logo }}" />
-        </a>
-      </div>
-    </div>
-
-    <div class="row">
-      <div class="col py-2 text-center">
-        <h4 class="h5">Silver</h4>
-      </div>
-    </div>
-
-    <div class="row">
-      <div class="offset-3 col-6 offset-sm-2 col-sm-4 mb-3">
-        <a href="{{ site.data.sponsors['cleo'].url }}" target="_blank">
-          <img class="img-fluid mb-3" src="data:image/svg+xml;base64,{{ site.data.sponsors['cleo'].base64logo }}" />
-        </a>
-      </div>
-
-      <div class="col-6 col-sm-4 mb-3">
-        <a href="{{ site.data.sponsors['loco2'].url }}" target="_blank">
-          <img class="img-fluid mb-3" src="data:image/svg+xml;base64,{{ site.data.sponsors['loco2'].base64logo }}" />
-        </a>
-      </div>
-
-      <div class="offset-3 col-6 offset-sm-2 col-sm-4 mb-3">
-        <a href="{{ site.data.sponsors['immersive_labs'].url }}" target="_blank">
-          <img class="img-fluid mb-3" src="data:image/svg+xml;base64,{{ site.data.sponsors['immersive_labs'].base64logo }}" />
-        </a>
-      </div>
-
-      <div class="col-6 col-sm-4 mb-3">
-        <a href="{{ site.data.sponsors['nexmo'].url }}" target="_blank">
-          <img class="img-fluid mb-3" src="data:image/svg+xml;base64,{{ site.data.sponsors['nexmo'].base64logo }}" />
-        </a>
-      </div>
-    </div>
-
-    <div class="row">
-      <div class="col py-2 text-center">
-        <h4 class="h6">Friends</h4>
-      </div>
-    </div>
-
-    <div class="row">
-      <div class="col-4 col-sm-3">
-        <img class="img-fluid mb-3" src="data:image/svg+xml;base64,{{ site.data.sponsors['bloom_and_wild'].base64logo }}" />
-      </div>
-
-      <div class="col-4 col-sm-3">
-        <img class="img-fluid mb-3" src="data:image/svg+xml;base64,{{ site.data.sponsors['dressipi'].base64logo }}" />
-      </div>
-
-      <div class="col-4 col-sm-3">
-        <img class="img-fluid mb-3" src="data:image/svg+xml;base64,{{ site.data.sponsors['appfolio'].base64logo }}" />
-      </div>
-
-      <div class="col-4 col-sm-3">
-        <img class="img-fluid mb-3" src="data:image/svg+xml;base64,{{ site.data.sponsors['error'].base64logo }}" />
-      </div>
-
-      <div class="col-4 col-sm-3">
-        <a href="{{ site.data.sponsors['p92'].url }}" target="_blank">
-          <img class="img-fluid mb-3" src="data:image/svg+xml;base64,{{ site.data.sponsors['p92'].base64logo }}" />
-        </a>
-      </div>
-    </div>
-
-    <div class="row my-4">
-      <div class="col-sm-6">
-        <h4 class="">Code of conduct?</h4>
-        <p><a href="/misc/code-of-conduct" title="Code of Conduct">Yup</a>. Brighton Ruby Conference is a harassment-free experience for everyone. With that in mind we have a brief code of conduct. It's not draconian, we merely want everyone to enjoy themselves and be considerate of everyone else. <em>Matz is nice, so we are nice.</em></p>
-      </div>
-
-      <div class="col-sm-6">
-        <div class="mb-4">
-          <h4 class="">What is Brighton Like?</h4>
-          <p>Well I think it's <a href="/misc/lovely-brighton" title="Brighton Guide">like this.</a></p>
-
-          <h4 class="">Where Should I Stay?</h4>
-          <p>I put people in the <a href="http://myhotels.com/brighton/location/">My Hotel</a>. I’ve also used the <a href="http://www.ibis.com/gb/hotel-6444-ibis-brighton-city-centre/index.shtml" title="Brighton Guide">Ibis Brighton</a> in past years as well.</p>
-        </div>
-      </div>
-    </div>
-
-    <div class="row my-5">
-      {% for archive in site.archives %}
-        {% for photo in archive.photos limit:3 %}
-          <div class="col-2 mb-3">
-            <img src="/images/{{ archive.date | date: "%Y" }}/{{ photo.src }}.jpg" alt="{{ photo.alt }}" class="img-fluid" />
+        <div class="row mb-2">
+          <div class="col-3 col-md-2">
+            <div class="row mb-2">
+              <div class="col-8 offset-4">
+                {% assign author = site.data.authors[post.author] %}
+                {% if author %}
+                  <a href="{{ post.url }}">
+                    <img src="{{ author.image }}" class="img-fluid mt-1" alt="{{ author.name }}" />
+                  </a>
+                {% else %}
+                  &nbsp;
+                {% endif %}
+              </div>
+            </div>
           </div>
-        {% endfor %}
-      {% endfor %}
+          <div class="col-9 col-md-10">
+            <p class="mb-0">
+              <small>
+                {{ post.date | date: "%H:%M" }}
+                {% if author %}
+                  • {{ author.name }}
+                  {% if author.twitter %}
+                    <small><a href="https://twitter.com/{{ author.twitter }}" class="text-white">@{{ author.twitter }}</a></small>
+                  {% endif %}
+                {% endif %}
+              </small><br />
+              {% assign author = site.data.authors[post.author] %}
+              {% if post.vimeo != nil or post.layout == 'preview' %}
+                <a href="{{ post.url }}" class="text-white">
+                  {{ post.title }}
+                </a>
+              {% else %}
+                {{ post.title }}
+              {% endif %}
+            </p>
+          </div>
+        </div>
+
+        {% if post.break == true %}<hr class="my-2" />{% endif %}
+      {% endif %}
+    {% endfor %}
+  </div>
+  <div class="col-12 col-md-3">
+    <div class="row">
+      <div class="col-9 offset-3 col-md-12 offset-md-0">
+        <h4 class="h6 text-uppercase my-3">Gold</h4>
+
+        <div class="row">
+          <div class="col-11">
+            <a href="{{ site.data.sponsors['freeagent'].url }}" target="_blank">
+              <img class="img-fluid mb-3" mb-3 src="data:image/svg+xml;base64,{{ site.data.sponsors['freeagent'].base64logo }}" />
+            </a>
+          </div>
+
+          <div class="col-11">
+            <a href="{{ site.data.sponsors['cookpad'].url }}" target="_blank">
+              <img class="img-fluid mb-3" mb-3 src="data:image/svg+xml;base64,{{ site.data.sponsors['cookpad'].base64logo }}" />
+            </a>
+          </div>
+
+          <div class="col-11">
+            <a href="{{ site.data.sponsors['trx'].url }}" target="_blank">
+              <img class="img-fluid mb-3" mb-3 src="data:image/svg+xml;base64,{{ site.data.sponsors['trx'].base64logo }}" />
+            </a>
+          </div>
+
+          <div class="col-11">
+            <a href="{{ site.data.sponsors['simply_business'].url }}" target="_blank">
+              <img class="img-fluid" mb-3 src="data:image/svg+xml;base64,{{ site.data.sponsors['simply_business'].base64logo }}" />
+            </a>
+          </div>
+        </div>
+
+        <h4 class="h6 text-uppercase mt-5 mb-1">Silver</h4>
+
+        <div class="row">
+          <div class="col-8 mb-3">
+            <a href="{{ site.data.sponsors['cleo'].url }}" target="_blank">
+              <img class="img-fluid mb-3" src="data:image/svg+xml;base64,{{ site.data.sponsors['cleo'].base64logo }}" />
+            </a>
+          </div>
+
+          <div class="col-8 mb-3">
+            <a href="{{ site.data.sponsors['loco2'].url }}" target="_blank">
+              <img class="img-fluid mb-3" src="data:image/svg+xml;base64,{{ site.data.sponsors['loco2'].base64logo }}" />
+            </a>
+          </div>
+
+          <div class="col-8 mb-3">
+            <a href="{{ site.data.sponsors['immersive_labs'].url }}" target="_blank">
+              <img class="img-fluid mb-3" src="data:image/svg+xml;base64,{{ site.data.sponsors['immersive_labs'].base64logo }}" />
+            </a>
+          </div>
+
+          <div class="col-8 mb-3">
+            <a href="{{ site.data.sponsors['nexmo'].url }}" target="_blank">
+              <img class="img-fluid mb-3" src="data:image/svg+xml;base64,{{ site.data.sponsors['nexmo'].base64logo }}" />
+            </a>
+          </div>
+        </div>
+
+        <h4 class="h6 text-uppercase mt-5 mb-1">Friends</h4>
+
+        <div class="row">
+          <div class="col-6">
+            <img class="img-fluid mb-3" src="data:image/svg+xml;base64,{{ site.data.sponsors['bloom_and_wild'].base64logo }}" />
+          </div>
+
+          <div class="col-6">
+            <img class="img-fluid mb-3" src="data:image/svg+xml;base64,{{ site.data.sponsors['dressipi'].base64logo }}" />
+          </div>
+
+          <div class="col-6">
+            <img class="img-fluid mb-3" src="data:image/svg+xml;base64,{{ site.data.sponsors['appfolio'].base64logo }}" />
+          </div>
+
+          <div class="col-6">
+            <img class="img-fluid mb-3" src="data:image/svg+xml;base64,{{ site.data.sponsors['error'].base64logo }}" />
+          </div>
+
+          <div class="col-6">
+            <a href="{{ site.data.sponsors['p92'].url }}" target="_blank">
+              <img class="img-fluid mb-3" src="data:image/svg+xml;base64,{{ site.data.sponsors['p92'].base64logo }}" />
+            </a>
+          </div>
+        </div>
+
+      </div>
     </div>
-  </article>
+
+  </div>
+</div>
+
+</div>
+</div>
+</div>
+<hr />
+<div class="container-fluid">
+
+<div class="row">
+  <div class="col-sm-6 col-md-5 offset-md-2">
+    <h4>Code of conduct</h4>
+    <p><a href="/misc/code-of-conduct" title="Code of Conduct">Yup</a>. Brighton Ruby Conference is a harassment-free experience for everyone. <em>Matz is nice, so we are nice.</em></p>
+  </div>
+
+  <div class="col-sm-6 col-md-5">
+    <div class="mb-4">
+      <h4>What is Brighton Like?</h4>
+      <p>Well I think it's <a href="/misc/lovely-brighton" title="Brighton Guide">like this.</a></p>
+    </div>
+  </div>
 </div>
