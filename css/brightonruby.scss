@@ -1,16 +1,18 @@
 ---
 ---
 
+$red: rgb(174,22,22);
+$dark: rgb(5,5,5);
+$grid-gutter-width-base: 18px;
+$link-color: lighten($red, 15%);
+
 // Core variables and mixins
+@import "bootstrap/functions";
 @import "bootstrap/variables";
 @import "bootstrap/mixins";
-@import "bootstrap/custom";
-
-// Reset and dependencies
-@import "bootstrap/normalize";
-@import "bootstrap/print";
 
 // Core CSS
+@import "bootstrap/root";
 @import "bootstrap/reboot";
 @import "bootstrap/type";
 @import "bootstrap/images";
@@ -37,17 +39,19 @@
 // @import "bootstrap/progress";
 // @import "bootstrap/media";
 // @import "bootstrap/list-group";
-@import "bootstrap/responsive-embed";
 // @import "bootstrap/close";
 
 // Components w/ JavaScript
+// @import "bootstrap/toasts";
 // @import "bootstrap/modal";
 // @import "bootstrap/tooltip";
 // @import "bootstrap/popover";
 // @import "bootstrap/carousel";
 
 // Utility classes
+// @import "bootstrap/spinners";
 @import "bootstrap/utilities";
+// @import "bootstrap/print";
 
 .text-georgia {
   font-family: Georgia, serif;
@@ -72,8 +76,6 @@ body {
   // a { color: black; }
 }
 
-.text-white { color: $gray-light; }
-.text-muted { color: $gray-lighter; }
 .logo { width: 22px; height: 22px; fill: #FFF; }
 .logo-footer { width: 50px; height: 50px; fill: #FFF; }
 .no-link:hover { text-decoration: none }

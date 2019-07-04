@@ -1,20 +1,17 @@
 /*!
- * Bootstrap v4.0.0-alpha.6 (https://getbootstrap.com)
- * Copyright 2011-2017 The Bootstrap Authors
- * Copyright 2011-2017 Twitter, Inc.
+ * Bootstrap v4.3.1 (https://getbootstrap.com/)
+ * Copyright 2011-2019 The Bootstrap Authors
+ * Copyright 2011-2019 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
 
 // Core variables and mixins
+@import "bootstrap/functions";
 @import "bootstrap/variables";
 @import "bootstrap/mixins";
-@import "bootstrap/custom";
-
-// Reset and dependencies
-@import "bootstrap/normalize";
-@import "bootstrap/print";
 
 // Core CSS
+@import "bootstrap/root";
 @import "bootstrap/reboot";
 @import "bootstrap/type";
 @import "bootstrap/images";
@@ -41,14 +38,16 @@
 @import "bootstrap/progress";
 @import "bootstrap/media";
 @import "bootstrap/list-group";
-@import "bootstrap/responsive-embed";
 @import "bootstrap/close";
 
 // Components w/ JavaScript
+@import "bootstrap/toasts";
 @import "bootstrap/modal";
 @import "bootstrap/tooltip";
 @import "bootstrap/popover";
 @import "bootstrap/carousel";
 
 // Utility classes
+@import "bootstrap/spinners";
 @import "bootstrap/utilities";
+@import "bootstrap/print";
