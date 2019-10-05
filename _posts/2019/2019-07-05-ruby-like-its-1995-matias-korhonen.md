@@ -2,7 +2,8 @@
 title: Ruby like it’s 1995
 author: matiaskorhonen
 date: '2019-07-05 16:30'
-layout: preview
+layout: video
+vimeo: "348784158"
 image: "/images/2019/ruby-like-its-1995-matias-korhonen.jpg"
 description: "Running Ruby 0.95"
 ---
