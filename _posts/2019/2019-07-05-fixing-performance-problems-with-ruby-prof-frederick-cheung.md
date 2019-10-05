@@ -1,9 +1,9 @@
 ---
-title: "Fixing Performance Problems
-with ruby-prof"
+title: "Fixing Performance Problems with ruby-prof"
 author: frederickcheung
 date: '2019-07-05 11:50'
-layout: preview
+layout: video
+vimeo: "348668015"
 image: "/images/2019/fixing-performance-problems-with-ruby-prof-frederick-cheung.jpg"
 description: "Ruby makes writing expressive code easy, but writing fast code isn’t always easy and can be a bit of a black art."
 ---
