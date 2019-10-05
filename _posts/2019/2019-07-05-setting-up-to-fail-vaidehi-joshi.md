@@ -2,7 +2,8 @@
 title: Setting Up To Fail
 author: vaidehijoshi
 date: '2019-07-05 10:00'
-layout: preview
+layout: video
+vimeo: "348532736"
 #image: '/images/2019/vaidehi-joshi.jpg'
 description: 'What do we really mean when we design towards fault-tolerant systems'
 redirect:
