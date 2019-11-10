@@ -28,6 +28,8 @@ layout: default
     {{ page.date | date: "%A, %-d" }}{{ ordinal }} {{ page.date | date: "%B"  }}
   </h1>
 
+  {{ content }}
+
   <div class="row">
     {% assign ordered_posts = site.posts | sort: 'date' %}
     {% for post in ordered_posts %}
@@ -51,5 +53,42 @@ layout: default
     {% endfor %}
   </div>
 
-  {{ content }}
-</div>
+  <div class="row">
+    <div class="col-6">
+      <h4 class="h6 text-uppercase text-center my-3">Gold</h4>
+      <div class="row">
+        {% for sponsor in page.gold %}
+          <div class="col-11 mb-3">
+            <a href="{{ site.data.sponsors[sponsor].url }}" target="_blank">
+              <img class="img-fluid mb-3" mb-3 src="data:image/svg+xml;base64,{{ site.data.sponsors[sponsor].base64logo }}" />
+            </a>
+          </div>
+        {% endfor %}
+      </div>
+    </div>
+
+    <div class="col-6">
+      <h4 class="h6 text-uppercase text-center my-3">Silver</h4>
+      <div class="row">
+        {% for sponsor in page.silver %}
+          <div class="col-6 mb-3">
+            <a href="{{ site.data.sponsors[sponsor].url }}" target="_blank">
+              <img class="img-fluid mb-3" mb-3 src="data:image/svg+xml;base64,{{ site.data.sponsors[sponsor].base64logo }}" />
+            </a>
+          </div>
+        {% endfor %}
+      </div>
+
+      <h4 class="h6 text-uppercase text-center my-3">Friends</h4>
+      <div class="row">
+        {% for sponsor in page.friend %}
+          <div class="col-4 mb-3">
+            <a href="{{ site.data.sponsors[sponsor].url }}" target="_blank">
+              <img class="img-fluid mb-3" mb-3 src="data:image/svg+xml;base64,{{ site.data.sponsors[sponsor].base64logo }}" />
+            </a>
+          </div>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</article>

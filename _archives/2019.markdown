@@ -1,7 +1,7 @@
 ---
 title: '2019 Schedule'
 date: '2019-07-05'
-layout: 'schedule'
+layout: 'archive'
 gold:
   - freeagent
   - cookpad
@@ -10,8 +10,8 @@ gold:
 silver:
   - loco2
   - cleo
-  - immmersive_labs
-  -
+  - immersive_labs
+  - nexmo
 friend:
   - bloom_and_wild
   - dressipi
