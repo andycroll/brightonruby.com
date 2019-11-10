@@ -28,7 +28,7 @@ layout: default
 
   <p><img src="{{ page.image | absolute_url }}" class="img-fluid" /></p>
 
-  <div class="row">
+  <div class="row" style="min-height: 50vh">
     <div class="col-3 mb-2">
       {% assign author = site.data.authors[page.author] %}
       {% if author %}

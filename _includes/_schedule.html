@@ -1,0 +1,47 @@
+{% assign ordered_posts = site.posts | sort: 'date' %}
+{% for post in ordered_posts %}
+  {% assign post_year = post.date | date: "%Y" %}
+  {% if post_year == "2020" %}
+    {% if post.break == true %}<hr class="my-2" />{% endif %}
+
+    <div class="row mb-2">
+      <div class="col-3 col-md-2">
+        <div class="row mb-2">
+          <div class="col-8 offset-4">
+            {% assign author = site.data.authors[post.author] %}
+            {% if author %}
+              <a href="{{ post.url }}">
+                <img src="{{ author.image }}" class="img-fluid mt-1" alt="{{ author.name }}" />
+              </a>
+            {% else %}
+              &nbsp;
+            {% endif %}
+          </div>
+        </div>
+      </div>
+      <div class="col-9 col-md-10">
+        <p class="mb-0">
+          <small>
+            {{ post.date | date: "%H:%M" }}
+            {% if author %}
+              • {{ author.name }}
+              {% if author.twitter %}
+                <small><a href="https://twitter.com/{{ author.twitter }}" class="text-white">@{{ author.twitter }}</a></small>
+              {% endif %}
+            {% endif %}
+          </small><br />
+          {% assign author = site.data.authors[post.author] %}
+          {% if post.vimeo != nil or post.layout == 'preview' %}
+            <a href="{{ post.url }}" class="text-white">
+              {{ post.title }}
+            </a>
+          {% else %}
+            {{ post.title }}
+          {% endif %}
+        </p>
+      </div>
+    </div>
+
+    {% if post.break == true %}<hr class="my-2" />{% endif %}
+  {% endif %}
+{% endfor %}
