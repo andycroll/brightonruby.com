@@ -3,7 +3,7 @@ title: The Life Changing Magic of Tidying Technical Debt
 author: sroopsunar
 date: '2019-07-05 14:30'
 layout: preview
-#image: '/images/2019/life-changing-magic-of-tidying-technical-debt-sroop-sunar.jpg'
+image: "/images/2019/life-changing-magic-of-tidying-technical-debt-sroop-sunar.jpg"
 description: "Should we be aiming for clean code, or tidy code?"
 ---
 

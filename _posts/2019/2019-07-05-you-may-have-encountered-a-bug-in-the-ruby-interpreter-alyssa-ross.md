@@ -3,7 +3,7 @@ title: You may have encountered a bug in the Ruby interpreter
 author: alyssaross
 date: "2019-07-05 16:00"
 layout: preview
-#image: '/images/2019/you-may-have-encountered-a-bug-in-the-ruby-interpreter-alyssa-ross.jpg'
+image: "/images/2019/you-may-have-encountered-a-bug-in-the-ruby-interpreter-alyssa-ross.jpg"
 description: "People say “it’s never a compiler error”. But very occasionally... it is."
 ---
 
