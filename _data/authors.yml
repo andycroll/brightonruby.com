@@ -33,6 +33,11 @@ alfredomotta:
   twitter: mottalrd
   image: /images/authors/alfredomotta.jpg
   bio: 'CTO at CreditSpring, protecting people from unexpected financial emergencies. Loves data and scientific experimentation over intuition and learning over being too serious.'
+allisonmcmillan:
+  name: Allison McMillan
+  twitter: allie_p
+  image: /images/authors/allisonmcmillan.jpg
+  bio: "Allison McMillan is a Senior Engineering Manager at GitHub and the creator of the Parent Driven Development podcast."
 alyssaross:
   name: Alyssa Ross
   twitter: qyliss
@@ -42,7 +47,7 @@ aminaadewusi:
   name: Amina Adewusi
   twitter: a_adewusi
   image: /images/authors/aminaadewusi.jpg
-  bio: "Amina Adewusi is a Junior Developer at Error and taught herself how to code after discovering open source."
+  bio: "Amina is an Associate Software Engineer at the Guardian in London. She seeks to represent the voice of new developers in the software engineering industry and is passionate about encouraging under-represented groups into tech."
 andrewfaraday:
   name: Andrew Faraday
   twitter: marmitejunction
@@ -93,6 +98,7 @@ eileenuchitelle:
   name: Eileen Uchitelle
   twitter: eileencodes
   image: /images/authors/eileenuchitelle.jpg
+  bio: "Staff Engineer on the Ruby Architecture Team at GitHub and a member of the Rails Core team. She’s an avid contributor to open source focusing on the Ruby on Rails framework and its dependencies. Eileen is passionate about scalability, performance, and making open source communities more sustainable and welcoming."
 elizadejager:
   name: "Eliza de&nbsp;Jager"
   twitter: code_kitten
@@ -111,6 +117,11 @@ emilystolfo:
   name: Emily Stolfo
   twitter: emstolfo
   image: /images/authors/emilystolfo.jpg
+emmabarnes:
+  name: Emma Barnes
+  twitter: has_many_books
+  image: /images/authors/emmabarnes.jpg
+  bio: 'Book publisher turned programmer. She runs generalproducts.co, makers of consonance.app, as well as indie publisher snowbooks.com, and she maintains schools publishing app makeourbook.com on Side Project Fridays. She works in a first floor office in a market town in the Oxfordshire countryside, which attracts a local cat that visits through the window.'
 emmabeynon:
   name: Emma Beynon
   twitter: emmabeynon
@@ -219,6 +230,11 @@ paulamuldoon:
   twitter: fiddlerscode
   image: /images/authors/paulamuldoon.jpg
   bio: 'Engineer at Kurt Geiger, graduated from Makers Academy and University of Michigan. Code by day, music by night.'
+penelopephippen:
+  name: Penelope Phippen
+  twitter: penelopezone
+  image: /images/authors/penelopephippen.jpg
+  bio: "Cursedly obsessed with the Ruby parser and maintained RSpec for a number of years. Currently works at Google as a Developer Advocate. She is a trans woman, originally hailing from the Romsey, Hampshire, but currently lives in New York. She loves all things Ruby, and is super excited to meet you at Brighton Ruby!"
 philnash:
   name: Phil Nash
   twitter: philnash

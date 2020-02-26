@@ -1,0 +1,26 @@
+<div class="row">
+   <div class="col mb-5">
+     <p class="h1">
+       Lovely Speakers. <a href="https://cfp.brightonruby.com" class="btn btn-outline-light">Be a speaker</a><br />
+       <small>A handful for now</small>
+
+     </p>
+
+     {% assign ordered_posts = site.posts | sort: 'date' %}
+     <div class="row my-3">
+       {% for post in ordered_posts %}
+         {% assign post_year = post.date | date: "%Y" %}
+         {% if post_year == include.year %}
+           {% if post.break != true %}
+             {% assign author = site.data.authors[post.author] %}
+             <div class="col-4 col-md-3">
+               <a href="https://twitter.com/{{ author.twitter }}">
+                 <img src="{{ author.image }}" class="img-fluid mb-4" alt="{{ author.name }}" />
+               </a>
+             </div>
+           {% endif %}
+         {% endif %}
+       {% endfor %}
+     </div>
+   </div>
+</div>
