@@ -1,11 +1,11 @@
 ---
-title: Fresh from Keynoting RailsConf
+title: Technically a Talk
 author: eileenuchitelle
 date: '2020-07-03 10:00'
-layout: preview
-vimeo:
+layout: video
+vimeo: "429052766"
 # image: "/images/2019/from-developer-to-architect-and-back-again-matthew-rudy-jacobs.jpg"
-description: "A multiple RailsConf keynoter and core Rails team member"
+description: "Extracting multipe database support from Github"
 ---
 
-To come
+Eileen talks through her experiences building a major feature—multiple database support—in Rails 6 and why she does the (good!) work she does for the Rails community.
