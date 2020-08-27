@@ -1,20 +1,19 @@
 ---
 title: '2020 Schedule'
 date: '2020-07-03'
-layout: 'schedule'
+layout: 'archive'
 ruby:
- - "freeagent"
 gold:
  - "cookpad"
- - "simply_business"
+ - "freeagent"
 silver:
 friend:
 photos:
 tweets:
 image: 'images/twitter-image.jpg'
-description: 'Year Seven'
+description: 'Alt::BrightonRuby'
 ---
 
-Every year, with every conference we’re getting better any better.
+A slightly odd, quasi-conference for strange times.
 
-Did you know that Ruby isn’t dead?
+There was no in-person Brighton Ruby, because we were al shut in our houses. It’s recorded talks, it’s a physical book, it’s a podcast. Delivered throughout June/July/August 2020.
