@@ -1,5 +1,5 @@
 ---
-title: The 14-day No Laptop Challenge
+title: "The 14-day No Laptop Challenge"
 author: joshpuetz
 date: '2020-07-03 11:00'
 layout: video
