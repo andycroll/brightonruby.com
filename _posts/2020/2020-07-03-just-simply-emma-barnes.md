@@ -1,10 +1,9 @@
 ---
-title: From Developer to Architect (and back again)
+title: Just Simply
 author: emmabarnes
-date: '2020-07-03 11:30'
-layout: preview
-vimeo:
-# image: "/images/2019/from-developer-to-architect-and-back-again-matthew-rudy-jacobs.jpg"
+date: '2020-07-03 12:00'
+layout: video
+vimeo: "428796895"
 description: "A talk that’s painfully simple, really obvious and frighteningly easy"
 ---
 
