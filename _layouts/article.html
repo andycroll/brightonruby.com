@@ -2,13 +2,10 @@
 layout: default
 ---
 
-<div class="container-fluid">
-  <article>
-    <div class="row">
-      <div class="col-sm-12">
-        <h1>{{ page.title }}</h1>
-        {{ content }}
-      </div>
-    </div>
-  </article>
-</div>
+<article class="">
+  <h1 class="text-3xl text-center leading-tight mb-8">{{ page.title }}</h1>
+
+  <div class="prose bg-white p-4 rounded max-w-2xl mx-auto">
+    {{ content }}
+  </div>
+</article>

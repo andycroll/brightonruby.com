@@ -3,7 +3,7 @@ title: You may have encountered a bug in the Ruby interpreter
 author: alyssaross
 date: "2019-07-05 16:00"
 layout: video
-vimeo: "348782162"
+video_source: "videos.brightonruby.com/videos/2019/alyssa-you-may-have-encountered-a-bug-in-the-ruby-interpreter.mp4"
 image: "/images/2019/you-may-have-encountered-a-bug-in-the-ruby-interpreter-alyssa-ross.jpg"
 description: "People say “it’s never a compiler error”. But very occasionally... it is."
 ---

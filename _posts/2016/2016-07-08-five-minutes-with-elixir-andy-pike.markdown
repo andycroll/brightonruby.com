@@ -2,7 +2,7 @@
 title: Five Minutes with Elixir
 layout: video
 author: andypike
-vimeo: 181409249
+video_source: "videos.brightonruby.com/videos/2016/andy-five-minutes-with-elixir.mp4"
 date: '2016-07-08 14:30'
 ---
 

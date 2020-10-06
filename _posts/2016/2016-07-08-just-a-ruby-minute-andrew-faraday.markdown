@@ -2,7 +2,7 @@
 title: Just a Ruby Minute
 layout: video
 author: justaminute
-vimeo: 181854772
+video_source: "videos.brightonruby.com/videos/2016/just-a-ruby-minute-2016.mp4"
 date: '2016-07-08 14:00'
 ---
 

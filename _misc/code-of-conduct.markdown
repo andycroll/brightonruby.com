@@ -5,11 +5,7 @@ redirect_from:
   - /2014/code-of-conduct.html
 ---
 
----
-
-### For a expanded video where I talk about what this means... see [2018’s introduction](/2018/welcome-code-of-conduct-andy-croll)
-
----
+#### For a expanded video where I talk about what this means... see [2018’s introduction](/2018/welcome-code-of-conduct-andy-croll)
 
 All attendees, speakers, sponsors & volunteers at our conference are required to agree with the following code of conduct. We will enforce this code throughout the event. We expect all participants to help create a safe environment for everybody.
 

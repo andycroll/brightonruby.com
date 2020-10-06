@@ -3,7 +3,7 @@ title: "Six Years of Ruby Performance: A History"
 author: noahgibbs
 date: '2019-07-05 15:00'
 layout: video
-vimeo: "348778570"
+video_source: "videos.brightonruby.com/videos/2019/noah-six-years-of-ruby-performance-a-history.mp4"
 image: "/images/2019/six-years-of-ruby-performance-noah-gibbs.jpg"
 description: "How fast is Ruby 2.6? How do I measure? How close is Ruby 3x3? Should I upgrade?"
 ---

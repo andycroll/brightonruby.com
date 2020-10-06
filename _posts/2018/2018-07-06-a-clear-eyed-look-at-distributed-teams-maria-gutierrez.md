@@ -3,7 +3,7 @@ title: A Clear-eyed Look at Distributed Teams
 author: mariagutierrez
 date: '2018-07-06 14:20'
 layout: video
-vimeo: 280583335
+video_source: "videos.brightonruby.com/videos/2018/maria-a-clear-eyed-look-at-distributed-teams.mp4"
 image: '/images/2018/a-clear-eyed-look-at-distributed-teams-maria-gutierrez.jpg'
 description: 'Distributed teams can have big benefits for both employers and employees. But there are many challenges.'
 ---

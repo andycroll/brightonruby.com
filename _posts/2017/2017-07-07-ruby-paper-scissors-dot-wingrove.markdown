@@ -5,7 +5,7 @@ author: dotwingrove
 date: '2017-07-07 10:00'
 redirect_from:
  - /2017/what-roshambo-can-teach-us-dot-wingrove/
-vimeo: 231114547
+video_source: "videos.brightonruby.com/videos/2017/dot-ruby-paper-scissors.mp4"
 slides: "http://slides.com/dorothyjane/ruby-paper-scissors/"
 image: "/images/2017/ruby-paper-scissors-dot-wingrove.jpg"
 description: 'Let’s explore approaches and techniques used to build a successful RoShamBo bot.'

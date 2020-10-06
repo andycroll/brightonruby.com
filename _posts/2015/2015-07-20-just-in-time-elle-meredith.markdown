@@ -2,7 +2,7 @@
 title: Just in Time
 layout: video
 author: ellemeredith
-vimeo: 168624856
+video_source: "videos.brightonruby.com/videos/2015/elle-just-in-time.mp4"
 date: '2015-07-20 11:00'
 ---
 

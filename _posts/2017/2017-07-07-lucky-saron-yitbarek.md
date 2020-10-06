@@ -3,7 +3,7 @@ title: Lucky
 layout: video
 author: saronyitbarek
 date: '2017-07-07 09:10'
-vimeo: 232795065
+video_source: "videos.brightonruby.com/videos/2017/saron-lucky.mp4"
 image: '/images/2017/lucky-saron-yitbarek.jpg'
 description: 'Being an open source contributor requires many resources we often take for granted: technical knowledge, confidence in that knowledge, access to technical tools, and a socioeconomic status that allows us to code without financial compensation. These resources are inaccessible to many, if not most.'
 ---

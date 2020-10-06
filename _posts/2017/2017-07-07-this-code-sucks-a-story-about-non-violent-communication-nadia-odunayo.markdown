@@ -5,7 +5,7 @@ author: nadiaodunayo
 date: '2017-07-07 14:20'
 redirect_from:
  - /2017/this-code-sucks-a-story-about-non-violent-programming-nadia-odunayo/
-vimeo: 230355123
+video_source: "videos.brightonruby.com/videos/2017/nadia-this-code-sucks-a-story-about-non-violent-communication.mp4"
 slides: 'https://speakerdeck.com/nodunayo/this-code-sucks-a-story-about-nonviolent-communication'
 image: '/images/2017/this-code-sucks-nadia-odunayo.jpg'
 description: 'Think about something that happened at work recently. How did it make you feel? Why did it make you feel that way?'

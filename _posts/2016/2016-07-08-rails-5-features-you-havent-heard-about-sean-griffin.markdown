@@ -2,7 +2,7 @@
 title: Rails 5 Features You Haven’t Heard About
 layout: video
 author: seangriffin
-vimeo: 180888392
+video_source: "videos.brightonruby.com/videos/2016/sean-rails-5-features-you-haven’t-heard-about.mp4"
 date: '2016-07-08 15:00'
 ---
 

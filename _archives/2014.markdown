@@ -1,18 +1,7 @@
 ---
-title: '2014 Archive'
+layout: article
+title: '2014'
 date: '2014-07-21'
-layout: 'archive'
-sponsors:
-  - name: 'Bytemark Hosting'
-    link: 'http://bytemark-hosting.com/r/brightonruby'
-  - name: 'Pivotal Labs'
-    link: 'http://pivotallabs.com'
-  - name: 'FreeAgent'
-    link: 'http://freeagent.com'
-  - name: 'Funding Circle'
-    link: 'http://fundingcircle.com'
-  - name: 'Kyan'
-    link: 'http://kyan.com'
 photos:
   - src: andrewfrance
     alt: 'Apres (Andrew France - Flickr)'
@@ -47,6 +36,9 @@ And the sun shone, people dressed as Jedi, Laurent Sansonetti live coded an Andr
 
 No-one died in the sweltering conditions, so I'm basically calling it a win.
 
+Supported by [Bytemark Hosting](http://bytemark-hosting.com/r/brightonruby), [Pivotal Labs](http://pivotallabs.com), [FreeAgent](http://bit.ly/38L8H9i), [Funding Circle](http://fundingcircle.com) & [Kyan](http://kyan.com).
+
+<!--
 - time: '09:00'
   title: 'May the Ruby be with you'
   author:
@@ -103,3 +95,4 @@ No-one died in the sweltering conditions, so I'm basically calling it a win.
   author:
     - name: 'tenderlove'
       twitter: 'Aaron Patterson'
+-->

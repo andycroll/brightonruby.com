@@ -5,9 +5,8 @@ layout: 'archive'
 gold:
   - freeagent
   - bytemark
-  - pivotallabs
 silver:
-  - notonthehighstreet
+  # - notonthehighstreet
   - unboxed
 photos:
   - src: andycroll

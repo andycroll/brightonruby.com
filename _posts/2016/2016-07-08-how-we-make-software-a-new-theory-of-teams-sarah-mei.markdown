@@ -2,7 +2,7 @@
 title: "How We Make Software: A New Theory of Teams"
 layout: video
 author: sarahmei
-vimeo: 178469403
+video_source: "videos.brightonruby.com/videos/2016/sarah-how-we-make-software_-a-new-theory-of-teams.mp4"
 date: '2016-07-08 16:40'
 ---
 

@@ -2,7 +2,7 @@
 title: The Function of Bias
 layout: video
 author: sarasimon
-vimeo: 179819139
+video_source: "videos.brightonruby.com/videos/2016/sara-the-function-of-bias.mp4"
 date: '2016-07-08 11:20'
 ---
 

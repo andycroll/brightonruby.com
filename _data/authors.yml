@@ -13,6 +13,10 @@ adamniedzielski:
   twitter: niedzielskiadam
   image: /images/authors/adamniedzielski.jpg
   bio: 'Adam is a programmer that loves teaching people how to write code and sharing his knowledge. He enjoys conferences and local programming meetups as an attendee, speaker and organizer. Adam is obsessed with clean code, but he never forgets that the technology exists to serve its users. He is really proud of his blog.\n\nIn his free time Adam plays board games, drinks craft beer or explores new cities without checking a map.'
+alandonahoe:
+  name: "Alan Donahoe"
+  twitter: CoderDonohoe
+  image: /images/authors/alandonahoe.jpg
 alexbalhatchet:
   name: Alex Balhatchet
   twitter: kaokun
@@ -71,6 +75,10 @@ andypike:
   name: Andy Pike
   twitter: andypike
   image: /images/authors/andypike.jpg
+anjuananeikasimmons:
+  name: "Anjuan & Aneika Simmons"
+  twitter: anjuan
+  image: /images/authors/anjuananeikasimmons.png
 ashleyellispierce:
   name: Ashley Ellis Pierce
   twitter: aellispierce
@@ -190,6 +198,11 @@ mariagutierrez:
   twitter: mariagutierrez
   image: /images/authors/mariaguiterrez.jpg
   bio: 'VP of Engineering at Edinburgh-based FreeAgent. Previously worked at LivingSocial leading globally distributed teams, and at Adobe where she worked in the developer technologies group. Also a Director of the WomenWhoCode Edinburgh network.'
+marybethlee:
+  name: Mary Lee
+  twitter: marybethlee11
+  bio: "Senior developer at Hashrocket, host of pgcasts"
+  image: /images/authors/marylee.jpg
 matiaskorhonen:
   name: Matias Korhonen
   twitter: matiaskorhonen
@@ -210,6 +223,11 @@ najafali:
   twitter: alinajaf
   image: /images/authors/najafali.jpg
   bio: 'Ali runs a Ruby on Rails consultancy called Happy Bear Software. He has fixed a lot of bugs and trained a lot of junior developers, who also have fixed a lot of bugs.'
+nateberkopec:
+  name: Nate Berkopec
+  twitter: nateberkopec
+  image: /images/authors/nateberkopec.jpg
+  bio: "Rails performance consultant at Speedshop"
 neilmiddleton:
   name: Neil Middleton
   twitter: neilmiddleton

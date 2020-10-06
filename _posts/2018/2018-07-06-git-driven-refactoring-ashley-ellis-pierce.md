@@ -3,7 +3,7 @@ title: Git-driven Refactoring
 author: ashleyellispierce
 date: '2018-07-06 11:30'
 layout: video
-vimeo: 280569771
+video_source: "videos.brightonruby.com/videos/2018/ashley-git-driven-refactoring.mp4"
 image: '/images/2018/git-driven-refactoring-ashley-ellis-pierce.jpg'
 description: 'Often we know that our code needs refactoring, but we have no idea where to start.'
 ---
