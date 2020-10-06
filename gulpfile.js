@@ -1,7 +1,6 @@
 const { dest, parallel, series, src, watch } = require('gulp')
 const browserSync = require('browser-sync')
 const del = require('del')
-const postcss = require('gulp-postcss')
 const run = require('gulp-run')
 
 const server = browserSync.create()
