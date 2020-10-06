@@ -2,7 +2,7 @@
 title: Hubs & Spokes on Rails
 layout: video
 author: patrickmckenzie
-vimeo: 181103691
+video_source: "videos.brightonruby.com/videos/2016/patrick-hubs-and-spokes-on-rails.mp4"
 date: '2016-07-08 16:00'
 ---
 

@@ -3,7 +3,7 @@ title: From Developer to Architect (and back again)
 author: matthewrudyjacobs
 date: '2019-07-05 11:30'
 layout: video
-vimeo: "348664663"
+video_source: "videos.brightonruby.com/videos/2019/matthew-from-developer-to-architect-and-back-again.mp4"
 image: "/images/2019/from-developer-to-architect-and-back-again-matthew-rudy-jacobs.jpg"
 description: "Weren’t Software Architects a thing in the 90s, cast away when we learnt about Agile?"
 ---

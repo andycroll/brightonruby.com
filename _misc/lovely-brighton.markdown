@@ -17,7 +17,7 @@ You name it we have it.
 * Gay capital of Europe. [Check](http://www.brighton-pride.org).
 * Oldest still working cinema in the UK. [Check](http://www.picturehouses.co.uk/cinema/Duke_Of_Yorks/).
 * Second largest Arts Festival in the UK. [Check](http://brightonfestival.org).
-* Cycle rides from London. [Crazies](http://www.londonbrightoncycle.co.uk).
+* Cycle rides from London. [Eeep](http://www.londonbrightoncycle.co.uk).
 * Lovely Georgian arts venue and museum. [Check](http://brightondome.org). _Also our conference venue._ :-)
 
 For more about the city there's always [wikipedia](https://en.wikipedia.org/wiki/Brighton).
@@ -28,11 +28,15 @@ For more about the city there's always [wikipedia](https://en.wikipedia.org/wiki
 
 #### The Ibis
 
-If people are staying in Brighton they are mostly in the Ibis. It is right out in front of the station. Only 10 minutes to the sea and less to the venue.
+If attendees are staying in Brighton they are mostly in the Ibis. It is right out in front of the station. Only 10 minutes to the sea and less to the venue.
+
+#### My Hotel
+
+Another decent hotel close to the venue.
 
 #### The Dome
 
-Our amazing venue. Next to the Pavillion with some lovely gardens and next to a small museum and art gallery.
+Our amazing venue. Next to the Pavilion with some lovely gardens and next to a small museum and art gallery.
 
 #### The Pier
 
@@ -40,7 +44,7 @@ We used to have two. Then there was a fire, now there is one. It couldn’t be m
 
 #### Beach
 
-Pebbles! _Sorry_. There's food and drink venues to the West of the Pier toward Hove. It is quite a nice walk once you're through the busy bit. In the opposite direction you'll see some grand regency houses as you walk up the hill.
+Pebbles/big sand! _Sorry_. There's food and drink venues to the West of the Pier toward Hove. It is quite a nice walk once you're through the busy bit. In the opposite direction you'll see some grand regency houses as you walk up the hill.
 
 #### The North Laine
 
@@ -52,7 +56,7 @@ Between the North Laine and the sea is a warren of streets, known for jewellery 
 
 #### West Street
 
-Walk straight from the station to the sea and as you walk over the main crossroads, you'll find Western Road. A blight on central Brighton featuring spray-clean chain pubs frequented by stag (bachelor) and hen (bachelorette) parties. It'll be dead by Sunday when you arrive. There's a carbuncle of an Odeon cinema at the end of the street by the sea.
+Walk straight from the station to the sea and as you walk over the main crossroads, you'll find West Street. A blight on central Brighton featuring spray-clean chain pubs frequented by stag (bachelor) and hen (bachelorette) parties. There's dual carbuncles of an Odeon cinema & the Brighton Centre at the end of the street by the sea.
 
 #### Churchill Square
 
@@ -64,20 +68,21 @@ Grassy area just north of the North Laine. Skate park (lookout for men who are '
 
 #### And more
 
-[Visit Brighton](http://www.visitbrighton.com) a standard 'tourist-y' site - to cover stuff I haven’t seen or done. I only moved here in June last year and I have twins under 18 months old. I haven’t hit the town much.
+[Visit Brighton](http://www.visitbrighton.com) a standard 'tourist-y' site - to cover stuff I haven’t seen or done.
 
 <img src="/images/brightonmap.png" class="img-fluid" alt="Brighton Central Areas" />
 
-And there's the regular standbyes of Foursquare and Yelp: their coverage seems pretty accurate.
+And there's the regular standby of Yelp: their coverage seems pretty accurate.
 
 ## Food
 
-We have all the decent chains: Bills (before it was a chain), Carluccios, Jamie's Italian, Pizza Express, Giraffe, Wagamamas, et al. All within reach of the venue.
+We have all the decent chains: Bills (before it was a chain), Pho, Pizza Express, Wagamamas, et al. All within reach of the venue.
 
-And we obviously have our fair share of Subway, Starbucks, Costa, McDonald's and KFC. But... you can eat really well in Brighton.
+And we obviously have our fair share of Subway, Starbucks, Costa, McDonald's and KFC. But... you _can_ eat really well in Brighton.
 
 A couple of personal recommendations:
 
+* [Happy Maki](https://www.happymaki.co.uk) - Vegan Sushi Burritos - Pool Valley
 * [Food for friends](http://www.foodforfriends.com) - Vege - Ship Street
 * [Solero](http://www.solera-brighton.co.uk) - Spanish Tapas - Sydney Street
 * [La Choza](http://www.lachoza.co.uk) - Mexican - Gloucester Road
@@ -87,9 +92,9 @@ And of course your average pub food in Brighton is pretty great.
 
 # Drink
 
-Sussex has a strong brewing (proper ales, not lager) tradition. Now I'm in my thirties that's what I'm allowed to drink.
+Sussex has a strong brewing (proper ales, not lager) tradition. Now I'm in my ~~thirties~~ forties that's what I'm allowed to drink.
 
-[Harveys](http://www.harveys.org.uk) is the local brewery (based in next-town-along Lewes) and other smaller local brewers inlude [Long Man](http://www.longmanbrewery.com) and [Dark Star](http://darkstarbrewing.co.uk).
+[Harveys](http://www.harveys.org.uk) is the local brewery (based in next-town-along Lewes) and other smaller local brewers include [Long Man](http://www.longmanbrewery.com) and [Dark Star](http://darkstarbrewing.co.uk).
 
 We have some cash put away at the Dome for after-conference drinks, but if you want to move on there are tons of pubs within 5 minutes walk. Pick one, sit in it, you'll probably like it.
 
@@ -97,17 +102,17 @@ We have some cash put away at the Dome for after-conference drinks, but if you w
 
 * [Coffee@33](https://twitter.com/CoffeeAt33) - North Road - near the station
 * [Marwood Coffee](http://themarwood.com) - Ship St - tucked away, ace decor
-* [Velo](http://www.velo-cafe.co.uk/) - The Level
+* [Velo](https://www.wolfox.coffee/) - Various
 * [Small Batch](http://smallbatchcoffee.co.uk) - Jubilee St - Brighton chain, this is their main branch
-* Several places, all on Kensington gardens
-
-And slightly out of town... [Emporium](http://emporiumbrighton.com) - London Road - a gorgeous old theatre
+* Several other places, all on Kensington gardens
 
 ## Getting Around
 
 You'll be able to walk around town! Despite the hills.
 
 If you want to go further afield we have [decent buses](http://www.buses.co.uk). Also [Thrifty Car Rental](http://www.thrifty.co.uk) are near the station. You can also hire cars by the hour with [City Car](http://www.citycarclub.co.uk/locations/brighton-car-hire).
+
+There’s also aqua green [Brighton Bikes](https://btnbikeshare.com) to trundle along the seafront.
 
 Cabs are plentiful near the station at all hours.
 

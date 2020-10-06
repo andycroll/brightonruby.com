@@ -3,7 +3,7 @@ title: Better Coding Through Unit Tests
 author: valeriewoolardsrinivasan
 date: "2019-07-05 14:00"
 layout: video
-vimeo: "348774069"
+video_source: "videos.brightonruby.com/videos/2019/valerie-better-coding-through-unit-tests.mp4"
 image: "/images/2019/better-coding-through-unit-tests-valerie-woolard-srinivasan.jpg"
 description: "We all know that testing is important. But it’s also hard to get right."
 ---

@@ -1,5 +1,0 @@
----
-title: Welcome
-author: andycroll
-date: '2015-07-20 09:00'
----

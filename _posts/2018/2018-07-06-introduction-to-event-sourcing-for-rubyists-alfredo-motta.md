@@ -3,7 +3,7 @@ title: Introduction to Event Sourcing for Rubyists
 author: alfredomotta
 date: '2018-07-06 14:45'
 layout: video
-vimeo: 280615641
+video_source: "videos.brightonruby.com/videos/2018/alfredo-introduction-to-event-sourcing-for-rubyists.mp4"
 image: '/images/2018/introduction-to-event-sourcing-for-rubyists-alfredo-motta.jpg'
 description: 'Event sourcing is a git-like approach to data storage, a log of change rather than a database.'
 ---

@@ -16,4 +16,8 @@ description: 'Alt::BrightonRuby'
 
 A slightly odd, quasi-conference for strange times.
 
-There was no in-person Brighton Ruby, because we were al shut in our houses. It’s recorded talks, it’s a physical book, it’s a podcast. Delivered throughout June/July/August 2020.
+There was no in-person Brighton Ruby, because we were all shut in our houses. Delivered throughout June/July/August 2020.
+
+With the help of the fine people at [Consonance](https://www.consonance.app) we printed a beautifully typeset physical copy of _why’s [poignant guide to ruby](https://poignant.guide).
+
+After the videos I had informative chats with the speakers on the [Made of People Podcast](https://madeofpeoplepodcast.com).

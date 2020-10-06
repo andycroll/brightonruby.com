@@ -2,7 +2,7 @@
 title: What is Processor?
 layout: video
 author: samphippen
-vimeo: 181012964
+video_source: "videos.brightonruby.com/videos/2016/sam-what-is-processor.mp4"
 date: '2016-07-08 11:00'
 ---
 

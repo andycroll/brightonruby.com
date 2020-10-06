@@ -19,34 +19,44 @@ layout: default
       {% assign ordinal = "th" %}
   {% endcase %}
 {% endif %}
+{% assign author = site.data.authors[page.author] %}
 
 <article>
-  <p class="h3"><a href="/{{ page.date | date: "%Y" }}">{{ page.date | date: "%Y" }}</a></p>
+  <div class="text-center">
+    <p class="text-xl"><a href="/{{ page.date | date: "%Y" }}">{{ page.date | date: "%Y" }}</a></p>
+    <h1 class="text-3xl">
+      {{ page.title }}
+    </h1>
+    <p class="mb-4">
+      {{ author.name }} //
+      {% if author.twitter %}
+        <a href="https://twitter.com/{{ author.twitter }}">@{{ author.twitter }}</a>
+      {% endif %}
+    </p>
 
-  <div class="embed-responsive embed-responsive-16by9">
-    <iframe src="https://player.vimeo.com/video/{{ page.vimeo }}" width="640" height="480" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
   </div>
 
-  <h1 class="my-2">
-    {% assign author = site.data.authors[page.author] %}
-    {{ page.title }}
-  </h1>
+  {% if page.video_source %}
+    <div class="relative">
+      <video class="object-contain rounded bg-gray-600 xl:container mx-auto" controls autoPictureInPicture>
+        <source src="//{{ page.video_source }}" type="video/mp4">
+      </video>
+    </div>
+  {% endif %}
 
-  <div class="row">
-    <div class="col-md-9">
-      <p class="mb-0">
-        {{ author.name }} //
-        {% if author.twitter %}
-          <a href="https://twitter.com/{{ author.twitter }}">@{{ author.twitter }}</a>
-        {% endif %}
-      </p>
-      {{ author.bio | default: '' | markdownify }}
+  <div class="bg-white mt-4 p-4 rounded max-w-xl mx-auto">
+    {% if page.video_source %}
+      <span class="flex flex-row-reverse rounded-md">
+        <a download href="//{{ page.video_source }}" class="inline-flex justify-center rounded-md border border-transparent px-4 py-2 mb-4 bg-red-600 text-base font-medium text-white shadow-sm hover:bg-red-800 focus:outline-none focus:border-red-700 focus:shadow-outline-red transition ease-in-out duration-150 sm:text-sm">
+          Download
+        </a>
+      </span>
+    {% endif %}
 
-      <hr />
-
+    <div class="prose">
       {{ content }}
 
-      <p>{{ page.date | date: "%A, %-d" }}{{ ordinal }} {{ page.date | date: "%B %Y"  }}</p>
+      <p class="text-sm mt-8">{{ page.date | date: "%A, %-d" }}{{ ordinal }} {{ page.date | date: "%B %Y"  }}</p>
     </div>
   </div>
 </article>

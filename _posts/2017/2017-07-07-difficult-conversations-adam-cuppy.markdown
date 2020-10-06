@@ -3,7 +3,7 @@ title: Difficult Conversations
 layout: video
 author: adamcuppy
 date: '2017-07-07 14:00'
-vimeo: 230210054
+video_source: "videos.brightonruby.com/videos/2017/adam-difficult-conversations.mp4"
 image: '/images/2017/difficult-conversations-adam-cuppy.jpg'
 slides: 'https://speakerdeck.com/acuppy/brighton-ruby-2017-difficult-conversations'
 description: 'It’s never easy to have a tough conversations, and they never go away.'

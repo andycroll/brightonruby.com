@@ -2,7 +2,7 @@
 title: Do You Need That Gem?
 layout: video
 author: samphippen
-vimeo: 168093261
+video_source: "videos.brightonruby.com/videos/2015/sam-do-you-need-that-gem.mp4"
 date: '2015-07-20 11:20'
 ---
 

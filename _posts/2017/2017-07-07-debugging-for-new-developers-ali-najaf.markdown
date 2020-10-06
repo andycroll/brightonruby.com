@@ -3,7 +3,7 @@ title: Debugging For New Developers
 layout: video
 author: najafali
 date: '2017-07-07 11:10'
-vimeo: 231134135
+video_source: "videos.brightonruby.com/videos/2017/najaf-debugging-a-short-guide-for-new-developers.mp4"
 slides: 'https://github.com/happybearsoftware/debugging-talk/blob/master/slides/slides.md'
 image: '/images/2017/debugging-for-new-developers-najaf-ali.jpg'
 description: "Learn about tactics and techniques for diagnosing bugs, reproducing them, researching around the problem, asking for help and implementing a fix."

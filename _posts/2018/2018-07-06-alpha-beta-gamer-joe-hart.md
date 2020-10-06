@@ -3,7 +3,7 @@ title: Alpha. Beta. Gamer.
 author: joehart
 date: '2018-07-06 17:00'
 layout: video
-vimeo: 281234121
+video_source: "videos.brightonruby.com/videos/2018/joe-alpha-beta-gamer.mp4"
 image: '/images/2018/alpha-beta-gamer-joe-hart.jpg'
 description: 'A live performance of video games and stand up comedy.'
 ---

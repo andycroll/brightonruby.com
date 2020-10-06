@@ -2,7 +2,7 @@
 title: The Point of Objects
 layout: video
 author: johncinnamond
-vimeo: 180888400
+video_source: "videos.brightonruby.com/videos/2016/john-the-point-of-objects.mp4"
 date: '2016-07-08 10:00'
 ---
 

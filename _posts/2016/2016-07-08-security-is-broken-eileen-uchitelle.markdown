@@ -2,7 +2,7 @@
 title: Security is Broken
 layout: video
 author: eileenuchitelle
-vimeo: 178624701
+video_source: "videos.brightonruby.com/videos/2016/eileen-security-is-broken-understanding-common-vulnerabilities.mp4"
 date: '2016-07-08 09:30'
 ---
 

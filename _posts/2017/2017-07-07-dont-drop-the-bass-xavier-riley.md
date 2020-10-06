@@ -3,7 +3,7 @@ title: Don’t Drop The Bass
 layout: video
 author: xavierriley
 date: '2017-07-07 11:30'
-vimeo: 231396168
+video_source: "videos.brightonruby.com/videos/2017/xavier-dont-drop-the-bass.mp4"
 image: '/images/2017/dont-drop-the-bass-xavier-riley.jpg'
 description: 'Ever wondered whether you can program a bass guitar with Ruby?'
 ---

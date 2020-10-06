@@ -3,7 +3,7 @@ title: Embracing Openness in Open Source
 author: aminaadewusi
 date: '2019-07-05 11:40'
 layout: video
-vimeo: "348666525"
+video_source: "videos.brightonruby.com/videos/2019/amina-embracing-openness-in-open-source.mp4"
 image: "/images/2019/embracing-openness-in-open-source-amina-adewusi.jpg"
 description: "How you avoid stumbling blocks when you start out in Open Source projects"
 ---

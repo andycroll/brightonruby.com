@@ -3,7 +3,7 @@ title: Ruby like it’s 1995
 author: matiaskorhonen
 date: '2019-07-05 16:30'
 layout: video
-vimeo: "348784158"
+video_source: "videos.brightonruby.com/videos/2019/matias-ruby-like-its-1995.mp4"
 image: "/images/2019/ruby-like-its-1995-matias-korhonen.jpg"
 description: "Running Ruby 0.95"
 ---

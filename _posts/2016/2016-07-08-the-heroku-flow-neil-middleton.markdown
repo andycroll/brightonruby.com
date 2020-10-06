@@ -2,7 +2,7 @@
 title: The Heroku Flow
 layout: video
 author: neilmiddleton
-vimeo: 181818654
+video_source: "videos.brightonruby.com/videos/2016/neil-the-heroku-flow.mp4"
 date: '2016-07-08 14:50'
 ---
 

@@ -2,7 +2,7 @@
 title: The Struggle to Stay Technical
 layout: video
 author: kinseyanndurham
-vimeo: 169222630
+video_source: "videos.brightonruby.com/videos/2015/kinsey-the-struggle-to-stay-technical.mp4"
 date: '2015-07-20 14:40'
 ---
 

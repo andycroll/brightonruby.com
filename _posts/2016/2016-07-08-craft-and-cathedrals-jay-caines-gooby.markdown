@@ -2,7 +2,7 @@
 title: Craft & Cathedrals
 layout: video
 author: jaycainesgooby
-vimeo: 181409253
+video_source: "videos.brightonruby.com/videos/2016/jay-craft-and-cathedrals.mp4"
 date: '2016-07-08 14:35'
 ---
 

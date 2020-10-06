@@ -1,3 +1,6 @@
 _site
 .env
 .jekyll-cache*
+.jekyll-metadata
+node_modules
+yarn-error.log
