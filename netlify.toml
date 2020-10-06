@@ -1,0 +1,3 @@
+[build.environment]
+  YARN_FLAGS = "--production=false"
+  NODE_ENV = "production"
