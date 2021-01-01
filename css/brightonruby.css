@@ -326,6 +326,10 @@ template {
  * Add the correct display in IE 10.
  */
 
+[hidden] {
+  display: none;
+}
+
 /**
  * Manually forked from SUIT CSS Base: https://github.com/suitcss/base
  * A thin layer on top of normalize.css that provides a starting point more
@@ -1846,6 +1850,10 @@ video {
   display: grid;
 }
 
+.hidden {
+  display: none;
+}
+
 .flex-row-reverse {
   flex-direction: row-reverse;
 }
@@ -2077,6 +2085,12 @@ video {
   --text-opacity: 1;
   color: #ffffff;
   color: rgba(255, 255, 255, var(--text-opacity));
+}
+
+.text-black {
+  --text-opacity: 1;
+  color: #000000;
+  color: rgba(0, 0, 0, var(--text-opacity));
 }
 
 .text-gray-200 {
