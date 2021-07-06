@@ -22,6 +22,6 @@
     "gulp": "^4.0.2",
     "gulp-run": "^1.7.1",
     "node-sass": "^4.12.0",
-    "tailwindcss": "^1.8.10"
+    "tailwindcss": "^1.9.6"
   }
 }
