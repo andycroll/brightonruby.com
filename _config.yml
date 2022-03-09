@@ -1,4 +1,4 @@
-name: Brighton Ruby Conference 2020
+name: Brighton Ruby Conference 2022
 description: A one day conference in Brighton for Rubyists
 
 exclude: ['config.ru', 'Gemfile', 'Gemfile.lock', 'vendor']
