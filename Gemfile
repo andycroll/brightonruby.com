@@ -1,6 +1,6 @@
 source "https://rubygems.org"
 
-ruby "~> 2.6.0"
+ruby File.read(".ruby-version").strip
 
 gem "bundler", "<3"
 gem "dotenv"
