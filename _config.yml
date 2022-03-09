@@ -1,7 +1,7 @@
 name: Brighton Ruby Conference 2022
 description: A one day conference in Brighton for Rubyists
 
-exclude: ['config.ru', 'Gemfile', 'Gemfile.lock', 'vendor']
+exclude: ['config.ru', 'Gemfile', 'Gemfile.lock', 'vendor', 'node_modules']
 include: ['_redirects']
 permalink: /:year/:title/
 future: true
