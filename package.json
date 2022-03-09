@@ -1,0 +1,15 @@
+{
+  "devDependencies": {
+    "@tailwindcss/typography": "^0.5.2",
+    "concurrently": "^7.0.0",
+    "tailwindcss": "^3.0.23"
+  },
+  "scripts": {
+    "build": "npm run build-jekyll && npm run build-tailwind && npm run build-jekyll",
+    "build-jekyll": "bundle exec jekyll build",
+    "build-tailwind": "npx tailwindcss -i ./_css/brightonruby.css -o ./css/brightonruby.css",
+    "dev": "concurrently --kill-others \"npm:watch-*\"",
+    "watch-tailwind": "npx tailwindcss -i ./_css/brightonruby.css -o ./css/brightonruby.css --watch",
+    "watch-jekyll": "bundle exec jekyll serve --incremental --watch"
+  }
+}
