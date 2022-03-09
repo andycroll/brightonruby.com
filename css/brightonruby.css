@@ -1898,6 +1898,10 @@ video {
   font-size: 1.25rem;
 }
 
+.text-2xl {
+  font-size: 1.5rem;
+}
+
 .text-3xl {
   font-size: 1.875rem;
 }
@@ -1916,6 +1920,11 @@ video {
 
 .leading-tight {
   line-height: 1.25;
+}
+
+.my-4 {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
 }
 
 .mx-16 {
@@ -1995,6 +2004,10 @@ video {
 
 .p-4 {
   padding: 1rem;
+}
+
+.p-5 {
+  padding: 1.25rem;
 }
 
 .py-1 {
