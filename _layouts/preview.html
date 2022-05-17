@@ -21,30 +21,22 @@ layout: default
 {% endif %}
 
 <article>
-  <p class="h3"><a href="/{{ page.date | date: "%Y" }}">{{ page.date | date: "%Y" }}</a></p>
-
-  <p><img src="{{ page.image | absolute_url }}" class="img-fluid" /></p>
+  <h2><a href="/{{ page.date | date: "%Y" }}">{{ page.date | date: "%Y" }}</a></h2>
 
   <h1 class="my-2">
     {% assign author = site.data.authors[page.author] %}
     {{ page.title }}
   </h1>
 
-  <div class="row" style="min-height: 50vh">
-    <div class="col-md-9">
-      <p class="mb-0">
-        {{ author.name }} //
-        {% if author.twitter %}
-          <a href="https://twitter.com/{{ author.twitter }}">@{{ author.twitter }}</a>
-        {% endif %}
-      </p>
-      {{ author.bio | default: '' | markdownify }}
+  <p class="mb-0">
+    {{ author.name }}
+    {% if author.twitter %}
+      // <a href="https://twitter.com/{{ author.twitter }}">@{{ author.twitter }}</a>
+    {% endif %}
+  </p>
+  {{ author.bio | default: '' | markdownify }}
 
-      <hr />
+  <hr />
 
-      {{ content }}
-
-      <p>{{ page.date | date: "%A, %-d" }}{{ ordinal }} {{ page.date | date: "%B %Y"  }}</p>
-    </div>
-  </div>
+  {{ content }}
 </article>
