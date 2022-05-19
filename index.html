@@ -5,50 +5,44 @@ image: 'images/twitter-image.jpg'
 ---
 
 <header class="px-4 mx-auto mb-4 max-w-3xl">
-  <h2 class="text-2xl sm:text-3xl text-center leading-tight mb-4">Thursday 30th June, 2022</h2>
-  <div class="text-center">
-    <a href="https://ti.to/goodscary/brighton-ruby-2022" class="inline-block p-5 border border-transparent text-3xl leading-4 font-medium rounded text-white bg-red-600 hover:bg-red-500 focus:outline-none focus:border-red-700 focus:shadow-outline-red active:bg-red-700 transition ease-in-out duration-150">Buy Tickets</a>
-    <a href="https://forms.reform.app/goodscary/brighton-ruby-2022-cfp/gci0d6" class="inline-block p-5 border border-white text-3xl leading-4 font-medium rounded text-white bg-transparent hover:bg-red-500 hover:border-transparent focus:outline-none focus:border-red-700 focus:shadow-outline-red active:bg-red-700 transition ease-in-out duration-150">Submit Talk</a>
-  </div>
-  <hr class="border-t-2 my-4 border-red-200">
-  <h1 class="text-xl sm:text-2xl text-center leading-tight mb-3">A single-day, single-track conference for 150 Rubyists on the sunny* south coast of the UK.</h1>
-  <p class="text-xs text-center text-gray-50">*sun not guaranteed</p>
+  <h2 class="text-xl sm:text-2xl text-center leading-tight mb-3">A <b>sold out</b>, single-day, single-track conference for 160 Rubyists on the sunny* south coast of the UK.</h2>
 </header>
 
-<div class="xl:container mx-auto">
-  <div class="grid grid-cols-4 sm:grid-cols-12 grid-flow-cols-dense md:grid-flow-rows-dense gap-4 mb-4">
-    <div class="col-span-4 lg:col-span-2 lg:row-span-2 lg:bg-red-600 lg:bg-opacity-25 lg:px-4 rounded">
-      <h2 class="text-lg leading-none lg:leading-tight md:text-xl text-center sm:text-right lg:py-2">Watch videos from previous years</h2>
+<h1 class="text-2xl sm:text-3xl text-center leading-tight mb-4">Thursday 30th June, 2022</h1>
+
+<div class="lg:container mx-auto">
+  <div class="grid grid-cols-4 gap-4 mb-4">
+    <div class="">
+      <a href="{{ site.data.sponsors['cookpad'].url }}" target="_blank">
+        <img class="img-fluid mb-3" mb-3 src="data:image/svg+xml;base64,{{ site.data.sponsors['cookpad'].base64logo }}" />
+      </a>
+      <a href="{{ site.data.sponsors['bloom_and_wild'].url }}" target="_blank">
+        <img class="img-fluid mb-3" mb-3 src="data:image/svg+xml;base64,{{ site.data.sponsors['bloom_and_wild'].base64logo }}" />
+      </a>
     </div>
 
-    {% assign mini = "1,3,1,1,1,1,2,1,1,1,1,2,1,1,1,1,1,1" | split: "," %}
-    {% assign sizes = "1,2,1,1,1,3,1,1,1,2,1,1,1,1,1,1,1,1" | split: "," %}
-    {% assign posts = site.posts | where_exp: "post", "post.break != true" | where_exp: "post", "post.author != 'samphippen'" | sample: sizes.size %}
-    {% for post in posts %}
-      <div class="col-span-{{ mini[forloop.index0] }} row-span-{{ mini[forloop.index0] }} lg:col-span-{{ sizes[forloop.index0] }} lg:row-span-{{ sizes[forloop.index0] }}">
-        <a href="{{ post.url }}" class="relative">
-          {% assign author = site.data.authors[post.author] %}
-          <img src="{{ author.image }}" class="rounded shadow transition transform duration-300 hover:shadow-lg hover:scale-105 ease-in-out" alt="{{ post.title }}" />
-        </a>
-      </div>
-    {% endfor %}
+    <div class="col-span-2">
+      {% include _schedule.html %}
+    </div>
+
+    <div class="">
+      <a href="{{ site.data.sponsors['freeagent'].url }}" target="_blank">
+        <img class="img-fluid mb-3" mb-3 src="data:image/svg+xml;base64,{{ site.data.sponsors['freeagent'].base64logo }}" />
+      </a>
+      <a href="{{ site.data.sponsors['cleo'].url }}" target="_blank">
+        <img class="img-fluid mb-3" mb-3 src="data:image/svg+xml;base64,{{ site.data.sponsors['cleo'].base64logo }}" />
+      </a>
+    </div>
   </div>
 </div>
 
-<header class="px-4 mx-auto mb-4 max-w-3xl">
-  <p class="border-t-2 pt-2 mt-4 border-red-200 text-lg sm:text-2xl text-center text-gray-200">Put together and hosted by <a href="https://andycroll.com">Andy Croll</a>.</p>
-</header>
-
-<div class="rounded-md bg-gray-50 p-4 mb-4 md:mb-12 max-w-lg mx-auto">
-  <form action="https://tinyletter.com/brightonruby" method="post" id="mc-embedded-subscribe-form" target="popupwindow" onsubmit="window.open('https://tinyletter.com/brightonruby', 'popupwindow', 'scrollbars=yes,width=800,height=600');return true" novalidate>
-    <label for="tlemail" class="block text-sm font-medium leading-5 text-gray-700 mb-1">Share your email to stay in touch</label>
-    <input type="email" id="tlemail" name="email" class="form-input rounded block w-full sm:text-sm sm:leading-5 mb-2 text-black" placeholder="you@example.com">
-    <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="hidden" tabindex="-1" value="1" name="embed" /></div>
-    <input type="submit" value="Email me" name="subscribe" class="inline-flex items-center px-2.5 py-1.5 border border-transparent text-sm leading-4 font-medium rounded text-white bg-red-600 hover:bg-red-500 focus:outline-none focus:border-red-700 focus:shadow-outline-red active:bg-red-700 transition ease-in-out duration-150">
-  </form>
+<div class="px-4 mx-auto mb-4 max-w-3xl">
+  <p class="border-t-2 pt-4 mt-6 border-red-200 text-md sm:text-xl text-center text-gray-200">Programmed & hosted by <a href="https://andycroll.com">Andy Croll</a>.</p>
 </div>
 
-<div class="flex justify-center space-x-4">
+{% include _email.html %}
+
+<div class="flex justify-center mb-4 space-x-4">
   <div class="max-w-lg bg-red-800 text-white p-4 rounded">
     <h3 class="text-lg">Code of conduct</h3>
     <p><b>Of course.</b> Brighton Ruby is a harassment-free experience for everyone. <em>Matz is nice, so we are nice.</em></p>
@@ -69,3 +63,8 @@ image: 'images/twitter-image.jpg'
     </div>
   </div>
 </div>
+
+{% include _headshots.html %}
+
+<p class="text-xs text-center text-gray-50 mb-4">*sun not guaranteed</p>
+
