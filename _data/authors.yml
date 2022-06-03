@@ -157,7 +157,7 @@ jaycainesgooby:
 jemmaissroff:
   name: Jemma Issroff
   twitter: jemmaissroff
-  image: ""
+  image: /images/authors/jemmaissroff.jpg
   bio: "Jemma Issroff works on Shopify's Ruby Infrastructure team. She is also a co-founder of WNB.rb, a women / non-binary Ruby community, a co-host on The Ruby on Rails Podcast, the author of both Ruby Weekly's Tip of the Week, and an ebook about Ruby garbage collection."
 joehart:
   name: Joe Hart
@@ -167,7 +167,7 @@ joehart:
 joelhawksley:
   name: Joel Hawksley
   twitter: joelhawksley
-  image: ""
+  image: /images/authors/joelhawksley.jpg
   bio: ""
 johncinnamond:
   name: John Cinnamond
@@ -194,8 +194,8 @@ katrinaowen:
   bio: 'An ecosystem engineer at GitHub and author. She accidentally became a developer while pursuing a degree in molecular biology. When programming, her focus is on automation, workflow optimization, and refactoring.'
 kellysutton:
   name: Kelly Sutton
-  twitter: k
-  image: ""
+  twitter: kellysutton
+  image: /images/authors/kellysutton.jpg
   bio: "Kelly Sutton is a software engineer based in Seattle, WA, and works for Gusto."
 kinseyanndurham:
   name: Kinsey Ann Durham
@@ -241,8 +241,8 @@ najafali:
   bio: 'Ali runs a Ruby on Rails consultancy called Happy Bear Software. He has fixed a lot of bugs and trained a lot of junior developers, who also have fixed a lot of bugs.'
 naomifreeman:
   name: "Naomi Freeman"
-  twitter:
-  image: ""
+  twitter: Naomi_Freeman
+  image: /images/authors/naomifreeman.jpg
   bio: "Previously: Ruby dev (payments and infra). Women Who Code Data Science & Blockchain Fellow. CTO. Founder. etc. Currently: bridging business and tech as a Subject Matter Expert: Technical Management at Noroff University - Accelerate (Norway). Canadian living in Norway. I like cats."
 nateberkopec:
   name: Nate Berkopec
@@ -294,8 +294,8 @@ piotrsolnica:
   bio: 'Piotr is a Technical Lead @icelab. Author and core team member @rom_rb and a co-founder and core team member @dry_rb.'
 robertamataityte:
   name: "Roberta Mataityte"
-  twitter:
-  image:
+  twitter: robertamataityte
+  image: /images/authors/robertamataityte.jpg
   bio: "Roberta is a Software Engineer at FutureLearn, a leading online education platform. Prior to working in technology she worked for the arts and film sector and has a keen interest in the cross section of art, culture and technology. These days when not learning, coding or debugging, she is probably trying to grow the perfect balcony tomatoes.  "
 robmiller:
   name: Rob Miller
@@ -351,8 +351,8 @@ tekinsuleyman:
   bio: Tekin Suleyman is a freelance consultant who's been shipping Ruby code for over a decade. He's worked with teams, large and small. He also runs the North West Ruby User Group in Manchester.
 tomstuart:
   name: Tom Stuart
-  twitter: t
-  image: ""
+  twitter: tomstuart
+  image: /images/authors/tomstuart.jpg
   bio: "Tom is a computer scientist, longtime Rubyist and Senior Staff Engineer at Shopify. He has taught optimising compilers at the University of Cambridge and written about technology for the Guardian. His book about computation theory in Ruby, “Understanding Computation”, is published by O’Reilly."
 vaidehijoshi:
   name: Vaidehi Joshi

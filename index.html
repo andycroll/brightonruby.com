@@ -8,7 +8,24 @@ image: 'images/twitter-image.jpg'
   <h2 class="text-xl sm:text-2xl text-center leading-tight mb-3">A <b>sold out</b>, single-day, single-track conference for 160 Rubyists on the sunny* south coast of the UK.</h2>
 </header>
 
-<h1 class="text-2xl sm:text-3xl text-center leading-tight mb-4">Thursday 30th June, 2022</h1>
+<h1 class="text-2xl sm:text-3xl text-center leading-tight mb-4">
+  Thursday 30th June, 2022<br />
+  The Ironworks, Brighton
+</h1>
+
+<div class="lg:container mx-auto">
+  <div class="grid grid-cols-9 gap-4 mb-4">
+    {%
+      assign posts = site.posts |
+        where_exp: "post", "post.break != true" |
+        where_exp: "post", "post.layout == 'preview'"
+    %}
+    {% for post in posts %}
+      {% assign author = site.data.authors[post.author] %}
+      <img src="{{ author.image }}" class="rounded shadow transition transform duration-300 hover:shadow-lg hover:scale-105 ease-in-out" alt="{{ author.name }}" />
+    {% endfor %}
+  </div>
+</div>
 
 <div class="lg:container mx-auto">
   <div class="grid grid-cols-4 gap-4 mb-4">
