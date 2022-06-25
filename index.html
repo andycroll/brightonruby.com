@@ -4,17 +4,16 @@ title: "Brighton Ruby Conference"
 image: 'images/twitter-image.jpg'
 ---
 
-<header class="px-4 mx-auto mb-4 max-w-3xl">
-  <h2 class="text-xl sm:text-2xl text-center leading-tight mb-3">A <b>sold out</b>, single-day, single-track conference for 160 Rubyists on the sunny* south coast of the UK.</h2>
-</header>
-
-<h1 class="text-2xl sm:text-3xl text-center leading-tight mb-4">
-  Thursday 30th June, 2022<br />
+<h1 class="text-lg sm:text-xl md:text-3xl text-center leading-tight mb-4">
+  Thursday 30th June, 2022
+  <!--
+  <br />
   The Ironworks, Brighton
+  -->
 </h1>
 
 <div class="lg:container mx-auto">
-  <div class="grid grid-cols-9 gap-4 mb-4">
+  <div class="grid grid-cols-9 gap-2 md:gap-4 mb-4">
     {%
       assign posts = site.posts |
         where_exp: "post", "post.break != true" |
@@ -28,38 +27,70 @@ image: 'images/twitter-image.jpg'
 </div>
 
 <div class="lg:container mx-auto">
-  <div class="grid grid-cols-4 gap-4 mb-4">
-    <div class="">
+  <div class="grid grid-cols-2 md:grid-cols-4 md:grid-flow-row-dense gap-4 md:mb-4">
+    <div class="col-span-1">
       <a href="{{ site.data.sponsors['cookpad'].url }}" target="_blank">
-        <img class="img-fluid mb-3" mb-3 src="data:image/svg+xml;base64,{{ site.data.sponsors['cookpad'].base64logo }}" />
+        <img class="mb-4" src="data:image/svg+xml;base64,{{ site.data.sponsors['cookpad'].base64logo }}" />
       </a>
       <a href="{{ site.data.sponsors['bloom_and_wild'].url }}" target="_blank">
-        <img class="img-fluid mb-3" mb-3 src="data:image/svg+xml;base64,{{ site.data.sponsors['bloom_and_wild'].base64logo }}" />
+        <img src="data:image/svg+xml;base64,{{ site.data.sponsors['bloom_and_wild'].base64logo }}" />
       </a>
     </div>
 
-    <div class="col-span-2">
-      {% include _schedule.html %}
-    </div>
-
-    <div class="">
+    <div class="col-span-1 md:col-start-4">
       <a href="{{ site.data.sponsors['freeagent'].url }}" target="_blank">
-        <img class="img-fluid mb-3" mb-3 src="data:image/svg+xml;base64,{{ site.data.sponsors['freeagent'].base64logo }}" />
+        <img class="mb-4" src="data:image/svg+xml;base64,{{ site.data.sponsors['freeagent'].base64logo }}" />
       </a>
       <a href="{{ site.data.sponsors['cleo'].url }}" target="_blank">
-        <img class="img-fluid mb-3" mb-3 src="data:image/svg+xml;base64,{{ site.data.sponsors['cleo'].base64logo }}" />
+        <img src="data:image/svg+xml;base64,{{ site.data.sponsors['cleo'].base64logo }}" />
       </a>
+    </div>
+
+    <div class="col-span-2 md:col-start-2">
+      {% include _schedule.html %}
     </div>
   </div>
 </div>
 
+<div class="lg:container mx-auto grid grid-cols-2 md:grid-cols-6 gap-4">
+  <div class="col-span-2 md:col-span-4 md:col-start-2 mt-8">
+    <p class="text-xs text-center text-gray-200">Friends of Brighton Ruby</p>
+  </div>
+
+  <div class="col-span-1 md:col-start-2">
+    <a href="{{ site.data.sponsors['shopify'].url }}" target="_blank">
+      <img src="data:image/svg+xml;base64,{{ site.data.sponsors['shopify'].base64logo }}" />
+    </a>
+  </div>
+
+  <div class="col-span-1">
+    <a href="{{ site.data.sponsors['gusto'].url }}" target="_blank">
+      <img src="data:image/svg+xml;base64,{{ site.data.sponsors['gusto'].base64logo }}" />
+    </a>
+  </div>
+
+  <div class="col-span-1">
+    <a href="{{ site.data.sponsors['form3'].url }}" target="_blank">
+      <img src="/images/2022/noroff-accelerate.png" />
+    </a>
+  </div>
+
+  <div class="col-span-1">
+    <a href="{{ site.data.sponsors['form3'].url }}" target="_blank">
+      <img src="data:image/svg+xml;base64,{{ site.data.sponsors['form3'].base64logo }}" />
+    </a>
+  </div>
+</div>
+
+<!--
 <div class="px-4 mx-auto mb-4 max-w-3xl">
   <p class="border-t-2 pt-4 mt-6 border-red-200 text-md sm:text-xl text-center text-gray-200">Programmed & hosted by <a href="https://andycroll.com">Andy Croll</a>.</p>
 </div>
 
 {% include _email.html %}
+-->
 
-<div class="flex justify-center mb-4 space-x-4">
+<div class="flex justify-center my-4 space-x-4">
   <div class="max-w-lg bg-red-800 text-white p-4 rounded">
     <h3 class="text-lg">Code of conduct</h3>
     <p><b>Of course.</b> Brighton Ruby is a harassment-free experience for everyone. <em>Matz is nice, so we are nice.</em></p>
