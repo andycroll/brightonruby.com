@@ -74,38 +74,6 @@ Grassy area just north of the North Laine. Skate park (lookout for men who are '
 
 And there's the regular standby of Yelp: their coverage seems pretty accurate.
 
-## Food
-
-We have all the decent chains: Bills (before it was a chain), Pho, Pizza Express, Wagamamas, et al. All within reach of the venue.
-
-And we obviously have our fair share of Subway, Starbucks, Costa, McDonald's and KFC. But... you _can_ eat really well in Brighton.
-
-A couple of personal recommendations:
-
-* [Happy Maki](https://www.happymaki.co.uk) - Vegan Sushi Burritos - Pool Valley
-* [Food for friends](http://www.foodforfriends.com) - Vege - Ship Street
-* [Solero](http://www.solera-brighton.co.uk) - Spanish Tapas - Sydney Street
-* [La Choza](http://www.lachoza.co.uk) - Mexican - Gloucester Road
-* [Chilli Pickle](http://www.thechillipickle.com) - Amazing Indian - Jubilee St
-
-And of course your average pub food in Brighton is pretty great.
-
-# Drink
-
-Sussex has a strong brewing (proper ales, not lager) tradition. Now I'm in my ~~thirties~~ forties that's what I'm allowed to drink.
-
-[Harveys](http://www.harveys.org.uk) is the local brewery (based in next-town-along Lewes) and other smaller local brewers include [Long Man](http://www.longmanbrewery.com) and [Dark Star](http://darkstarbrewing.co.uk).
-
-We have some cash put away at the Dome for after-conference drinks, but if you want to move on there are tons of pubs within 5 minutes walk. Pick one, sit in it, you'll probably like it.
-
-## Good coffee in town
-
-* [Coffee@33](https://twitter.com/CoffeeAt33) - North Road - near the station
-* [Marwood Coffee](http://themarwood.com) - Ship St - tucked away, ace decor
-* [Velo](https://www.wolfox.coffee/) - Various
-* [Small Batch](http://smallbatchcoffee.co.uk) - Jubilee St - Brighton chain, this is their main branch
-* Several other places, all on Kensington gardens
-
 ## Getting Around
 
 You'll be able to walk around town! Despite the hills.
