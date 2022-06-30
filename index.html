@@ -13,7 +13,7 @@ image: 'images/twitter-image.jpg'
 </h1>
 
 <div class="lg:container mx-auto">
-  <div class="grid grid-cols-9 gap-2 md:gap-4 mb-4">
+  <div class="grid grid-cols-8 gap-2 md:gap-4 mb-4">
     {%
       assign posts = site.posts |
         where_exp: "post", "post.break != true" |
