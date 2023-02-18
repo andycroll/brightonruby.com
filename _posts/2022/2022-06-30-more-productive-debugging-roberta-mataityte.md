@@ -2,9 +2,9 @@
 title: "A framework for more productive debugging"
 author: robertamataityte
 date: '2022-06-30 14:30'
-layout: preview
+layout: video
+video_source: "videos.brightonruby.com/videos/2022/roberta-mataityte-a-framework-for-more-productive-debugging.mp4"
 description: "Elusive. Rules. Clarity."
-firstinsegment: true
 ---
 
 You can either try to guess your way out of a bug and potentially end up spending a large amount of time getting carried away and going off in unproductive directions.

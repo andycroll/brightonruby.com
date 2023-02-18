@@ -2,9 +2,9 @@
 title: "Stop ignoring pattern matching! It’s really good!"
 author: tomstuart
 date: '2022-06-30 11:45'
-layout: preview
+layout: video
+video_source: "videos.brightonruby.com/videos/2022/tom-stuart-stop-ignoring-pattern-matching.mp4"
 description: "Patterns. Enthusiasm. Adoption."
-firstinsegment: true
 ---
 
 Pattern matching was introduced as a major language feature in Ruby 2.7 and has been improved in subsequent releases, but not many people are using it yet.

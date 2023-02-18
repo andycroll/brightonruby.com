@@ -1,18 +1,18 @@
 ---
-title: '2022 Schedule'
-date: '2022-07-03'
-layout: 'schedule'
+title: '2022'
+date: '2022-06-30'
+layout: 'archive'
 ruby:
 gold:
  - "cookpad"
  - "freeagent"
- - "bloomandwild"
+ - "bloom_and_wild"
  - "cleo"
 silver:
 friend:
  - "shopify"
  - "github"
- - "noroffaccelerate"
+#  - "noroffaccelerate"
  - "form3"
 photos:
 tweets:
@@ -22,5 +22,5 @@ description: 'The return'
 
 A new smaller venue at the Ironworks.
 
-<!-- [Consonance](https://www.consonance.app) helped us reprint a second edition of our beautifully typeset physical copy of _why’s [poignant guide to ruby](https://poignant.guide). -->
+[Consonance](https://www.consonance.app) helped us reprint a second edition of our beautifully typeset physical copy of _why’s [poignant guide to ruby](https://poignant.guide).
 

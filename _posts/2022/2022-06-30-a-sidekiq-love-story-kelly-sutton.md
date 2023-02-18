@@ -2,7 +2,8 @@
 title: "You had me at LPUSH, a Sidekiq love story"
 author: kellysutton
 date: '2022-06-30 10:30'
-layout: preview
+layout: video
+video_source: "videos.brightonruby.com/videos/2022/kelly-sutton-you-had-me-at-lpush.mp4"
 description: "Billions. Redis. Efficiency."
 ---
 

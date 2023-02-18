@@ -2,7 +2,8 @@
 title: "Resilience"
 author: naomifreeman
 date: '2022-06-30 16:30'
-layout: preview
+layout: video
+video_source: "videos.brightonruby.com/videos/2022/naomi-freeman-resilience.mp4"
 description: "Reframe. Support. Embrace."
 ---
 

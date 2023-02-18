@@ -2,7 +2,8 @@
 title: "Cache me if you can: How instance variables work in CRuby"
 author: jemmaissroff
 date: '2022-06-30 12:15'
-layout: preview
+layout: video
+video_source: "videos.brightonruby.com/videos/2022/jemma-issroff-setting-and-getting-instance-variables.mp4"
 description: "Instance. Shapes. Performance."
 ---
 

@@ -2,7 +2,8 @@
 title: "Maybe You Aren’t My Type?"
 author: johncinnamond
 date: '2022-06-30 16:00'
-layout: preview
+layout: video
+video_source: "videos.brightonruby.com/videos/2022/john-cinnamond-maybe-youre-not-my-type.mp4"
 description: "Nil. Maybe. Same."
 firstinsegment: true
 ---
