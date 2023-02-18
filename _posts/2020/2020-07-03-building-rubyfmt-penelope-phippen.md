@@ -3,7 +3,6 @@ title: Building Rubyfmt
 author: penelopephippen
 date: '2020-07-03 10:00'
 layout: video
-video_source: "videos.brightonruby.com/videos/2015/.mp4"
 video_source: "videos.brightonruby.com/videos/2020/penelope-building-rubyfmt.mp4"
 # image: "/images/2019/embracing-openness-in-open-source-amina-adewusi.jpg"
 description: "Cursedly obsessed with the Ruby parser"
