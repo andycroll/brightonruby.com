@@ -107,6 +107,11 @@ eileenuchitelle:
   twitter: eileencodes
   image: /images/authors/eileenuchitelle.jpg
   bio: "Staff Engineer on the Ruby Architecture Team at GitHub and a member of the Rails Core team. She’s an avid contributor to open source focusing on the Ruby on Rails framework and its dependencies. Eileen is passionate about scalability, performance, and making open source communities more sustainable and welcoming."
+eileenuchitelle23:
+  name: Eileen Uchitelle
+  twitter: eileencodes
+  image: /images/authors/eileenuchitelle.jpg
+  bio: "Eileen M. Uchitelle is a Senior Staff Engineer at Shopify where she helps lead the effort to improve and maintain the Rails framework and Ruby language. As a member of the Rails Core Team her goal is to ensure the long-term sustainability of the Rails framework and its continued adoption as one of the leading open-source frameworks."
 elizadejager:
   name: "Eliza de&nbsp;Jager"
   twitter: code_kitten
@@ -164,6 +169,11 @@ joehart:
   twitter: joehart
   image: /images/authors/joehart.jpg
   bio: 'Joe Hart is a comedian who codes, or a software engineer who tells jokes depending on which time of the day he’s asked. He’s built software for the BBC, non profits and is currently making WebVR things for Blend Media.'
+joehart23:
+  name: Joe Hart
+  mastodon: social.lol/@joehart 
+  image: /images/authors/joehart.jpg
+  bio: 'Part time developer, part time comedian and full time fool Joe Hart has been building software and slinging jokes for the better part of a decade. Mostly being a frontend engineering consultant by day, Joe has snuck into Andy’s Brighton Ruby promised land to talk about games, interactivity and ideally make you laugh.'
 joelhawksley:
   name: Joel Hawksley
   twitter: joelhawksley
@@ -187,6 +197,11 @@ justaminute2017:
   twitter: marmitejunction
   image: /images/authors/justaminute2017.jpg
   bio: 'A tribute to the Radio 4 original, created with Playstation controllers and noises from the radio.'
+kaitlyntierney:
+  name: Kaitlyn Tierney
+  website: krtierney.com
+  image: /images/authors/kaitlyntierney.jpg
+  bio: "Kaitlyn Tierney loves learning new things and sharing them with others—everything from archery, to ceramics, to software engineering is fair game. After starting her career as a zoo librarian in San Diego, she’s currently a Staff Software Engineer at Farewill, where she focuses on strengthening technical foundations, mentoring engineers, and writing everything down for posterity. She lives in London and works remotely."
 katrinaowen:
   name: Katrina Owen
   twitter: kytrinyx
@@ -234,6 +249,11 @@ nadiaodunayo:
   twitter: nodunayo
   image: /images/authors/nadiaodunayo.jpg
   bio: 'Nadia co-founded Ignition Works in order to find fun and sustainable ways to build worthwhile software products. She has taught good engineering practices through pair programming at Pivotal Labs and Pivotal Cloud Foundry. She originally learnt to code at Makers Academy and she runs the Ruby Book Club podcast in her spare time.'
+nadiaodunayo23:
+  name: Nadia Odunayo
+  twitter: nodunayo
+  image: /images/authors/nadiaodunayo23.jpg
+  bio: 'Nadia Odunayo is the founder and CEO of The StoryGraph, the new app that helps you to track your reading and choose which book to read next based on your mood and favourite topics and themes. She previously worked at Pivotal Labs as a software engineer and originally learnt to code at Makers Academy in London. In her spare time she loves to take dance class and, naturally, read!'
 najafali:
   name: Najaf Ali
   twitter: alinajaf
@@ -258,11 +278,22 @@ nickmeans:
   twitter: nmeans
   image: /images/authors/nickmeans.jpg
   bio: 'Storyteller, empathetic leader, student of disasters, builder of distributed teams. Unabashed AV geek. VP of Engineering at Muve Health.'
+nickschwaderer:
+  name: Nick Schwaderer
+  twitter: schwad_rb
+  mastodon: ruby.social/@nickschwaderer
+  image: /images/authors/nickschwaderer.jpg
+  bio: "Nick is a Senior Production Engineer at Shopify on the Ruby and Rails Infrastructure Team. Nick maintains Scarpe, an attempt at a new Shoes.rb implementation. He digs into Ruby lore frequently with the PastRubies newsletter. Nick has worked on projects with Ruby to help forecast pain for individuals with chronic illness and assist in communications during a natural disaster."
 noahgibbs:
   name: Noah Gibbs
   twitter: codefolio
   image: /images/authors/noahgibbs.jpg
   bio: "Noah is a Ruby Fellow for AppFolio, working on the core Ruby language and related tooling. After over 30 years of communicating with computers, Noah now believes that communicating with humans may not be a passing fad, and he’s trying it out."
+noahgibbs23:
+  name: Noah Gibbs
+  twitter: ruby.social/@codefolio
+  image: /images/authors/noahgibbs.jpg
+  bio: "Noah works on the YJIT team at Shopify, and has been staring hard at Ruby performance for many years. As a long-time developer, he's always happy to yell at you kids to get off his lawn."
 patrickmckenzie:
   name: Patrick McKenzie
   twitter: patio11
@@ -349,6 +380,11 @@ tekinsuleyman:
   twitter: tekin
   image: /images/authors/tekinsuleyman.jpg
   bio: Tekin Suleyman is a freelance consultant who's been shipping Ruby code for over a decade. He's worked with teams, large and small. He also runs the North West Ruby User Group in Manchester.
+timriley:
+  name: Tim Riley
+  mastodon: ruby.social/@timriley
+  image: /images/authors/timriley.jpg
+  bio: "Tim is a core team member of Hanami, dry-rb and rom-rb and a Principal Engineer at Buildkite. He’s been writing Ruby for over 20 years and still loves it!"
 tomstuart:
   name: Tom Stuart
   twitter: tomstuart
