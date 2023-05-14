@@ -1,62 +1,74 @@
 ---
 layout: default
 ---
-
 {% capture day %}{{ page.date | date: "%-d" }}{% endcapture %}
 {% capture dayLastTwoDigits %}{{ day | modulo: 100 }}{% endcapture %}
-{% if dayLastTwoDigits >= "11" and dayLastTwoDigits <= "13" %}
-  {% assign ordinal = "th" %}
+{% if dayLastTwoDigits >= '11' and dayLastTwoDigits <= '13' %}
+  {% assign ordinal = 'th' %}
 {% else %}
   {% capture dayLastDigit %}{{ day | modulo: 10 }}{% endcapture %}
   {% case dayLastDigit %}
-    {% when "1" %}
-      {% assign ordinal = "st" %}
-    {% when "2" %}
-      {% assign ordinal = "nd" %}
-    {% when "3" %}
-      {% assign ordinal = "rd" %}
+    {% when '1' %}
+      {% assign ordinal = 'st' %}
+    {% when '2' %}
+      {% assign ordinal = 'nd' %}
+    {% when '3' %}
+      {% assign ordinal = 'rd' %}
     {% else %}
-      {% assign ordinal = "th" %}
+      {% assign ordinal = 'th' %}
   {% endcase %}
 {% endif %}
 {% assign author = site.data.authors[page.author] %}
 
 <article>
-  <div class="text-center">
-    <p class="text-xl"><a href="/{{ page.date | date: "%Y" }}">{{ page.date | date: "%Y" }}</a></p>
-    <h1 class="text-3xl">
-      {{ page.title }}
-    </h1>
-    <p class="mb-4">
-      {{ author.name }} //
-      {% if author.twitter %}
-        <a href="https://twitter.com/{{ author.twitter }}">@{{ author.twitter }}</a>
-      {% endif %}
+  <div class="lg:container lg:mx-auto p-2 sm:p-4">
+    <p class="font-bold">
+      <a href="/{{ page.date | date: "%Y" }}">{{ page.date | date: '%Y' }}</a>
     </p>
-
   </div>
 
   {% if page.video_source %}
     <div class="relative">
-      <video class="object-contain rounded bg-gray-600 xl:container mx-auto" controls autoPictureInPicture>
+      <video class="w-1/1 object-contain lg:rounded bg-gray-600 xl:container mx-auto" controls autoPictureInPicture>
         <source src="//{{ page.video_source }}" type="video/mp4">
       </video>
     </div>
   {% endif %}
 
-  <div class="bg-white mt-4 p-4 rounded max-w-xl mx-auto">
+  <div class="bg-sky-500 text-amber-50">
+    <div class="lg:container lg:mx-auto py-4 px-2 sm:px-4">
+      <h1 class="font-bold"">
+        {{ page.title }}
+      </h1>
+      <div class="grid grid-cols-2">
+        <h3 class="italic text-xs leading-6 opacity-70">{{ author.name }}</h3>
+        <a download href="//{{ page.video_source }}" class="text-right block italic text-xs leading-6 opacity-70 underline decoration-dashed">download</a>
+      </div>
+      <!--
+      <p class="">
+        {% if author.twitter %}
+          <a href="https://twitter.com/{{ author.twitter }}">@{{ author.twitter }}</a>
+        {% endif %}
+      </p>
+      -->
+      
+    </div>
+  </div>
+
+  <div class="lg:container lg:mx-auto p-2 sm:p-4">
     {% if page.video_source %}
       <span class="flex flex-row-reverse rounded-md">
-        <a download href="//{{ page.video_source }}" class="inline-flex justify-center rounded-md border border-transparent px-4 py-2 mb-4 bg-red-600 text-base font-medium text-white shadow-sm hover:bg-red-800 focus:outline-none focus:border-red-700 focus:shadow-outline-red transition ease-in-out duration-150 sm:text-sm">
-          Download
-        </a>
       </span>
     {% endif %}
 
     <div class="prose">
       {{ content }}
 
-      <p class="text-sm mt-8">{{ page.date | date: "%A, %-d" }}{{ ordinal }} {{ page.date | date: "%B %Y"  }}</p>
+      <p class="text-sm mt-8">
+        {{ page.date | date: '%A, %-d' -}}
+        {{- ordinal }}
+        {{ page.date | date: '%B %Y' }}
+      </p>
     </div>
   </div>
 </article>

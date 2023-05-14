@@ -1,0 +1,58 @@
+<div class="bg-amber-50 text-stone-900">
+  {% comment %} <div class="bg-sky-950 text-amber-50"> {% endcomment %}
+    <div class="lg:container lg:mx-auto">
+      <div>
+        {% assign wastalk = false %}
+        {% assign ordered_posts = site.posts | where_exp: 'post', 'post.date >= site.time' | sort: 'date' %}
+
+        {% for post in ordered_posts %}
+        {% assign author = site.data.authors[post.author] %}
+
+        {% if wastalk == true and post.title == 'Break' or post.title == 'Lunch' or post.title == 'Doors' or post.title
+        == "Drinks" %}
+      </div>
+      {%- endif %}
+
+      {% if wastalk == false and post.title != 'Break' and post.title != 'Lunch' and post.title != 'Doors' and
+      post.title != "Drinks" %}
+      <div data-timestamp="{{ post.date | date: '%H%M' }}" class="md:flex px-2 sm:px-4 gap-2 sm:gap-4">
+        {%- endif %}
+
+        {% if post.title == 'Break' or post.title == 'Lunch' or post.title == 'Doors' or post.title == "Drinks" %}
+        {% assign wastalk = false %}
+        <div data-timestamp="{{ post.date | date: '%H%M' }}"
+          class="md:flex my-4 px-2 sm:px-4 gap-2 sm:gap-4 opacity-50">
+          {%- else %}
+          {% assign wastalk = true %}
+          {%- endif %}
+
+          <div class="lg:basis-1/4 grow flex gap-4 mb-2 md:mb-0">
+            <div class="grow-0">
+              {{ post.date | date: '%H:%M' }}
+            </div>
+            <div class="hidden sm:block w-12 shrink-0 grow-0">
+              {% if author %}
+              <img src="{{ author.image }}" class="rounded-sm" alt="{{ author.name }}">
+              {% else %}
+              &nbsp;
+              {% endif %}
+            </div>
+            <div class="grow">
+              <h2>{{ post.title }}</h2>
+              <h3 class="italic text-xs leading-6 opacity-60">{{ author.name }}</h3>
+            </div>
+          </div>
+          {% if post.title == 'Break' or post.title == 'Lunch' or post.title == 'Doors' or post.title == "Drinks" %}
+        </div>
+        {%- endif %}
+
+        {% endfor %}
+      </div>
+    </div>
+    <div class="lg:container lg:mx-auto">
+      <p class="text-xs leading-6 opacity-40 px-2 sm:px-4 pb-2 font-extralight">
+        Programmed & hosted by
+        <a href="https://andycroll.com">Andy Croll</a>.
+      </p>
+    </div>
+  </div>

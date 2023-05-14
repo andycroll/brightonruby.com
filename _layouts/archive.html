@@ -1,116 +1,131 @@
 ---
 layout: default
 ---
-
 {% capture day %}{{ page.date | date: "%-d" }}{% endcapture %}
 {% capture dayLastTwoDigits %}{{ day | modulo: 100 }}{% endcapture %}
-{% if dayLastTwoDigits >= "11" and dayLastTwoDigits <= "13" %}
-  {% assign ordinal = "th" %}
+{% if dayLastTwoDigits >= '11' and dayLastTwoDigits <= '13' %}
+  {% assign ordinal = 'th' %}
 {% else %}
   {% capture dayLastDigit %}{{ day | modulo: 10 }}{% endcapture %}
   {% case dayLastDigit %}
-    {% when "1" %}
-      {% assign ordinal = "st" %}
-    {% when "2" %}
-      {% assign ordinal = "nd" %}
-    {% when "3" %}
-      {% assign ordinal = "rd" %}
+    {% when '1' %}
+      {% assign ordinal = 'st' %}
+    {% when '2' %}
+      {% assign ordinal = 'nd' %}
+    {% when '3' %}
+      {% assign ordinal = 'rd' %}
     {% else %}
-      {% assign ordinal = "th" %}
+      {% assign ordinal = 'th' %}
   {% endcase %}
 {% endif %}
-
-{% assign page_year = page.date | date: "%Y" %}
+{% assign page_year = page.date | date: '%Y' %}
 
 <article>
-  <div class="text-center mb-8">
-    <p class="text-xl">{{ page.date | date: "%A, %-d" }}{{ ordinal }} {{ page.date | date: "%B"  }}</p>
-    <h1 class="text-3xl">
-      {{ page_year }}
-    </h1>
+  <div class="lg:container lg:mx-auto p-2 sm:p-4">
+    <p class="font-bold">
+      {{ page_year }} Archive
+      <span class="font-light italic">
+        {{- page.date | date: '%A, %-d' -}}
+        {{- ordinal }}
+        {{ page.date | date: '%B' -}}
+      </span>
+    </p>
   </div>
 
-  <div class="xl:container mx-auto">
-    <div class="grid grid-cols-2 sm:col-start-2 sm:grid-cols-3 gap-4 mb-4">
-      <div class="prose prose-sm bg-white p-4 rounded">
-        {{ content }}
-      </div>
-
+  <div id="sponsors" class="bg-slate-900 text-amber-50">
+    <div class="lg:container lg:mx-auto grid grid-cols-1 md:grid-cols-2 gap-4 px-2 sm:px-4 pt-2 pb-3 sm:py-4">
       {% if page.gold.size > 0 %}
-        <div class="p-4 rounded col-start-2 sm:col-start-3 row-start-2 row-span-2">
-          <h4 class="text-center text-xs mb-4">Gold</h4>
-          {% for sponsor in page.gold %}
-            <div class="px-8">
-              {% if site.data.sponsors[sponsor].url != nil %}
-              <a href="{{ site.data.sponsors[sponsor].url }}" target="_blank">
-                <img class="mb-4" src="data:image/svg+xml;base64,{{ site.data.sponsors[sponsor].base64logo }}" />
-              </a>
-              {% else %}
-              <img class="mb-4" src="data:image/svg+xml;base64,{{ site.data.sponsors[sponsor].base64logo }}" />
-              {% endif %}
-            </div>
-          {% endfor %}
-        </div>
-      {% endif %}
+        <div class="sm:flex">
+          <div class="w-16 grow-0 pr-2 sm:pr-4">
+            <p class="text-xs leading-8 opacity-40">Gold</p>
+          </div>
 
-      {% if page.silver.size > 0 %}
-        <div class="p-4 rounded sm:col-start-2 row-start-5 sm:row-start-4">
-          <h4 class="text-center text-xs mb-4">Silver</h4>
-
-          <div class="grid grid-cols-2 gap-8 mb-4">
-            {% for sponsor in page.silver %}
-              <div class="">
-                {% if site.data.sponsors[sponsor].url != nil %}
-                <a href="{{ site.data.sponsors[sponsor].url }}" target="_blank">
-                  <img class="mb-4" src="data:image/svg+xml;base64,{{ site.data.sponsors[sponsor].base64logo }}" />
+          <div class="grow grid grid-cols-3 sm:grid-cols-4 content-center gap-2 gap-x-4 md:gap-4">
+            {% for sponsor in page.gold %}
+              {% if site.data.sponsors[sponsor].url != null %}
+                <a class="block" href="{{ site.data.sponsors[sponsor].url }}" target="_blank">
+                  <img src="data:image/svg+xml;base64,{{ site.data.sponsors[sponsor].base64logo }}">
                 </a>
-                {% else %}
-                <img class="mb-4" src="data:image/svg+xml;base64,{{ site.data.sponsors[sponsor].base64logo }}" />
-                {% endif %}
-              </div>
+              {% else %}
+                <img class="block" src="data:image/svg+xml;base64,{{ site.data.sponsors[sponsor].base64logo }}">
+              {% endif %}
             {% endfor %}
           </div>
         </div>
       {% endif %}
 
-      {% assign ordered_posts = site.posts | sort: 'date' %}
-      {% for post in ordered_posts %}
-        {% assign post_year = post.date | date: "%Y" %}
-        {% if post_year == page_year and post.break != true %}
-          {% assign author = site.data.authors[post.author] %}
-          <div class="">
-            <a href="{{ post.url }}">
-              {% if post.image %}
-                <img src="{{ post.image }}" class="rounded mb-2" alt="{{ post.title }}" />
-              {% else %}
-                <img src="{{ author.image }}" class="rounded w-1/2 mb-2" alt="{{ post.title }}" />
-              {% endif %}
-            </a>
-            <p><a href="{{ post.url }}">{{ post.title }}</a></p>
-            <p class="text-sm">{{ author.name }}</p>
+      {% if page.silver.size > 0 %}
+        <div class="sm:flex">
+          <div class="w-20 grow-0 pr-2 sm:pr-4">
+            <p class="text-xs leading-8 opacity-40">Silver</p>
           </div>
-        {% endif %}
-      {% endfor %}
 
-      {% if page.friend.size > 0 %}
-        <div class="p-4 rounded col-span-2">
-          <h4 class="text-center text-xs mb-4">Friends</h4>
-
-          <div class="grid grid-cols-3 sm:grid-cols-4 gap-8 mb-4 mx-16">
-            {% for sponsor in page.friend %}
-              <div class="">
-                {% if site.data.sponsors[sponsor].url != nil %}
-                <a href="{{ site.data.sponsors[sponsor].url }}" target="_blank">
-                  <img class="mb-4" src="data:image/svg+xml;base64,{{ site.data.sponsors[sponsor].base64logo }}" />
+          <div class="grow grid grid-cols-4 content-center gap-2 gap-x-4 md:gap-4">
+            {% for sponsor in page.silver %}
+              {% if site.data.sponsors[sponsor].url != null %}
+                <a class="block" href="{{ site.data.sponsors[sponsor].url }}" target="_blank">
+                  <img src="data:image/svg+xml;base64,{{ site.data.sponsors[sponsor].base64logo }}">
                 </a>
-                {% else %}
-                <img class="mb-4" src="data:image/svg+xml;base64,{{ site.data.sponsors[sponsor].base64logo }}" />
-                {% endif %}
-              </div>
+              {% else %}
+                <img class="block" src="data:image/svg+xml;base64,{{ site.data.sponsors[sponsor].base64logo }}">
+              {% endif %}
             {% endfor %}
           </div>
         </div>
       {% endif %}
     </div>
   </div>
+
+  {% assign ordered_posts = site.posts | sort: 'date' %}
+  <div class="lg:container lg:mx-auto p-2 sm:p-4">
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-2 sm:gap-4">
+      {% for post in ordered_posts %}
+        {% assign post_year = post.date | date: '%Y' %}
+        {% if post_year == page_year and post.break != true %}
+          {% assign author = site.data.authors[post.author] %}
+          <div class="flex gap-4 mb-2 md:mb-0">
+            <div class="w-12 shrink-0 grow-0">
+              <a href="{{ post.url }}"><img src="{{ author.image }}" class="rounded-sm" alt="{{ author.name }}"></a>
+            </div>
+            <div class="grow">
+              <h2>
+                <a href="{{ post.url }}">{{ post.title }}</a>
+              </h2>
+              <h3 class="italic text-xs leading-6 opacity-60">{{ author.name }}</h3>
+            </div>
+          </div>
+        {% endif %}
+      {% endfor %}
+    </div>
+  </div>
+
+  <article class="lg:container lg:mx-auto py-4 px-2 sm:px-4">
+    <div class="prose max-w-2xl font-light">
+      {{ content }}
+    </div>
+  </article>
+
+  {% if page.friend.size > 0 %}
+    <div id="sponsors" class="bg-sky-500 text-amber-50">
+      <div class="lg:container lg:mx-auto my-8 px-2 sm:px-4 pt-2 pb-3 sm:py-4">
+        <div class="sm:flex">
+          <div class="w-20 grow-0 pr-2 sm:pr-4">
+            <p class="text-sm sm:text-regular sm:leading-8 opacity-40">Friends</p>
+          </div>
+
+          <div class="grow grid grid-cols-4 md:grid-cols-12 content-center gap-2 gap-x-4 md:gap-4">
+            {% for sponsor in page.friend %}
+              {% if site.data.sponsors[sponsor].url != null %}
+                <a class="block" href="{{ site.data.sponsors[sponsor].url }}" target="_blank">
+                  <img src="data:image/svg+xml;base64,{{ site.data.sponsors[sponsor].base64logo }}">
+                </a>
+              {% else %}
+                <img class="block" src="data:image/svg+xml;base64,{{ site.data.sponsors[sponsor].base64logo }}">
+              {% endif %}
+            {% endfor %}
+          </div>
+        </div>
+      </div>
+    </div>
+  {% endif %}
 </article>
