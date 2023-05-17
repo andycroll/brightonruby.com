@@ -3,32 +3,28 @@
     <div class="lg:container lg:mx-auto">
       <div>
         {% assign wastalk = false %}
-        {% assign ordered_posts = site.posts | where_exp: 'post', 'post.date >= site.time' | sort: 'date' %}
+        {% assign ordered_posts = site.posts | | where_exp: 'post', 'post.date >= site.time and post.layout == "preview" or post.layout == "break"' | sort: 'date' %}
 
         {% for post in ordered_posts %}
-        {% assign author = site.data.authors[post.author] %}
+          {% assign author = site.data.authors[post.author] %}
 
-        {% if wastalk == true and post.title == 'Break' or post.title == 'Lunch' or post.title == 'Doors' or post.title
-        == "Drinks" %}
-      </div>
-      {%- endif %}
-
-      {% if wastalk == false and post.title != 'Break' and post.title != 'Lunch' and post.title != 'Doors' and
-      post.title != "Drinks" %}
-      <div data-timestamp="{{ post.date | date: '%H%M' }}" class="md:flex px-2 sm:px-4 gap-2 sm:gap-4">
-        {%- endif %}
-
-        {% if post.title == 'Break' or post.title == 'Lunch' or post.title == 'Doors' or post.title == "Drinks" %}
-        {% assign wastalk = false %}
-        <div data-timestamp="{{ post.date | date: '%H%M' }}"
-          class="md:flex my-4 px-2 sm:px-4 gap-2 sm:gap-4 opacity-50">
-          {%- else %}
-          {% assign wastalk = true %}
+          {% if wastalk == true and post.title == 'Break' or post.title == 'Lunch' or post.title == 'Doors' or post.title == "Drinks" %}
+            </div>
           {%- endif %}
 
-          <div class="lg:basis-1/4 grow flex gap-4 mb-2 md:mb-0">
-            <div class="grow-0">
-              {{ post.date | date: '%H:%M' }}
+          {% if wastalk == false and post.title != 'Break' and post.title != 'Lunch' and post.title != 'Doors' and post.title != "Drinks" %}
+            <div data-timestamp="{{ post.date | date: '%H%M' }}" class="md:flex px-2 sm:px-4 py-2 gap-2 sm:gap-0">
+          {%- endif %}
+
+          {% if post.title == 'Break' or post.title == 'Lunch' or post.title == 'Doors' or post.title == "Drinks" %}
+            <div data-timestamp="{{ post.date | date: '%H%M' }}" class="md:flex px-2 sm:px-4 py-2 md:py-4 gap-2 sm:gap-0 opacity-50">
+          {%- endif %}
+
+          <div class="grow flex gap-4 my-1">
+            <div class="grow-0 w-12">
+              {% if wastalk == false or post.title == 'Break' or post.title == 'Lunch' or post.title == 'Doors' or post.title == "Drinks" %}
+                {{ post.date | date: '%H:%M' }}
+              {% endif -%}
             </div>
             <div class="hidden sm:block w-12 shrink-0 grow-0">
               {% if author %}
@@ -42,9 +38,16 @@
               <h3 class="italic text-xs leading-6 opacity-60">{{ author.name }}</h3>
             </div>
           </div>
+      
           {% if post.title == 'Break' or post.title == 'Lunch' or post.title == 'Doors' or post.title == "Drinks" %}
-        </div>
-        {%- endif %}
+            </div>
+          {%- endif %}
+
+          {% if post.title == 'Break' or post.title == 'Lunch' or post.title == 'Doors' or post.title == "Drinks" %}
+            {% assign wastalk = false %}
+          {%- else %}
+            {% assign wastalk = true %}
+          {%- endif %}
 
         {% endfor %}
       </div>
