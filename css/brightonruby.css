@@ -1798,10 +1798,6 @@ select {
   width: 6rem;
 }
 
-.w-3\/4 {
-  width: 75%;
-}
-
 .w-full {
   width: 100%;
 }
@@ -2208,10 +2204,6 @@ select {
     margin-bottom: 0px;
   }
 
-  .md\:w-3\/4 {
-    width: 75%;
-  }
-
   .md\:grid-cols-12 {
     grid-template-columns: repeat(12, minmax(0, 1fr));
   }
@@ -2222,10 +2214,6 @@ select {
 
   .md\:grid-cols-3 {
     grid-template-columns: repeat(3, minmax(0, 1fr));
-  }
-
-  .md\:grid-cols-5 {
-    grid-template-columns: repeat(5, minmax(0, 1fr));
   }
 
   .md\:gap-4 {
