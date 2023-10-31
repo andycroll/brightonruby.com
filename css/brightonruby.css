@@ -1806,10 +1806,6 @@ select {
   max-width: 42rem;
 }
 
-.flex-none {
-  flex: none;
-}
-
 .shrink-0 {
   flex-shrink: 0;
 }
