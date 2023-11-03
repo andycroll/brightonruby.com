@@ -1,7 +1,11 @@
 ---
 title: Debugging For New Developers
 layout: video
-author: najafali
+author: Najaf Ali
+author_social:
+  - name: "@alinajaf"
+    url: "https://twitter.com/alinajaf"
+author_bio_markdown: "Ali runs a Ruby on Rails consultancy called Happy Bear Software. He has fixed a lot of bugs and trained a lot of junior developers, who also have fixed a lot of bugs."
 date: '2017-07-07 11:10'
 video_source: "videos.brightonruby.com/videos/2017/najaf-debugging-a-short-guide-for-new-developers.mp4"
 slides: 'https://github.com/happybearsoftware/debugging-talk/blob/master/slides/slides.md'

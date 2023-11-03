@@ -1,6 +1,10 @@
 ---
 title: A Brief History of Types
-author: sarahmei
+author: Sarah Mei
+author_social:
+  - name: "@sarahmei"
+    url: "https://twitter.com/sarahmei"
+author_bio_markdown: "Architect at Salesforce UX, out of San Franciso. Director at Ruby Central (organisers of RailsConf & RubyConf). Founder of Bridge Foundry (Rails Bridge)."
 date: '2018-07-06 09:40'
 layout: video
 video_source: "videos.brightonruby.com/videos/2018/sarah-a-brief-history-of-types.mp4"

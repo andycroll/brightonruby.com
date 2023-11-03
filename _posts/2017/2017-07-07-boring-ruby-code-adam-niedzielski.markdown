@@ -1,6 +1,11 @@
 ---
 title: Boring Ruby Code
-author: adamniedzielski
+author: Adam Niedzielski
+author_social:
+  - name: "@niedzielskiadam"
+    url: "https://twitter.com/niedzielskiadam"
+author_bio_markdown: 'Adam is a programmer that loves teaching people how to write code and sharing his knowledge. He enjoys conferences and local programming meetups as an attendee, speaker and organizer. Adam is obsessed with clean code, but he never forgets that the technology exists to serve its users. He is really proud of his blog.\n\nIn his free time Adam plays board games, drinks craft beer or explores new cities without checking a map.'
+
 date: '2017-07-07 15:50'
 layout: video
 video_source: "videos.brightonruby.com/videos/2017/adam-boring-ruby-code.mp4"

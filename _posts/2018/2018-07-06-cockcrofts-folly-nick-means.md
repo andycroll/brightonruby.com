@@ -1,6 +1,10 @@
 ---
 title: Cockcroft’s Folly
-author: nickmeans
+author: Nick Means
+author_social:
+  - name: "@nmeans"
+    url: "https://twitter.com/nmeans"
+author_bio_markdown: "Storyteller, empathetic leader, student of disasters, builder of distributed teams. Unabashed AV geek. VP of Engineering at Muve Health."
 date: '2018-07-06 14:00'
 layout: video
 video_source: "videos.brightonruby.com/videos/2018/nick-cockcrofts-folly.mp4"

@@ -1,9 +1,12 @@
 ---
 title: Welcome & Code of Conduct
-author: andycroll
+author: Andy Croll
+author_social:
+  - name: "@andycroll"
+    url: "https://twitter.com/andycroll"
+  - url: "https://ruby.social/@andycroll"
 date: '2018-07-06 09:30'
 layout: video
-video_source: "videos.brightonruby.com/videos/2015/.mp4"
 video_source: "videos.brightonruby.com/videos/2018/andy-brighton-ruby-code-of-conduct.mp4"
 image: '/images/2018/welcome-code-of-conduct-andy-croll.jpg'
 description: 'At the beginning of 2018’s Brighton Ruby, during the introduction, I wanted to ‘get into’ what having a Code of Conduct means. I hadn’t seen anyone do this, and it’s a topic I’d been thinking about a lot this year.'

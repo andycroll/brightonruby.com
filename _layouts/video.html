@@ -1,74 +1,144 @@
 ---
 layout: default
 ---
-{% capture day %}{{ page.date | date: "%-d" }}{% endcapture %}
-{% capture dayLastTwoDigits %}{{ day | modulo: 100 }}{% endcapture %}
-{% if dayLastTwoDigits >= '11' and dayLastTwoDigits <= '13' %}
-  {% assign ordinal = 'th' %}
-{% else %}
-  {% capture dayLastDigit %}{{ day | modulo: 10 }}{% endcapture %}
-  {% case dayLastDigit %}
-    {% when '1' %}
-      {% assign ordinal = 'st' %}
-    {% when '2' %}
-      {% assign ordinal = 'nd' %}
-    {% when '3' %}
-      {% assign ordinal = 'rd' %}
-    {% else %}
-      {% assign ordinal = 'th' %}
-  {% endcase %}
-{% endif %}
-{% assign author = site.data.authors[page.author] %}
+{%- assign page_year = page.date | date: '%Y' -%}
+{%- assign day = page.date | date: '%-d' -%}
+{%- assign dayLastTwoDigits = day | modulo: 100 -%}
+
+{%- if dayLastTwoDigits == '11' or dayLastTwoDigits == '12' -%}
+  {%- assign ordinal = 'th' -%}
+{%- else -%}
+  {%- assign dayLastDigit = day | modulo: 10 -%}
+  {%- if dayLastDigit == '1' -%}
+    {%- assign ordinal = 'st' -%}
+  {%- elsif dayLastDigit == '2' -%}
+    {%- assign ordinal = 'nd' -%}
+  {%- elsif dayLastDigit == '3' -%}
+    {%- assign ordinal = 'rd' -%}
+  {%- else -%}
+    {%- assign ordinal = 'th' -%}
+  {%- endif -%}
+{%- endif -%}
 
 <article>
-  <div class="lg:container lg:mx-auto p-2 sm:p-4">
-    <p class="font-bold">
-      <a href="/{{ page.date | date: "%Y" }}">{{ page.date | date: '%Y' }}</a>
-    </p>
+  <div class="bg-sky-500 text-amber-50">
+    <div class="lg:container lg:mx-auto py-4 px-2 sm:px-4">
+      <h1 class="font-bold">
+        {{ page.title }} //
+        <a class="italic decoration-white decoration-2 hover:underline" href="/{{ page_year }}">
+          {{ page.date | date: '%A, %-d' -}}
+          {{- ordinal }}
+          {{ page.date | date: '%B %Y' }}
+        </a>
+      </h1>
+      <div class="grid grid-cols-2">
+        <h3 class="italic text-xs leading-6 opacity-70">{{ page.author }}</h3>
+        {% if page.video_source %}
+          <a
+            download
+            href="//{{ page.video_source }}"
+            class="text-right block italic text-xs leading-6 opacity-70 underline decoration-dashed"
+            >download</a
+          >
+        {% endif %}
+      </div>
+      <!--
+        <p class="">
+          {% if author.twitter %}
+            <a href="https://twitter.com/{{ author.twitter }}">@{{ author.twitter }}</a>
+          {% endif %}
+        </p>
+      -->
+    </div>
   </div>
-
   {% if page.video_source %}
     <div class="relative">
-      <video class="w-1/1 object-contain lg:rounded bg-gray-600 xl:container mx-auto" controls autoPictureInPicture>
+      <video
+        class="aspect-16/10 w-full object-contain bg-gradient-to-b from-slate-900 to-slate-700 xl:container mx-auto"
+        preload="metadata"
+        controls
+        autoPictureInPicture
+        poster="{{ page.image }}"
+      >
         <source src="//{{ page.video_source }}" type="video/mp4">
+        <!-- <track label="English" kind="subtitles" srclang="en-us" src="JAWS-aria-errors.vtt" default=""> -->
+        Sorry, your browser doesn’t support embedded videos, but don’t worry, you can
+        <a href="//{{ page.video_source }}">download it</a>.
+        <!--
+          The <a href="JAWS-aria-errors.vtt">caption file</a> is also available in case your video player can import it.
+        -->
       </video>
     </div>
   {% endif %}
 
-  <div class="bg-sky-500 text-amber-50">
-    <div class="lg:container lg:mx-auto py-4 px-2 sm:px-4">
-      <h1 class="font-bold"">
-        {{ page.title }}
-      </h1>
-      <div class="grid grid-cols-2">
-        <h3 class="italic text-xs leading-6 opacity-70">{{ author.name }}</h3>
-        <a download href="//{{ page.video_source }}" class="text-right block italic text-xs leading-6 opacity-70 underline decoration-dashed">download</a>
+  {% for archive in site.archives %}
+    {% assign archive_year = archive.name | replace: '.md', '' %}
+    {% if archive_year == page_year %}
+      <div id="sponsors" class="bg-slate-900 text-amber-50">
+        <div class="lg:container lg:mx-auto grid grid-cols-1 md:grid-cols-2 gap-4 px-2 sm:px-4 pt-2 pb-3 sm:py-4">
+          <div class="sm:flex">
+            <div class="w-16 grow-0 pr-2 sm:pr-4">
+              <p class="text-xs leading-8 opacity-40">Gold</p>
+            </div>
+
+            <div class="grow grid grid-cols-3 sm:grid-cols-4 content-center gap-2 gap-x-4 md:gap-4">
+              {% for sponsor in archive.gold %}
+                {% if sponsor.url != null %}
+                  <a class="block" href="{{ sponsor.url }}" title="{{ sponsor.name }}" target="_blank">
+                    <img
+                      class="block"
+                      src="/images/{{ page_year }}/sponsors/{{ sponsor.name | downcase | replace: ' ', '_'}}.svg"
+                      alt="{{ sponsor.name }} Logo"
+                    >
+                  </a>
+                {% else %}
+                  <img
+                    class="block"
+                    src="/images/{{ page_year }}/sponsors/{{ sponsor.name | downcase | replace: ' ', '_'}}.svg"
+                    alt="{{ sponsor.name }} Logo"
+                  >
+                {% endif %}
+              {% endfor %}
+            </div>
+          </div>
+
+          {% if page_year == '2023' %}
+            <div class="hidden md:block md:flex flex-row-reverse">
+              <a class="block" href="https://bigeggfilms.com" title="Video by Big Egg Films" target="_blank">
+                <img
+                  class="h-8 block"
+                  src="/images/{{ page_year }}/big-egg-films.svg"
+                  alt="Big Egg Films Logo"
+                >
+              </a>
+            </div>
+          {% endif %}
+        </div>
       </div>
-      <!--
-      <p class="">
-        {% if author.twitter %}
-          <a href="https://twitter.com/{{ author.twitter }}">@{{ author.twitter }}</a>
-        {% endif %}
-      </p>
-      -->
-      
-    </div>
-  </div>
+    {% endif %}
+  {% endfor %}
 
   <div class="lg:container lg:mx-auto p-2 sm:p-4">
-    {% if page.video_source %}
-      <span class="flex flex-row-reverse rounded-md">
-      </span>
-    {% endif %}
-
     <div class="prose">
       {{ content }}
 
-      <p class="text-sm mt-8">
-        {{ page.date | date: '%A, %-d' -}}
-        {{- ordinal }}
-        {{ page.date | date: '%B %Y' }}
-      </p>
+      {% if page_year == '2023' %}
+      <div class="md:hidden">
+        <span class="inline-flex items-center">
+          Video by
+        <a href="https://bigeggfilms.com" title="Video by Big Egg Films" target="_blank">
+          <img
+            class="h-8 mx-2 my-0"
+            src="/images/{{ page_year }}/big-egg-films.svg"
+            alt="Big Egg Films Logo"
+          >
+        </a>
+      </div>
+      {%- endif %}
+
+      <hr>
+
+      {{ page.author_bio_markdown | markdownify }}
     </div>
   </div>
 </article>

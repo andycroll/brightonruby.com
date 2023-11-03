@@ -1,6 +1,10 @@
 ---
 title: A Branch in Time
-author: tekinsuleyman
+author: Tekin Süleyman
+author_social:
+  - name: "@tekin"
+    url: "https://twitter.com/tekin"
+author_bio_markdown: Tekin Suleyman is a freelance consultant who's been shipping Ruby code for over a decade. He's worked with teams, large and small. He also runs the North West Ruby User Group in Manchester.
 date: '2018-07-06 12:10'
 layout: video
 video_source: "videos.brightonruby.com/videos/2018/tekin-a-branch-in-time.mp4"

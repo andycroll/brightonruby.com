@@ -1,7 +1,11 @@
 ---
 title: Difficult Conversations
 layout: video
-author: adamcuppy
+author: Adam Cuppy
+author_social:
+  - name: "@adamcuppy"
+    url: "https://twitter.com/adamcuppy"
+author_bio_markdown: "Master of Smile Generation. Ambassador of Company Culture. Tech Entreprenur. Speaker/Educator. One-time Professional Actor @osfashland. Husband. Chief Zealous Officer @CodingZeal"
 date: '2017-07-07 14:00'
 video_source: "videos.brightonruby.com/videos/2017/adam-difficult-conversations.mp4"
 image: '/images/2017/difficult-conversations-adam-cuppy.jpg'

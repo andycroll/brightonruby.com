@@ -1,6 +1,10 @@
 ---
 title: Git-driven Refactoring
-author: ashleyellispierce
+author: Ashley Ellis Pierce
+author_social:
+  - name: "@aellispierce"
+    url: "https://twitter.com/aellispierce"
+author_bio_markdown: "Ashley lives in Durham, NC and is an Application Engineer at GitHub. She enjoys helping others learn to code and is the lead organizer for RailsBridge Triangle and a mentor for Code the Dream"
 date: '2018-07-06 11:30'
 layout: video
 video_source: "videos.brightonruby.com/videos/2018/ashley-git-driven-refactoring.mp4"

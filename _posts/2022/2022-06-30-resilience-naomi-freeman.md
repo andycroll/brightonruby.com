@@ -1,6 +1,10 @@
 ---
 title: "Resilience"
-author: naomifreeman
+author: "Naomi Freeman"
+author_social:
+  - name: "@Naomi_Freeman"
+    url: "https://twitter.com/Naomi_Freeman"
+author_bio_markdown: "Previously: Ruby dev (payments and infra). Women Who Code Data Science & Blockchain Fellow. CTO. Founder. etc. Currently: bridging business and tech as a Subject Matter Expert: Technical Management at Noroff University - Accelerate (Norway). Canadian living in Norway. I like cats."
 date: '2022-06-30 16:30'
 layout: video
 video_source: "videos.brightonruby.com/videos/2022/naomi-freeman-resilience.mp4"

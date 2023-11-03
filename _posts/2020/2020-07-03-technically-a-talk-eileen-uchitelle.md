@@ -1,6 +1,10 @@
 ---
 title: Technically a Talk
-author: eileenuchitelle
+author: Eileen Uchitelle
+author_social:
+  - name: "@eileencodes"
+    url: "https://twitter.com/eileencodes"
+author_bio_markdown: "Staff Engineer on the Ruby Architecture Team at GitHub and a member of the Rails Core team. She’s an avid contributor to open source focusing on the Ruby on Rails framework and its dependencies. Eileen is passionate about scalability, performance, and making open source communities more sustainable and welcoming."
 date: '2020-07-03 10:00'
 layout: video
 video_source: "videos.brightonruby.com/videos/2020/eileen-technically-a-talk.mp4"

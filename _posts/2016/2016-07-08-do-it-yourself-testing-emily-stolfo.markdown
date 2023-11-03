@@ -1,7 +1,10 @@
 ---
 title: Do-it-Yourself Testing
 layout: video
-author: emilystolfo
+author: Emily Stolfo
+author_social:
+  - name: "@emstolfo"
+    url: "https://twitter.com/emstolfo"
 video_source: "videos.brightonruby.com/videos/2016/emily-do-it-yourself-testing.mp4"
 date: '2016-07-08 11:40'
 ---

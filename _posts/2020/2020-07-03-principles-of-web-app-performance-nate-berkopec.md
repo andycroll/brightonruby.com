@@ -1,6 +1,10 @@
 ---
 title: "Principles of Web App Performance"
-author: nateberkopec
+author: Nate Berkopec
+author_social:
+  - name: "@nateberkopec"
+    url: "https://twitter.com/nateberkopec"
+author_bio_markdown: "Rails performance consultant at Speedshop"
 date: '2020-07-03 16:00'
 layout: video
 video_source: "videos.brightonruby.com/videos/2020/nate-principles-of-web-app-performance.mp4"

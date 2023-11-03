@@ -1,6 +1,10 @@
 ---
 title: Setting Up To Fail
-author: vaidehijoshi
+author: Vaidehi Joshi
+author_social:
+  - name: "@vaidehijoshi"
+    url: "https://twitter.com/vaidehijoshi"
+author_bio_markdown: "Creator of Base CS"
 date: '2019-07-05 10:00'
 layout: video
 video_source: "videos.brightonruby.com/videos/2019/vaidehi-setting-up-to-fail.mp4"

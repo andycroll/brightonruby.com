@@ -1,6 +1,10 @@
 ---
 title: How to Become a Developer with No Time and No Money
-author: aminaadewusi
+author: Amina Adewusi
+author_social:
+  - name: "@a_adewusi"
+    url: "https://twitter.com/a_adewusi"
+author_bio_markdown: "Amina is an Associate Software Engineer at the Guardian in London. She seeks to represent the voice of new developers in the software engineering industry and is passionate about encouraging under-represented groups into tech."
 date: '2020-07-03 13:00'
 layout: video
 video_source: "videos.brightonruby.com/videos/2020/amina-how-to-become-a-developer-with-no-time-and-no-money.mp4"

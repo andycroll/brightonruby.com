@@ -1,7 +1,11 @@
 ---
 title: 'Ruby: How a Language Reflects its People'
 layout: video
-author: alexcoles
+author: Alex Coles
+author_social:
+  - name: "@myabc"
+    url: "https://twitter.com/myabc"
+author_bio_markdown: 'CTO of education startup Skive and very active in the Ruby community, having founded the annual eurucamp camp/conference and JRubyConf EU.\n\nHe has also contributed extensively to many open-source projects including OpenProject, RefineryCMS and DataMapper.'
 date: '2017-07-07 09:40'
 video_source: "videos.brightonruby.com/videos/2017/alex-ruby-how-a-language-reflects-its-people.mp4"
 slides: 'https://speakerdeck.com/myabc/how-a-language-reflects-its-people-brighton-ruby'

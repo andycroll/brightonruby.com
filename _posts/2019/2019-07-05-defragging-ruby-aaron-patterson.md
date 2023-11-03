@@ -1,6 +1,10 @@
 ---
 title: Defragging Ruby
-author: aaronpatterson
+author: Aaron Patterson
+author_social:
+  - name: "@tenderlove"
+    url: "https://twitter.com/tenderlove"
+author_bio_markdown: "Aaron is on the Ruby core team, the Rails core team, and the team that takes care of his cat, Gorby puff.  During the day he works for a small technology company called GitHub.  Someday he will find the perfect safety gear to wear while extreme programming."
 date: '2019-07-05 17:00'
 layout: video
 video_source: "videos.brightonruby.com/videos/2019/aaron-defragging-ruby.mp4"

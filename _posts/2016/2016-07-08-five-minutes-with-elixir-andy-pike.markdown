@@ -1,7 +1,12 @@
 ---
 title: Five Minutes with Elixir
 layout: video
-author: andypike
+author: Andy Pike
+author_social:
+  - name: "@andypike"
+    url: "https://twitter.com/andypike"
+image: /images/authors/andypike.jpg
+
 video_source: "videos.brightonruby.com/videos/2016/andy-five-minutes-with-elixir.mp4"
 date: '2016-07-08 14:30'
 ---

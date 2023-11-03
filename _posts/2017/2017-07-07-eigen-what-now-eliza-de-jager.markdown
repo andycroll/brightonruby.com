@@ -1,7 +1,11 @@
 ---
 title: Eigen What Now?
 layout: video
-author: elizadejager
+author: "Eliza de Jager"
+author_social:
+  - name: "@code_kitten"
+    url: "https://twitter.com/code_kitten"
+author_bio_markdown: "Developer at Zappi Store."
 date: '2017-07-07 15:30'
 video_source: "videos.brightonruby.com/videos/2017/eliza-eigen-what-now.mp4"
 image: '/images/2017/eigen-what-now-eliza-de-jager.jpg'

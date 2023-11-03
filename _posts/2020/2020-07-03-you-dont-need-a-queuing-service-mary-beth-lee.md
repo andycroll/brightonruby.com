@@ -1,6 +1,7 @@
 ---
 title: "You Don’t Need A Queuing Service, You Have Postgres"
-author: marybethlee
+author: Mary Lee
+author_bio_markdown: "Senior developer at Hashrocket, host of pgcasts"
 date: '2020-07-03 10:00'
 layout: video
 video_source: "videos.brightonruby.com/videos/2020/mary-you-dont-need-a-queuing-service.mp4"

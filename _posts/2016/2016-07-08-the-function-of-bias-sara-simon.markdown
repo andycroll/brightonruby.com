@@ -1,7 +1,10 @@
 ---
 title: The Function of Bias
 layout: video
-author: sarasimon
+author: Sara Simon
+author_social:
+  - name: "@sarambsimon"
+    url: "https://twitter.com/sarambsimon"
 video_source: "videos.brightonruby.com/videos/2016/sara-the-function-of-bias.mp4"
 date: '2016-07-08 11:20'
 ---

@@ -1,6 +1,10 @@
 ---
 title: "A framework for more productive debugging"
-author: robertamataityte
+author: "Roberta Mataityte"
+author_social:
+  - name: "@robertamataityte"
+    url: "https://twitter.com/robertamataityte"
+author_bio_markdown: "Roberta is a Software Engineer at FutureLearn, a leading online education platform. Prior to working in technology she worked for the arts and film sector and has a keen interest in the cross section of art, culture and technology. These days when not learning, coding or debugging, she is probably trying to grow the perfect balcony tomatoes."
 date: '2022-06-30 14:30'
 layout: video
 video_source: "videos.brightonruby.com/videos/2022/roberta-mataityte-a-framework-for-more-productive-debugging.mp4"

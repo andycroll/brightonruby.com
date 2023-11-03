@@ -1,7 +1,11 @@
 ---
 title: Lucky
 layout: video
-author: saronyitbarek
+author: Saron Yitbarek
+author_social:
+  - name: "@saronyitbarek"
+    url: "https://twitter.com/saronyitbarek"
+author_bio_markdown: "Formerly an apprentice herself, she started the CodeNewbie movement: the most supportive community of programmers and people learning to code. Saron will bring her perspective to share ideas for learners and coaches."
 date: '2017-07-07 09:10'
 video_source: "videos.brightonruby.com/videos/2017/saron-lucky.mp4"
 image: '/images/2017/lucky-saron-yitbarek.jpg'

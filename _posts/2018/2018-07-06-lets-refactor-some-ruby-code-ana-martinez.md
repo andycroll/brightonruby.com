@@ -1,6 +1,10 @@
 ---
 title: Let’s Refactor Some Ruby Code
-author: anamartinez
+author: Ana Martínez
+author_social:
+  - name: "@anamma_06"
+    url: "https://twitter.com/anamma_06"
+author_bio_markdown: "Ana is in love the open source development. She is currently working at SUSE on the Open Build Service frontend, one of the oldest Rails projects that is still in use."
 date: '2018-07-06 11:50'
 layout: video
 video_source: "videos.brightonruby.com/videos/2018/ana-lets-refactor-some-ruby-code.mp4"

@@ -1,6 +1,10 @@
 ---
 title: "Fixing Performance Problems with ruby-prof"
-author: frederickcheung
+author: Frederick Cheung
+author_social:
+  - name: "@fglc2"
+    url: "https://twitter.com/fglc2"
+author_bio_markdown: "Ruby Hero, runner, cat servant & CTO at Dressipi"
 date: '2019-07-05 11:50'
 layout: video
 video_source: "videos.brightonruby.com/videos/2019/frederick-fixing-performance-problems-with-ruby-prof.mp4"

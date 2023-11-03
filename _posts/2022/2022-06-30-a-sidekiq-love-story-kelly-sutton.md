@@ -1,6 +1,10 @@
 ---
 title: "You had me at LPUSH, a Sidekiq love story"
-author: kellysutton
+author: "Kelly Sutton"
+author_bio_markdown: "Kelly Sutton is a software engineer based in Seattle, WA, and works for Gusto."
+author_social:
+  - name: "@kellysutton"
+    url: "https://twitter.com/kellysutton"
 date: '2022-06-30 10:30'
 layout: video
 video_source: "videos.brightonruby.com/videos/2022/kelly-sutton-you-had-me-at-lpush.mp4"

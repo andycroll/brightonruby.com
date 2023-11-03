@@ -1,7 +1,11 @@
 ---
 title: Can My Friends Come Too?
 layout: video
-author: andrewnesbitt
+author: Andrew Nesbitt
+author_social:
+  - name: "@teabass"
+    url: "https://twitter.com/teabass"
+author_bio_markdown: "Andrew is a freelance software developer, based in Somerset, UK. He spends most of his days programming in Ruby, contributing to open source projects and organising local developer user groups."
 date: '2017-07-07 14:40'
 video_source: "videos.brightonruby.com/videos/2017/andrew-can-my-friends-come-too.mp4"
 image: '/images/2017/can-my-friends-come-too-andrew-nesbitt.jpg'

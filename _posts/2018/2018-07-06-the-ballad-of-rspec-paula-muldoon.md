@@ -1,6 +1,10 @@
 ---
 title: The Ballad of RSpec
-author: paulamuldoon
+author: Paula Muldoon
+author_social:
+  - name: "@fiddlerscode"
+    url: "https://twitter.com/fiddlerscode"
+author_bio_markdown: "Engineer at Kurt Geiger, graduated from Makers Academy and University of Michigan. Code by day, music by night."
 date: '2018-07-06 15:00'
 layout: video
 video_source: "videos.brightonruby.com/videos/2018/paula-the-ballad-of-rspec.mp4"

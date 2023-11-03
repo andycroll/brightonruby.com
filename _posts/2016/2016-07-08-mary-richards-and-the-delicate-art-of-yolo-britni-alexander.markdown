@@ -1,7 +1,10 @@
 ---
 title: Mary Richards and the Delicate Art of YOLO
 layout: video
-author: britnialexander
+author: Britni Alexander
+author_social:
+  - name: "@TwitniTheGirl"
+    url: "https://twitter.com/TwitniTheGirl"
 video_source: "videos.brightonruby.com/videos/2016/britni-mary-richards-and-the-delicate-art-of-yolo.mp4"
 date: '2016-07-08 16:20'
 ---

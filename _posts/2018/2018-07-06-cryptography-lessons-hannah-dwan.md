@@ -1,6 +1,10 @@
 ---
 title: Cryptography Lessons
-author: hannahdwan
+author: "Hannah Dwan"
+author_social:
+  - name: "@hoeyboey"
+    url: "https://twitter.com/"
+author_bio_markdown: "Hannah Dwan is a developer at Happy Bear Software! She used to be a games journalist, but abandoned the glitz and glamour of esports in favour of pull requests and documentation."
 date: '2018-07-06 15:30'
 layout: video
 video_source: "videos.brightonruby.com/videos/2018/hannah-cryptography-lessons.mp4"
