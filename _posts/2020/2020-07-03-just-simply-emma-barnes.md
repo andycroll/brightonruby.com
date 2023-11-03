@@ -1,6 +1,9 @@
 ---
 title: Just Simply
-author: emmabarnes
+author: Emma Barnes
+author_bio_markdown: "Book publisher turned programmer. She runs [generalproducts.co](https://generalproducts.co), makers of [Consonance](https://consonance.app), as well as indie publisher [Snowbooks](https://snowbooks.com), and she maintains schools publishing app [Make Our Book](https://makeourbook.com) on Side Project Fridays. She works in a first floor office in a market town in the Oxfordshire countryside, which attracts a local cat that visits through the window."
+author_social:
+  - url: "https://ruby.social/emma"
 date: '2020-07-03 12:00'
 layout: video
 video_source: "videos.brightonruby.com/videos/2020/emma-just-simply.mp4"

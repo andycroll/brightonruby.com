@@ -1,6 +1,10 @@
 ---
 title: Cultivating Instinct
-author: katrinaowen
+author: Katrina Owen
+author_social:
+  - name: "@kytrinyx"
+    url: "https://twitter.com/kytrinyx"
+author_bio_markdown: "An ecosystem engineer at GitHub and author. She accidentally became a developer while pursuing a degree in molecular author_biologymarkdown. When programming, her focus is on automation, workflow optimization, and refactoring."
 date: '2018-07-06 10:10'
 layout: video
 video_source: "videos.brightonruby.com/videos/2018/katrina-cultivating-instinct.mp4"

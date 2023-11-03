@@ -1,7 +1,7 @@
 ---
 title: Lightning Talks
 layout: video
-author: lightning2015
+author: Lightning Talks
 video_source: "videos.brightonruby.com/videos/2015/lightning-talks-brighton-ruby-2016.mp4"
 date: '2015-07-20 11:40'
 ---

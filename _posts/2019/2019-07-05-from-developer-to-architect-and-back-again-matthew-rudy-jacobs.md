@@ -1,6 +1,7 @@
 ---
 title: From Developer to Architect (and back again)
-author: matthewrudyjacobs
+author: Matthew Rudy Jacobs
+author_bio_markdown: "Engineer at Babylon Health, and Organiser of Hong Kong Code Conf."
 date: '2019-07-05 11:30'
 layout: video
 video_source: "videos.brightonruby.com/videos/2019/matthew-from-developer-to-architect-and-back-again.mp4"

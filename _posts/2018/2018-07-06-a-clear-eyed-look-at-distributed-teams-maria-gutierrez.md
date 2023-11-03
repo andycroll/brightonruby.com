@@ -1,6 +1,10 @@
 ---
 title: A Clear-eyed Look at Distributed Teams
-author: mariagutierrez
+author: "Maria Gutierrez"
+author_social:
+  - name: "@mariagutierrez"
+    url: "https://twitter.com/mariagutierrez"
+author_bio_markdown: "VP of Engineering at Edinburgh-based FreeAgent. Previously worked at LivingSocial leading globally distributed teams, and at Adobe where she worked in the developer technologies group. Also a Director of the WomenWhoCode Edinburgh network."
 date: '2018-07-06 14:20'
 layout: video
 video_source: "videos.brightonruby.com/videos/2018/maria-a-clear-eyed-look-at-distributed-teams.mp4"

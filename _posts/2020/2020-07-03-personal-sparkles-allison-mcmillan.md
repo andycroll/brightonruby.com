@@ -1,10 +1,13 @@
 ---
 title: Planning for Personal Sparkles
-author: allisonmcmillan
+author: Allison McMillan
+author_social:
+  - name: "@allie_p"
+    url: "https://twitter.com/allie_p"
+author_bio_markdown: "Allison McMillan is a Senior Engineering Manager at GitHub and the creator of the Parent Driven Development podcast."
 date: '2020-07-03 14:00'
 layout: video
 video_source: "videos.brightonruby.com/videos/2020/allison-personal-sparkles.mp4"
-# image: "/images/2020/"
 description: "How can we learn in a pandemic?"
 ---
 

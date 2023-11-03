@@ -1,6 +1,10 @@
 ---
 title: Introduction to Event Sourcing for Rubyists
-author: alfredomotta
+author: Alfredo Motta
+author_social:
+  - name: "@mottalrd"
+    url: "https://twitter.com/mottalrd"
+author_bio_markdown: "CTO at CreditSpring, protecting people from unexpected financial emergencies. Loves data and scientific experimentation over intuition and learning over being too serious."
 date: '2018-07-06 14:45'
 layout: video
 video_source: "videos.brightonruby.com/videos/2018/alfredo-introduction-to-event-sourcing-for-rubyists.mp4"

@@ -1,7 +1,10 @@
 ---
 title: The Soul of Software
 layout: video
-author: avdigrimm
+author: Avdi Grimm
+author_social:
+  - name: "@avdi"
+    url: "https://twitter.com/avdi"
 video_source: "videos.brightonruby.com/videos/2015/avdi-the-soul-of-software.mp4"
 date: '2015-07-20 16:15'
 ---

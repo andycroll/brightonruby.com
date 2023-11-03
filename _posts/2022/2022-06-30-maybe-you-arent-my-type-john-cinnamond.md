@@ -1,6 +1,10 @@
 ---
 title: "Maybe You Aren’t My Type?"
-author: johncinnamond
+author: John Cinnamond
+author_social:
+  - name: "@jcinnamond"
+    url: "https://twitter.com/jcinnamond"
+author_bio_markdown: "John is a Lead Engineer at Form3, a payment technology company. When not coding in Go for a living John can probably be found learning Haskell, reading about mathematics, or having a nice sit down and thinking about what kind of thing programming is."
 date: '2022-06-30 16:00'
 layout: video
 video_source: "videos.brightonruby.com/videos/2022/john-cinnamond-maybe-youre-not-my-type.mp4"

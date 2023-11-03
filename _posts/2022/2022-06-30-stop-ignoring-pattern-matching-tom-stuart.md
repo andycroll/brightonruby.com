@@ -1,6 +1,10 @@
 ---
 title: "Stop ignoring pattern matching! It’s really good!"
-author: tomstuart
+author: Tom Stuart
+author_social:
+  - name: "@tomstuart"
+    url: "https://twitter.com/tomstuart"
+author_bio_markdown: "Tom is a computer scientist, longtime Rubyist and Senior Staff Engineer at Shopify. He has taught optimising compilers at the University of Cambridge and written about technology for the Guardian. His book about computation theory in Ruby, “Understanding Computation”, is published by O’Reilly."
 date: '2022-06-30 11:45'
 layout: video
 video_source: "videos.brightonruby.com/videos/2022/tom-stuart-stop-ignoring-pattern-matching.mp4"

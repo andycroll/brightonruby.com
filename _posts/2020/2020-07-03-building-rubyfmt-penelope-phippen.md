@@ -1,10 +1,13 @@
 ---
 title: Building Rubyfmt
-author: penelopephippen
+author: Penelope Phippen
+author_social:
+  - name: "@penelope_zone"
+    url: "https://twitter.com/penelope_zone"
+author_bio_markdown: "Cursedly obsessed with the Ruby parser and maintained RSpec for a number of years. Currently works at Google as a Developer Advocate. She is a trans woman, originally hailing from the Romsey, Hampshire, but currently lives in New York. She loves all things Ruby, and is super excited to meet you at Brighton Ruby!"
 date: '2020-07-03 10:00'
 layout: video
 video_source: "videos.brightonruby.com/videos/2020/penelope-building-rubyfmt.mp4"
-# image: "/images/2019/embracing-openness-in-open-source-amina-adewusi.jpg"
 description: "Cursedly obsessed with the Ruby parser"
 ---
 

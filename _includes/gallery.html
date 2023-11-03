@@ -1,0 +1,65 @@
+<div class="flex flex-wrap gap-4">
+  {% for file in site.static_files -%}
+    {%- if file.path contains include.folder -%}
+      {%- if file.extname == '.jpg' -%}
+        {%- assign filenameparts = file.path | split: '/' -%}
+        {%- assign filename = filenameparts | last | replace: file.extname, '' | split: '_IMG' | first -%}
+        <a
+          data-lightbox
+          href="{{ file.path | relative_url }}"
+          title="{{ filename }}"
+          class="w-12 h-12 shrink-0 grow-0"
+        >
+          <img
+            src="{{ site.url }}{{ file.path | relative_url }}?width=96"
+            alt="{{ filename }}"
+            title="{{ filename }}"
+            class="rounded-sm aspect-square object-cover"
+          >
+        </a>
+      {% endif -%}
+    {%- endif -%}
+  {%- endfor -%}
+</div>
+
+<div
+  id="lightbox"
+  class="fixed top-0 left-0 w-full h-full grid justify-items-center justify-center bg-black/60 p-24 hidden"
+>
+  <img class="max-w-full max-h-full rounded" id="lightbox-image" src="" alt="Image">
+</div>
+
+<script>
+  function openLightbox(imageUrl) {
+    var lightbox = document.getElementById('lightbox');
+    var lightboxImage = document.getElementById('lightbox-image');
+    lightboxImage.src = imageUrl;
+    lightbox.style.display = 'flex';
+  }
+
+  // Attach event listeners to all links
+  var links = document.querySelectorAll('a[data-lightbox]');
+  links.forEach(function (link) {
+    link.addEventListener('click', function (e) {
+      e.preventDefault();
+      var imageUrl = link.getAttribute('href');
+      openLightbox(imageUrl);
+    });
+  });
+
+  function closeLightbox() {
+    var lightbox = document.getElementById('lightbox');
+    lightbox.style.display = 'none';
+  }
+
+  document.getElementById('lightbox').addEventListener('click', function () {
+    closeLightbox();
+  });
+
+  // Add event listener for the Escape key to close the lightbox
+  document.addEventListener('keydown', function (e) {
+    if (e.key === 'Escape') {
+      closeLightbox();
+    }
+  });
+</script>

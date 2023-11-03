@@ -1,6 +1,11 @@
 ---
 title: "Managing the Burnout Burndown"
-author: anjuananeikasimmons
+author: "Anjuan & Aneika Simmons"
+author_social:
+  - name: "@anjuan"
+    url: "https://twitter.com/anjuan"
+  - name: "@aneika"
+    url: "https://twitter.com/aneika"
 date: '2020-07-03 17:00'
 layout: video
 video_source: "videos.brightonruby.com/videos/2020/anjuan-aneika-managing-the-burnout-burndown.mp4"

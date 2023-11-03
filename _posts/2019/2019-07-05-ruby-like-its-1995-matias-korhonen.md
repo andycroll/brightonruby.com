@@ -1,6 +1,10 @@
 ---
 title: Ruby like it’s 1995
-author: matiaskorhonen
+author: Matias Korhonen
+author_social:
+  - name: "@matiaskorhonen"
+    url: "https://twitter.com/matiaskorhonen"
+author_bio_markdown: "Matias has been writing Ruby for almost a decade and in his spare time he's a beer enthusiast and general internet astronaut."
 date: '2019-07-05 16:30'
 layout: video
 video_source: "videos.brightonruby.com/videos/2019/matias-ruby-like-its-1995.mp4"

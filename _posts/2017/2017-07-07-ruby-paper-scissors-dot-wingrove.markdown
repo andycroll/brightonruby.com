@@ -1,7 +1,11 @@
 ---
 title: Ruby Paper Scissors
 layout: video
-author: dotwingrove
+author: Dot Wingrove
+author_social:
+  - name: "@notthepoint"
+    url: "https://twitter.com/notthepoint"
+author_bio_markdown: "Co-organiser of @CodebarBrighton, studying maths with @OpenUniversity, humum to @morty_macgrove"
 date: '2017-07-07 10:00'
 redirect_from:
  - /2017/what-roshambo-can-teach-us-dot-wingrove/

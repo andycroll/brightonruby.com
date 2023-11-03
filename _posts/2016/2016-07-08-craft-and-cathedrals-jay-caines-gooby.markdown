@@ -1,7 +1,10 @@
 ---
 title: Craft & Cathedrals
 layout: video
-author: jaycainesgooby
+author: Jay Caines-Gooby
+author_social:
+  - name: "@jaygooby"
+    url: "https://twitter.com/jaygooby"
 video_source: "videos.brightonruby.com/videos/2016/jay-craft-and-cathedrals.mp4"
 date: '2016-07-08 14:35'
 ---

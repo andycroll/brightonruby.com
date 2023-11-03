@@ -1,8 +1,12 @@
 ---
 title: "The Magic of Rails"
 date: "2023-06-30 09:45"
-author: eileenuchitelle23
-layout: preview
+author: Eileen Uchitelle
+author_bio_markdown: "Eileen is a Senior Staff Engineer at Shopify where she helps lead the effort to improve and maintain the Rails framework and Ruby language.
+
+As a member of the Rails Core Team her goal is to ensure the long-term sustainability of the Rails framework and its continued adoption as one of the leading open-source frameworks."
+layout: video
+video_source: "videos.brightonruby.com/videos/2023/eileen-uchitelle-the-magic-of-rails.mp4"
 description: "A RailsConf keynote, just for you"
 ---
 

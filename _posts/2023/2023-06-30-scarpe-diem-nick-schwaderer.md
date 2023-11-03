@@ -1,10 +1,16 @@
 ---
 title: "Scarpe Diem"
 date: "2023-06-30 10:30"
-author: nickschwaderer
-author_biography_markdown: "Nick is a Senior Production Engineer at Shopify on the Ruby and Rails Infrastructure Team. Nick maintains Scarpe, an attempt at a new Shoes.rb implementation. He digs into Ruby lore frequently with the PastRubies newsletter. Nick has worked on projects with Ruby to help forecast pain for individuals with chronic illness and assist in communications during a natural disaster."
-layout: preview
+author: Nick Schwaderer
+author_bio_markdown: "Nick is a Senior Production Engineer at Shopify on the Ruby and Rails Infrastructure Team. Nick maintains Scarpe, an attempt at a new Shoes.rb implementation. He digs into Ruby lore frequently with the PastRubies newsletter. Nick has worked on projects with Ruby to help forecast pain for individuals with chronic illness and assist in communications during a natural disaster."
+author_social:
+  - name: "@schwad_rb"
+    url: "https://twitter.com/schwad_rb"
+  - url: "https://ruby.social/@nickschwaderer"
+layout: video
+video_source: "videos.brightonruby.com/videos/2023/nick-schwaderer-scarpe-diem.mp4"
 description: "Seizing _why’s legacy for the future"
+highlight: true
 ---
 
 Why the Lucky Stiff, one of the most beloved members of the historical Ruby community, is widely known for his seminal Poignant Guide to Ruby. His second-most ambitious writing, NOBODY KNOWS SHOES, is lesser-known. This text was the manual for an amazing set of tools _why developed in 2007 called Shoes.rb. 

@@ -1,6 +1,10 @@
 ---
 title: Random Thoughts
-author: danielberzon
+author: Danny Berzon
+author_social:
+  - name: "@DvBerzon"
+    url: "https://twitter.com/DvBerzon"
+author_bio_markdown: "Danny has worked in Web Development since late last century, Java and Servlets then Ruby on Rails. Currently in a permanent position at Ocasta Studios."
 date: '2018-07-06 14:50'
 layout: video
 video_source: "videos.brightonruby.com/videos/2018/danny-random-thoughts.mp4"

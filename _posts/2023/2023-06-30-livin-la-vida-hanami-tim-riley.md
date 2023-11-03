@@ -1,12 +1,14 @@
 ---
 title: "Livin’ la Vida Hanami"
 date: "2023-06-30 14:30"
-author: timriley
-layout: preview
+layout: video
+video_source: "videos.brightonruby.com/videos/2023/tim-riley-livin-la-vida-hanami.mp4"
 description: "Dry.rb + Hanami = a real production alternative"
-speaker: Tim Riley
-speaker_image: tim-riley.jpg
-speaker_bio_markdown: "Tim is a core team member of [Hanami](https://hanamirb.org), [dry-rb](https://dry-rb.org) and [rom-rb](https://rom-rb.org) and a Principal Engineer at [Buildkite](https://buildkite.com). He’s been writing Ruby for over 20 years and still loves it! He works to bring the joy of Ruby to writing real, maintainable apps of all shapes and sizes."
+author: Tim Riley
+author_bio_markdown: "Tim is a core team member of [Hanami](https://hanamirb.org), [dry-rb](https://dry-rb.org) and [rom-rb](https://rom-rb.org) and a Principal Engineer at [Buildkite](https://buildkite.com). He’s been writing Ruby for over 20 years and still loves it! He works to bring the joy of Ruby to writing real, maintainable apps of all shapes and sizes."
+author_social:
+  - url: "https://ruby.social/@timriley"
+highlight: true
 ---
 
 _You’re into applications_

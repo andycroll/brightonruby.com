@@ -1,10 +1,12 @@
 ---
 title: "The 14-day No Laptop Challenge"
-author: joshpuetz
+author: Josh Puetz
+author_social:
+  - name: "@joshpuetz"
+    url: "https://twitter.com/joshpuetz"
 date: '2020-07-03 11:00'
 layout: video
 video_source: "videos.brightonruby.com/videos/2020/josh-the-14-day-no-laptop-challenge.mp4"
-# image: "/images/2020/"
 description: "Can you do RealWorkTM on an iPad?"
 ---
 

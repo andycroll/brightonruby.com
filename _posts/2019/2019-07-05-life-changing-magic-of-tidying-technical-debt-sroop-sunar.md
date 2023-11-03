@@ -1,6 +1,7 @@
 ---
 title: The Life Changing Magic of Tidying Technical Debt
-author: sroopsunar
+author: Sroop Sunar
+author_bio_markdown: "Sroop Sunar is a Software Developer (and employee #1) at Peg. Before that, she worked at Thoughtbot, and in a previous life was an illustrator and graphic designer."
 date: '2019-07-05 14:30'
 layout: video
 video_source: "videos.brightonruby.com/videos/2019/sroop-the-life-changing-magic-of-tidying-technical-debt.mp4"

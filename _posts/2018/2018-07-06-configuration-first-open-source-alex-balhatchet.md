@@ -1,6 +1,10 @@
 ---
 title: Configuration-first Open Source
-author: alexbalhatchet
+author: Alex Balhatchet
+author_social:
+  - name: "@kaokun"
+    url: "https://twitter.com/kaokun"
+author_bio_markdown: "Senior software engineer at CharlieHR, building the HR software for teams with big ideas. Previously CTO at Nestoria so ask me about writing Perl for a decade before switching to Ruby :-)"
 date: '2018-07-06 14:40'
 layout: video
 video_source: "videos.brightonruby.com/videos/2018/alex-configuration-first-open-source.mp4"

@@ -1,7 +1,11 @@
 ---
 title: Just a Ruby Minute
 layout: video
-author: justaminute
+author: Andrew Faraday
+author_social:
+  - name: "@marmitejunction"
+    url: "https://twitter.com/marmitejunction"
+author_bio_markdown: "A tribute to the Radio 4 original, created with Playstation controllers and noises from the radio."
 video_source: "videos.brightonruby.com/videos/2016/just-a-ruby-minute-2016.mp4"
 date: '2016-07-08 14:00'
 ---

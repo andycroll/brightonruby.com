@@ -1,6 +1,10 @@
 ---
 title: The Best Worst Software I’ve Ever Written
-author: andrewfaraday
+author: Andrew Faraday
+author_social:
+  - name: "@marmitejunction"
+    url: "https://twitter.com/marmitejunction"
+author_bio_markdown: "Rubyist, music graduate, autistic, international panel game host, kidney donor, follower of Christ. Mostly tweets about politics and software. Host of Just a (Ruby) Minute."
 date: '2018-07-06 14:55'
 layout: video
 video_source: "videos.brightonruby.com/videos/2018/andrew-the-best-worst-software-i’ve-ever-written.mp4"

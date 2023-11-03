@@ -1,27 +1,29 @@
 ---
 layout: default
 ---
+{%- assign page_year = page.date | date: '%Y' -%}
+{%- assign day = page.date | date: '%-d' -%}
+{%- assign dayLastTwoDigits = day | modulo: 100 -%}
 
-{% capture day %}{{ page.date | date: "%-d" }}{% endcapture %}
-{% capture dayLastTwoDigits %}{{ day | modulo: 100 }}{% endcapture %}
-{% if dayLastTwoDigits >= "11" and dayLastTwoDigits <= "13" %}
-  {% assign ordinal = "th" %}
-{% else %}
-  {% capture dayLastDigit %}{{ day | modulo: 10 }}{% endcapture %}
-  {% case dayLastDigit %}
-    {% when "1" %}
-      {% assign ordinal = "st" %}
-    {% when "2" %}
-      {% assign ordinal = "nd" %}
-    {% when "3" %}
-      {% assign ordinal = "rd" %}
-    {% else %}
-      {% assign ordinal = "th" %}
-  {% endcase %}
-{% endif %}
+{%- if dayLastTwoDigits == '11' or dayLastTwoDigits == '12' -%}
+  {%- assign ordinal = 'th' -%}
+{%- else -%}
+  {%- assign dayLastDigit = day | modulo: 10 -%}
+  {%- if dayLastDigit == '1' -%}
+    {%- assign ordinal = 'st' -%}
+  {%- elsif dayLastDigit == '2' -%}
+    {%- assign ordinal = 'nd' -%}
+  {%- elsif dayLastDigit == '3' -%}
+    {%- assign ordinal = 'rd' -%}
+  {%- else -%}
+    {%- assign ordinal = 'th' -%}
+  {%- endif -%}
+{%- endif -%}
 
 <article>
-  <h2><a href="/{{ page.date | date: "%Y" }}">{{ page.date | date: "%Y" }}</a></h2>
+  <h2>
+    <a href="/{{ page_year }}">{{ page_year }}</a>
+  </h2>
 
   <h1 class="my-2">
     {% assign author = site.data.authors[page.author] %}
@@ -36,7 +38,7 @@ layout: default
   </p>
   {{ author.bio | default: '' | markdownify }}
 
-  <hr />
+  <hr>
 
   {{ content }}
 </article>
