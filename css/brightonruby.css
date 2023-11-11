@@ -1814,10 +1814,6 @@ select {
   height: 100%;
 }
 
-.max-h-full {
-  max-height: 100%;
-}
-
 .w-12 {
   width: 3rem;
 }
@@ -1840,10 +1836,6 @@ select {
 
 .max-w-2xl {
   max-width: 42rem;
-}
-
-.max-w-full {
-  max-width: 100%;
 }
 
 .max-w-xl {
@@ -2006,8 +1998,8 @@ select {
   padding: 0.5rem;
 }
 
-.p-24 {
-  padding: 6rem;
+.p-3 {
+  padding: 0.75rem;
 }
 
 .px-2 {
@@ -2322,6 +2314,10 @@ select {
 
   .md\:gap-4 {
     gap: 1rem;
+  }
+
+  .md\:p-12 {
+    padding: 3rem;
   }
 
   .md\:py-8 {
