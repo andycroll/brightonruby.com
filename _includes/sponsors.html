@@ -1,21 +1,59 @@
-<div id="sponsors" class="bg-slate-900 text-amber-50">
-  <div class="lg:container lg:mx-auto flex items-center gap-4 px-2 sm:px-4 py-2 sm:py-4">
-    <p class="w-1/4 text-xs leading-6 opacity-40">
-      Sponsored by these lovely folks.</p>
+{% if page.gold.size > 0 %}
+  <div id="sponsors" class="bg-slate-900 text-amber-50 mt-3">
+    <div class="lg:container lg:mx-auto grid grid-cols-1 md:grid-cols-2 gap-4 px-2 sm:px-4 pt-2 pb-3 sm:py-4">
+      <div class="sm:flex">
+        <div class="w-16 grow-0 pr-2 sm:pr-4">
+          <p class="text-xs leading-8 opacity-40">Gold</p>
+        </div>
 
-    <div class="w-3/4 md:w-3/4 grid grid-cols-2 md:grid-cols-4 md:grid-flow-row-dense gap-2 gap-x-4 md:gap-4">
-      <a class="block" href="{{ site.data.sponsors['cookpad'].url }}" target="_blank">
-        <img src="data:image/svg+xml;base64,{{ site.data.sponsors['cookpad'].base64logo }}">
-      </a>
-      <a class="block" href="{{ site.data.sponsors['sorcer'].url }}" target="_blank">
-        <img src="data:image/svg+xml;base64,{{ site.data.sponsors['sorcer'].base64logo }}">
-      </a>
-      <a class="block" href="https://www.tech.sb/" target="_blank">
-        <img src="data:image/svg+xml;base64,{{ site.data.sponsors['simply_business'].base64logo }}">
-      </a>
-      <a class="block" href="{{ site.data.sponsors['bloom_and_wild'].url }}" target="_blank">
-        <img src="data:image/svg+xml;base64,{{ site.data.sponsors['bloom_and_wild'].base64logo }}">
-      </a>
+        <div class="grow grid grid-cols-3 sm:grid-cols-4 content-center gap-2 gap-x-4 md:gap-4">
+          {% for sponsor in page.gold %}
+            {% if sponsor.url != null %}
+              <a class="block" href="{{ sponsor.url }}" title="{{ sponsor.name }}" target="_blank">
+                <img
+                  class="block"
+                  src="/images/2024/sponsors/{{ sponsor.name | downcase | replace: ' ', '_'}}.svg"
+                  alt="{{ sponsor.name }} Logo"
+                >
+              </a>
+            {% else %}
+              <img
+                class="block"
+                src="/images/2024/sponsors/{{ sponsor.name | downcase | replace: ' ', '_'}}.svg"
+                alt="{{ sponsor.name }} Logo"
+              >
+            {% endif %}
+          {% endfor %}
+        </div>
+      </div>
+
+      {% if page.silver.size > 0 %}
+        <div class="sm:flex">
+          <div class="w-16 grow-0 pr-2 sm:pr-4">
+            <p class="text-xs leading-8 opacity-40">Silver</p>
+          </div>
+
+          <div class="grow grid grid-cols-3 sm:grid-cols-4 content-center gap-2 gap-x-4 md:gap-4">
+            {% for sponsor in page.silver %}
+              {% if sponsor.url != null %}
+                <a class="block" href="{{ sponsor.url }}" title="{{ sponsor.name }}" target="_blank">
+                  <img
+                    class="block"
+                    src="/images/2024/sponsors/{{ sponsor.name | downcase | replace: ' ', '_'}}.svg"
+                    alt="{{ sponsor.name }} Logo"
+                  >
+                </a>
+              {% else %}
+                <img
+                  class="block"
+                  src="/images/2024/sponsors/{{ sponsor.name | downcase | replace: ' ', '_'}}.svg"
+                  alt="{{ sponsor.name }} Logo"
+                >
+              {% endif %}
+            {% endfor %}
+          </div>
+        </div>
+      {% endif %}
     </div>
   </div>
-</div>
+{% endif %}
