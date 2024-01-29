@@ -5,9 +5,9 @@ module.exports = {
       mono: ["MonoLisa Variable", "ui-monospace", "SFMono-Regular", "Menlo", "Monaco", "Consolas", "Liberation Mono", "Courier New", "monospace"],
     },
     screens: {
-      'sm': '400px',
-      'md': '700px',
-      'lg': '1024px',
+      'sm': '520px',
+      'md': '620px',
+      'lg': '1000px',
       // 'xl': '1280px',
       // '2xl': '1536px',
     }
