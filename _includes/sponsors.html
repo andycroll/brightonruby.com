@@ -1,58 +1,62 @@
 {% if page.gold.size > 0 %}
   <div id="sponsors" class="bg-slate-900 text-amber-50">
-    <div class="lg:container lg:mx-auto grid grid-cols-1 md:grid-cols-2 gap-4 px-2 sm:px-4 pt-2 pb-3 sm:py-4">
-      <div class="sm:flex">
-        <div class="w-16 grow-0 pr-2 sm:pr-4">
-          <p class="text-xs leading-8 opacity-40">Gold</p>
+    <div class="grid grid-cols-3 md:grid-cols-11 gap-4 p-4 lg:container lg:mx-auto">
+      <div class="col-span-3 md:col-span-1">
+        <p class="text-xs opacity-40">Gold</p>
+      </div>
+
+      {% for sponsor in page.gold %}
+        {% if sponsor.url != null %}
+          <a
+            class="col-span md:col-span-2"
+            href="{{ sponsor.url }}"
+            title="{{ sponsor.name }}"
+            target="_blank"
+          >
+            <img
+              class=""
+              src="/images/2024/sponsors/{{ sponsor.name | downcase | replace: ' ', '_'}}.svg"
+              alt="{{ sponsor.name }} Logo"
+            >
+          </a>
+        {% else %}
+          <img
+            class="col-span-2"
+            src="/images/2024/sponsors/{{ sponsor.name | downcase | replace: ' ', '_'}}.svg"
+            alt="{{ sponsor.name }} Logo"
+          >
+        {% endif %}
+      {% endfor %}
+    </div>
+
+    <div class="grid grid-cols-4 md:grid-cols-11 gap-4 p-4 lg:container lg:mx-auto">
+      {% if page.silver.size > 0 %}
+        <div class="col-span-4 md:col-span-1">
+          <p class="text-xs opacity-40">Silver</p>
         </div>
 
-        <div class="grow grid grid-cols-3 sm:grid-cols-4 content-center gap-2 gap-x-4 md:gap-4">
-          {% for sponsor in page.gold %}
-            {% if sponsor.url != null %}
-              <a class="block" href="{{ sponsor.url }}" title="{{ sponsor.name }}" target="_blank">
-                <img
-                  class="block"
-                  src="/images/2024/sponsors/{{ sponsor.name | downcase | replace: ' ', '_'}}.svg"
-                  alt="{{ sponsor.name }} Logo"
-                >
-              </a>
-            {% else %}
+        {% for sponsor in page.silver %}
+          {% if sponsor.url != null %}
+            <a
+              class="col-span md:col-span-2"
+              href="{{ sponsor.url }}"
+              title="{{ sponsor.name }}"
+              target="_blank"
+            >
               <img
-                class="block"
+                class=""
                 src="/images/2024/sponsors/{{ sponsor.name | downcase | replace: ' ', '_'}}.svg"
                 alt="{{ sponsor.name }} Logo"
               >
-            {% endif %}
-          {% endfor %}
-        </div>
-      </div>
-
-      {% if page.silver.size > 0 %}
-        <div class="sm:flex">
-          <div class="w-16 grow-0 pr-2 sm:pr-4">
-            <p class="text-xs leading-8 opacity-40">Silver</p>
-          </div>
-
-          <div class="grow grid grid-cols-3 sm:grid-cols-4 content-center gap-2 gap-x-4 md:gap-4">
-            {% for sponsor in page.silver %}
-              {% if sponsor.url != null %}
-                <a class="block" href="{{ sponsor.url }}" title="{{ sponsor.name }}" target="_blank">
-                  <img
-                    class="block"
-                    src="/images/2024/sponsors/{{ sponsor.name | downcase | replace: ' ', '_'}}.svg"
-                    alt="{{ sponsor.name }} Logo"
-                  >
-                </a>
-              {% else %}
-                <img
-                  class="block"
-                  src="/images/2024/sponsors/{{ sponsor.name | downcase | replace: ' ', '_'}}.svg"
-                  alt="{{ sponsor.name }} Logo"
-                >
-              {% endif %}
-            {% endfor %}
-          </div>
-        </div>
+            </a>
+          {% else %}
+            <img
+              class="col-span md:col-span-2"
+              src="/images/2024/sponsors/{{ sponsor.name | downcase | replace: ' ', '_'}}.svg"
+              alt="{{ sponsor.name }} Logo"
+            >
+          {% endif %}
+        {% endfor %}
       {% endif %}
     </div>
   </div>
