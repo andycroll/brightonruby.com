@@ -1,0 +1,38 @@
+<mj-section background-color="#eeeeee" padding="0">
+  <mj-column>
+    <mj-text font-size="12px" line-height="16px" font-weight="bold" padding="0 0 0 25px" margin="0" font-family="Ubuntu, Helvetica, Arial, sans-serif" color="#222222">
+      <p style="padding: 0">WONDERFUL SPONSORS</p>
+    </mj-text>
+      <mj-text color="#222222" padding="0 0 0 25px" margin="0" line-height="20px" font-family="Ubuntu, Helvetica, Arial, sans-serif">
+      <p style="padding: 0; margin-top: 0; font-size: 14px">
+        <b>Gold</b>
+        <a href="https://sorcer.io/">Sorcer</a>,
+        <a href="https://tech.sb/">Simply Business</a>,
+        <a href="https://bloomandwild.com/careers">Bloom & Wild</a>,
+        <a href="https://mindfulchef.com/">Mindful Chef</a> &
+        <a href="https://web.meetcleo.com/careers">Cleo</a>
+      </p>
+      <p style="padding: 0; margin-top: 0; font-size: 13px">
+        <b>Silver</b>
+        <a href="https://appsignal.com/">AppSignal</a>,
+        <a href="https://www.20i.com/managed-hosting">20i</a>
+      </p>
+    </mj-text>
+  </mj-column>
+</mj-section>
+
+<mj-section>
+  <mj-column>
+    <mj-text>
+      <p>HTML TEXT IN HERE</p>
+    </mj-text>
+  </mj-column>
+</mj-section>
+
+<mj-section>
+  <mj-column>
+    <mj-button align="left" font-size="16px" background-color="#9a111e" color="#ffffff" href="https://brightonruby.com">
+      <p>Buy tickets</p>
+    </mj-button>
+  </mj-column>
+</mj-section>
