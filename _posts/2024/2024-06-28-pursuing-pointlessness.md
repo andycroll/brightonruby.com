@@ -1,5 +1,5 @@
 ---
-title: "Pursuing Pointlessness"
+title: "⚡️ Pursuing Pointlessness"
 date: "2024-06-28 15:50"
 author: Chris Howlett
 author_bio_markdown: ""
