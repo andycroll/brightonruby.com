@@ -1,61 +1,73 @@
 <div class="bg-amber-50 text-stone-900">
   {% comment %} <div class="bg-sky-950 text-amber-50"> {% endcomment %}
-    <div class="lg:container lg:mx-auto">
-      <div>
-        {% assign wastalk = false %}
-        {% assign ordered_posts = site.posts | | where_exp: 'post', 'post.date >= site.time and post.layout == "preview" or post.layout == "break"' | sort: 'date' %}
+  <div class="lg:container lg:mx-auto">
+    {% assign wastalk = false %}
+    {% assign ordered_posts = site.posts
+      | where_exp: 'post', 'post.date >= site.time and post.layout == "preview" or post.layout == "break"'
+      | sort: 'date'
+    %}
 
-        {% for post in ordered_posts %}
-          {% assign author = site.data.authors[post.author] %}
-
-          {% if wastalk == true and post.title == 'Break' or post.title == 'Lunch' or post.title == 'Doors' or post.title == "Drinks" %}
+    {% for post in ordered_posts %}
+      {% if post.title == 'Registration'
+        or post.title == 'Coffee'
+        or post.title == 'Lunch'
+        or post.title == 'Ice Cream'
+        or post.title == 'Drinks'
+      %}
+        {% capture classes %}my-5 opacity-50{% endcapture %}
+      {% else %}
+        {% capture classes %}{% endcapture %}
+      {% endif %}
+      <div
+        data-timestamp="{{ post.date | date: '%H%M' }}"
+        class="px-2 sm:px-4 {{ classes }}"
+      >
+        <div class="sm:flex sm:gap-4 my-1">
+          {% if wastalk == false
+            or post.title == 'Registration'
+            or post.title == 'Coffee'
+            or post.title == 'Lunch'
+            or post.title == 'Ice Cream'
+            or post.title == 'Drinks'
+          %}
+            <div class="w-12 flex-none mt-4 sm:mt-0">
+              {{ post.date | date: '%H:%M' }}
             </div>
-          {%- endif %}
-
-          {% if wastalk == false and post.title != 'Break' and post.title != 'Lunch' and post.title != 'Doors' and post.title != "Drinks" %}
-            <div data-timestamp="{{ post.date | date: '%H%M' }}" class="md:flex px-2 sm:px-4 py-2 gap-2 sm:gap-0">
-          {%- endif %}
-
-          {% if post.title == 'Break' or post.title == 'Lunch' or post.title == 'Doors' or post.title == "Drinks" %}
-            <div data-timestamp="{{ post.date | date: '%H%M' }}" class="md:flex px-2 sm:px-4 py-2 md:py-4 gap-2 sm:gap-0 opacity-50">
-          {%- endif %}
-
-          <div class="grow flex gap-4 my-1">
-            <div class="grow-0 w-12">
-              {% if wastalk == false or post.title == 'Break' or post.title == 'Lunch' or post.title == 'Doors' or post.title == "Drinks" %}
-                {{ post.date | date: '%H:%M' }}
-              {% endif -%}
+          {% else -%}
+            <div class="hidden sm:block w-12 flex-none mt-4 sm:mt-0">&nbsp;</div>
+          {% endif -%}
+          {% if post.author %}
+            <div class="hidden sm:block w-12 flex-none">
+              <img
+                src="/images/2024/speakers/{{ post.author | downcase | replace: " ", "_" }}.jpg?width=96&height=96"
+                class="rounded-sm"
+                alt="{{ post.author }}"
+              >
             </div>
-            <div class="hidden sm:block w-12 shrink-0 grow-0">
-              {% if author %}
-              <img src="{{ author.image }}" class="rounded-sm" alt="{{ author.name }}">
-              {% else %}
-              &nbsp;
-              {% endif %}
-            </div>
-            <div class="grow">
-              <h2>{{ post.title }}</h2>
-              <h3 class="italic text-xs leading-6 opacity-60">{{ author.name }}</h3>
-            </div>
+          {% endif %}
+          <div class="flex-1">
+            <h2>{{ post.title }}</h2>
+            <h3 class="italic text-xs leading-6 opacity-60">{{ post.author }}</h3>
           </div>
-      
-          {% if post.title == 'Break' or post.title == 'Lunch' or post.title == 'Doors' or post.title == "Drinks" %}
-            </div>
-          {%- endif %}
-
-          {% if post.title == 'Break' or post.title == 'Lunch' or post.title == 'Doors' or post.title == "Drinks" %}
-            {% assign wastalk = false %}
-          {%- else %}
-            {% assign wastalk = true %}
-          {%- endif %}
-
-        {% endfor %}
+        </div>
       </div>
-    </div>
-    <div class="lg:container lg:mx-auto">
-      <p class="text-xs leading-6 opacity-40 px-2 sm:px-4 pb-2 font-extralight">
-        Programmed & hosted by
-        <a href="https://andycroll.com">Andy Croll</a>.
-      </p>
-    </div>
+
+      {% if post.title == 'Registration'
+        or post.title == 'Coffee'
+        or post.title == 'Lunch'
+        or post.title == 'Ice Cream'
+        or post.title == 'Drinks'
+      %}
+        {% assign wastalk = false %}
+      {%- else %}
+        {% assign wastalk = true %}
+      {%- endif %}
+    {% endfor %}
   </div>
+  <div class="lg:container lg:mx-auto">
+    <p class="text-xs leading-6 opacity-40 px-2 sm:px-4 pb-2 font-extralight">
+      Programmed & hosted by
+      <a href="https://andycroll.com">Andy Croll</a>.
+    </p>
+  </div>
+</div>
