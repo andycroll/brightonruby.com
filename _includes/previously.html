@@ -1,0 +1,12 @@
+<p class="text-xs leading-6 opacity-60 font-extralight">A decade of Brighton Ruby</p>
+
+<ul class="flex flex-wrap gap-4">
+  {% for i in (2014..2023) %}
+    {% if i == 2021 %}
+      {% continue %}
+    {% endif %}
+    <li>
+      <a href="/{{ i }}" class="font-bold decoration-red-600 decoration-2 hover:underline">{{ i }}</a>
+    </li>
+  {% endfor %}
+</ul>
