@@ -1,5 +1,5 @@
 ---
-title: "Who Want’s to be a Ruby Engineer?"
+title: "Who Wants to be a Ruby Engineer?"
 date: "2024-06-28 16:30"
 author: Drew Bragg
 author_bio_markdown: ""
