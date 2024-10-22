@@ -24,14 +24,16 @@ supporters:
     url: "https://crunchydata.com"
 image: 'images/twitter-image.jpg'
 ---
-{% include schedule.html %}
+{% comment %}
+  {% include schedule.html %}
 
-{% include sponsors.html %}
+  {% include sponsors.html %}
+{% endcomment %}
 
 {% include trailer.html %}
 
 {% include headshots.html %}
 
-{% include supporters.html %}
+{% comment %} {% include supporters.html %} {% endcomment %}
 
 {% include information.html %}
