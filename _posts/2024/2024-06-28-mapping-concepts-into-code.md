@@ -2,11 +2,12 @@
 title: "Mapping Concepts into Code"
 date: "2024-06-28 14:30"
 author: Chris Oliver
-author_bio_markdown: ""
+author_bio_markdown: "A software developer based in St. Louis, Missouri. I'm the founder of GoRails, a company focused on helping Ruby on Rails developers learn, build, and deploy their ideas."
 author_social:
   - name: "@excid3"
     url: "https://x.com/excid3"
-layout: preview
+layout: video
+video_source: "videos.brightonruby.com/videos/2024/chris-oliver-mapping-concepts-into-code.mp4"
 description: "What goes into building a Ruby gem?"
 ---
 

@@ -2,10 +2,12 @@
 title: "Database Troubleshooting for Developers"
 date: "2024-06-28 14:00"
 author: Karen Jex
-author_bio_markdown: ""
+author_bio_markdown: "Playing with (PostgreSQL) databases, keen cyclist, Mum to two amazing humans"
 author_social:
-  - url: ""
-layout: preview
+  - name: "@KarenHJex"
+    url: "https://x.com/Karenhjex"
+layout: video
+video_source: "videos.brightonruby.com/videos/2024/karen-jex-database-troubleshooting-for-developers.mp4"
 description: "What do you do if something goes wrong with your database?"
 ---
 

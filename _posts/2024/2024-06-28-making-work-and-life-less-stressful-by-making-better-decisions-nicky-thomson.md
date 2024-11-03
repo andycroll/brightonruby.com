@@ -9,7 +9,8 @@ She has spent more than two decades as a freelance and in-house developer, deliv
 Offline, Nicky enjoys watching bad TV and learning new stuff: this year it's a serious sewing/dressmaking habit."
 author_social:
   - url: "https://ravenation.club/@knotnicky"
-layout: preview
+layout: video
+video_source: "videos.brightonruby.com/videos/2024/nicky-thompson-making-work-life-less-stressful-by-making-better-decisions.mp4"
 description: "Making mistakes is one way to but it still feels bad when it happens."
 ---
 
