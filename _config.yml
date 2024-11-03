@@ -8,9 +8,6 @@ future: true
 url: "https://brightonruby.com"
 baseurl: ""
 
-sass:
-  style: :compressed
-
 collections:
   archives:
     output: true
@@ -23,3 +20,4 @@ collections:
 plugins:
   - jekyll-redirect-from
   - jekyll-resize
+  - jekyll-tailwind

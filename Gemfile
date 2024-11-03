@@ -1,10 +1,11 @@
 source "https://rubygems.org"
 
-ruby File.read(".ruby-version").strip
+ruby file: ".ruby-version"
 
 gem "webrick"
 gem "html-proofer"
 gem "jekyll"
-gem "jekyll-redirect-from"
+gem "jekyll-redirect-from", group: [:jekyll_plugins]
+gem "jekyll-tailwind", group: [:jekyll_plugins]
 gem "jekyll-resize", git: "https://github.com/MichaelCurrin/jekyll-resize"
 
