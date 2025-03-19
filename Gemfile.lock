@@ -104,8 +104,7 @@ GEM
       jekyll (>= 3.3, < 5.0)
     jekyll-sass-converter (3.1.0)
       sass-embedded (~> 1.75)
-    jekyll-tailwind (2.1)
-      jekyll (>= 3.0, < 5.0)
+    jekyll-tailwindcss (0.6.2)
       tailwindcss-ruby
     jekyll-watch (2.2.1)
       listen (~> 3.0)
@@ -221,7 +220,7 @@ DEPENDENCIES
   jekyll
   jekyll-redirect-from
   jekyll-resize!
-  jekyll-tailwind
+  jekyll-tailwindcss
   webrick
 
 RUBY VERSION

@@ -33,13 +33,14 @@
   <meta name="twitter:image" content="{{ page.image | absolute_url }}">
   {% endif %}
 
-  <link rel="stylesheet" href="/css/brightonruby.css">
+  <link rel="stylesheet" href="{{ "/assets/css/monolisa.css" | relative_url }}">
+  <link rel="stylesheet" href="{{ "/assets/css/app.css" | relative_url }}">
 </head>
 
 <body class="bg-amber-50 text-stone-900 font-mono">
 
   <div class="bg-white text-black">
-    <div class="lg:container lg:mx-auto">
+    <div class="container mx-auto">
       <div class="h-auto sm:h-20 px-2 sm:px-4">
         <div class="flex flex-col sm:flex-row">
           <a class="inline-block flex sm:grow" href="/">
@@ -90,7 +91,7 @@
     {{ content }}
   </main>
 
-  <footer role="contentinfo" class="lg:container lg:mx-auto mt-8 md:my-8 px-2 sm:px-4">
+  <footer role="contentinfo" class="container mx-auto mt-8 md:my-8 px-2 sm:px-4">
     {% include previously.html %}
 
     <div class="w-12 mt-8">

@@ -6,6 +6,5 @@ gem "webrick"
 gem "html-proofer"
 gem "jekyll"
 gem "jekyll-redirect-from", group: [:jekyll_plugins]
-gem "jekyll-tailwind", group: [:jekyll_plugins]
+gem "jekyll-tailwindcss", group: [:jekyll_plugins]
 gem "jekyll-resize", git: "https://github.com/MichaelCurrin/jekyll-resize"
-

@@ -11,6 +11,7 @@ author_social:
 layout: video
 video_source: "videos.brightonruby.com/videos/2024/drew-bragg-who-wants-to-be-a-ruby-engineer.mp4"
 description: "Phone a friend? Go 50/50?"
+highlight: true
 ---
 
 The Ruby community's gameshow! The video is just the intro, try and catch this live if you can.

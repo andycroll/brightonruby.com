@@ -21,7 +21,7 @@ layout: default
 {%- endif -%}
 
 <article>
-  <div class="lg:container lg:mx-auto p-2 sm:p-4">
+  <div class="container mx-auto p-2 sm:p-4">
     <h1 class="font-bold text-2xl">
       {{ page_year }}
       <span class="text-base font-light italic">
@@ -34,7 +34,7 @@ layout: default
 
   {%- assign ordered_posts = site.posts | sort: 'date' -%}
   {%- if ordered_posts.size > 0 %}
-    <div class="lg:container lg:mx-auto p-2 sm:p-4">
+    <div class="container mx-auto p-2 sm:p-4">
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-2 sm:gap-4">
         {% for post in ordered_posts %}
           {% assign post_year = post.date | date: '%Y' %}
@@ -63,7 +63,7 @@ layout: default
 
   {% if page.gold.size > 0 %}
     <div id="sponsors" class="bg-slate-900 text-amber-50 mt-3">
-      <div class="lg:container lg:mx-auto grid grid-cols-1 md:grid-cols-2 gap-4 px-2 sm:px-4 pt-2 pb-3 sm:py-4">
+      <div class="container mx-auto grid grid-cols-1 md:grid-cols-2 gap-4 px-2 sm:px-4 pt-2 pb-3 sm:py-4">
         <div class="sm:flex">
           <div class="w-16 grow-0 pr-2 sm:pr-4">
             <p class="text-xs leading-8 opacity-40">Gold</p>
@@ -121,7 +121,7 @@ layout: default
     </div>
   {% endif %}
 
-  <div class="lg:container lg:mx-auto p-2 sm:p-4">
+  <div class="container mx-auto p-2 sm:p-4">
     <article class="">
       <div class="prose font-light max-w-xl mb-6">
         {{ content }}
@@ -136,7 +136,7 @@ layout: default
 
   {% if page.supporter.size > 0 %}
     <div id="supporters" class="bg-slate-900 text-amber-50 mt-3">
-      <div class="lg:container lg:mx-auto grid grid-cols-1 md:grid-cols-2 gap-4 px-2 sm:px-4 pt-2 pb-3 sm:py-4">
+      <div class="container mx-auto grid grid-cols-1 md:grid-cols-2 gap-4 px-2 sm:px-4 pt-2 pb-3 sm:py-4">
         <div class="sm:flex">
           <div class="w-28 grow-0 pr-2 sm:pr-4">
             <p class="text-xs leading-8 opacity-40">Supported&nbsp;by</p>

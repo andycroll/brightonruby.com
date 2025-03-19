@@ -8,6 +8,7 @@ As a member of the Rails Core Team her goal is to ensure the long-term sustainab
 layout: video
 video_source: "videos.brightonruby.com/videos/2023/eileen-uchitelle-the-magic-of-rails.mp4"
 description: "A RailsConf keynote, just for you"
+highlight: true
 ---
 
 We'll look at the philosophy behind the framework as well as the overall structure of the components and explore some of the common patterns that Rails uses to build agnostic and beautiful interfaces, and the techniques it implements to hide complexity so you can focus on building your application.

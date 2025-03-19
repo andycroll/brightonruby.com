@@ -6,8 +6,11 @@
 
 @font-face {
   font-family: "MonoLisa Variable";
+
   src: url("/fonts/MonoLisaVariableNormal.woff2");
+
   font-weight: 100 1000;
+
   unicode-range: U+0020-007E, U+00A0-00AC, U+00AE-00B4, U+00B6-0131,
     U+0134-0148, U+014A-017E, U+018F, U+0192, U+019D, U+01A0-01A1,
     U+01AF-01B0, U+01B7, U+01CD-01DC, U+01E4-01EB, U+01EE-01EF,
@@ -31,6 +34,7 @@
 }
 
 /* Set custom properties for each layout feature */
+
 :root {
   --monolisa-variable-regular-aalt: "aalt" off;
   --monolisa-variable-regular-case: "case" off;
@@ -58,6 +62,7 @@
 
 /* If class is applied, update custom property and
    apply modern font-variant-* when supported */
+
 .monolisa-variable-regular-aalt {
   --monolisa-variable-regular-aalt: "aalt" on;
 }
@@ -190,6 +195,7 @@
 
 /* Apply current state of all custom properties
    whenever a class is being applied */
+
 .monolisa-variable-regular-aalt,
 .monolisa-variable-regular-case,
 .monolisa-variable-regular-dnom,
@@ -223,6 +229,7 @@
 }
 
 /* Variable instances */
+
 .monolisa-variable-regular-thin {
   font-variation-settings: "wght" 100;
 }
@@ -261,8 +268,11 @@
 
 @font-face {
   font-family: "MonoLisa Variable";
+
   src: url("/fonts/MonoLisaVariableItalic.woff2");
+
   font-weight: 100 1000;
+
   unicode-range: U+0020-007E, U+00A0-00AC, U+00AE-00B4, U+00B6-0131,
     U+0134-0148, U+014A-017E, U+018F, U+0192, U+019D, U+01A0-01A1,
     U+01AF-01B0, U+01B7, U+01CD-01DC, U+01E4-01EB, U+01EE-01EF,
@@ -283,10 +293,12 @@
     U+2639-263C, U+263E, U+2665, U+2713-2718, U+2744, U+27A1, U+27B2,
     U+2B05-2B07, U+2B58, U+3008-3009, U+E0A0-E0A2, U+E0B0-E0B3,
     U+EE00-EE0B, U+EE10-EE15;
+
   font-style: italic;
 }
 
 /* Set custom properties for each layout feature */
+
 :root {
   --monolisa-variable-italic-aalt: "aalt" off;
   --monolisa-variable-italic-case: "case" off;
@@ -313,6 +325,7 @@
 
 /* If class is applied, update custom property and
    apply modern font-variant-* when supported */
+
 .monolisa-variable-italic-aalt {
   --monolisa-variable-italic-aalt: "aalt" on;
 }
@@ -441,6 +454,7 @@
 
 /* Apply current state of all custom properties
    whenever a class is being applied */
+
 .monolisa-variable-italic-aalt,
 .monolisa-variable-italic-case,
 .monolisa-variable-italic-dnom,
@@ -473,6 +487,7 @@
 }
 
 /* Variable instances */
+
 .monolisa-variable-italic-thin-italic {
   font-variation-settings: "wght" 100;
 }
@@ -508,7 +523,3 @@
 .monolisa-variable-italic-extrabold-italic {
   font-variation-settings: "wght" 900;
 }
-
-@tailwind base;
-@tailwind components;
-@tailwind utilities;

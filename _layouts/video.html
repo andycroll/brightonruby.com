@@ -22,7 +22,7 @@ layout: default
 
 <article>
   <div class="bg-sky-500 text-amber-50">
-    <div class="lg:container lg:mx-auto py-4 px-2 sm:px-4">
+    <div class="container mx-auto py-4 px-2 sm:px-4">
       <h1 class="font-bold">
         {{ page.title }} //
         <a class="italic decoration-white decoration-2 hover:underline" href="/{{ page_year }}">
@@ -75,7 +75,7 @@ layout: default
     {% assign archive_year = archive.name | replace: '.md', '' %}
     {% if archive_year == page_year %}
       <div id="sponsors" class="bg-slate-900 text-amber-50">
-        <div class="lg:container lg:mx-auto grid grid-cols-1 md:grid-cols-2 gap-4 px-2 sm:px-4 pt-2 pb-3 sm:py-4">
+        <div class="container mx-auto grid grid-cols-1 md:grid-cols-2 gap-4 px-2 sm:px-4 pt-2 pb-3 sm:py-4">
           <div class="sm:flex">
             <div class="w-16 grow-0 pr-2 sm:pr-4">
               <p class="text-xs leading-8 opacity-40">Gold</p>
@@ -118,8 +118,8 @@ layout: default
     {% endif %}
   {% endfor %}
 
-  <div class="lg:container lg:mx-auto p-2 sm:p-4">
-    <div class="prose">
+  <div class="container mx-auto p-2 sm:p-4">
+    <div class="typography max-w-xl">
       {{ content }}
 
       {% if page_year == '2023' %}
@@ -136,7 +136,7 @@ layout: default
       </div>
       {%- endif %}
 
-      <hr>
+      <hr class="my-4">
 
       {{ page.author_bio_markdown | markdownify }}
     </div>

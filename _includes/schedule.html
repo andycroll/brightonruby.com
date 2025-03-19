@@ -1,6 +1,6 @@
 <div class="bg-amber-50 text-stone-900">
   {% comment %} <div class="bg-sky-950 text-amber-50"> {% endcomment %}
-  <div class="lg:container lg:mx-auto">
+  <div class="container mx-auto">
     {% assign wastalk = false %}
     {% assign ordered_posts = site.posts
       | where_exp: 'post', 'post.date >= site.time and post.layout == "preview" or post.layout == "break"'
@@ -64,7 +64,7 @@
       {%- endif %}
     {% endfor %}
   </div>
-  <div class="lg:container lg:mx-auto">
+  <div class="container mx-auto">
     <p class="text-xs leading-6 opacity-40 px-2 sm:px-4 pb-2 font-extralight">
       Programmed & hosted by
       <a href="https://andycroll.com">Andy Croll</a>.

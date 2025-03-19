@@ -6,11 +6,10 @@ author_social:
   - name: "@sarahmei"
     url: "https://twitter.com/sarahmei"
 author_bio_markdown: "Architect at Salesforce UX, out of San Franciso. Director at Ruby Central (organisers of RailsConf & RubyConf). Founder of Bridge Foundry (Rails Bridge)."
-date: '2017-07-07 16:10'
+date: "2017-07-07 16:10"
 video_source: "videos.brightonruby.com/videos/2017/sarah-livable-code.mp4"
-image: '/images/2017/livable-code-sarah-mei.jpg'
-description: 'The modern practice of software isn’t much like architecture or construction. The buildings are largely built. These days, we make a pre-built space work for whoever lives there.'
-highlight: true
+image: "/images/2017/livable-code-sarah-mei.jpg"
+description: "The modern practice of software isn’t much like architecture or construction. The buildings are largely built. These days, we make a pre-built space work for whoever lives there."
 ---
 
 The modern practice of software isn’t much like architecture or construction. The buildings are largely built. These days, we make a pre-built space work for whoever lives there.
