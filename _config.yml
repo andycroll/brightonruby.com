@@ -21,3 +21,6 @@ plugins:
   - jekyll-redirect-from
   - jekyll-resize
   - jekyll-tailwind
+
+tailwind:
+  minify: true
