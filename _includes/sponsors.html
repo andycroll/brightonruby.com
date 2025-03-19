@@ -15,22 +15,22 @@
           >
             <img
               class=""
-              src="/images/2024/sponsors/{{ sponsor.name | downcase | replace: ' ', '_'}}.svg"
+              src="/images/2025/sponsors/{{ sponsor.name | downcase | replace: ' ', '_'}}.svg"
               alt="{{ sponsor.name }} Logo"
             >
           </a>
         {% else %}
           <img
             class="col-span-2"
-            src="/images/2024/sponsors/{{ sponsor.name | downcase | replace: ' ', '_'}}.svg"
+            src="/images/2025/sponsors/{{ sponsor.name | downcase | replace: ' ', '_'}}.svg"
             alt="{{ sponsor.name }} Logo"
           >
         {% endif %}
       {% endfor %}
     </div>
 
-    <div class="grid grid-cols-4 md:grid-cols-11 gap-4 p-4 lg:container lg:mx-auto">
-      {% if page.silver.size > 0 %}
+    {% if page.silver.size > 0 %}
+      <div class="grid grid-cols-4 md:grid-cols-11 gap-4 p-4 lg:container lg:mx-auto">
         <div class="col-span-4 md:col-span-1">
           <p class="text-xs opacity-40">Silver</p>
         </div>
@@ -45,19 +45,19 @@
             >
               <img
                 class=""
-                src="/images/2024/sponsors/{{ sponsor.name | downcase | replace: ' ', '_'}}.svg"
+                src="/images/2025/sponsors/{{ sponsor.name | downcase | replace: ' ', '_'}}.svg"
                 alt="{{ sponsor.name }} Logo"
               >
             </a>
           {% else %}
             <img
               class="col-span md:col-span-2"
-              src="/images/2024/sponsors/{{ sponsor.name | downcase | replace: ' ', '_'}}.svg"
+              src="/images/2025/sponsors/{{ sponsor.name | downcase | replace: ' ', '_'}}.svg"
               alt="{{ sponsor.name }} Logo"
             >
           {% endif %}
         {% endfor %}
-      {% endif %}
-    </div>
+      </div>
+    {% endif %}
   </div>
 {% endif %}
