@@ -40,10 +40,10 @@ postcss-selector-parser@6.0.10:
     cssesc "^3.0.0"
     util-deprecate "^1.0.2"
 
-tailwindcss@^4.0.14, "tailwindcss@>=3.0.0 || insiders || >=4.0.0-alpha.20 || >=4.0.0-beta.1":
-  version "4.0.14"
-  resolved "https://registry.npmjs.org/tailwindcss/-/tailwindcss-4.0.14.tgz"
-  integrity sha512-92YT2dpt671tFiHH/e1ok9D987N9fHD5VWoly1CdPD/Cd1HMglvZwP3nx2yTj2lbXDAHt8QssZkxTLCCTNL+xw==
+tailwindcss@^4.1.0:
+  version "4.1.0"
+  resolved "https://registry.yarnpkg.com/tailwindcss/-/tailwindcss-4.1.0.tgz#f51694989c82116a07049db6c0c110aec4d7298c"
+  integrity sha512-vBYstoFnvUZCDxaauNGQQEvJNQgCd1vSMDRYuZZMH1xRRcTboOk1rJrW5yFkEabU9X6Yx1C4LQ+QvPOvQj4Daw==
 
 util-deprecate@^1.0.2:
   version "1.0.2"
