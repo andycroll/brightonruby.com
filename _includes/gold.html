@@ -1,0 +1,29 @@
+{% if page.gold.size > 0 %}
+  <div id="sponsors" class="bg-slate-900 text-amber-50">
+    <p class="w-full text-center text-xs opacity-40 pt-2">Sponsored by...</p>
+    <div class="w-full flex justify-center mx-auto">
+      {% for sponsor in page.gold %}
+        {% if sponsor.url != null %}
+          <a
+            class="w-40 md:w-48 p-2 px-4"
+            href="{{ sponsor.url }}"
+            title="{{ sponsor.name }}"
+            target="_blank"
+          >
+            <img
+              class=""
+              src="/images/2025/sponsors/{{ sponsor.name | downcase | replace: ' ', '_'}}.svg"
+              alt="{{ sponsor.name }} Logo"
+            >
+          </a>
+        {% else %}
+          <img
+            class="col-span-2"
+            src="/images/2025/sponsors/{{ sponsor.name | downcase | replace: ' ', '_'}}.svg"
+            alt="{{ sponsor.name }} Logo"
+          >
+        {% endif %}
+      {% endfor %}
+    </div>
+  </div>
+{% endif %}
