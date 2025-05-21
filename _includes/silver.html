@@ -1,7 +1,7 @@
 <div id="sponsors" class="bg-slate-900 text-amber-50">
   <p class="w-full text-center text-xs opacity-40 pt-2">Also helped by...</p>
 
-  <div class="w-full flex justify-center mx-auto">
+  <div class="w-full flex flex-wrap lg:flex-nowrap justify-center mx-auto">
     {% for sponsor in page.silver %}
       {% if sponsor.url != null %}
         <a
@@ -18,7 +18,7 @@
         </a>
       {% else %}
         <img
-          class="col-span md:col-span-2"
+          class="w-32 md:w-40 p-2 px-4"
           src="/images/2025/sponsors/{{ sponsor.name | downcase | replace: ' ', '_'}}.svg"
           alt="{{ sponsor.name }} Logo"
         >
