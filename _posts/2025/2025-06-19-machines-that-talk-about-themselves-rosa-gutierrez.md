@@ -1,6 +1,6 @@
 ---
 title: "Machines That Talk About Themselves"
-date: "2025-06-19 09:15"
+date: "2025-06-19 09:30"
 author: Rosa Gutierrez
 author_bio_markdown: "TBD"
 author_social:
