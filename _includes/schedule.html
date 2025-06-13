@@ -1,6 +1,6 @@
 <div class="bg-amber-50 text-stone-900">
   {% comment %} <div class="bg-sky-950 text-amber-50"> {% endcomment %}
-  <div class="container mx-auto">
+  <div class="container mx-auto md:w-3/4 lg:w-1/2">
     {% assign wastalk = false %}
     {% assign ordered_posts = site.posts
       | where_exp: 'post', 'post.date >= site.time and post.layout == "preview" or post.layout == "break"'
