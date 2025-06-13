@@ -56,39 +56,30 @@
                 Thu&nbsp;19&nbsp;Jun
               </span>
             </div>
-            <a class="flex-1 text-right" href="https://brightondome.org">
-              Brighton&nbsp;Dome
-            </a>
+
+            <div class="md:flex-1 text-right">
+              <a href="https://brightondome.org">
+                <span class="hidden md:inline">Brighton&nbsp;</span>Dome
+              </a>
+              &sol;
+              <a href="https://maps.apple.com/?address=Brighton,%20BN1%201UE,%20England&auid=15913380656425988054&ll=50.823661,-0.138391&lsp=9902&q=Brighton%20Dome">
+                Apple
+              </a>
+              &sol;
+              <a href="https://goo.gl/maps/o5YdP27AZ8jNWdGT7">
+                Google
+              </a>
+            </div>
           </h1>
         </div>
       </div>
     </div>
   </div>
 
-  <!--
-  <div class="font-bold block w-100 text-white bg-red-800 hover:bg-red-600 focus:outline-none focus:border-red-600">
-    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
-      class="w-6 h-6">
-      <path stroke-linecap="round" stroke-linejoin="round"
-        d="M9 6.75V15m6-6v8.25m.503 3.498 4.875-2.437c.381-.19.622-.58.622-1.006V4.82c0-.836-.88-1.38-1.628-1.006l-3.869 1.934c-.317.159-.69.159-1.006 0L9.503 3.252a1.125 1.125 0 0 0-1.006 0L3.622 5.689C3.24 5.88 3 6.27 3 6.695V19.18c0 .836.88 1.38 1.628 1.006l3.869-1.934c.317-.159.69-.159 1.006 0l4.994 2.497c.317.158.69.158 1.006 0Z" />
-    </svg>
-
-    <a href="https://maps.apple.com/?address=Brighton,%20BN1%201UE,%20England&auid=15913380656425988054&ll=50.823661,-0.138391&lsp=9902&q=Brighton%20Dome"
-      focus:shadow-outline-red active:bg-red-600 transition ease-in-out duration-150">
-      Apple
-    </a>
-
-    <a href="https://goo.gl/maps/o5YdP27AZ8jNWdGT7" class=" font-bold block w-100 text-white bg-red-800 hover:bg-red-600 focus:outline-none focus:border-red-600
-                focus:shadow-outline-red active:bg-red-600 transition ease-in-out duration-150">
-      Google
-    </a>
-  </div>
-  -->
-
   <main>
-    {% include buytickets.html %}
-
     {{ content }}
+
+    {% include buytickets.html %}
   </main>
 
   <footer role="contentinfo" class="container mx-auto mt-8 md:my-8 px-2 sm:px-4">

@@ -19,7 +19,7 @@
         {% capture classes %}{% endcapture %}
       {% endif %}
       <div
-        data-timestamp="{{ post.date | date: '%H%M' }}"
+        data-timestamp="{{ post.date | date: '%s' }}"
         class="px-2 sm:px-4 {{ classes }}"
       >
         <div class="sm:flex sm:gap-4 my-1">
@@ -71,3 +71,20 @@
     </p>
   </div>
 </div>
+
+<script>
+  // Hide completed talk sections (1 hour after start time)
+  document.addEventListener('DOMContentLoaded', function() {
+    const now = new Date();
+    const currentTimestamp = Math.floor(now.getTime() / 1000); // Current Unix timestamp
+    
+    document.querySelectorAll('[data-timestamp]').forEach(function(section) {
+      const timestamp = parseInt(section.dataset.timestamp);
+      const endTime = timestamp + 3600; // Add 1 hour (3600 seconds)
+      
+      if (currentTimestamp > endTime) {
+        section.style.display = 'none';
+      }
+    });
+  });
+</script>
