@@ -13,7 +13,7 @@ Situated on the south coast, it's been described to me as a town of freelancers,
 
 You name it we have it.
 
-* UK's only Green MP. [Check](http://www.carolinelucas.com).
+* UK's Green Party Leader is our MP. [Check](https://members.parliament.uk/member/5314/contact).
 * Gay capital of Europe. [Check](http://www.brighton-pride.org).
 * Oldest still working cinema in the UK. [Check](http://www.picturehouses.co.uk/cinema/Duke_Of_Yorks/).
 * Second largest Arts Festival in the UK. [Check](http://brightonfestival.org).
@@ -29,10 +29,6 @@ For more about the city there's always [wikipedia](https://en.wikipedia.org/wiki
 #### The Ibis
 
 If attendees are staying in Brighton they are mostly in the Ibis. It is right out in front of the station. Only 10 minutes to the sea and less to the venue.
-
-#### My Hotel
-
-Another decent hotel close to the venue.
 
 #### The Dome
 
@@ -60,7 +56,7 @@ Walk straight from the station to the sea and as you walk over the main crossroa
 
 #### Churchill Square
 
-Slightly drab mall in the centre of Brighton, there's an Apple Store if you need anything! The main shopping street continues west where without noticing you'll suddenly be in Hove.
+Slightly drab mall in the centre of Brighton, there's an Apple Store if you need anything in aluminium or white plastic! The main shopping street continues west, where without noticing you'll suddenly be in Hove.
 
 #### The Level
 
@@ -86,7 +82,7 @@ Cabs are plentiful near the station at all hours.
 
 ## Out of town
 
-You can catch a bus (79) from town to Ditchling Beacon and walk along the ridge looking down onto Sussex. Beautiful in the summmer.
+You can catch a bus (79) from town to Ditchling Beacon (on the weekend) and walk along the ridge looking down onto Sussex. Beautiful in the summmer.
 
 There's plenty of walking in the wider [South Downs National Park](http://www.southdowns.gov.uk/) as well.
 
