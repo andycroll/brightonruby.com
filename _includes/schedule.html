@@ -39,7 +39,7 @@
           {% if post.author %}
             <div class="hidden sm:block w-12 flex-none">
               <img
-                src="/images/2024/speakers/{{ post.author | downcase | replace: " ", "_" }}.jpg?width=96&height=96"
+                src="{{ post.author_image | downcase | replace: " ", "_" }}?width=96&height=96"
                 class="rounded-sm"
                 alt="{{ post.author }}"
               >
