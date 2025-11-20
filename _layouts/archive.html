@@ -41,9 +41,15 @@ layout: default
           {% if post_year == page_year and post.break != true %}
             <div class="flex gap-4 mb-2 md:mb-0">
               <div class="w-16 shrink-0 grow-0">
+                {% if post.author_image %}
+                  {% assign image_src = post.author_image %}
+                {% else %}
+                  {% assign author_slug = post.author | downcase | replace: " ", "_" %}
+                  {% assign image_src = "/images/" | append: post_year | append: "/speakers/" | append: author_slug | append: ".jpg" %}
+                {% endif %}
                 <a href="{{ post.url }}"
                   ><img
-                    src="{{ post.author_image }}?width=96&height=96"
+                    src="{{ image_src }}?width=96&height=96"
                     class="rounded-sm"
                     alt="{{ author.name }}"
                 ></a>

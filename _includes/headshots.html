@@ -17,8 +17,14 @@
           {% assign post_year = post.date | date: '%Y' %}
           <a href="{{ post.url }}" class="relative">
             {% assign author = site.data.authors[post.author] %}
+            {% if post.author_image %}
+              {% assign image_src = post.author_image %}
+            {% else %}
+              {% assign author_slug = post.author | downcase | replace: " ", "_" %}
+              {% assign image_src = "/images/" | append: post_year | append: "/speakers/" | append: author_slug | append: ".jpg" %}
+            {% endif %}
             <img
-              src="{{ post.author_image }}?width=96&height=96"
+              src="{{ image_src }}?width=96&height=96"
               class="rounded shadow transition transform duration-300 hover:shadow-lg hover:scale-105 ease-in-out"
               alt="{{ post.title }}"
             >
