@@ -6,8 +6,8 @@ author_bio_markdown: "Founder and CEO of The StoryGraph, the app that helps you 
 author_social:
   - name: "TBD"
     url: "TBD"
-layout: preview
-video_source: "TBD"
+layout: video
+video_source: "videos.brightonruby.com/videos/2025/nadia-odunayo-case-of-the-peculiar-pattern.mp4"
 author_image: "/images/2025/speakers/nadia_odunayo.jpg"
 description: "When a mysterious pattern matching bug crashes during a major product launch, Ruby Private Investigator Deirdre Bug is forced to seek help from an unexpected source. What begins as urgent debugging evolves into something much more, causing her to question everything."
 ---

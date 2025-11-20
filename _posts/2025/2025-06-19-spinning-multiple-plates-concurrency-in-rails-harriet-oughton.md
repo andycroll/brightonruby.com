@@ -6,8 +6,8 @@ author_bio_markdown: "Senior full stack developer at Zivio who contributes to Ra
 author_social:
   - name: "TBD"
     url: "TBD"
-layout: preview
-video_source: "TBD"
+layout: video
+video_source: "videos.brightonruby.com/videos/2025/harriet-oughton-spinning-multiple-plates-concurrency-in-rails.mp4"
 author_image: "/images/2025/speakers/harriet_oughton.jpg"
 description: "An exploration of the concurrency built into Rails, drawing from work on the Rails Guides and featuring a fun, chaotic physical demonstration of the difficulties of multi-threaded workloads."
 ---

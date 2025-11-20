@@ -6,8 +6,8 @@ author_bio_markdown: "Principal programmer at 37signals who loves learning langu
 author_social:
   - name: "TBD"
     url: "TBD"
-layout: preview
-video_source: "TBD"
+layout: video
+video_source: "videos.brightonruby.com/videos/2025/rosa-gutierrez-machines-that-talk-about-themselves.mp4"
 author_image: "/images/2025/speakers/rosa_gutierrez.jpg"
 description: "TBD"
 ---

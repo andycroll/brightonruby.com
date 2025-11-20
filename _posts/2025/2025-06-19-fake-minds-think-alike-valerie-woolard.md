@@ -6,8 +6,8 @@ author_bio_markdown: "Principal software engineer at Heroku who writes Ruby code
 author_social:
   - name: "TBD"
     url: "TBD"
-layout: preview
-video_source: "TBD"
+layout: video
+video_source: "videos.brightonruby.com/videos/2025/valerie-woolard-fake-minds-think-alike.mp4"
 author_image: "/images/2025/speakers/valerie_woolard.jpg"
 description: "A primer on vector data types and how they are used in large language models and AI. We'll talk about how models can fall short and walk through a practical example of how to build a similarity search with Ruby."
 ---

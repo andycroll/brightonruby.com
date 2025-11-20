@@ -6,8 +6,8 @@ author_bio_markdown: "Engineering Manager at Shopify who helps improve the Ruby 
 author_social:
   - name: "TBD"
     url: "TBD"
-layout: preview
-video_source: "TBD"
+layout: video
+video_source: "videos.brightonruby.com/videos/2025/emily-samp-beyond-type-checking.mp4"
 author_image: "/images/2025/speakers/emily_samp.jpg"
 description: "Many Ruby developers have remained skeptical of type checking, viewing it as unnecessary complexity in a language celebrated for its simplicity and flexibility. Behind the scenes, however, type checking advancements are driving dramatic improvements to Ruby developer tools."
 ---
