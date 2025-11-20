@@ -18,7 +18,7 @@
           <a href="{{ post.url }}" class="relative">
             {% assign author = site.data.authors[post.author] %}
             <img
-              src="/images/{{ post_year }}/speakers/{{ post.author | downcase | replace: " ", "_" }}.jpg?width=96&height=96"
+              src="{{ post.author_image }}?width=96&height=96"
               class="rounded shadow transition transform duration-300 hover:shadow-lg hover:scale-105 ease-in-out"
               alt="{{ post.title }}"
             >

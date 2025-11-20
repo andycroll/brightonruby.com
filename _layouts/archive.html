@@ -43,7 +43,7 @@ layout: default
               <div class="w-16 shrink-0 grow-0">
                 <a href="{{ post.url }}"
                   ><img
-                    src="/images/{{ post_year }}/speakers/{{ post.author | downcase | replace: " ", "_" }}.jpg?width=96&height=96"
+                    src="{{ post.author_image }}?width=96&height=96"
                     class="rounded-sm"
                     alt="{{ author.name }}"
                 ></a>
