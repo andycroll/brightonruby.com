@@ -1,5 +1,5 @@
 [build.environment]
-  NODE_VERSION = "17.6"
+  NODE_VERSION = "24"
 
 [[headers]]
   for = "/*"
