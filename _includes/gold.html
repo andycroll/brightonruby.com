@@ -2,11 +2,11 @@
   <div id="sponsors" class="bg-slate-900 text-amber-50">
     <div class="container mx-auto px-4 pt-4 pb-2">
       <p class="text-xs opacity-40 text-center md:text-left">Sponsored by...</p>
-      <div class="grid grid-cols-2 justify-items-center md:flex md:items-center gap-4 pt-2">
+      <div class="grid grid-cols-2 md:flex md:items-center gap-4 pt-2">
         {% for sponsor in page.gold %}
           {% if sponsor.url != null %}
             <a
-              class="md:w-48 px-2"
+              class="w-full md:w-48 px-2"
               href="{{ sponsor.url }}"
               title="{{ sponsor.name }}"
               target="_blank"
@@ -17,7 +17,7 @@
               >
             </a>
           {% else %}
-            <div class="md:w-48 px-2">
+            <div class="w-full md:w-48 px-2">
               <img
                 src="/images/2026/sponsors/{{ sponsor.name | downcase | replace: ' ', '_'}}.svg"
                 alt="{{ sponsor.name }} Logo"
