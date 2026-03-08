@@ -1,32 +1,31 @@
 {% if page.supporters.size > 0 %}
   <div id="supporters" class="bg-slate-900 text-amber-50">
-    <div class="grid grid-cols-3 md:grid-cols-11 gap-4 p-4 container mx-auto">
-      <div class="col-span-3 md:col-span-1">
-        <p class="text-xs opacity-40 inline-block align-middle">Supporters</p>
-      </div>
-
-      {% for sponsor in page.supporters %}
-        {% if sponsor.url != null %}
-          <a
-            class="col-span md:col-span-2"
-            href="{{ sponsor.url }}"
-            title="{{ sponsor.name }}"
-            target="_blank"
-          >
-            <img
-              class=""
-              src="/images/2026/sponsors/{{ sponsor.name | downcase | replace: ' ', '_'}}.svg"
-              alt="{{ sponsor.name }} Logo"
+    <div class="container mx-auto px-4 pb-4">
+      <p class="text-xs opacity-40 text-center md:text-left">Supporters</p>
+      <div class="grid grid-cols-3 md:flex md:items-center gap-4 pt-2">
+        {% for sponsor in page.supporters %}
+          {% if sponsor.url != null %}
+            <a
+              class="w-full md:w-36 px-2"
+              href="{{ sponsor.url }}"
+              title="{{ sponsor.name }}"
+              target="_blank"
             >
-          </a>
-        {% else %}
-          <img
-            class="col-span-2"
-            src="/images/2026/sponsors/{{ sponsor.name | downcase | replace: ' ', '_'}}.svg"
-            alt="{{ sponsor.name }} Logo"
-          >
-        {% endif %}
-      {% endfor %}
+              <img
+                src="/images/2026/sponsors/{{ sponsor.name | downcase | replace: ' ', '_'}}.svg"
+                alt="{{ sponsor.name }} Logo"
+              >
+            </a>
+          {% else %}
+            <div class="w-full md:w-36 px-2">
+              <img
+                src="/images/2026/sponsors/{{ sponsor.name | downcase | replace: ' ', '_'}}.svg"
+                alt="{{ sponsor.name }} Logo"
+              >
+            </div>
+          {% endif %}
+        {% endfor %}
+      </div>
     </div>
   </div>
 {% endif %}
