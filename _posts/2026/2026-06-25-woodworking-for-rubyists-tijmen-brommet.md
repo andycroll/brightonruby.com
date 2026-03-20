@@ -2,7 +2,7 @@
 title: "Woodworking for Rubyists"
 date: "2026-06-25 14:25"
 author: Tijmen Brommet
-author_bio_markdown: "Tijmen is a senior developer at CaptionHub, working on a real-time captioning platform using Ruby. Previously worked on GOV.UK and the Department for Education. Lives in Amsterdam."
+author_bio_markdown: "Tijmen Brommet is a developer at CaptionHub, a multimedia localisation platform, and works on real-time captioning for live streams and conferences. Before CaptionHub, he worked on GOV.UK at the Government Digital Service. He lives in Amsterdam."
 author_social:
   - name: "GitHub"
     url: "https://github.com/tijmenb"
