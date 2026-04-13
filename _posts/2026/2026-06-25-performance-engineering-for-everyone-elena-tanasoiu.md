@@ -4,8 +4,8 @@ date: "2026-06-25 10:00"
 author: Elena Tanasoiu & Emma Gabriel
 author_bio_markdown: "Elena Tanasoiu is a Staff Engineer on GitHub's Performance Engineering team. She spends her time making one of the world's largest Ruby on Rails applications faster by profiling production traffic, diagnosing bottlenecks, and occasionally convincing teams they don't need more hardware. She has a fondness for flamegraphs because they never lie. Also enjoys pickles. Emma Gabriel is the Senior Director of Product Management leading GitHub's frontend platform teams. She spends her time figuring out what people actually mean when they say 'this feels slow', and then deciding what to do about it. In a past life, she spent three years as a Ruby on Rails developer; now she has two kids to worry about endlessly, and very little time for anything else."
 author_social:
-  - name: "GitHub (Elena)"
-    url: "https://github.com/elenatanasoiu"
+  - name: "Website (Elena)"
+    url: "https://elenatanasoiu.com/"
   - name: "GitHub (Emma)"
     url: "https://github.com/emmagabriel"
 layout: video
