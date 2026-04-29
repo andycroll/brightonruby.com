@@ -1,0 +1,96 @@
+---
+layout: default
+title: "Brighton Ruby 2026 — Schedule"
+permalink: /2026/schedule/
+description: "The full schedule for Brighton Ruby 2026, Thursday 25th June at Brighton Dome."
+image: "images/twitter-image.jpg"
+---
+
+<div class="container mx-auto p-2 sm:p-4">
+  <h1 class="font-bold text-2xl">
+    Schedule
+    <span class="text-base font-light italic">Thursday, 25th June 2026</span>
+  </h1>
+</div>
+
+<div class="container mx-auto md:w-3/4 lg:w-1/2 px-2 sm:px-4 pb-6">
+  {% assign ordered_posts = site.posts | sort: 'date' %}
+  {% assign wastalk = false %}
+
+  {% for post in ordered_posts %}
+    {% assign post_year = post.date | date: '%Y' %}
+    {% if post_year != '2026' %}{% continue %}{% endif %}
+
+    {% assign is_break = false %}
+    {% if post.title == 'Registration'
+      or post.title == 'Coffee'
+      or post.title == 'Lunch'
+      or post.title == 'Ice Cream'
+      or post.title == 'Drinks'
+    %}
+      {% assign is_break = true %}
+    {% endif %}
+
+    {% if is_break %}
+      {% capture row_classes %}my-5 opacity-50{% endcapture %}
+    {% else %}
+      {% capture row_classes %}{% endcapture %}
+    {% endif %}
+
+    <div class="{{ row_classes }}">
+      <div class="sm:flex sm:gap-4 my-1">
+        {% if wastalk == false or is_break %}
+          <div class="w-12 flex-none mt-4 sm:mt-0">
+            {{ post.date | date: '%H:%M' }}
+          </div>
+        {% else %}
+          <div class="hidden sm:block w-12 flex-none mt-4 sm:mt-0">&nbsp;</div>
+        {% endif %}
+
+        {% if post.author and is_break == false %}
+          <div class="hidden sm:block w-12 flex-none">
+            {% if post.author_image %}
+              {% assign image_src = post.author_image %}
+            {% else %}
+              {% assign author_slug = post.author | downcase | replace: ' ', '_' %}
+              {% assign image_src = '/images/2026/speakers/' | append: author_slug | append: '.jpg' %}
+            {% endif %}
+            <a href="{{ post.url }}">
+              <img
+                src="{{ image_src | downcase | replace: ' ', '_' }}?width=96&height=96"
+                class="rounded-sm"
+                alt="{{ post.author }}"
+              >
+            </a>
+          </div>
+        {% endif %}
+
+        <div class="flex-1">
+          <h2>
+            {% if is_break %}
+              {{ post.title }}
+            {% else %}
+              <a href="{{ post.url }}">{{ post.title }}</a>
+            {% endif %}
+          </h2>
+          {% if post.author %}
+            <h3 class="italic text-xs leading-6 opacity-60">{{ post.author }}</h3>
+          {% endif %}
+        </div>
+      </div>
+    </div>
+
+    {% if is_break %}
+      {% assign wastalk = false %}
+    {% else %}
+      {% assign wastalk = true %}
+    {% endif %}
+  {% endfor %}
+</div>
+
+<div class="container mx-auto md:w-3/4 lg:w-1/2 px-2 sm:px-4 pb-6">
+  <p class="text-xs leading-6 opacity-40 font-extralight">
+    Programmed &amp; hosted by
+    <a href="https://andycroll.com">Andy Croll</a>.
+  </p>
+</div>
