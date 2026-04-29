@@ -3,6 +3,10 @@
 
 @import "tailwindcss";
 
+html {
+  font-size: clamp(1em, 0.9em + 0.4vi, 1.125em);
+}
+
 @theme {
   --font-mono: "MonoLisa Variable", "ui-monospace", "SFMono-Regular", "Menlo", "Monaco", "Consolas", "Liberation Mono", "Courier New", "monospace";
 }
