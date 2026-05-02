@@ -20,4 +20,5 @@ collections:
 plugins:
   - jekyll-redirect-from
   - jekyll-resize
+  - jekyll-sitemap
   - jekyll-tailwindcss
