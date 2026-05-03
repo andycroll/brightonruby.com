@@ -9,6 +9,7 @@ date: '2018-07-06 12:10'
 layout: video
 video_source: "videos.brightonruby.com/videos/2018/tekin-a-branch-in-time.mp4"
 image: '/images/2018/a-branch-in-time-tekin-suleyman.jpg'
+author_image: '/images/2018/speakers/tekin_suleyman.jpg'
 description: 'A considered history of your code can be powerful. Learn tools and techniques that can mean the difference between hours of frustration and a quick path to clarity.'
 ---
 
