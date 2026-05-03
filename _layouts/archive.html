@@ -49,7 +49,7 @@ layout: default
                 {% endif %}
                 <a href="{{ post.url }}"
                   ><img
-                    src="{{ image_src }}?width=96&height=96"
+                    src="{% include cf_image.html src=image_src width=96 height=96 %}"
                     class="rounded-sm"
                     alt="{{ author.name }}"
                 ></a>

@@ -2,7 +2,7 @@ name: Brighton Ruby Conference
 description: A summer-y, friendly, one day conference in Brighton for Rubyists
 
 exclude: ["config.ru", "Gemfile", "Gemfile.lock", "vendor", "node_modules"]
-include: ["_redirects"]
+include: ["_redirects", "_headers"]
 permalink: /:year/:title/
 future: true
 url: "https://brightonruby.com"
@@ -19,6 +19,5 @@ collections:
 
 plugins:
   - jekyll-redirect-from
-  - jekyll-resize
   - jekyll-sitemap
   - jekyll-tailwindcss

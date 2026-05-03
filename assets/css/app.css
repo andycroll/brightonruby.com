@@ -2,6 +2,7 @@
 ---
 
 @import "tailwindcss";
+@plugin "@tailwindcss/typography";
 
 html {
   font-size: clamp(1em, 0.9em + 0.4vi, 1.125em);

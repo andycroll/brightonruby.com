@@ -37,9 +37,10 @@
             <div class="hidden sm:block w-12 flex-none mt-4 sm:mt-0">&nbsp;</div>
           {% endif -%}
           {% if post.author %}
+            {% assign image_src = post.author_image | downcase | replace: " ", "_" %}
             <div class="hidden sm:block w-12 flex-none">
               <img
-                src="{{ post.author_image | downcase | replace: " ", "_" }}?width=96&height=96"
+                src="{% include cf_image.html src=image_src width=96 height=96 %}"
                 class="rounded-sm"
                 alt="{{ post.author }}"
               >

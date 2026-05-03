@@ -24,7 +24,7 @@
               {% assign image_src = "/images/" | append: post_year | append: "/speakers/" | append: author_slug | append: ".jpg" %}
             {% endif %}
             <img
-              src="{{ image_src }}?width=96&height=96"
+              src="{% include cf_image.html src=image_src width=96 height=96 %}"
               class="rounded shadow transition transform duration-300 hover:shadow-lg hover:scale-105 ease-in-out"
               alt="{{ post.title }}"
             >

@@ -1,0 +1,21 @@
+{%- comment -%}
+Render an image src that, in production, is routed through Cloudflare Image
+Transformations (/cdn-cgi/image/...). In development the original path is used
+so jekyll serve can resolve it locally.
+
+Params:
+  src    (required) — absolute path starting with "/images/..."
+  width  (optional) — pixels
+  height (optional) — pixels
+  fit    (optional) — Cloudflare fit mode, defaults to "cover"
+{%- endcomment -%}
+{%- if jekyll.environment == "production" -%}
+{%- assign opts = "format=auto" -%}
+{%- if include.width -%}{%- assign opts = opts | append: ",width=" | append: include.width -%}{%- endif -%}
+{%- if include.height -%}{%- assign opts = opts | append: ",height=" | append: include.height -%}{%- endif -%}
+{%- assign fit = include.fit | default: "cover" -%}
+{%- if include.width or include.height -%}{%- assign opts = opts | append: ",fit=" | append: fit -%}{%- endif -%}
+/cdn-cgi/image/{{ opts }}{{ include.src }}
+{%- else -%}
+{{ include.src }}
+{%- endif -%}
