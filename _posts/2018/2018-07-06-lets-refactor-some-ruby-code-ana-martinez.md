@@ -9,6 +9,7 @@ date: '2018-07-06 11:50'
 layout: video
 video_source: "videos.brightonruby.com/videos/2018/ana-lets-refactor-some-ruby-code.mp4"
 image: '/images/2018/lets-refactor-some-ruby-code-ana-martinez.jpg'
+author_image: '/images/2018/speakers/ana_martinez.jpg'
 description: 'Let us refactor some code in long-lived Ruby and Rails open source projects and what can we learn while doing it.'
 ---
 
