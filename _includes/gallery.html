@@ -7,7 +7,7 @@
         <a data-lightbox href="{{ file.path | relative_url }}" title="{{ filename }}" class="w-12 h-12 shrink-0 grow-0">
           {% capture src %}{{ file.path | relative_url }}{% endcapture %}
           <img
-            src="{{ site.url }}{{ src | resize: '96x96>' }}"
+            src="{% include cf_image.html src=src width=96 height=96 %}"
             alt="{{ filename }}"
             title="{{ filename }}"
             class="rounded-sm aspect-square object-cover"

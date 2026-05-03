@@ -55,9 +55,10 @@ image: "images/twitter-image.jpg"
               {% assign author_slug = post.author | downcase | replace: ' ', '_' %}
               {% assign image_src = '/images/2026/speakers/' | append: author_slug | append: '.jpg' %}
             {% endif %}
+            {% assign image_src = image_src | downcase | replace: ' ', '_' %}
             <a href="{{ post.url }}">
               <img
-                src="{{ image_src | downcase | replace: ' ', '_' }}?width=96&height=96"
+                src="{% include cf_image.html src=image_src width=96 height=96 %}"
                 class="rounded-sm"
                 alt="{{ post.author }}"
               >
