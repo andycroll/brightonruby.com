@@ -9,13 +9,18 @@ Params:
   height (optional) — pixels
   fit    (optional) — Cloudflare fit mode, defaults to "cover"
 {%- endcomment -%}
+{%- assign src = include.src -%}
+{%- unless src contains "://" -%}
+{%- assign first_char = src | slice: 0 -%}
+{%- unless first_char == "/" -%}{%- assign src = "/" | append: src -%}{%- endunless -%}
+{%- endunless -%}
 {%- if jekyll.environment == "production" -%}
 {%- assign opts = "format=auto" -%}
 {%- if include.width -%}{%- assign opts = opts | append: ",width=" | append: include.width -%}{%- endif -%}
 {%- if include.height -%}{%- assign opts = opts | append: ",height=" | append: include.height -%}{%- endif -%}
 {%- assign fit = include.fit | default: "cover" -%}
 {%- if include.width or include.height -%}{%- assign opts = opts | append: ",fit=" | append: fit -%}{%- endif -%}
-/cdn-cgi/image/{{ opts }}{{ include.src }}
+/cdn-cgi/image/{{ opts }}{{ src }}
 {%- else -%}
-{{ include.src }}
+{{ src }}
 {%- endif -%}

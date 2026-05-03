@@ -66,7 +66,7 @@ Grassy area just north of the North Laine. Skate park (lookout for men who are '
 
 [Visit Brighton](http://www.visitbrighton.com) a standard 'tourist-y' site - to cover stuff I haven’t seen or done.
 
-<img src="/images/brightonmap.png" class="img-fluid" alt="Brighton Central Areas" />
+<img src="{% include cf_image.html src='/images/brightonmap.png' %}" class="img-fluid" alt="Brighton Central Areas" />
 
 And there's the regular standby of Yelp: their coverage seems pretty accurate.
 

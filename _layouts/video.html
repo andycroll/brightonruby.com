@@ -58,7 +58,7 @@ layout: default
         preload="metadata"
         controls
         autoPictureInPicture
-        poster="{{ page.image }}"
+        poster="{% if page.image %}{% include cf_image.html src=page.image width=1280 height=800 %}{% endif %}"
       >
         <source src="//{{ page.video_source }}" type="video/mp4">
         <!-- <track label="English" kind="subtitles" srclang="en-us" src="JAWS-aria-errors.vtt" default=""> -->
