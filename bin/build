@@ -1,0 +1,13 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+# Cloudflare's build container does not set a UTF-8 locale, which makes
+# jekyll-tailwindcss silently fail with "invalid byte sequence in US-ASCII"
+# when scanning post bodies that contain apostrophes or accented characters.
+# When that happens the plugin emits no compiled CSS and Jekyll copies the
+# raw `@import "tailwindcss"` source to _site/, leaving the deployed site
+# unstyled.
+export LANG=C.UTF-8
+export LC_ALL=C.UTF-8
+
+exec bundle exec jekyll build "$@"
