@@ -4,6 +4,7 @@
       <p class="text-xs opacity-40 text-center">Sponsored by...</p>
       <div class="flex flex-wrap items-center justify-center gap-x-8 sm:gap-x-12 gap-y-6 pt-2">
         {% for sponsor in page.gold %}
+          {% assign sponsor_slug = sponsor.name | downcase | replace: ' ', '_' %}
           {% if sponsor.url != null %}
             <a
               class="block"
@@ -11,19 +12,11 @@
               title="{{ sponsor.name }}"
               target="_blank"
             >
-              <img
-                class="h-12 sm:h-16 md:h-18 w-auto"
-                src="/images/2026/sponsors/{{ sponsor.name | downcase | replace: ' ', '_'}}.svg"
-                alt="{{ sponsor.name }} Logo"
-              >
+              {% inline_svg /images/2026/sponsors/{{ sponsor_slug }}.svg class="h-12 sm:h-16 md:h-18 w-auto" role="img" aria-label="{{ sponsor.name }} Logo" %}
             </a>
           {% else %}
             <div class="block">
-              <img
-                class="h-12 sm:h-16 md:h-18 w-auto"
-                src="/images/2026/sponsors/{{ sponsor.name | downcase | replace: ' ', '_'}}.svg"
-                alt="{{ sponsor.name }} Logo"
-              >
+              {% inline_svg /images/2026/sponsors/{{ sponsor_slug }}.svg class="h-12 sm:h-16 md:h-18 w-auto" role="img" aria-label="{{ sponsor.name }} Logo" %}
             </div>
           {% endif %}
         {% endfor %}

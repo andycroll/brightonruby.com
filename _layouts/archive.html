@@ -77,20 +77,13 @@ layout: default
 
           <div class="grow grid grid-cols-3 sm:grid-cols-4 content-center gap-2 gap-x-4 md:gap-4">
             {% for sponsor in page.gold %}
+              {% assign sponsor_slug = sponsor.name | downcase | replace: ' ', '_' %}
               {% if sponsor.url != null %}
                 <a class="block" href="{{ sponsor.url }}" title="{{ sponsor.name }}" target="_blank">
-                  <img
-                    class="block"
-                    src="/images/{{ page_year }}/sponsors/{{ sponsor.name | downcase | replace: ' ', '_'}}.svg"
-                    alt="{{ sponsor.name }} Logo"
-                  >
+                  {% inline_svg /images/{{ page_year }}/sponsors/{{ sponsor_slug }}.svg class="block" role="img" aria-label="{{ sponsor.name }} Logo" %}
                 </a>
               {% else %}
-                <img
-                  class="block"
-                  src="/images/{{ page_year }}/sponsors/{{ sponsor.name | downcase | replace: ' ', '_'}}.svg"
-                  alt="{{ sponsor.name }} Logo"
-                >
+                {% inline_svg /images/{{ page_year }}/sponsors/{{ sponsor_slug }}.svg class="block" role="img" aria-label="{{ sponsor.name }} Logo" %}
               {% endif %}
             {% endfor %}
           </div>
@@ -104,20 +97,13 @@ layout: default
 
             <div class="grow grid grid-cols-3 sm:grid-cols-4 content-center gap-2 gap-x-4 md:gap-4">
               {% for sponsor in page.silver %}
+                {% assign sponsor_slug = sponsor.name | downcase | replace: ' ', '_' %}
                 {% if sponsor.url != null %}
                   <a class="block" href="{{ sponsor.url }}" title="{{ sponsor.name }}" target="_blank">
-                    <img
-                      class="block"
-                      src="/images/{{ page_year }}/sponsors/{{ sponsor.name | downcase | replace: ' ', '_'}}.svg"
-                      alt="{{ sponsor.name }} Logo"
-                    >
+                    {% inline_svg /images/{{ page_year }}/sponsors/{{ sponsor_slug }}.svg class="block" role="img" aria-label="{{ sponsor.name }} Logo" %}
                   </a>
                 {% else %}
-                  <img
-                    class="block"
-                    src="/images/{{ page_year }}/sponsors/{{ sponsor.name | downcase | replace: ' ', '_'}}.svg"
-                    alt="{{ sponsor.name }} Logo"
-                  >
+                  {% inline_svg /images/{{ page_year }}/sponsors/{{ sponsor_slug }}.svg class="block" role="img" aria-label="{{ sponsor.name }} Logo" %}
                 {% endif %}
               {% endfor %}
             </div>
@@ -150,20 +136,13 @@ layout: default
 
           <div class="grow grid grid-cols-3 sm:grid-cols-4 content-center gap-2 gap-x-4 md:gap-4">
             {% for sponsor in page.supporter %}
+              {% assign sponsor_slug = sponsor.name | downcase | replace: ' ', '_' %}
               {% if sponsor.url != null %}
                 <a class="block" href="{{ sponsor.url }}" title="{{ sponsor.name }}" target="_blank">
-                  <img
-                    class="block object-contain"
-                    src="/images/{{ page_year }}/sponsors/{{ sponsor.name | downcase | replace: ' ', '_'}}.svg"
-                    alt="{{ sponsor.name }} Logo"
-                  >
+                  {% inline_svg /images/{{ page_year }}/sponsors/{{ sponsor_slug }}.svg class="block object-contain" role="img" aria-label="{{ sponsor.name }} Logo" %}
                 </a>
               {% else %}
-                <img
-                  class="block"
-                  src="/images/{{ page_year }}/sponsors/{{ sponsor.name | downcase | replace: ' ', '_'}}.svg"
-                  alt="{{ sponsor.name }} Logo"
-                >
+                {% inline_svg /images/{{ page_year }}/sponsors/{{ sponsor_slug }}.svg class="block" role="img" aria-label="{{ sponsor.name }} Logo" %}
               {% endif %}
             {% endfor %}
           </div>

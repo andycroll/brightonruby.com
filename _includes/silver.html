@@ -3,6 +3,7 @@
 
   <div class="w-full flex flex-wrap lg:flex-nowrap justify-center mx-auto">
     {% for sponsor in page.silver %}
+      {% assign sponsor_slug = sponsor.name | downcase | replace: ' ', '_' %}
       {% if sponsor.url != null %}
         <a
           class="w-32 md:w-40 p-2 px-4"
@@ -10,18 +11,10 @@
           title="{{ sponsor.name }}"
           target="_blank"
         >
-          <img
-            class=""
-            src="/images/2025/sponsors/{{ sponsor.name | downcase | replace: ' ', '_'}}.svg"
-            alt="{{ sponsor.name }} Logo"
-          >
+          {% inline_svg /images/2025/sponsors/{{ sponsor_slug }}.svg role="img" aria-label="{{ sponsor.name }} Logo" %}
         </a>
       {% else %}
-        <img
-          class="w-32 md:w-40 p-2 px-4"
-          src="/images/2025/sponsors/{{ sponsor.name | downcase | replace: ' ', '_'}}.svg"
-          alt="{{ sponsor.name }} Logo"
-        >
+        {% inline_svg /images/2025/sponsors/{{ sponsor_slug }}.svg class="w-32 md:w-40 p-2 px-4" role="img" aria-label="{{ sponsor.name }} Logo" %}
       {% endif %}
     {% endfor %}
   </div>
