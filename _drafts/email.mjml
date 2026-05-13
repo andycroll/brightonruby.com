@@ -6,16 +6,21 @@
       <mj-text color="#222222" padding="0 0 0 25px" margin="0" line-height="20px" font-family="Ubuntu, Helvetica, Arial, sans-serif">
       <p style="padding: 0; margin-top: 0; font-size: 14px">
         <b>Gold</b>
-        <a href="https://sorcer.io/">Sorcer</a>,
-        <a href="https://tech.sb/">Simply Business</a>,
-        <a href="https://bloomandwild.com/careers">Bloom & Wild</a>,
-        <a href="https://mindfulchef.com/">Mindful Chef</a> &
-        <a href="https://web.meetcleo.com/careers">Cleo</a>
+        <a href="https://web.meetcleo.com">Cleo</a> &
+        <a href="https://appsignal.com">AppSignal</a>
       </p>
       <p style="padding: 0; margin-top: 0; font-size: 13px">
-        <b>Silver</b>
-        <a href="https://appsignal.com/">AppSignal</a>,
-        <a href="https://www.20i.com/managed-hosting">20i</a>
+        <b>Supporters</b>
+        <a href="https://sorcer.io/">Sorcer</a>,
+        <a href="https://mmtm.io">mmtm</a>,
+        <a href="https://bookwhen.com">Bookwhen</a>,
+        <a href="https://app.letsjelly.com/signup?ref=goodscary">Jelly</a>,
+        <a href="https://www.intercom.com">Intercom</a>,
+        <a href="https://www.shopify.com">Shopify</a>,
+        <a href="https://captionhub.com">CaptionHub</a>,
+        <a href="https://avohq.io">Avo</a>,
+        <a href="https://www.simplybusiness.co.uk/">Simply Business</a> &
+        <a href="https://passentry.com">PassEntry</a>
       </p>
     </mj-text>
   </mj-column>
@@ -23,8 +28,10 @@
 
 <mj-section>
   <mj-column>
-    <mj-text>
-      <p>HTML TEXT IN HERE</p>
+    <mj-text font-family="Ubuntu, Helvetica, Arial, sans-serif" color="#222222" font-size="16px" line-height="24px">
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+
+      <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
     </mj-text>
   </mj-column>
 </mj-section>
@@ -34,5 +41,15 @@
     <mj-button align="left" font-size="16px" background-color="#9a111e" color="#ffffff" href="https://brightonruby.com">
       <p>Buy tickets</p>
     </mj-button>
+  </mj-column>
+</mj-section>
+
+<mj-section>
+  <mj-column>
+    <mj-text font-family="Ubuntu, Helvetica, Arial, sans-serif" color="#222222" font-size="16px" line-height="24px">
+      <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+
+      <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit.</p>
+    </mj-text>
   </mj-column>
 </mj-section>
