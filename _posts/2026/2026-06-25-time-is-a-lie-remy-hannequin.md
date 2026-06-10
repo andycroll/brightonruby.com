@@ -8,7 +8,7 @@ author_social:
     url: "https://thoughtbot.com"
   - name: "GitHub"
     url: "https://github.com/rhannequin"
-layout: video
+layout: preview
 author_image: "/images/2026/speakers/remy_hannequin.jpg"
 description: "Time seems simple until a background job vanishes during the DST switch or an API silently shifts dates because it assumed UTC. We'll look at why time is genuinely weird, and then work through practical patterns for handling it safely in Ruby and Rails."
 ---

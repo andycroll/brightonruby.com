@@ -8,7 +8,7 @@ author_social:
     url: "https://elenatanasoiu.com/"
   - name: "GitHub (Emma)"
     url: "https://github.com/emmagabriel"
-layout: video
+layout: preview
 author_image: "/images/2026/speakers/elena_tanasoiu.jpg"
 description: "Your app has a slow endpoint. You've added a database index, turned on caching, reached for larger instances — and you're still guessing. This talk teaches you how to read flamegraphs: the visualization that shows exactly where your code spends time, no guesswork required."
 ---

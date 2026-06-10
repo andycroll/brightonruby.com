@@ -5,7 +5,7 @@ author: Andy Croll
 author_social:
   - name: "andycroll.com"
     url: "https://andycroll.com"
-layout: video
+layout: preview
 author_image: "/images/2026/speakers/andy_croll.jpg"
 description: "Welcome to Brighton Ruby 2026."
 ---

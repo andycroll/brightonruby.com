@@ -10,7 +10,7 @@ author_social:
     url: "https://bsky.app/profile/tekin.co.uk"
   - name: "@tekin@ruby.social"
     url: "https://ruby.social/@tekin"
-layout: video
+layout: preview
 author_image: "/images/2026/speakers/tekin_suleyman.jpg"
 description: "10 cool things you probably didn't know about internationalisation."
 ---

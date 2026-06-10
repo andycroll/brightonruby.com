@@ -6,7 +6,7 @@ author_bio_markdown: "Tijmen Brommet is a developer at CaptionHub, a multimedia 
 author_social:
   - name: "GitHub"
     url: "https://github.com/tijmenb"
-layout: video
+layout: preview
 author_image: "/images/2026/speakers/tijmen_brommet.jpg"
 description: "What woodworking can teach us about software development. From jigs to joints, the parallels between crafting with wood and crafting with code."
 ---
