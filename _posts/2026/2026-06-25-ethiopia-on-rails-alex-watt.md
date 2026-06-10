@@ -10,7 +10,7 @@ author_social:
     url: "https://x.com/alexcwatt"
   - name: "GitHub"
     url: "https://github.com/alexcwatt"
-layout: video
+layout: preview
 author_image: "/images/2026/speakers/alex_watt.jpg"
 description: "Improving healthcare in Addis Ababa, Ethiopia, with a Rails app for mobile medical clinics."
 ---

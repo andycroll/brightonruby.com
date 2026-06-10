@@ -8,7 +8,7 @@ author_social:
     url: "https://buildermethods.com"
   - name: "@casjam"
     url: "https://x.com/casjam"
-layout: video
+layout: preview
 author_image: "/images/2026/speakers/brian_casel.jpg"
 description: "Everyone's seen AI spin up a fresh app from scratch. But what about your well-established codebase, with years of decisions, conventions, and real users? Brian Casel argues that experienced developers have the biggest advantage in the AI era, and shows why the best teams are blurring the lines between developer, designer, and product manager—and what that means for us as builders."
 ---
