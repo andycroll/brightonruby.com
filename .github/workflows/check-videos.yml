@@ -1,0 +1,23 @@
+name: Check videos
+
+# Catches the failure mode where videos.brightonruby.com stops resolving (e.g.
+# a dropped CNAME) or a talk's video_source path is mistyped — either of which
+# silently breaks the <video> player on talk pages without failing a build.
+on:
+  schedule:
+    - cron: "23 7 * * *" # daily; surfaces silent CDN/DNS regressions
+  pull_request:
+    paths:
+      - "_posts/**"
+      - "bin/check-video-sources"
+      - ".github/workflows/check-videos.yml"
+  workflow_dispatch:
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v6
+      - name: Verify talk videos are reachable
+        run: ./bin/check-video-sources
