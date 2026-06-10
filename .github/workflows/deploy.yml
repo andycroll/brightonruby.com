@@ -10,7 +10,7 @@ concurrency:
 jobs:
   deploy:
     runs-on: ubuntu-latest
-    timeout-minutes: 10
+    timeout-minutes: 15
     steps:
       - uses: actions/checkout@v6
 
@@ -24,6 +24,9 @@ jobs:
           LANG: C.UTF-8
           LC_ALL: C.UTF-8
         run: bundle exec jekyll build
+
+      - name: Verify talk videos are reachable
+        run: ./bin/check-video-sources
 
       - name: Deploy to Cloudflare
         uses: cloudflare/wrangler-action@v3

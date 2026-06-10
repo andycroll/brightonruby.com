@@ -1,0 +1,88 @@
+#!/usr/bin/env bash
+#
+# Verify every talk video referenced in _posts is actually reachable.
+#
+# The talk pages embed <source src="//videos.brightonruby.com/..."> pointing at
+# a Bunny CDN pull zone (CNAME: videos.brightonruby.com -> brightonrubyvideo.b-cdn.net,
+# DNS-only). If that CNAME is dropped or a video_source path is mistyped, the
+# <video> player silently breaks on the affected pages with nothing failing the
+# build. This check turns that into a hard, visible failure.
+#
+# Requests are spaced out and any first-pass failure is re-checked after a pause,
+# so transient CDN throttling doesn't produce a false alarm — only a genuine
+# outage (or a real missing file) fails the run.
+#
+# Usage: bin/check-video-sources
+# Exits non-zero if any referenced video is unreachable or not a video.
+
+set -uo pipefail
+
+cd "$(dirname "$0")/.."
+
+# Pull the host/path out of every `video_source: "..."` line in _posts.
+# (Plain read loop rather than mapfile, so this also runs on macOS's bash 3.2.)
+sources=()
+while IFS= read -r line; do
+  sources+=("$line")
+done < <(
+  grep -rhoE 'video_source:[[:space:]]*"[^"]+"' _posts \
+    | sed -E 's/.*"([^"]+)".*/\1/' \
+    | sort -u
+)
+
+if [ "${#sources[@]}" -eq 0 ]; then
+  echo "No video_source entries found in _posts — nothing to check."
+  exit 0
+fi
+
+# HEAD only (no body download). Echoes "CODE|CONTENT_TYPE"; 000 on transport error.
+probe() {
+  curl -sS -o /dev/null -I --max-time 30 \
+    -w '%{http_code}|%{content_type}' "$1" 2>/dev/null || echo '000|'
+}
+
+# A video is healthy when it returns 200/206 with a video/* content type.
+healthy() {
+  case "$1" in 200|206) [[ "$2" == video/* ]] ;; *) false ;; esac
+}
+
+echo "Checking ${#sources[@]} video source(s)…"
+
+# First pass: gentle, spaced out. Collect anything that doesn't look healthy.
+failed=()
+for src in "${sources[@]}"; do
+  res=$(probe "https://${src}")
+  healthy "${res%%|*}" "${res#*|}" || failed+=("$src")
+  sleep 0.2
+done
+
+ok_first=$(( ${#sources[@]} - ${#failed[@]} ))
+echo "First pass: ${ok_first}/${#sources[@]} reachable."
+
+# Confirm pass: real outages stay broken; transient throttling clears after a beat.
+fail=0
+if [ "${#failed[@]}" -gt 0 ]; then
+  echo "Re-checking ${#failed[@]} after a short pause…"
+  sleep 5
+  for src in "${failed[@]}"; do
+    res=$(probe "https://${src}")
+    code=${res%%|*}
+    ctype=${res#*|}
+    if healthy "$code" "$ctype"; then
+      printf '  ok (recovered)  %s\n' "https://${src}"
+    else
+      printf '  FAIL  %-3s  %s  (content-type: %s)\n' "$code" "https://${src}" "${ctype:-none}"
+      fail=1
+    fi
+  done
+fi
+
+echo
+if [ "$fail" -ne 0 ]; then
+  echo "One or more talk videos are unreachable."
+  echo "If ALL failed, the videos.brightonruby.com CNAME is likely missing or"
+  echo "broken — it should point (DNS-only) at brightonrubyvideo.b-cdn.net."
+  exit 1
+fi
+
+echo "All ${#sources[@]} video sources reachable."
