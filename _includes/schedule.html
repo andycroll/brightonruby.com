@@ -38,12 +38,20 @@
           {% endif -%}
           {% if post.author %}
             {% assign image_src = post.author_image | downcase | replace: " ", "_" %}
-            <div class="hidden sm:block w-12 flex-none">
+            <div class="hidden sm:flex sm:gap-1 flex-none">
               <img
                 src="{% include cf_image.html src=image_src width=96 height=96 %}"
-                class="rounded-sm"
+                class="w-12 rounded-sm"
                 alt="{{ post.author }}"
               >
+              {% if post.author_image_2 %}
+                {% assign image_src_2 = post.author_image_2 | downcase | replace: " ", "_" %}
+                <img
+                  src="{% include cf_image.html src=image_src_2 width=96 height=96 %}"
+                  class="w-12 rounded-sm"
+                  alt="{{ post.author }}"
+                >
+              {% endif %}
             </div>
           {% endif %}
           <div class="flex-1">
