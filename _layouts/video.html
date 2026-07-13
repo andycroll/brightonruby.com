@@ -40,6 +40,12 @@ layout: default
             class="text-right block italic text-xs leading-6 opacity-70 underline decoration-dashed"
             >download</a
           >
+        {% elsif page.youtube_id %}
+          <a
+            href="https://www.youtube.com/watch?v={{ page.youtube_id }}"
+            class="text-right block italic text-xs leading-6 opacity-70 underline decoration-dashed"
+            >youtube</a
+          >
         {% endif %}
       </div>
       <!--
@@ -51,7 +57,18 @@ layout: default
       -->
     </div>
   </div>
-  {% if page.video_source %}
+  {% if page.youtube_id %}
+    <div class="relative bg-gradient-to-b from-slate-900 to-slate-700">
+      <iframe
+        class="aspect-video w-full xl:container mx-auto block"
+        src="https://www.youtube.com/embed/{{ page.youtube_id }}"
+        title="{{ page.title }}"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen
+      ></iframe>
+    </div>
+  {% elsif page.video_source %}
     <div class="relative">
       <video
         class="aspect-16/10 w-full object-contain bg-gradient-to-b from-slate-900 to-slate-700 xl:container mx-auto"

@@ -6,7 +6,8 @@ author_bio_markdown: "Full stack developer at The Engagement Platform (TEP), who
 author_social:
   - name: "LinkedIn"
     url: "https://www.linkedin.com/in/jennie1evans/"
-layout: preview
+layout: video
+youtube_id: "aQ0XxxXuaCg"
 author_image: "/images/2026/speakers/jennie_evans.jpg"
 description: "How kindness shows up in development teams and why it matters. A look at the small acts that make teams stronger."
 ---

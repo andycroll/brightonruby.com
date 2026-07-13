@@ -10,7 +10,8 @@ author_social:
     url: "https://www.linkedin.com/in/craig-norford/"
   - name: "Medium"
     url: "https://medium.com/@craig.a.norford"
-layout: preview
+layout: video
+youtube_id: "xQ2334zPzug"
 author_image: "/images/2026/speakers/craig_norford.png"
 description: "Different strategies for managing multi tenancy in Sidekiq and different strategies based on your business needs. Especially looking at balancing cost and compute with shuffle sharding."
 ---
