@@ -1,0 +1,42 @@
+{
+  "_comment": "Per-year visual variants of the Brighton Ruby thumbnail style. Copy an entry, bump the year, and tweak the palette to make a NEW variant. Anything omitted falls back to `default`. `bg` is a top-to-bottom gradient; set `from`===`to` for a flat colour. `glow` adds a radial highlight (great for dark themes). `headshotSide` places the speaker photo left or right. `ringColors` cycle across the playlist-cover headshot grid. `badge` is either \"label\" (small YEAR · TALK text, top-right) or \"circle\" (a round year badge, bottom).",
+
+  "default": {
+    "bg": { "from": "#0b3a41", "to": "#08262b" },
+    "ink": "#fdf6e3",
+    "accent": "#e4572e",
+    "accentInk": "#ffffff",
+    "ringColors": ["#e4572e", "#f2a541", "#3fb8af", "#f6f4d2"],
+    "iconColor": "#ffffff",
+    "iconOpacity": 0.06,
+    "headshotSide": "left",
+    "glow": null,
+    "badge": "label"
+  },
+
+  "2025": {
+    "bg": { "from": "#0f4a52", "to": "#07272c" },
+    "ink": "#fdf6e3",
+    "accent": "#e4572e",
+    "accentInk": "#ffffff",
+    "ringColors": ["#e4572e", "#f2a541", "#3fb8af", "#f6f4d2", "#e08e45"],
+    "iconColor": "#ffffff",
+    "iconOpacity": 0.06,
+    "headshotSide": "left",
+    "glow": null,
+    "badge": "label"
+  },
+
+  "2026": {
+    "bg": { "from": "#1a0d0d", "to": "#050303" },
+    "ink": "#ffffff",
+    "accent": "#e01b2e",
+    "accentInk": "#ffffff",
+    "ringColors": ["#e01b2e", "#f2a541", "#c9455a", "#f6f4d2"],
+    "iconColor": "#e01b2e",
+    "iconOpacity": 0.10,
+    "headshotSide": "right",
+    "glow": { "color": "#e01b2e", "x": "72%", "y": "42%", "strength": 0.55 },
+    "badge": "circle"
+  }
+}

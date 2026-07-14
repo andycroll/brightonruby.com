@@ -1,0 +1,6 @@
+node_modules/
+package-lock.json
+youtube/client_secret.json
+youtube/token.json
+youtube/.venv/
+youtube/__pycache__/

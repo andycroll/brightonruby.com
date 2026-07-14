@@ -1,0 +1,17 @@
+{
+  "name": "brighton-ruby-youtube-thumbnails",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Generate Brighton Ruby YouTube talk thumbnails, playlist covers and descriptions from _posts data.",
+  "bin": {
+    "br-thumbnails": "./generate.mjs"
+  },
+  "scripts": {
+    "postinstall": "playwright install chromium"
+  },
+  "dependencies": {
+    "gray-matter": "^4.0.3",
+    "playwright": "^1.47.0"
+  }
+}
