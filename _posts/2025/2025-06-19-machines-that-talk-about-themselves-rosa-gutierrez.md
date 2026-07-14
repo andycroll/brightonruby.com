@@ -9,7 +9,7 @@ author_social:
 layout: video
 video_source: "videos.brightonruby.com/videos/2025/rosa-gutierrez-machines-that-talk-about-themselves.mp4"
 author_image: "/images/2025/speakers/rosa_gutierrez.jpg"
-description: "TBD"
+description: "A whistle-stop tour from a deceptively simple Raymond Smullyan logic puzzle — rebuilt live in Ruby with pattern matching — to the very limits of what can be proved or computed: Gödel's incompleteness theorems, Turing's halting problem, and the Church–Turing thesis. Rosa's takeaway: just as mathematics' existential crisis a century ago gave birth to computer science, understanding the fundamentals yourself is the real advantage in the age of LLMs."
 ---
 
-TBD
+A whistle-stop tour from a deceptively simple Raymond Smullyan logic puzzle — rebuilt live in Ruby with pattern matching — to the very limits of what can be proved or computed: Gödel's incompleteness theorems, Turing's halting problem, and the Church–Turing thesis. Rosa's takeaway: just as mathematics' existential crisis a century ago gave birth to computer science, understanding the fundamentals yourself is the real advantage in the age of LLMs.
