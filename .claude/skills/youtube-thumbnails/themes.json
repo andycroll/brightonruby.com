@@ -1,42 +1,83 @@
 {
-  "_comment": "Per-year visual variants of the Brighton Ruby thumbnail style. Copy an entry, bump the year, and tweak the palette to make a NEW variant. Anything omitted falls back to `default`. `bg` is a top-to-bottom gradient; set `from`===`to` for a flat colour. `glow` adds a radial highlight (great for dark themes). `headshotSide` places the speaker photo left or right. `ringColors` cycle across the playlist-cover headshot grid. `badge` is either \"label\" (small YEAR · TALK text, top-right) or \"circle\" (a round year badge, bottom).",
+  "_comment": "Per-year visual variants. Each year picks a `layout` (classic | poster | ticket) then customises it. Copy a year or an `_example_*` entry, key it by the year, and tweak. Anything omitted falls back to `default`. Keys starting with `_` are ignored by the generator (they're just templates to copy). Axes: `layout` (which archetype); palette (`bg` top→bottom gradient, `ink`, `accent`, `accentInk`, `ringColors` cycle the cover grid); `motif` (icons | rays | flat) with `iconColor`/`iconOpacity` (+ `motifOrigin` for rays); `headshotShape` (circle | rounded | bleed) + `headshotSide` (left | right); `titleTreatment` (box | underline | plain); plus per-layout extras (`glow`, `badge`, `sun`, `titleAccent`, `tag`).",
 
   "default": {
+    "layout": "classic",
     "bg": { "from": "#0b3a41", "to": "#08262b" },
     "ink": "#fdf6e3",
     "accent": "#e4572e",
     "accentInk": "#ffffff",
     "ringColors": ["#e4572e", "#f2a541", "#3fb8af", "#f6f4d2"],
+    "motif": "icons",
     "iconColor": "#ffffff",
     "iconOpacity": 0.06,
+    "headshotShape": "circle",
     "headshotSide": "left",
+    "titleTreatment": "box",
     "glow": null,
     "badge": "label"
   },
 
   "2025": {
+    "layout": "classic",
     "bg": { "from": "#0f4a52", "to": "#07272c" },
     "ink": "#fdf6e3",
     "accent": "#e4572e",
     "accentInk": "#ffffff",
     "ringColors": ["#e4572e", "#f2a541", "#3fb8af", "#f6f4d2", "#e08e45"],
+    "motif": "icons",
     "iconColor": "#ffffff",
     "iconOpacity": 0.06,
+    "headshotShape": "circle",
     "headshotSide": "left",
-    "glow": null,
+    "titleTreatment": "box",
     "badge": "label"
   },
 
   "2026": {
+    "layout": "classic",
     "bg": { "from": "#1a0d0d", "to": "#050303" },
     "ink": "#ffffff",
     "accent": "#e01b2e",
     "accentInk": "#ffffff",
     "ringColors": ["#e01b2e", "#f2a541", "#c9455a", "#f6f4d2"],
+    "motif": "icons",
     "iconColor": "#e01b2e",
     "iconOpacity": 0.10,
+    "headshotShape": "circle",
     "headshotSide": "right",
+    "titleTreatment": "box",
     "glow": { "color": "#e01b2e", "x": "72%", "y": "42%", "strength": 0.55 },
     "badge": "circle"
+  },
+
+  "_example_poster": {
+    "layout": "poster",
+    "bg": { "from": "#fbf3dc", "to": "#f6e7c4" },
+    "ink": "#12323a",
+    "accent": "#e4572e",
+    "sun": "#f4c542",
+    "ringColors": ["#2b9bd6", "#e4572e", "#f2a541", "#3fb8af"],
+    "motif": "rays",
+    "iconColor": "#f4c542",
+    "iconOpacity": 0.35,
+    "motifOrigin": { "x": 980, "y": 150 },
+    "headshotShape": "circle",
+    "headshotSide": "right",
+    "titleTreatment": "underline"
+  },
+
+  "_example_ticket": {
+    "layout": "ticket",
+    "bg": { "from": "#c1121f", "to": "#8d0801" },
+    "ink": "#ffffff",
+    "accent": "#f4c542",
+    "titleAccent": "#f4c542",
+    "tag": "#39c0c8",
+    "ringColors": ["#f4c542", "#39c0c8", "#ffd6a5", "#ffffff"],
+    "motif": "flat",
+    "headshotShape": "bleed",
+    "headshotSide": "right",
+    "titleTreatment": "plain"
   }
 }
