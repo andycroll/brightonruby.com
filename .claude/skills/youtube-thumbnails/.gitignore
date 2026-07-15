@@ -1,5 +1,6 @@
 node_modules/
 package-lock.json
+.logo-cache/
 youtube/client_secret.json
 youtube/token.json
 youtube/.venv/

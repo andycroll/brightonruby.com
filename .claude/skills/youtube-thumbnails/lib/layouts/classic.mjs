@@ -15,7 +15,7 @@ function titleHtml(lines, treatment) {
     .join("");
 }
 
-export function talk({ repo, theme, year, talk }) {
+export function talk({ repo, theme, year, talk, logo }) {
   const lines = wrapTitle(talk.title);
   const photo = dataUri(repo, talk.authorImage);
   const side = theme.headshotSide === "right" ? "row-reverse" : "row";
@@ -43,7 +43,7 @@ export function talk({ repo, theme, year, talk }) {
     .badge-circle .yr{font-family:'Anton',sans-serif;font-size:38px;line-height:1}.badge-circle .wave{font-size:16px;opacity:.7;margin-top:2px}
   </style></head><body><div class="frame">
     ${motifLayer(theme)}
-    <div class="wordmark">${wordmark(repo, theme.ink)}</div>
+    <div class="wordmark">${wordmark(logo, theme.ink)}</div>
     ${theme.badge === "circle" ? "" : badge}
     <div class="content">
       <div class="photo" style="${photo ? `background-image:url('${photo}')` : ""}"></div>
@@ -54,7 +54,7 @@ export function talk({ repo, theme, year, talk }) {
   </div></body></html>`;
 }
 
-export function cover({ repo, theme, year, talks }) {
+export function cover({ repo, theme, year, talks, logo }) {
   const cells = talks
     .map((t, i) => {
       const photo = dataUri(repo, t.authorImage);
@@ -75,7 +75,7 @@ export function cover({ repo, theme, year, talks }) {
     .url{position:absolute;z-index:3;bottom:44px;right:64px;letter-spacing:.12em;font-weight:600;font-size:18px;opacity:.7;text-transform:uppercase}
   </style></head><body><div class="frame">
     ${motifLayer(theme)}
-    <div class="wordmark">${wordmark(repo, theme.ink)}</div>
+    <div class="wordmark">${wordmark(logo, theme.ink)}</div>
     <div class="grid">${cells}</div>
     <div class="big"><div class="yr">${year}</div><div class="lineup">The Full Lineup</div></div>
     <div class="url">brightonruby.com</div>

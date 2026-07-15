@@ -33,7 +33,7 @@ function titleHtml(lines, theme) {
     .join("");
 }
 
-export function talk({ repo, theme, year, talk }) {
+export function talk({ repo, theme, year, talk, logo }) {
   const lines = wrapTitle(talk.title, 12);
   const photo = dataUri(repo, talk.authorImage);
   const tag = theme.tag || "#39c0c8";
@@ -58,14 +58,14 @@ export function talk({ repo, theme, year, talk }) {
     ${motifLayer(theme)}
     <div class="panel"></div>
     ${perforation(theme.bg.from)}
-    <div class="wordmark">${wordmark(repo, theme.ink)}<span class="yr">${year}</span></div>
+    <div class="wordmark">${wordmark(logo, theme.ink)}<span class="yr">${year}</span></div>
     <div class="titlewrap">${titleHtml(lines, theme)}</div>
     <div class="tag">+ Talk Recording</div>
     <div class="meta"><div class="nm">${escapeHtml(talk.author)}</div>${talk.role ? `<div class="sub">${escapeHtml(talk.role)}</div>` : ""}</div>
   </div></body></html>`;
 }
 
-export function cover({ repo, theme, year, talks }) {
+export function cover({ repo, theme, year, talks, logo }) {
   const cells = talks
     .map((t, i) => {
       const photo = dataUri(repo, t.authorImage);
@@ -87,7 +87,7 @@ export function cover({ repo, theme, year, talks }) {
     .url{position:absolute;z-index:3;bottom:44px;right:64px;letter-spacing:.12em;font-weight:600;font-size:18px;opacity:.75;text-transform:uppercase}
   </style></head><body><div class="frame">
     ${motifLayer(theme)}
-    <div class="wordmark">${wordmark(repo, theme.ink)}<span class="yr">${year}</span></div>
+    <div class="wordmark">${wordmark(logo, theme.ink)}<span class="yr">${year}</span></div>
     <div class="grid">${cells}</div>
     <div class="big"><div class="yr">${year}</div><div class="lineup">The Full Lineup</div></div>
     <div class="url">brightonruby.com</div>

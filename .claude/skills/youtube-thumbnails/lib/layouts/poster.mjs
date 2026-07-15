@@ -22,7 +22,7 @@ function titleHtml(lines, theme) {
     .join("");
 }
 
-export function talk({ repo, theme, year, talk }) {
+export function talk({ repo, theme, year, talk, logo }) {
   const lines = wrapTitle(talk.title, 12);
   const photo = dataUri(repo, talk.authorImage);
   const sun = theme.sun || "#f2c94c";
@@ -47,7 +47,7 @@ export function talk({ repo, theme, year, talk }) {
   </style></head><body><div class="frame">
     ${motifLayer(theme)}
     <div class="sun"></div>
-    <div class="pill">${wordmark(repo, theme.accent)}<span class="yr">${year}</span></div>
+    <div class="pill">${wordmark(logo, theme.accent)}<span class="yr">${year}</span></div>
     <div class="content">
       <div class="titlewrap">${titleHtml(lines, theme)}</div>
       <div class="photo" style="${photo ? `background-image:url('${photo}')` : ""}"></div>
@@ -56,7 +56,7 @@ export function talk({ repo, theme, year, talk }) {
   </div></body></html>`;
 }
 
-export function cover({ repo, theme, year, talks }) {
+export function cover({ repo, theme, year, talks, logo }) {
   const sun = theme.sun || "#f2c94c";
   const cells = talks
     .map((t, i) => {
@@ -81,7 +81,7 @@ export function cover({ repo, theme, year, talks }) {
   </style></head><body><div class="frame">
     ${motifLayer(theme)}
     <div class="sun"></div>
-    <div class="pill">${wordmark(repo, theme.accent)}<span class="yr">${year}</span></div>
+    <div class="pill">${wordmark(logo, theme.accent)}<span class="yr">${year}</span></div>
     <div class="grid">${cells}</div>
     <div class="big"><div class="yr">${year}</div><div class="lineup">The Full Lineup</div></div>
     <div class="url">brightonruby.com</div>

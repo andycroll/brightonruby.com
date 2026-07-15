@@ -1,6 +1,7 @@
 // Shared primitives for the thumbnail layout modules.
 import fs from "node:fs";
 import path from "node:path";
+import { execFileSync } from "node:child_process";
 
 export const FONTS_LINK =
   '<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>' +
@@ -26,10 +27,38 @@ export function dataUri(repo, webPath) {
   return `data:${mime};base64,${fs.readFileSync(abs).toString("base64")}`;
 }
 
-// Inline the real Brighton Ruby wordmark, recoloured to `ink`.
-export function wordmark(repo, ink) {
-  const svg = fs.readFileSync(path.join(repo, "images/logo.svg"), "utf8");
-  return svg.replace("<svg", `<svg fill="${ink}"`);
+// Resolve the era-correct logo for a year. `logosMap` (logos.json) keys years to
+// either { "file": "images/…" } or { "git": "<rev>:images/…" } (pulled from
+// history, cached). Returns { isSvg, svg?, dataUri? }. Falls back to logos.default.
+export function resolveLogo(repo, year, logosMap, cacheDir) {
+  const entry = (logosMap && (logosMap[String(year)] || logosMap.default)) || { file: "images/logo.svg" };
+  let abs;
+  if (entry.git) {
+    fs.mkdirSync(cacheDir, { recursive: true });
+    const safe = entry.git.replace(/[^a-z0-9]+/gi, "_");
+    const ext = path.extname(entry.git) || ".svg";
+    abs = path.join(cacheDir, safe + ext);
+    if (!fs.existsSync(abs)) {
+      const buf = execFileSync("git", ["-C", repo, "show", entry.git], { maxBuffer: 32 * 1024 * 1024 });
+      fs.writeFileSync(abs, buf);
+    }
+  } else {
+    abs = path.join(repo, entry.file.replace(/^\//, ""));
+  }
+  const isSvg = path.extname(abs).toLowerCase() === ".svg";
+  if (isSvg) return { isSvg: true, svg: fs.readFileSync(abs, "utf8") };
+  const ext = path.extname(abs).slice(1).toLowerCase();
+  const mime = ext === "png" ? "image/png" : "image/jpeg";
+  return { isSvg: false, dataUri: `data:${mime};base64,${fs.readFileSync(abs).toString("base64")}` };
+}
+
+// Render a resolved logo as inline markup, recoloured to `ink` when it's an SVG.
+export function wordmark(logo, ink) {
+  if (!logo) return "";
+  if (!logo.isSvg) return `<img src="${logo.dataUri}" alt="Brighton Ruby" style="height:100%;width:auto;display:block">`;
+  return logo.svg
+    .replace(/\sfill="(#0{3}|#0{6}|black)"/gi, "") // drop hard-coded black fills so ink shows
+    .replace("<svg", `<svg fill="${ink}"`);
 }
 
 // Greedy word-wrap a title to lines of ~maxChars; upper-cased.

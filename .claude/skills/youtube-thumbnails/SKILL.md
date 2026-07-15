@@ -1,101 +1,96 @@
 ---
 name: youtube-thumbnails
-description: Generate Brighton Ruby YouTube talk thumbnails, playlist covers and descriptions for a conference year, and (optionally) push videos into YouTube playlists via the Data API. Use when preparing a year's talk videos for YouTube — creating thumbnails, a playlist cover, description text, or uploading/organising videos into a playlist.
+description: Explore and generate Brighton Ruby YouTube talk thumbnails, playlist covers and descriptions for a conference year, then (optionally) push videos into YouTube playlists via the Data API. Use when preparing a year's talk videos for YouTube — exploring thumbnail design directions, rendering the chosen one across all talks, writing descriptions, or uploading/organising videos into a playlist.
 ---
 
 # Brighton Ruby — YouTube thumbnails & playlists
 
-Produces the YouTube assets for a conference year: a 1280×720 thumbnail per talk,
-a playlist cover, and a copy/paste descriptions doc. Talk data (title, speaker,
-headshot, bio, socials, abstract) is read straight from `_posts/<year>/`, so the
-only per-year input you author is a **theme** in `themes.json` — which picks a
-**layout** and its palette/options.
+This skill is a **design workflow, not a one-shot renderer**. For each year you
+diverge (generate a spread of distinct concept options), winnow with the user,
+then converge (lock one and render the whole year). An HTML/CSS template engine
+with pluggable layouts is the renderer behind it. Talk data comes from
+`_posts/<year>/`; the wordmark is the **era-correct logo** for the year.
 
-## Layouts (archetypes)
+## The loop: explore → winnow → build
 
-Each year picks a structurally different layout, not just a recolour. They live
-in `lib/layouts/` and are pluggable:
+**1. Diverge — author concepts.** Write several *distinct* concept files (not
+recolours of one idea) to `thumbnail-concepts/explore-<year>/concepts/<id>.json`.
+Vary the load-bearing choices: `layout` (classic / poster / ticket), palette,
+`motif`, headshot shape/side, title treatment. Each file is a theme object plus a
+`"label"`. Copy from `themes.json` (`_example_poster`, `_example_ticket`, `2026`)
+as starting points.
 
-- **`classic`** — "emerge from black": dark, photo beside the title, last title
-  line in an accent box. The 2025/2026 finals use this.
-- **`poster`** — "seaside": light/airy, radiating sun + rays, pill label,
-  hand-drawn underline squiggle, ringed circular headshot. Use a light palette.
-- **`ticket`** — "ticket stub": bold colour field, perforated ticket edge, a
-  large rectangular headshot bleeding off-frame, a recording tag. Saturated
-  palette.
-
-Preview any layout on real talk data with `--theme`:
-
+**2. Render the contact sheet.**
 ```bash
-node generate.mjs --year 2026 --theme _example_poster --only "Ethiopia" --no-cover
-node generate.mjs --year 2026 --theme _example_ticket --only "Ethiopia" --no-cover
+cd .claude/skills/youtube-thumbnails && npm install   # first time (downloads Chromium)
+node generate.mjs sheet --year 2027 --rep "Ethiopia"
 ```
+Produces `thumbnail-concepts/explore-2027/`: a `previews/<id>.png` per concept and
+a labelled `contact-sheet.png`. **Show the contact sheet to the user.**
 
-## Generate assets for a year
+**3. Winnow + iterate.** Ask which direction they like. Then author *variations
+around the favourite* (shift palette, swap motif, try the other headshot side),
+drop them in `concepts/`, and re-run `sheet`. Repeat until one wins. This is the
+whole point — keep it a conversation, not a single pass.
 
+**4. Converge — build the year** from the chosen concept file:
 ```bash
-cd .claude/skills/youtube-thumbnails
-npm install                 # first time only; downloads Chromium via Playwright
-node generate.mjs --year 2027 --descriptions
+node generate.mjs build --year 2027 --concept thumbnail-concepts/explore-2027/concepts/<winner>.json --descriptions
 ```
+Outputs to `thumbnail-concepts/final-2027/`: `<Talk> - <Speaker> [Brighton Ruby
+2027].png` per talk, `Brighton Ruby 2027 - Playlist Cover.png`, and
+`youtube-descriptions-2027.md`.
 
-Outputs to `thumbnail-concepts/final-<year>/`:
-- `<Talk Title> - <Speaker> [Brighton Ruby <year>].png` per talk
-- `Brighton Ruby <year> - Playlist Cover.png`
-- `youtube-descriptions-<year>.md` (with `--descriptions`)
+## Concept file schema
 
-Flags: `--layout NAME` (override the theme's layout), `--theme KEY` (use a
-specific themes.json entry on this year's data), `--only "substring"`,
-`--no-cover`, `--no-thumbnails`, `--out DIR`, `--repo PATH`. `node generate.mjs
---help` lists everything.
+A concept is a standalone JSON theme object. Fields (unset → `themes.json`
+`default`):
+- `label` — shown on the contact sheet.
+- `layout` — `classic` (dark, photo beside title, accent box) | `poster`
+  (light seaside, sun+rays, squiggle underline) | `ticket` (colour field,
+  perforated edge, bleeding rectangular headshot, recording tag).
+- Palette: `bg` (`{from,to}` gradient), `ink`, `accent`, `accentInk`, `ringColors`.
+- `motif`: `icons` | `rays` | `flat` + `iconColor`/`iconOpacity` (+ `motifOrigin`).
+- `headshotShape`: `circle` | `rounded` | `bleed`; `headshotSide`: `left` | `right`.
+- `titleTreatment`: `box` | `underline` | `plain`.
+- Per-layout extras: `glow` (classic), `badge` (`label`/`circle`), `sun` (poster),
+  `titleAccent` + `tag` (ticket).
 
-## Make a new-year variant
+## Era-correct logos (`logos.json`)
 
-Add an entry to `themes.json` keyed by the year (copy `2026`, `_example_poster`,
-or `_example_ticket` and tweak). Fields:
-
-- `layout` — `classic` | `poster` | `ticket`.
-- **Palette** — `bg` (top→bottom gradient; equal `from`/`to` for flat), `ink`,
-  `accent`, `accentInk`, `ringColors` (cycle across the cover grid).
-- **Background motif** — `motif`: `icons` | `rays` | `flat`, with
-  `iconColor`/`iconOpacity` (and `motifOrigin` for rays).
-- **Headshot** — `headshotShape`: `circle` | `rounded` | `bleed`;
-  `headshotSide`: `left` | `right`.
-- **Title** — `titleTreatment`: `box` | `underline` | `plain`.
-- **Per-layout extras** — `glow` (classic dark glow), `badge` (`label`/`circle`),
-  `sun` (poster sun colour), `titleAccent` + `tag` (ticket).
-
-Omitted fields fall back to `default`. A year with no entry still renders on the
-default (classic) palette and warns.
+Branding changed over the years, so the wordmark is resolved per year:
+`{ "file": "images/…" }` for a logo in the tree, or `{ "git": "<rev>:<path>" }`
+to pull a historical one from git history (cached in `.logo-cache/`, gitignored).
+The current map is a **best guess from git history** — eyeball it per year and
+adjust (e.g. `git show 0d0e5b6:images/logo.svg` is the 2017–2023 emblem;
+`5f51296`/`1fc31fa:images/logo.png` are the 2014/2015 raster marks). SVGs are
+recoloured to the theme ink; raster logos are placed as-is.
 
 ## Add a whole new layout
 
-Drop a module in `lib/layouts/` exporting `talk(ctx)`, `cover(ctx)`, and `label`
-(see `poster.mjs` for a template — `ctx` is `{ repo, theme, year, talk|talks }`),
-then register it in `lib/layouts/index.mjs`. Reuse the shared primitives in
-`lib/helpers.mjs` (wordmark, headshot data-URI, title wrap, motif layers, glow).
+Drop a module in `lib/layouts/` exporting `talk(ctx)`, `cover(ctx)`, `label`
+(`ctx` = `{ repo, theme, year, talk|talks, logo }`; see `poster.mjs`), and register
+it in `lib/layouts/index.mjs`. Reuse `lib/helpers.mjs` (wordmark, headshot data-URI,
+`wrapTitle`, `motifLayer`, `frameBg`).
 
 ## Notes
 
-- **Data source:** any `_posts/<year>/*.md` with a `title` + `author` and without
-  `break: true`. Headshot comes from `author_image` (falls back to
-  `/images/<year>/speakers/<author_slug>.jpg`). An optional `role:` in a post's
-  frontmatter shows as the speaker's role line where the layout supports it.
-- **Fonts:** the template loads Google Fonts (Anton = display, Caveat = script,
-  Inter = labels) — close, swappable stand-ins for the brand fonts (edit
-  `lib/helpers.mjs`). Rendering needs network access the first time to fetch them.
+- **Data source:** `_posts/<year>/*.md` with `title` + `author` and no `break: true`.
+  Headshot = `author_image` (fallback `/images/<year>/speakers/<slug>.jpg`). Optional
+  `role:` shows a role line where the layout supports it. Posts with broken YAML
+  frontmatter are skipped with a warning (old years have quirks).
+- **Fonts:** Google Fonts (Anton = display, Caveat = script, Inter = labels), close
+  swappable stand-ins for the brand fonts (edit `lib/helpers.mjs`). First render
+  needs network to fetch them.
 - **Filenames** follow the existing convention: `:` → `,`, `/` → `-`.
-- Review output before uploading. Multi-speaker talks use the single
-  `author_image`; composite headshots still need a manual pass.
+- Review output before uploading; multi-speaker talks use the single `author_image`.
 
 ## Upload / organise videos on YouTube
 
 See `youtube/SETUP.md` for one-time Google Cloud OAuth setup, then use
-`youtube/upload.py` to create a playlist, add already-uploaded videos to it, set
-thumbnails, update descriptions, or upload new video files — individually or in
-bulk from a `manifest.json`. Secrets (`client_secret.json`, `token.json`) are
-gitignored.
-
+`youtube/upload.py` to create a playlist, add already-uploaded videos, set
+thumbnails, update descriptions, or upload new files — individually or in bulk via
+`manifest.json`. Secrets (`client_secret.json`, `token.json`) are gitignored.
 ```bash
 cd youtube && pip install -r requirements.txt && python upload.py --help
 ```

@@ -1,0 +1,19 @@
+{
+  "_comment": "Era-correct wordmark per year. `file` = a path in the working tree; `git` = `<rev>:<path>` pulled from history and cached in .logo-cache/. The wide horizontal wordmarks (viewBox 0 0 1420 200: images/logo.svg, images/logo-2018.svg) sit best in the top-left slot; the earlier gem/emblem mark is squarer. These are best guesses from git history (`git log --follow -- images/logo.svg` / `images/logo.png`) — eyeball each year and adjust. `git show 0d0e5b6:images/logo.svg` is the 2017–2023 emblem; `5f51296:images/logo.png` / `1fc31fa:images/logo.png` are the 2014 / 2015 raster marks.",
+
+  "default": { "file": "images/logo.svg" },
+
+  "2014": { "file": "images/logo-2014.svg" },
+  "2015": { "file": "images/logo-2014.svg" },
+  "2016": { "file": "images/logo-2014.svg" },
+  "2017": { "file": "images/logo-2018.svg" },
+  "2018": { "file": "images/logo-2018.svg" },
+  "2019": { "file": "images/logo-2018.svg" },
+  "2020": { "git": "0d0e5b6:images/logo.svg" },
+  "2021": { "git": "0d0e5b6:images/logo.svg" },
+  "2022": { "git": "0d0e5b6:images/logo.svg" },
+  "2023": { "git": "0d0e5b6:images/logo.svg" },
+  "2024": { "file": "images/logo.svg" },
+  "2025": { "file": "images/logo.svg" },
+  "2026": { "file": "images/logo.svg" }
+}
