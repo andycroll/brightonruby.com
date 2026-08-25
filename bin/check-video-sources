@@ -35,10 +35,30 @@ if [ "${#sources[@]}" -eq 0 ]; then
   exit 0
 fi
 
-# HEAD only (no body download). Echoes "CODE|CONTENT_TYPE"; 000 on transport error.
+# HEAD only (no body download). Echoes "CODE|CONTENT_TYPE|CURL_EXIT".
+# CODE is 000 whenever the connection never completed, so curl's exit status is
+# the only thing that distinguishes *why* — see cause() below.
 probe() {
-  curl -sS -o /dev/null -I --max-time 30 \
-    -w '%{http_code}|%{content_type}' "$1" 2>/dev/null || echo '000|'
+  local out curl_exit
+  out=$(curl -sS -o /dev/null -I --max-time 30 \
+    -w '%{http_code}|%{content_type}' "$1" 2>/dev/null)
+  curl_exit=$?
+  printf '%s|%s' "${out:-000|}" "$curl_exit"
+}
+
+# Turn curl's exit status into the real cause. A dropped DNS record and an
+# expired certificate both surface as "unreachable" but need opposite fixes,
+# so guessing between them wastes a debugging session.
+cause() {
+  case "$1" in
+    0) echo "" ;;
+    6) echo "DNS: host did not resolve" ;;
+    7) echo "connection refused" ;;
+    28) echo "timed out" ;;
+    35) echo "TLS handshake failed" ;;
+    60) echo "TLS certificate invalid or expired" ;;
+    *) echo "curl exit $1" ;;
+  esac
 }
 
 # A video is healthy when it returns 200/206 with a video/* content type.
@@ -51,8 +71,8 @@ echo "Checking ${#sources[@]} video source(s)…"
 # First pass: gentle, spaced out. Collect anything that doesn't look healthy.
 failed=()
 for src in "${sources[@]}"; do
-  res=$(probe "https://${src}")
-  healthy "${res%%|*}" "${res#*|}" || failed+=("$src")
+  IFS='|' read -r code ctype _curl_exit <<<"$(probe "https://${src}")"
+  healthy "$code" "$ctype" || failed+=("$src")
   sleep 0.2
 done
 
@@ -61,17 +81,19 @@ echo "First pass: ${ok_first}/${#sources[@]} reachable."
 
 # Confirm pass: real outages stay broken; transient throttling clears after a beat.
 fail=0
+causes=()
 if [ "${#failed[@]}" -gt 0 ]; then
   echo "Re-checking ${#failed[@]} after a short pause…"
   sleep 5
   for src in "${failed[@]}"; do
-    res=$(probe "https://${src}")
-    code=${res%%|*}
-    ctype=${res#*|}
+    IFS='|' read -r code ctype curl_exit <<<"$(probe "https://${src}")"
     if healthy "$code" "$ctype"; then
       printf '  ok (recovered)  %s\n' "https://${src}"
     else
-      printf '  FAIL  %-3s  %s  (content-type: %s)\n' "$code" "https://${src}" "${ctype:-none}"
+      why=$(cause "$curl_exit")
+      printf '  FAIL  %-3s  %s  (%s)\n' \
+        "$code" "https://${src}" "${why:-content-type: ${ctype:-none}}"
+      causes+=("${why:-unexpected HTTP response}")
       fail=1
     fi
   done
@@ -80,8 +102,30 @@ fi
 echo
 if [ "$fail" -ne 0 ]; then
   echo "One or more talk videos are unreachable."
-  echo "If ALL failed, the videos.brightonruby.com CNAME is likely missing or"
-  echo "broken — it should point (DNS-only) at brightonrubyvideo.b-cdn.net."
+
+  # When every failure shares one cause it's infrastructure, not a bad path, so
+  # point straight at the thing that needs fixing.
+  if [ "$(printf '%s\n' "${causes[@]}" | sort -u | wc -l)" -eq 1 ]; then
+    case "${causes[0]}" in
+    *certificate* | *handshake*)
+      echo
+      echo "Every failure was a TLS error. Bunny's Let's Encrypt certificate for"
+      echo "videos.brightonruby.com has lapsed or failed to renew — re-issue the"
+      echo "free certificate for that hostname under the pull zone's Hostnames"
+      echo "tab in the Bunny dashboard. Confirm with:"
+      echo "  echo | openssl s_client -connect videos.brightonruby.com:443 \\"
+      echo "    -servername videos.brightonruby.com 2>/dev/null \\"
+      echo "    | openssl x509 -noout -dates"
+      ;;
+    *DNS*)
+      echo
+      echo "Every failure was a DNS error. The videos.brightonruby.com CNAME is"
+      echo "missing or broken — it should point (DNS-only, grey cloud) at"
+      echo "brightonrubyvideo.b-cdn.net. Confirm with:"
+      echo "  dig +short videos.brightonruby.com CNAME"
+      ;;
+    esac
+  fi
   exit 1
 fi
 
