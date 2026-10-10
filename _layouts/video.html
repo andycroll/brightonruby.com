@@ -59,14 +59,7 @@ layout: default
   </div>
   {% if page.youtube_id %}
     <div class="relative bg-gradient-to-b from-slate-900 to-slate-700">
-      <iframe
-        class="aspect-video w-full xl:container mx-auto block"
-        src="https://www.youtube.com/embed/{{ page.youtube_id }}"
-        title="{{ page.title }}"
-        frameborder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-        allowfullscreen
-      ></iframe>
+      {% include youtube.html id=page.youtube_id title=page.title class="w-full xl:container mx-auto block" %}
     </div>
   {% elsif page.video_source %}
     <div class="relative">
