@@ -5,7 +5,7 @@ This is the Jekyll-powered website for Brighton Ruby Conference (brightonruby.co
 ## Technology Stack
 
 - **Framework**: Jekyll 4.4.1
-- **Ruby Version**: 3.4.7
+- **Ruby Version**: 4.0.10
 - **CSS Framework**: Tailwind CSS 4.0.14 using rubygem
 - **Hosting**: Netlify
 - **Build Tool**: Bundler
@@ -13,7 +13,7 @@ This is the Jekyll-powered website for Brighton Ruby Conference (brightonruby.co
 ## Development Setup
 
 ### Prerequisites
-- Ruby 3.4.4 (managed via `.ruby-version`)
+- Ruby 4.0.10 (managed via `.ruby-version`)
 - Bundler gem
 
 ### Installation
